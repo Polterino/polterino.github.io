@@ -89,7 +89,10 @@ document.addEventListener("DOMContentLoaded", function () {
 			const correctAnswerIndex = parseInt(document.querySelector(`input[name="answer${i}"]:checked`).getAttribute('data-correct-index'));
 
 			const feedbackElement = document.getElementById(`question${i}`).querySelector('.feedback');
-
+			
+			// Converti selectedAnswer in stringa per confronto
+			const selectedAnswerString = selectedAnswer !== null ? selectedAnswer.toString() : null;
+	
 			if (selectedAnswer === correctAnswerIndex.toString()) {
 				feedbackElement.innerHTML = "Correct!";
 				feedbackElement.classList.add('correct');
