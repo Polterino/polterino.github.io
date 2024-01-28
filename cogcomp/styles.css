@@ -50,10 +50,16 @@ button:hover {
     background-color: #fff;
     text-align: left;
     position: relative;
+	max-width: 800px;  /* Imposta la larghezza massima della domanda */
+    margin: 0 auto;   /* Centra la domanda orizzontalmente */
 }
 
 .question-image {
-    max-width: 100%;  /* Imposta la larghezza massima dell'immagine al 100% del suo contenitore */
+    width: 100%;  /* Imposta la larghezza dell'immagine al 100% della larghezza della domanda */
+    height: auto; /* Mantiene le proporzioni dell'immagine */
+    max-width: 100%; /* Assicura che l'immagine non superi la larghezza massima della domanda */
+    display: block;  /* Evita spazi vuoti sotto l'immagine */
+    margin-bottom: 10px; /* Aggiunge spazio sotto l'immagine */
 }
 
 .question-number {
