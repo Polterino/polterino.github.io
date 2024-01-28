@@ -105,23 +105,5 @@
 					"P(A,B,C,D,E) = P(A|C)P(B|C)P(D|B)P(C|E)"],
         "correctAnswer": 2,
 		"image": "img/domanda.png"
-	},
-	{
-		"question": "",
-        "options": ["",
-					"",
-					"",
-					"",
-					""],
-        "correctAnswer": 
-	},
-	{
-		"question": "",
-        "options": ["",
-					"",
-					"",
-					"",
-					""],
-        "correctAnswer": 
-	},
+	}
 ]
