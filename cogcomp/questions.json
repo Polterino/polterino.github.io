@@ -105,5 +105,104 @@
 					"P(A,B,C,D,E) = P(A|C)P(B|C)P(D|B)P(C|E)"],
         "correctAnswer": 2,
 		"image": "img/domanda.png"
+	},
+	{
+		"question": "In the delta rule, the weight changes are given",
+        "options": ["by the mean squared error between desired output and network output",
+					"by the difference between target and output, multiplied by the input",
+					"by the difference between target and output, multiplied by the gradient",
+					"by the difference between input and output",
+					"by the difference between target and output, multiplied by the bias"],
+        "correctAnswer": 1
+	},
+	{
+		"question": "In a restricted Boltzmann machine",
+        "options": ["during the positive phase visible units are reconstructed",
+					"lateral connections are present only in the hidden layer",
+					"contrastive divergence is used to minimize the classification error",
+					"units in the same laver are statistically independent",
+					"activations of all units within a layer can be computed at the same time"],
+        "correctAnswer": 4
+	},
+	{
+		"question": "We have a conjugate prior",
+        "options": ["when the prior distribution is in the same hypothesis space of the likelihood",
+					"when the likelihood function is Gaussian",
+					"when the prior distribution is Gaussian",
+					"when the prior distribution is uniform",
+					"when the posterior distribution is in the same family as the prior distribution"],
+        "correctAnswer": 4
+	},
+	{
+		"question": "Gibbs sampling",
+        "options": ["generate random samples consistent with the evidence",
+					"is an exact inference procedure for Bayesian networks",
+					"exploits the Markov blanket to discard samples that are not consistent with the evidence",
+					"use a Markov chain to iteratively approximate the target distribution",
+					"exploits the Markov blanket to sample conditionally dependent variables at the same time"],
+        "correctAnswer": 3
+	},
+	{
+		"question": "In the formal neuron, the signals coming trom other neurons are",
+        "options": ["multiplied by the threshold",
+					"multiplied by the synaptic weights and then subtracted",
+					"subtracted to the average activation",
+					"multiplied by the synaptic weights and then summed",
+					"added to the synaptic weights using a sigmoid activation function"],
+        "correctAnswer": 3
+	},
+	{
+		"question": "What distinguishes a multilayer feed-forward network from a perceptron?",
+        "options": ["the linear separability of the input patterns",
+					"the ability to learn pattern association",
+					"the use of the delta rule",
+					"the ability to learn non-linear functions",
+					"the use of the Hebb rule"],
+        "correctAnswer": 3
+	},
+	{
+		"question": "In Boltzmann machines, during the positive phase",
+        "options": ["correlations are computed between hidden units and model reconstructions",
+					"the hidden units are clamped to the previous state",
+					"both visible and hidden units can change their activation",
+					"only hidden units can change their activation",
+					"Gibbs sampling is used to reconstruct the input data"],
+        "correctAnswer": 3
+	},
+	{
+		"question": "In Boltzmann machines, during the positive phase",
+        "options": ["both visible and hidden units can change their activation",
+					"only hidden units can change their activation",
+					"correlations are computed between all hidden units",
+					"the visible units are clamped to the input data",
+					"the hidden units are clamped to the previous input data"],
+        "correctAnswer": 1
+	},
+	{
+		"question": "A deep belief network",
+        "options": ["learns a sequential generative model",
+					"use the top-down connection to propagate the error gradients",
+					"is formed by hierarchy of linear layer",
+					"is formed by hierarchy of stochastic networks",
+					"requires training labels that express probabilities"],
+        "correctAnswer": 3
+	},
+	{
+		"question": "Descriptive adequacy is",
+        "options": ["the accuracy of the empirical data so that is suitable for modeling",
+					"a transparent description of the data and the models",
+					"the accuracy of the model in predicting the dataset",
+					"the accuracy in describing the model architecture and parameters",
+					"the accurate description and justification of all model assumptions"],
+        "correctAnswer": 2
+	},
+	{
+		"question": "According to empiricism",
+        "options": ["we are born with innate ideas and concepts",
+					"in order to understand human intelligence we need to conduct psycological experiments",
+					"there is a clear distinction between mental processes and physical processes",
+					"knowledge is discovered primarly by deduction",
+					"most of our knowledge is derived by sensory experience"],
+        "correctAnswer": 4
 	}
 ]
