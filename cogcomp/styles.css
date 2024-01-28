@@ -49,7 +49,11 @@ button:hover {
     border-radius: 5px;
     background-color: #fff;
     text-align: left;
-    position: relative;  /* Aggiunto per posizionare la numerazione della domanda */
+    position: relative;
+}
+
+.question-image {
+    max-width: 100%;  /* Imposta la larghezza massima dell'immagine al 100% del suo contenitore */
 }
 
 .question-number {

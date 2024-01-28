@@ -30,7 +30,7 @@ document.addEventListener("DOMContentLoaded", function () {
 				<label>${option}</label><br>
 			`).join("");
 
-			const imageHTML = currentQuestion.image ? `<img src="${currentQuestion.image}" alt="Question Image">` : '';
+			const imageHTML = currentQuestion.image ? `<img src="${currentQuestion.image}" alt="Question Image" class="question-image">` : '';
 
 			console.log(`Question ${i + 1}:`, currentQuestion.question);
 
