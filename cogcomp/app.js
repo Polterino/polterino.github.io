@@ -4,6 +4,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     let questions;
     let userAnswers = [];
+	let randomQuestions;
 
     // Fetch questions from the JSON file
     fetch("questions.json")
@@ -29,10 +30,14 @@ document.addEventListener("DOMContentLoaded", function () {
     // Aggiorna questa parte nel tuo file JavaScript
 	function showQuestions() {
 		console.log("Showing questions:");
+		
+		numDom = 20;
+		randomQuestions = getRandomSample(questions, numDom);
 
 		// Loop through all questions
-		for (let i = 0; i < questions.length; i++) {
-			const currentQuestion = questions[i];
+		for (let i = 0; i < randomQuestions.length; i++) {
+			const currentQuestion = randomQuestions[i];
+			//const currentQuestion = questions[i];
 			const correctAnswerIndex = currentQuestion.correctAnswer;
 			
 			// Mantieni traccia dell'indice originale prima di mescolare
@@ -88,11 +93,12 @@ document.addEventListener("DOMContentLoaded", function () {
 		let score = 0;
 
 		// Loop through all questions
-		for (let i = 0; i < questions.length; i++) {
+		for (let i = 0; i < randomQuestions.length; i++) {
 			const selectedAnswer = getSelectedAnswer(`answer${i}`);
 			userAnswers.push(selectedAnswer);
 
-			const currentQuestion = questions[i];
+			currentQuestion = randomQuestions[i];
+			//const currentQuestion = questions[i];
 			
 			 // Verifica se almeno un elemento radio è selezionato
 			const selectedRadio = document.querySelector(`input[name="answer${i}"]:checked`);
@@ -128,6 +134,10 @@ document.addEventListener("DOMContentLoaded", function () {
 	}
 
 
+	function getRandomSample(array, size) {
+	  const shuffledArray = shuffleArray(array);
+	  return shuffledArray.slice(0, size);
+	}
 
     // Function to get the selected answer for a question
     function getSelectedAnswer(name) {
