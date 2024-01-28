@@ -18,42 +18,47 @@ document.addEventListener("DOMContentLoaded", function () {
     // Event listener for the Calculate Score button
     calculateButton.addEventListener("click", calculateScore);
 
-    // Function to display all questions and answers
-    function showQuestions() {
-        console.log("Showing questions:");
+    // Aggiorna questa parte nel tuo file JavaScript
+	function showQuestions() {
+		console.log("Showing questions:");
 
-        // Loop through all questions
-        for (let i = 0; i < questions.length; i++) {
-            const currentQuestion = questions[i];
-            const optionsHTML = currentQuestion.options.map((option, index) => `
-                <input type="radio" name="answer${i}" value="${index}">
-                <label>${option}</label><br>
-            `).join("");
+		// Loop through all questions
+		for (let i = 0; i < questions.length; i++) {
+			const currentQuestion = questions[i];
+			const optionsHTML = currentQuestion.options.map((option, index) => `
+				<input type="radio" name="answer${i}" value="${index}">
+				<label>${option}</label><br>
+			`).join("");
 
-            console.log(`Question ${i + 1}:`, currentQuestion.question);
-            console.log("Options:", currentQuestion.options);
-            console.log("Correct Answer Index:", currentQuestion.correctAnswer);
+			console.log(`Question ${i + 1}:`, currentQuestion.question);
 
-            questionContainer.innerHTML += `
-                <div class="question" id="question${i}">
-                    <h2>${currentQuestion.question}</h2>
-                    ${optionsHTML}
-                    <div class="feedback"></div>
-                </div>
-            `;
-        }
+			// Aggiungi il numero della domanda all'inizio della domanda
+			const questionNumberHTML = `<div class="question-number">${i + 1}</div>`;
+			
+			questionContainer.innerHTML += `
+				<div class="question" id="question${i}">
+					${questionNumberHTML}
+					<h2>${currentQuestion.question}</h2>
+					${optionsHTML}
+					<div class="feedback"></div>
+				</div>
+			`;
+		}
 
-        console.log("All questions displayed.");
-    }
+		console.log("All questions displayed.");
+	}
 
-    // Function to calculate the score
+
     // Modifica la funzione calculateScore nel tuo file JavaScript
 	function calculateScore() {
 		console.log("Calculating score:");
 
 		// Reset user answers and feedback
 		userAnswers = [];
-		document.querySelectorAll('.feedback').forEach(feedback => feedback.innerHTML = '');
+		document.querySelectorAll('.feedback').forEach(feedback => {
+			feedback.innerHTML = '';
+			feedback.classList.remove('correct', 'incorrect');
+		});
 
 		let score = 0;
 
@@ -69,17 +74,20 @@ document.addEventListener("DOMContentLoaded", function () {
 
 			if (selectedAnswer === correctAnswerIndex.toString()) {
 				feedbackElement.innerHTML = "Correct!";
+				feedbackElement.classList.add('correct');
 				score += 1;
 			} else {
 				feedbackElement.innerHTML = `Incorrect. Correct answer: ${currentQuestion.options[correctAnswerIndex]}`;
+				feedbackElement.classList.add('incorrect');
 			}
 		}
 
-    // Mostra lo score nella pagina
-    const scoreContainer = document.getElementById("score-container");
-    scoreContainer.innerHTML = `Your Score: ${score} / ${questions.length}`;
-    console.log("Score:", score);
+		// Mostra lo score nella pagina
+		const scoreContainer = document.getElementById("score-container");
+		scoreContainer.innerHTML = `Your Score: ${score} / ${questions.length}`;
+		console.log("Score:", score);
 	}
+
 
 
     // Function to get the selected answer for a question

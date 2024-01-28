@@ -40,3 +40,37 @@ button {
 button:hover {
     background-color: #45a049;
 }
+
+/* Aggiorna questo stile nel tuo file CSS */
+.question {
+    border: 1px solid #ddd;
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    background-color: #fff;
+    text-align: left;
+    position: relative;  /* Aggiunto per posizionare la numerazione della domanda */
+}
+
+.question-number {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+
+.feedback {
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+.correct {
+    color: green;
+}
+
+.incorrect {
+    color: red;
+}
+
