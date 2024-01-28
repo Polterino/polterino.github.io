@@ -91,7 +91,7 @@ document.addEventListener("DOMContentLoaded", function () {
 			const feedbackElement = document.getElementById(`question${i}`).querySelector('.feedback');
 			
 			// Converti selectedAnswer in stringa per confronto
-			const selectedAnswerString = selectedAnswer !== null ? selectedAnswer.toString() : null;
+			//const selectedAnswerString = selectedAnswer !== null ? selectedAnswer.toString() : null;
 	
 			if (selectedAnswer === correctAnswerIndex.toString()) {
 				feedbackElement.innerHTML = "Correct!";
