@@ -41,6 +41,19 @@ button:hover {
     background-color: #45a049;
 }
 
+#reset-button {
+  background-color: red;
+  color: white;  /* Opzionale: imposta il colore del testo */
+  border: none;  /* Opzionale: rimuovi il bordo */
+  padding: 10px 20px;  /* Opzionale: aggiusta il padding per una migliore presentazione */
+  cursor: pointer;
+}
+
+#reset-button:hover {
+  background-color: darkred;  /* Opzionale: cambia il colore al passaggio del mouse */
+}
+
+
 /* Stile generale per i bottoni radio */
 input[type="radio"] {
   appearance: none;
