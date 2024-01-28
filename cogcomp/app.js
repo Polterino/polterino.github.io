@@ -34,14 +34,18 @@ document.addEventListener("DOMContentLoaded", function () {
 		for (let i = 0; i < questions.length; i++) {
 			const currentQuestion = questions[i];
 			
+			// Mantieni traccia dell'indice originale prima di mescolare
+			const originalIndices = currentQuestion.options.map((option, index) => index);
+			
+			const correctAnswerIndex = currentQuestion.correctAnswer;
 			// Shuffle the array of options
 			const shuffledOptions = shuffleArray([...currentQuestion.options]);
 			
 			// Find the index of the correct answer in the shuffled array
-			const correctAnswerIndex = currentQuestion.options.indexOf(currentQuestion.options[currentQuestion.correctAnswer]);
+			//const correctAnswerIndex = currentQuestion.options.indexOf(currentQuestion.options[currentQuestion.correctAnswer]);
 			
 			const optionsHTML = shuffledOptions.map((option, index) => `
-				<input type="radio" name="answer${i}" value="${index}" data-correct-index="${correctAnswerIndex}">
+				<input type="radio" name="answer${i}" value="${originalIndices[index]}">
 				<label>${option}</label><br>
 			`).join("");
 
@@ -91,14 +95,14 @@ document.addEventListener("DOMContentLoaded", function () {
 			const selectedRadio = document.querySelector(`input[name="answer${i}"]:checked`);
 			
 			if (selectedRadio) {
-				const correctAnswerIndex = parseInt(document.querySelector(`input[name="answer${i}"]:checked`).getAttribute('data-correct-index'));
+				const correctAnswerIndex = currentQuestion.correctAnswer;
 
 				const feedbackElement = document.getElementById(`question${i}`).querySelector('.feedback');
 				
 				// Converti selectedAnswer in stringa per confronto
-				const selectedAnswerString = selectedAnswer !== null ? selectedAnswer.toString() : null;
+				//const selectedAnswerString = selectedAnswer !== null ? selectedAnswer.toString() : null;
 		
-				if (selectedAnswerString === correctAnswerIndex.toString()) {
+				if (parseInt(selectedAnswer) === parseInt(correctAnswerIndex)) {
 					feedbackElement.innerHTML = "Correct!";
 					feedbackElement.classList.add('correct');
 					score += 1;
