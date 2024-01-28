@@ -37,6 +37,9 @@ document.addEventListener("DOMContentLoaded", function () {
 			// Shuffle the array of options
 			const shuffledOptions = shuffleArray([...currentQuestion.options]);
 			
+			// Find the index of the correct answer in the shuffled array
+			const correctAnswerIndex = currentQuestion.options.indexOf(currentQuestion.options[currentQuestion.correctAnswer]);
+			
 			const optionsHTML = shuffledOptions.map((option, index) => `
 				<input type="radio" name="answer${i}" value="${index}">
 				<label>${option}</label><br>
@@ -83,7 +86,7 @@ document.addEventListener("DOMContentLoaded", function () {
 			userAnswers.push(selectedAnswer);
 
 			const currentQuestion = questions[i];
-			const correctAnswerIndex = currentQuestion.correctAnswer;
+			const correctAnswerIndex = currentQuestion.options.indexOf(currentQuestion.options[currentQuestion.correctAnswer]);
 
 			const feedbackElement = document.getElementById(`question${i}`).querySelector('.feedback');
 
