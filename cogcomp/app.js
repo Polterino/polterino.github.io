@@ -86,19 +86,30 @@ document.addEventListener("DOMContentLoaded", function () {
 			userAnswers.push(selectedAnswer);
 
 			const currentQuestion = questions[i];
-			const correctAnswerIndex = parseInt(document.querySelector(`input[name="answer${i}"]:checked`).getAttribute('data-correct-index'));
-
-			const feedbackElement = document.getElementById(`question${i}`).querySelector('.feedback');
 			
-			// Converti selectedAnswer in stringa per confronto
-			const selectedAnswerString = selectedAnswer !== null ? selectedAnswer.toString() : null;
-	
-			if (selectedAnswerString === correctAnswerIndex.toString()) {
-				feedbackElement.innerHTML = "Correct!";
-				feedbackElement.classList.add('correct');
-				score += 1;
+			 // Verifica se almeno un elemento radio è selezionato
+			const selectedRadio = document.querySelector(`input[name="answer${i}"]:checked`);
+			
+			if (selectedRadio) {
+				const correctAnswerIndex = parseInt(document.querySelector(`input[name="answer${i}"]:checked`).getAttribute('data-correct-index'));
+
+				const feedbackElement = document.getElementById(`question${i}`).querySelector('.feedback');
+				
+				// Converti selectedAnswer in stringa per confronto
+				const selectedAnswerString = selectedAnswer !== null ? selectedAnswer.toString() : null;
+		
+				if (selectedAnswerString === correctAnswerIndex.toString()) {
+					feedbackElement.innerHTML = "Correct!";
+					feedbackElement.classList.add('correct');
+					score += 1;
+				} else {
+					feedbackElement.innerHTML = `Incorrect. Correct answer: ${currentQuestion.options[correctAnswerIndex]}`;
+					feedbackElement.classList.add('incorrect');
+				}
 			} else {
-				feedbackElement.innerHTML = `Incorrect. Correct answer: ${currentQuestion.options[correctAnswerIndex]}`;
+				// Nessuna risposta selezionata, considera la domanda come sbagliata
+				const feedbackElement = document.getElementById(`question${i}`).querySelector('.feedback');
+				feedbackElement.innerHTML = 'Incorrect. No answer selected.';
 				feedbackElement.classList.add('incorrect');
 			}
 		}
