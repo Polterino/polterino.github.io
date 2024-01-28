@@ -41,6 +41,42 @@ button:hover {
     background-color: #45a049;
 }
 
+/* Aggiorna lo stile dei bottoni radio nel tuo file CSS */
+input[type="radio"] {
+    display: none; /* Nasconde il vero input radio */
+}
+
+/* Stile del contenitore del bottone radio personalizzato */
+label {
+    position: relative;
+    padding-left: 30px; /* Aggiunge spazio a sinistra del bottone radio */
+    cursor: pointer;
+    line-height: 20px;
+    display: block;
+}
+
+/* Stile dell'aspetto del bottone radio personalizzato */
+label:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 20px;
+    height: 20px;
+    border: 2px solid #4285f4; /* Colore del bordo */
+    border-radius: 50%; /* Rende il bordo circolare */
+    background-color: #fff; /* Colore di sfondo del bottone radio */
+    transition: background-color 0.3s ease; /* Aggiunge una transizione di colore di sfondo */
+}
+
+/* Stile del bottone radio quando è selezionato */
+input[type="radio"]:checked + label:before {
+    background-color: #4285f4; /* Cambia il colore di sfondo quando il bottone radio è selezionato */
+    border-color: #4285f4; /* Cambia il colore del bordo quando il bottone radio è selezionato */
+}
+
+
 /* Aggiorna questo stile nel tuo file CSS */
 .question {
     border: 1px solid #ddd;

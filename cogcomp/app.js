@@ -41,7 +41,7 @@ document.addEventListener("DOMContentLoaded", function () {
 			const correctAnswerIndex = currentQuestion.options.indexOf(currentQuestion.options[currentQuestion.correctAnswer]);
 			
 			const optionsHTML = shuffledOptions.map((option, index) => `
-				<input type="radio" name="answer${i}" value="${index}">
+				<input type="radio" name="answer${i}" value="${index}" data-correct-index="${correctAnswerIndex}">
 				<label>${option}</label><br>
 			`).join("");
 
@@ -86,7 +86,7 @@ document.addEventListener("DOMContentLoaded", function () {
 			userAnswers.push(selectedAnswer);
 
 			const currentQuestion = questions[i];
-			const correctAnswerIndex = currentQuestion.options.indexOf(currentQuestion.options[currentQuestion.correctAnswer]);
+			const correctAnswerIndex = parseInt(document.querySelector(`input[name="answer${i}"]:checked`).getAttribute('data-correct-index'));
 
 			const feedbackElement = document.getElementById(`question${i}`).querySelector('.feedback');
 
