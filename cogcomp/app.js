@@ -129,7 +129,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
 		// Mostra lo score nella pagina
 		const scoreContainer = document.getElementById("score-container");
-		scoreContainer.innerHTML = `Your Score: ${score} / ${questions.length}`;
+		scoreContainer.innerHTML = `Your Score: ${score} / ${randomQuestions.length}`;
 		console.log("Score:", score);
 	}
 
