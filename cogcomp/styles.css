@@ -50,7 +50,7 @@ button:hover {
     background-color: #fff;
     text-align: left;
     position: relative;
-	max-width: 800px;  /* Imposta la larghezza massima della domanda */
+	max-width: 400px;  /* Imposta la larghezza massima della domanda */
     margin: 0 auto;   /* Centra la domanda orizzontalmente */
 }
 
