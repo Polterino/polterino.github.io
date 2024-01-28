@@ -10,31 +10,30 @@ document.addEventListener("DOMContentLoaded", function () {
         .then(response => response.json())
         .then(data => {
             questions = data;
-            showQuestion();
-        });
+            showQuestions();
+        })
+        .catch(error => console.error("Error loading questions:", error));
 
-    // Event listener for the Next button
-    nextButton.addEventListener("click", () => {
-        currentQuestionIndex++;
-        if (currentQuestionIndex < questions.length) {
-            showQuestion();
-        } else {
-            alert("Quiz completed!");
-            // You may add more actions when the quiz is completed
+    // Function to display all questions and answers
+    function showQuestions() {
+        let html = "";
+
+        // Loop through all questions
+        for (let i = 0; i < questions.length; i++) {
+            const currentQuestion = questions[i];
+            const optionsHTML = currentQuestion.options.map((option, index) => `
+                <input type="radio" name="answer${i}" value="${index}">
+                <label>${option}</label><br>
+            `).join("");
+
+            html += `
+                <div class="question">
+                    <h2>${currentQuestion.question}</h2>
+                    ${optionsHTML}
+                </div>
+            `;
         }
-    });
 
-    // Function to display the current question and answers
-    function showQuestion() {
-        const currentQuestion = questions[currentQuestionIndex];
-        const optionsHTML = currentQuestion.options.map((option, index) => `
-            <input type="radio" name="answer" value="${index}">
-            <label>${option}</label><br>
-        `).join("");
-
-        questionContainer.innerHTML = `
-            <h2>${currentQuestion.question}</h2>
-            ${optionsHTML}
-        `;
+        questionContainer.innerHTML = html;
     }
 });
