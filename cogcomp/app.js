@@ -1,8 +1,6 @@
 document.addEventListener("DOMContentLoaded", function () {
     const questionContainer = document.getElementById("question-container");
-    const nextButton = document.getElementById("next-button");
 
-    let currentQuestionIndex = 0;
     let questions;
 
     // Fetch questions from the JSON file
@@ -10,13 +8,14 @@ document.addEventListener("DOMContentLoaded", function () {
         .then(response => response.json())
         .then(data => {
             questions = data;
+            console.log("Questions loaded:", questions);
             showQuestions();
         })
         .catch(error => console.error("Error loading questions:", error));
 
     // Function to display all questions and answers
     function showQuestions() {
-        let html = "";
+        console.log("Showing questions:");
 
         // Loop through all questions
         for (let i = 0; i < questions.length; i++) {
@@ -26,7 +25,11 @@ document.addEventListener("DOMContentLoaded", function () {
                 <label>${option}</label><br>
             `).join("");
 
-            html += `
+            console.log(`Question ${i + 1}:`, currentQuestion.question);
+            console.log("Options:", currentQuestion.options);
+            console.log("Correct Answer Index:", currentQuestion.correctAnswer);
+
+            questionContainer.innerHTML += `
                 <div class="question">
                     <h2>${currentQuestion.question}</h2>
                     ${optionsHTML}
@@ -34,6 +37,6 @@ document.addEventListener("DOMContentLoaded", function () {
             `;
         }
 
-        questionContainer.innerHTML = html;
+        console.log("All questions displayed.");
     }
 });
