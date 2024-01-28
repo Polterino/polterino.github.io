@@ -33,20 +33,23 @@ document.addEventListener("DOMContentLoaded", function () {
 		// Loop through all questions
 		for (let i = 0; i < questions.length; i++) {
 			const currentQuestion = questions[i];
+			const correctAnswerIndex = currentQuestion.correctAnswer;
 			
 			// Mantieni traccia dell'indice originale prima di mescolare
-			const originalIndices = currentQuestion.options.map((option, index) => index);
+			const optionsWithIndices = currentQuestion.options.map((option, index) => ({
+			  value: option,
+			  index: index
+			}));
 			
-			const correctAnswerIndex = currentQuestion.correctAnswer;
 			// Shuffle the array of options
-			const shuffledOptions = shuffleArray([...currentQuestion.options]);
+			const shuffledOptions = shuffleArray(optionsWithIndices);
 			
 			// Find the index of the correct answer in the shuffled array
 			//const correctAnswerIndex = currentQuestion.options.indexOf(currentQuestion.options[currentQuestion.correctAnswer]);
 			
 			const optionsHTML = shuffledOptions.map((option, index) => `
-				<input type="radio" name="answer${i}" value="${originalIndices[index]}">
-				<label>${option}</label><br>
+				<input type="radio" name="answer${i}" value="${option.index}">
+				<label>${option.value}</label><br>
 			`).join("");
 
 			const imageHTML = currentQuestion.image ? `<img src="${currentQuestion.image}" alt="Question Image" class="question-image">` : '';
