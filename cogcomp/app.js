@@ -47,38 +47,40 @@ document.addEventListener("DOMContentLoaded", function () {
     }
 
     // Function to calculate the score
-    function calculateScore() {
-        console.log("Calculating score:");
+    // Modifica la funzione calculateScore nel tuo file JavaScript
+	function calculateScore() {
+		console.log("Calculating score:");
 
-        // Reset user answers and feedback
-        userAnswers = [];
-        document.querySelectorAll('.feedback').forEach(feedback => feedback.innerHTML = '');
+		// Reset user answers and feedback
+		userAnswers = [];
+		document.querySelectorAll('.feedback').forEach(feedback => feedback.innerHTML = '');
 
-        // Loop through all questions
-        for (let i = 0; i < questions.length; i++) {
-            const selectedAnswer = getSelectedAnswer(`answer${i}`);
-            userAnswers.push(selectedAnswer);
+		let score = 0;
 
-            const currentQuestion = questions[i];
-            const correctAnswerIndex = currentQuestion.correctAnswer;
+		// Loop through all questions
+		for (let i = 0; i < questions.length; i++) {
+			const selectedAnswer = getSelectedAnswer(`answer${i}`);
+			userAnswers.push(selectedAnswer);
 
-            const feedbackElement = document.getElementById(`question${i}`).querySelector('.feedback');
+			const currentQuestion = questions[i];
+			const correctAnswerIndex = currentQuestion.correctAnswer;
 
-            if (selectedAnswer === correctAnswerIndex.toString()) {
-                feedbackElement.innerHTML = "Correct!";
-                console.log(`Question ${i + 1}: Correct`);
-            } else {
-                feedbackElement.innerHTML = `Incorrect. Correct answer: ${currentQuestion.options[correctAnswerIndex]}`;
-                console.log(`Question ${i + 1}: Incorrect`);
-            }
-        }
+			const feedbackElement = document.getElementById(`question${i}`).querySelector('.feedback');
 
-        const score = userAnswers.reduce((acc, answer, index) => {
-            return answer === questions[index].correctAnswer.toString() ? acc + 1 : acc;
-        }, 0);
+			if (selectedAnswer === correctAnswerIndex.toString()) {
+				feedbackElement.innerHTML = "Correct!";
+				score += 1;
+			} else {
+				feedbackElement.innerHTML = `Incorrect. Correct answer: ${currentQuestion.options[correctAnswerIndex]}`;
+			}
+		}
 
-        console.log("Score:", score);
-    }
+    // Mostra lo score nella pagina
+    const scoreContainer = document.getElementById("score-container");
+    scoreContainer.innerHTML = `Your Score: ${score} / ${questions.length}`;
+    console.log("Score:", score);
+	}
+
 
     // Function to get the selected answer for a question
     function getSelectedAnswer(name) {

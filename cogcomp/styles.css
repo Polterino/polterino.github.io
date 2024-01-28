@@ -4,9 +4,9 @@ body {
     margin: 0;
     padding: 0;
     display: flex;
-    justify-content: center;
+    flex-direction: column;  /* Aggiunto per evitare il taglio del contenuto alla fine della pagina */
     align-items: center;
-    height: 100vh;
+    min-height: 100vh;
 }
 
 #quiz-container {
@@ -15,6 +15,11 @@ body {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     padding: 20px;
     text-align: center;
+    margin-bottom: 20px;  /* Aggiunto spazio sotto il container delle domande */
+}
+
+#score-container {
+    margin-top: 20px;  /* Aggiunto spazio sopra lo score */
 }
 
 h1 {
