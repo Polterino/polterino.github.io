@@ -1,5 +1,4 @@
-{
-"questions":[
+[
     {
         "question": "What is the capital of France?",
         "options": ["Paris", "Berlin", "London", "Rome"],
@@ -11,4 +10,3 @@
         "correctAnswer": 1
     }
 ]
-}
