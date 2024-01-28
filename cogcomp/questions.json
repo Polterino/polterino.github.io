@@ -1,33 +1,82 @@
 [
     {
-        "question": "What is the capital of France?",
-        "options": ["Paris", "Berlin", "London", "Rome"],
+        "question": "According to Bayesian inference",
+        "options": ["the posterior probability is proportional to the likelihood multiplied by the prior", 
+					"the amount of observed data does not influence the estimate of the posteriorthe prior probability should be uniform",
+					"the normalization factor represents the likelihood of the data",
+					"the posterior probability can be estimated using maximum-likelihood"],
         "correctAnswer": 0
     },
     {
-        "question": "Which planet is known as the Red Planet?",
-        "options": ["Venus", "Mars", "Jupiter", "Saturn"],
+        "question": "In probabilistic programming",
+        "options": ["The output is always a probability distribution",
+					"You create a computer program that...", 
+					"Another answer with computer program",
+					"last answer"],
         "correctAnswer": 1,
 		"image": "img/img.png"
     },
 	{
-        "question": "What is the capital of France?",
-        "options": ["Paris", "Berlin", "London", "Rome"],
-        "correctAnswer": 2
-    },
-    {
-        "question": "Which planet is known as the Red Planet?",
-        "options": ["Venus", "Mars", "Jupiter", "Saturn"],
-        "correctAnswer": 3
-    },
-	{
-        "question": "What is the capital of France?",
-        "options": ["Paris", "Berlin", "London", "Rome"],
+        "question": "Intercausal reasoning in Bayesian networks updates the estimate of a variable",
+        "options": ["using information from the parents of its children",
+					"using information from its parents",
+					"using information from the variables in the Markov blanket",
+					"using an iterative procedure",
+					"using information from its children"],
         "correctAnswer": 0
     },
     {
-        "question": "Which planet is known as the Red Planet?",
-        "options": ["Venus", "Mars", "Jupiter", "Saturn"],
-        "correctAnswer": 1
+        "question": "A universal computing machine",
+        "options": ["approximates a Turing machine with a neural network",
+					"can solve the symbol grounding problem through inductive inference",
+					"is an ideal computing machine with continuous states",
+					"is a theoretical device that can simulate any algorithm",
+					"can simulate any algorithm using a finite amount of memory"],
+        "correctAnswer": 3
+    },
+	{
+        "question": "According to Innatism",
+        "options": ["most of our knowledge is present at birth",
+					"mental states are completely determined by brain states",
+					"the nature of our knowledge is probabilistic",
+					"we can generalize the property of a population from the property of a sample",
+					"a rational agent can select the best action regardless of the sensory evidence"],
+        "correctAnswer": 0
+    },
+    {
+        "question": "The emergentist approach for modeling cognition",
+        "options": ["emphasizes the central role of deductive reasoning in knowledge discovery",
+					"is based on explicit knowledge representations",
+					"argues that thinking arises from the activation dynamics of neuronal networks",
+					"arques that cognition can be programmed using syntactic rules",
+					"argues that intelligence can be programmed in a universal computing machine"],
+        "correctAnswer": 2
+    },
+	{
+        "question": "The algorithmic level in Marr's \"three levels of analysis\"",
+        "options": ["describes how the computation can be physically implemented",
+					"describes the goal of the computation",
+					"describes the goal of the computation and how inputs and outputs are represented",
+					"describes the goal of the algorithm and how it can be implemented",
+					"describes the representation for the input and the output of the model"],
+        "correctAnswer": 4
+    },
+	{
+        "question": "In order to adjudicate between competing theories",
+        "options": ["we should choose the simpler model",
+					"we should choose the most transparent model",
+					"verbal theories should be preferred over black-box models",
+					"we should choose the model with better descriptive adequacy",
+					"we should use strong inference to test the transparency of the model"],
+        "correctAnswer": 3
+    },
+	{
+        "question": "In emergentist cognitive models",
+        "options": ["it is easier to attribute a meaning to each representatonal unit",
+					"we assume that knowledge and reasoning are separate processes",
+					"knowledge is represented in a declarative form",
+					"knowledge is represented explicitly",
+					"knowledge is represented by a vector of activations over basic processing units"],
+        "correctAnswer": 4
     }
 ]

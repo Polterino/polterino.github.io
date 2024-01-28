@@ -17,6 +17,14 @@ document.addEventListener("DOMContentLoaded", function () {
 
     // Event listener for the Calculate Score button
     calculateButton.addEventListener("click", calculateScore);
+	
+	function shuffleArray(array) {
+		for (let i = array.length - 1; i > 0; i--) {
+			const j = Math.floor(Math.random() * (i + 1));
+			[array[i], array[j]] = [array[j], array[i]];
+		}
+		return array;
+	}
 
     // Aggiorna questa parte nel tuo file JavaScript
 	function showQuestions() {
@@ -25,7 +33,11 @@ document.addEventListener("DOMContentLoaded", function () {
 		// Loop through all questions
 		for (let i = 0; i < questions.length; i++) {
 			const currentQuestion = questions[i];
-			const optionsHTML = currentQuestion.options.map((option, index) => `
+			
+			// Shuffle the array of options
+			const shuffledOptions = shuffleArray([...currentQuestion.options]);
+			
+			const optionsHTML = shuffledOptions.map((option, index) => `
 				<input type="radio" name="answer${i}" value="${index}">
 				<label>${option}</label><br>
 			`).join("");
