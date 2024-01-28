@@ -30,6 +30,8 @@ document.addEventListener("DOMContentLoaded", function () {
 				<label>${option}</label><br>
 			`).join("");
 
+			const imageHTML = currentQuestion.image ? `<img src="${currentQuestion.image}" alt="Question Image">` : '';
+
 			console.log(`Question ${i + 1}:`, currentQuestion.question);
 
 			// Aggiungi il numero della domanda all'inizio della domanda
@@ -39,6 +41,7 @@ document.addEventListener("DOMContentLoaded", function () {
 				<div class="question" id="question${i}">
 					${questionNumberHTML}
 					<h2>${currentQuestion.question}</h2>
+					${imageHTML}
 					${optionsHTML}
 					<div class="feedback"></div>
 				</div>
