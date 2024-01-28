@@ -13,8 +13,7 @@
 					"You create a computer program that...", 
 					"Another answer with computer program",
 					"last answer"],
-        "correctAnswer": 1,
-		"image": "img/img.png"
+        "correctAnswer": 1
     },
 	{
         "question": "Intercausal reasoning in Bayesian networks updates the estimate of a variable",
@@ -78,5 +77,51 @@
 					"knowledge is represented explicitly",
 					"knowledge is represented by a vector of activations over basic processing units"],
         "correctAnswer": 4
-    }
+    },
+	{
+		"question": "Elman networks",
+        "options": ["use as context the previous state of the output layer",
+					"use a context layer to learn spatial representations",
+					"use as context the previous state of the hidden layer",
+					"use lateral connections to process temporal information",
+					"use bidirectionals connections between Internal output units"],
+        "correctAnswer": 2
+	},
+	{
+		"question": "In reinforcement learning",
+        "options": ["the goal is to discover a causal model of the environment",
+					"the goal is to maximize the value function",
+					"the environment can be defined as a Markov Decision Process",
+					"the agent learns from trial and error",
+					"the goal is to maximize the control policy"],
+        "correctAnswer": 3
+	},
+	{
+		"question": "How can we factorize the joint distribution for the following Bayesian network?",
+        "options": ["P(A,B,C,D,E) = P(A,B)P(C,D)P(E)",
+					"P(A,B,C,D,E) = P(A)P(B)P(C|A,B) P(D)P (E|C)",
+					"P(A,B,C,D,E) = P(A)P(B|D)P(C|A,B)P(D)P(E|C)",
+					"P(A,B,C,D,E) = P(A)P(B|D)P(C|A,B)P(C,E)",
+					"P(A,B,C,D,E) = P(A|C)P(B|C)P(D|B)P(C|E)"],
+        "correctAnswer": 2,
+		"image": "img/domanda.png"
+	},
+	{
+		"question": "",
+        "options": ["",
+					"",
+					"",
+					"",
+					""],
+        "correctAnswer": 
+	},
+	{
+		"question": "",
+        "options": ["",
+					"",
+					"",
+					"",
+					""],
+        "correctAnswer": 
+	},
 ]
