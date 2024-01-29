@@ -1,0 +1,462 @@
+[ 
+    {
+        "question": "Considering a generic processing pipeline for a gait identification system, select the <u>correct</u> ordering for the following Processing steps:",
+        "options": [
+            "Upsampling and filtering, template matching, template extraction, classification.",
+            "Template extraction, upsampling and filtering, sample normalization, classification.",
+            "Upsampling and filtering, template extraction, classification, angle normalization.",
+            "Upsampling and filtering, template extraction, sample normalization, classification."
+        ],
+        "correctAnswer": 3
+    },
+    {
+        "question": "Considering a copy-move image tampering detection, select the <u>correct</u> statement among the following ones.",
+        "options": [
+            "It requires analyzing more than one image.",
+            "It searches for blurred regions that denote the alteration.",
+            "It is based on detecting ghosting artifacts.",
+            "It uses local image descriptors"
+        ],
+        "correctAnswer": 3
+    },
+    {
+        "question": "Concerning the Photo-Response Non-Uniformity (PRNU) equation, which among the following statements is surely <u>wrong</u>.",
+        "options": [
+            "Theta includes compression noise.",
+            "K is a multiplicative term.",
+            "I_0 is the noise-free image.",
+            "g is a gain factor."
+        ],
+        "correctAnswer": 0,
+        "image": "img/PRNU.png"
+    },
+    {
+        "question": "Select the <u>wrong</u> statement concerning the major fingerprint types",
+        "options": [
+            "The number of singular points can be 0, 1, or 2.",
+            "A tented arch has 2 singular points.",
+            "The core is the north-most loop-type singular point.",
+            "Singular points can be loops or deltas."
+        ],
+        "correctAnswer": 0
+    },
+    {
+        "question": "Considering the metric Frechet Inception Distance (FID) for the evaluation of the performance of GAN, select the <u>wrong</u> statement among the following ones.",
+        "options": [
+            "It is sensitive to some artifacts.",
+            "It assumes a Gaussian distribution of the generated feature vectors.",
+            "It favors detectable objects, and therefore, it is not related to human evaluation.",
+            "It can detect mode dropping."
+        ],
+        "correctAnswer": 2
+    },
+    {
+        "question": "Considering a hash function that generates the digest <u>d</u> from a string <u>s</u>, <u>s -> d(s)</u>, select the <u>correct</u> statement referred to the resilience to second pre-image property.",
+        "options": [
+            "Given a d(s1)=d1, finding s2 such that d(s2)=d1 must be computationally-unfeasible.",
+            "Searching for a couple of strings s1 and s2 such that d(s2)=d(s1) is computationally-unfeasible.",
+            "Given a digest d, creating s such that d(s)=d must be computationally-unfeasible.",
+            "The length of s must be a multiple of a predefined minimum length."
+        ],
+        "correctAnswer": 0
+    },
+    {
+        "question": "Among the following list, select the strategies that can be employed by multimedia forensics to authenticate the origin of visual data (acquiring device).",
+        "options": [
+            "Constrast enhancement, stabilization, interlacing detection",
+            "PRNU estimation, CFA interpolation strategy estimation, chromatic aberration estimation.",
+            "Deepfake detection, integrity verification, ghosting artifacts detection",
+            "Sharpening, distortion correction, magnification."
+        ],
+        "correctAnswer": 1
+    },
+    {
+        "question": "What is the main role of geometric hashing in fingerprint indexing?",
+        "options": [
+            "Computing a matching score for each enrolled fingerprint.",
+            "Retrieving all the triangles of a fingerprint from a hash table.",
+            "Verifying the geometric constraints of a potential match.",
+            "Determining the length of the longest side of a triangle formed by minutiae."
+        ],
+        "correctAnswer": 1
+    },
+    {
+        "question": "Which of the following challenges to face recognition does <u>NOT</u> belong to the PIE set?",
+        "options": [
+            "Distance from the camera.",
+            "Familiarity.",
+            "Compression effects.",
+            "Blurring."
+        ],
+        "correctAnswer": 1
+    },
+    {
+        "question": "Considering the equation select among the following sentences the <u>correct</u> one",
+        "options": [
+            "The equation defines the Fisherface decomposition and S_0 is the interclass scatter matrix.",
+            "The equation defines the Principal Component Analysis decomposition.",
+            "The equation defines the Independent Component Analysis decomposition and S_0 is the between class scatter matrix.",
+            "The equation defines the Linear Discriminant analysis decomposition and S_0 is the between class scatter matrix."
+        ],
+        "correctAnswer": "3",
+        "image": "img/LDA.png"
+    },
+    {
+        "question": "In iris recognition, occlusion masks allow to localize...",
+        "options": [
+            "Primary specular reflection, eyelids, strands of hair.",
+            "Pupillary boundary, eyelids, eyelashes.",
+            "Specular reflections, eyelids, eyelashes."
+        ],
+        "correctAnswer": "2"
+    },
+    {
+        "question": "Which of the following features is <u>NOT</u> useful to detect deepfakes?",
+        "options": [
+            "Blinking pattern",
+            "Low frequency details.",
+            "Facial hair",
+            "Glare of glasses"
+        ],
+        "correctAnswer": "1"
+    },
+    {
+        "question": "Profiling a stream of packet lengths (sniffed via Wireshark), it is possible to detect which application is run by an Android phone. 5 different SVM classifiers were obtained by training a common dataset (made of 1000 training vectors) with different configuration parameters. According to the final accuracy and the number of support vectors (#SV), select the most reliable one.",
+        "options": [
+            "#SV=10, accuracy=92%",
+            "#SV=30, accuracy=97%",
+            "#SV=900, accuracy=99.5%",
+            "#SV=100, accuracy=97%"
+        ],
+        "correctAnswer": 1
+    },
+    {
+        "question": "Among the following list, select the strategies that can be employed by multimedia forensics to authenticate the origin of visual data (acquiring device).",
+        "options": [
+            "PRNU estimation, CFA interpolation strategy estimation, chromatic aberration estimation.",
+            "Sharpening, distortion correction, magnification.",
+            "Deepfake detection, integrity verification, ghosting artifacts detection.",
+            "Contrast enhancement, stabilization, interlacing detection."
+        ],
+        "correctAnswer": "0"
+    },
+    {
+        "question": "In the integro-difference operator for iris recognition systems, we can <u>surely</u> say that...",
+        "options": [
+            "Gradient is computed along a circle centered at (x_o, y_o).",
+            "Image pixels are integrated along a ray starting from (x_o, y_o).",
+            "Data are convolved with a Gaussian filter.",
+            "It is used to segment out eyelids."
+        ],
+        "correctAnswer": 2,
+        "image": "img/Segmentation.png"
+    },
+    {
+        "question": "Concerning unsupervised anomaly detection on a dataset where a is the fraction of anomalies, select the <u>wrong</u> answer among the following ones.",
+        "options": [
+            "Heavy tails in distributions facilitate the detection process.",
+            "If alfa > 5%, DAD assumption is needed.",
+            "If alfa is small, a simple outlier detector is required.",
+            "If alfa is large, you can fit a two components mixture model."
+        ],
+        "correctAnswer": 0
+    },
+    {
+        "question": "Concerning different methods to recover fairness, which of the following strategies are related to a pre-processing phase.",
+        "options": [
+            "Data augmentation",
+            "Domain adaptation.",
+            "Modification of classification regions.",
+            "Disentanglement methods."
+        ],
+        "correctAnswer": 0
+    },
+    {
+        "question": "Considering the analysis of a storage disk, which of the following statement would you use to explain what the <u>non-indexed</u> space is (select <u>the most fitting</u> option)?",
+        "options": [
+            "It is the space where Reallocation occurs when a sector is damaged.",
+            "It is a memory space which was occupied by a file that has been removed.",
+            "It is a write-protected space on the disk that cannot be overwritten.",
+            "It is the space within a sector between the end of the contained file and the end of the corresponding sector."
+        ],
+        "correctAnswer": 1
+    },
+    {
+        "question": "Concerning the figure of Digital Evidence First Responder in ISO IEC 27037/2012, select the <u>wrong</u> statement among the following ones:",
+        "options": [
+            "He/She checks and seizures the area containing digital devices.",
+            "He/She presents the results of the analysis in court.",
+            "He/She avoids changing the state of device.",
+            "He/She profiles all the persons authorized to access the area."
+        ],
+        "correctAnswer": 1
+    },
+    {
+        "question": "Among the following criteria, which is <u>NOT</u> used to filter spurious minutiae in minutiae extraction?",
+        "options": [
+            "Minutiae that do not have an adjacent ridge on either sides.",
+            "Minutiae that are located midway between the two nearest minutiae.",
+            "Minutiae that are close and opposite in direction.",
+            "Too many minutiae in a small neighborhood."
+        ],
+        "correctAnswer": 1
+    },
+    {
+        "question": "Considering the isolation tree anomaly detection algorithm, which of the following statements is <u>NOT</u> correct?",
+        "options": [
+            "In the creation of a single classification tree, thresholds are chosen randomly.",
+            "Final anomaly score depends on the expected depth.",
+            "When score 2^(-d/r) is low, we have an anomaly (d is the average depth).",
+            "For a given tree, attribute selection is repeated until every sample in the dataset is a leaf."
+        ],
+        "correctAnswer": 2
+    },
+    {
+        "question": "Assuming that an audio forensic analyst is processing an audio sequence and, at a certain point, he starts selecting the harmonics that are multiples of 50 Hz. Which type of analysis is he/she carrying on?",
+        "options": [
+            "Reducing noise to classify events",
+            "Reverberation analysis",
+            "Voice/speech identification",
+            "Analyzing the electrical network frequencies"
+        ],
+        "correctAnswer": 3
+    },
+    {
+        "question": "Given an audio track to analyze, select among the following speps the one witch is not useful in an enhancement",
+        "options": [
+            "Equalization",
+            "De-reverberation",
+            "Critical listening",
+            "Analyze frequencies around f = 50 Hz (and multiples)"
+        ],
+        "correctAnswer": 3
+    },
+    {
+        "question": "Select the <u>correct</u> statement concerning the M82 algorithm:",
+        "options": [
+            "Initial coarse pre-alignment takes into account top 10 minutiae pairs.",
+            "Deformation tensor is computed before matching pairs.",
+            "It takes into account the orientation of ridges.",
+            "A list of minutiae couples is sorted according to the matching weights."
+        ],
+        "correctAnswer": 3
+    },  
+    {
+        "question": "Given the following multimedia processing strategies, select the <u>passive</u> one.",
+        "options": [
+            "CFA estimation",
+            "Encryption",
+            "Steganography",
+            "Watermarking"
+        ],
+        "correctAnswer": 1
+    },
+    {
+        "question": "Concerning facial landmark extraction algorithms, select the <u>wrong</u> statement among the following ones.",
+        "options": [
+            "Each regression tree uses different subsets of pixels.",
+            "Kazemi and Sullivan's approach uses an ensemble of regression trees.",
+            "It starts with a fixed template of points which are fitted to the face.",
+            "Kazemi and Sullivan's solution uses 15 points instead of 68 used by dlib."
+        ],
+        "correctAnswer": 3
+    },
+    {
+        "question": "Among the following list, select the strategies that can be employed by multimedia forensics to enhance the quality of visual data.",
+        "options": [
+            "Deepfake detection, integrity verification, ghosting artifacts detection",
+            "Watermarking, stabilization, image phylogeny",
+            "PRNU estimation, CFA interpolation strategy estimation, chromatic aberration estimation",
+            "Sharpening, distortion correction, magnification"
+        ],
+        "correctAnswer": 3
+    },
+    {
+        "question": "Considering a Fast Sign Gradient Method (FGSM) to perform a targeted attack on an image classifier (e.g. converting the classification of the image of a labrador into a komodo dragon - see lab session nr. 2), an adversarial image is generated by the equation adv_i = image + epsilon - perturbation. It is possible to state that... (select the <u>correct</u> statement)",
+        "options": [
+            "The effectiveness of the attack (confidence on a <u>wrong</u> classification) increases as the variable epsilon decreases.",
+            "The strategy is more effective if more iterations are performed.",
+            "The distortion increases as the variable epsilon increases.",
+            "The effectiveness of the attack does not depend on the target final class."
+        ],
+        "correctAnswer": 1,
+        "image": "img/FGSM.png"
+    },
+    {
+        "question": "Which feature set is useful to compensate face deformation in face recognition?",
+        "options": [
+            "Level 3 features",
+            "Level 2 features",
+            "Level 1 features"
+        ],
+        "correctAnswer": 1
+    },
+    {
+        "question": "Consider the following anomaly example 'A packet loss which is not expected.' How would you define it?",
+        "options": [
+            "Contextual anomaly",
+            "Point anomaly",
+            "Collective anomaly"
+        ],
+        "correctAnswer": 1
+    },
+    {
+        "question": "Considering the equations for a spread-spectrum watermarking, select the <u>wrong</u> statement among the following ones.",
+        "options": [
+            "P_i[n_1, n_2] is a zero-mean pulse.",
+            "The perceptual mask is embedded inside the pulse p_i[n_1, n_2].",
+            "The number of tiles is different from the number of embedded bits.",
+            "P_i[n_1,n_2] depends on the message to be embedded."
+        ],
+        "correctAnswer": 3,
+        "image": "img/spectrum.png"
+    },
+    {
+        "question": "What is the purpose of face alignment/normalization in facial recognition systems?",
+        "options": [
+            "To capture facial landmarks for emotion classification.",
+            "To ensure consistent lighting conditions for accurate recognition.",
+            "To detect and align faces with different viewpoints and expressions.",
+            "To improve the speed of face recognition."
+        ],
+        "correctAnswer": 2
+    },
+    {
+        "question": "Considering the ISO/IEC JTC1 SC37 standardization activity and the related work groups, select the <u>correct</u> statement among the following ones.",
+        "options": [
+            "The standardization activity only aims at the definition of a common data exchange format.",
+            "Hand geometry is not considered since it can be related to soft biometrics.",
+            "The Biometric Data Interchange Format (ISO/IEC 19794) also deals with non-technical issues like presentation.",
+            "It can be divided into 6 different work groups."
+        ],
+        "correctAnswer": 3
+    },
+    {
+        "question": "Considering a spread-spectrum watermarking algorithm, select the <u>correct</u> statement on perceptual mask among the following ones.",
+        "options": [
+            "The perceptual mask improves the quality of the original image.",
+            "The perceptual mask selects the pixels where just noticeable distortion is low.",
+            "The perceptual mask embeds the information in points where image is mostly smooth.",
+            "The perceptual mask is dependent on the information to be embedded."
+        ],
+        "correctAnswer": 1
+    },
+    {
+        "question": "Concerning a forensic technical report to be presented in court, which of the following elements should <u>not be included</u> in the initial summary?",
+        "options": [
+            "The CV of the analyst.",
+            "The conclusions in brief.",
+            "The summary of the activities.",
+            "The objectives of the report."
+        ],
+        "correctAnswer": 0
+    },
+    {
+        "question": "In adversarial machine learning, which among the following definitions proves to be more suitable for an attack algorithm that aims at forcing the classifier into misclassifying one specific sample into generically <u>wrong</u> class without knowing the detection algorithm.",
+        "options": [
+            "Universal untargeted whitebox attack.",
+            "Individual targeted whitebox attack.",
+            "Individual untargeted blackbox attack.",
+            "Universal targeted blackbox attack."
+        ],
+        "correctAnswer": 2
+    },
+    {
+        "question": "Given a digital image, estimating the CFA interpolation strategy adopted on that image allows...",
+        "options": [
+            "...to associate the image to a specific Bayer pattern.",
+            "...to associate the image to a camera model only if it has not been compressed.",
+            "...to associate the image to a specific acquisition time.",
+            "...to associate the image to a specific camera."
+        ],
+        "correctAnswer": 3
+    },
+    {
+        "question": "Among the following, select the <u>wrong</u> statement concerning Network-based IDS.",
+        "options": [
+            "They require storage and fast processing capabilities.",
+            "They provide a network-wide overview of the attack.",
+            "They can detect out-of-band attacks.",
+            "They are not robust to fragmentation and TTL attack"
+        ],
+        "correctAnswer": 3
+    },
+    {
+        "question": "Given two PRNU patterns (one estimate from an image and the other from a set of 20 flat field pictures taken with the suspect camera), select the <u>wrong</u> statement among the following ones.",
+        "options": [
+            "Peak-to-Correlation Energy is less noisy than Normalized Cross-Correlation.",
+            "Flat field images need to be very dark.",
+            "Peak-to-Correlation Energy is more computationally demanding than Normalized Cross-Correlation.",
+            "If the image has not been taken with the suspected camera, PCE or NCC values are more or less the same for different analysis windows."
+        ],
+        "correctAnswer": 1
+    },
+    {
+        "question": "Considering the analysis of a storage disk, which of the following statement would you use to explain what the <u>slack space</u> is (select <u>the most fitting</u> option)?",
+        "options": [
+            "It is the space within a sector between the end of the contained file and the end of the corresponding sector.",
+            "It is the memory space included within a geometrical sector.",
+            "It is a non-allocated memory space that can be overwritten by a file.",
+            "It is a memory space which is not indexed anymore since the table of indexes has been lost with file removal."
+        ],
+        "correctAnswer": 0
+    },
+    {
+        "question": "Select the <u>wrong</u> statement concerning the M82 algorithm:",
+        "options": [
+            "A weight is assigned to each matching pair.",
+            "Small deformation can be compensated by a tensor transformation.",
+            "A coarse pre-alignment is performed using the Top 2 matching pair.",
+            "The list of matching minutiae pairs is ordered according to their weights."
+        ],
+        "correctAnswer": 2
+    },
+    {
+        "question": "In adversarial machine learning, which among the following definitions proves to be more suitable for an attack algorithm that aims at forcing the classifier into misclassifying all the samples into generically <u>wrong</u> class without knowing the detection algorithm.",
+        "options": [
+            "Universal targeted blackbox attack.",
+            "Universal untargeted whitebox attack.",
+            "Individual targeted blackbox attack.",
+            "Universal untargeted blackbox attack."
+        ],
+        "correctAnswer": 3
+    },
+    {
+        "question": "Considering a hash function that generates the digest <u>d</u> from a string <u>s</u>, <u>s -> d(s)</u>, select the <u>correct</u> statement referred to the resilience to collision property.",
+        "options": [
+            "Searching for a couple of strings s1 and s2 such that d(s2)=d(s1) is computationally-unfeasible.",
+            "Given a d(s1)=d1, finding s2 s.t. d(s2)=d1 must be computationally-unfeasible.",
+            "The length of s must be a multiple of a predefined minimum length.",
+            "Given a digest d, creating s s.t. d(s)=d must be computationally-unfeasible."
+        ],
+        "correctAnswer": 0
+    },
+    {
+        "question": "Considering a hash function that generates the digest <u>d</u> from a string <u>s</u>, <u>s -> d(s)</u>, select the <u>correct</u> statement referred to the resilience to pre-image property.",
+        "options": [
+            "Searching for a couple of strings s1 and s2 such that d(s2)=d(s1) is computationally-unfeasible.",
+            "Given a d(s1)=d1, finding s2 s.t. d(s2)=d1 must be computationally-unfeasible.",
+            "The length of s must be a multiple of a predefined minimum length.",
+            "Given a digest d, creating s s.t. d(s)=d must be computationally-unfeasible."
+        ],
+        "correctAnswer": 3
+    },
+    {
+        "question": "Given two PRNU patterns (one estimate from an image and the other from a set of 20 flat field pictures taken with the suspect camera), select the <u>correct</u> statement among the following ones.",
+        "options": [
+            "Peak-to-Correlation Energy is less computationally demanding than Normalized Cross-Correlation.",
+            "Peak-to-Correlation Energy is more noisy than Normalized Cross-Correlation.",
+            "Flat field images need to be very dark.",
+            "If the image has not been taken with the suspected camera, PCE or NCC values are more or less the same for different analysis windows."
+        ],
+        "correctAnswer": 3
+    },
+    {
+        "question": "Concerning the figure of Digital Evidence First Responder in ISO IEC 27037/2012, select the <u>wrong</u> statement among the following ones:",
+        "options": ["He/She profiles all the persons authorized to access the area.",
+                    "He/She identifies notes, diaries, post-it, manuals.",
+                    "He/She can be someone who is not in charge of the investigation.",
+                    "He/She checks and seizures the area containing digital devices."],
+        "correctAnswer": 2
+    }
+]
