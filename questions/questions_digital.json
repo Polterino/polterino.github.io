@@ -458,5 +458,135 @@
                     "He/She can be someone who is not in charge of the investigation.",
                     "He/She checks and seizures the area containing digital devices."],
         "correctAnswer": 2
+    },
+    {
+        "question": "Which among the following conditions makes the WDAD (Well-Defined Anomaly Distribution) assumption NOT valid?",
+        "options": [
+            "Adversarial conditions",
+            "Unknown anomaly",
+            "Impossibility of using deep learning for anomaly detection"
+        ],
+        "correctAnswer": 0
+    },
+    {
+        "question": "Which among the following ones is NOT an anomaly type?",
+        "options": [
+            "Point anomaly",
+            "Contextual anomaly",
+            "Collective anomaly",
+            "Systematic anomaly"
+        ],
+        "correctAnswer": 3
+    },
+    {
+        "question": "Considering a sudden decrease of temperature in July (Northern emisphere), we can state that it is a ....",
+        "options": [
+            "Point anomaly",
+            "Collective anomaly",
+            "Contextual anomaly"
+        ],
+        "correctAnswer": 2
+    },
+    {
+        "question": "Which of the following metrics is used to create a ROC (receiver operative characteristics) curve?",
+        "options": [
+            "Accuracy",
+            "F1 score",
+            "Recall",
+            "Precision"
+        ],
+        "correctAnswer": 2
+    },
+    {
+        "question": "Which of the following classification strategies is suitable for anomaly detection?",
+        "options": [
+            "Isolation forest",
+            "None of the mentioned strategies",
+            "Few shots learning networks",
+            "One-class SVM",
+            "All of the mentioned strategies"
+        ],
+        "correctAnswer": 4
+    },
+    {
+        "question": "Conserning an isolation forest algorithm, select the wrong statement among the following:",
+        "options": [
+            "Classification is performed computing the average depth for a given input samples.",
+            "Anomalies usually place at the lowest average depth for the trees",
+            "Node splitting is repeated until every input points is located on a leaf.",
+            "For each tree, the attribute selection order is random."
+        ],
+        "correctAnswer": 1
+    },
+    {
+        "question": "In clean data learning for anomaly detection, we can NOT use the training set to create ...",
+        "options": [
+            "ARMA models",
+            "A multiclass SVM classifier",
+            "Recurrent Neural Networks",
+            "A dynamical system from Partial Differential Equations"
+        ],
+        "correctAnswer": 1
+    },
+    {
+        "question": "In adversarial machie learning, which of the following attack combination scenarios prove to be the most challenging ...",
+        "options": [
+            "Blackbox individual attack",
+            "Blackbox targeted attack",
+            "Whitebox universal attack.",
+            "Whitebox targeted attack"
+        ],
+        "correctAnswer": 1
+    },
+    {
+        "question": "Which of the following attack types are most likely adressing an IDS?",
+        "options": [
+            "Poisoning attack",
+            "Evasion attack",
+            "Model extraction"
+        ],
+        "correctAnswer": 1
+    },
+    {
+        "question": "Which among the following adversarial ML attacks is the LEAST computationally expensive?",
+        "options": [
+            "Carlini & Wagner",
+            "Fast Gradient Sign method (FGSM)",
+            "Deepfool",
+            "Jacobian-based Saliency Map Attack (JSMA)",
+            "Broyden-Fletcher-Goldfarb-Shanno method (BFGS)"
+        ],
+        "correctAnswer": 1
+    },
+    {
+        "question": "The metric Inception Score (IS) will provide a high values for GANs that .... (select the correct statement)",
+        "options": [
+            "generate realistic data x",
+            "aim at making p(y|x) as uniform as possible.",
+            "generate p(y) with a low entropy.",
+            "aim at making p(y) as uniform as possible."
+        ],
+        "correctAnswer": 3
+    },
+    {
+        "question": "Among the following, select the wrong statement about the Frechet Inception Distance or FID.",
+        "options": [
+            "It can be computed using mean and covariance matrix for fake and real data only.",
+            "It models real and fake data as a multivariate distributions.",
+            "It is not affected by visual artifacts",
+            "It is robust to noise"
+        ],
+        "correctAnswer": 2
+    },
+    {
+        "question": "Select the WRONG statement:",
+        "options": [
+            "y_i  is the ground truth label for the sample x_i",
+            "The update strategies is part of a gradient descent strategy",
+            "Α is the gradient and changes for each x_i",
+            "Dataset is made of couple (x_i, y_i )"
+        ],
+        "correctAnswer": 2,
+        "image": "img/gradient.png"
     }
 ]
