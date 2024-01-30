@@ -44,7 +44,8 @@ document.addEventListener("DOMContentLoaded", function ()
 		console.log("Showing questions:");
 		
 		numDom = 20;
-		randomQuestions = getRandomSample(...questions, numDom);
+		const shuffledArray = shuffleArray(...questions);
+		randomQuestions = shuffledArray.slice(0, numDom);
         questionsToDisplay = questionsToShow || randomQuestions;
 
 		// Loop through all questions
@@ -152,11 +153,6 @@ document.addEventListener("DOMContentLoaded", function ()
         questionContainer.innerHTML = '';
         showQuestions(questions, true);
     }
-
-	function getRandomSample(array, size) {
-	  const shuffledArray = shuffleArray(array);
-	  return shuffledArray.slice(0, size);
-	}
 
     // Function to get the selected answer for a question
     function getSelectedAnswer(name) {
