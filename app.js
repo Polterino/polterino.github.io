@@ -8,6 +8,7 @@ document.addEventListener("DOMContentLoaded", function ()
     let questions;
     let userAnswers = [];
 	let randomQuestions;
+	let questionsToDisplay;
 	
 	const urlParams = new URLSearchParams(window.location.search);
     const currentPage = urlParams.get('page');
@@ -44,7 +45,7 @@ document.addEventListener("DOMContentLoaded", function ()
 		
 		numDom = 20;
 		randomQuestions = getRandomSample(questions, numDom);
-        const questionsToDisplay = questionsToShow || randomQuestions;
+        questionsToDisplay = questionsToShow || randomQuestions;
 
 		// Loop through all questions
 		for (let i = 0; i < questionsToDisplay.length; i++) {
@@ -105,11 +106,11 @@ document.addEventListener("DOMContentLoaded", function ()
 		let score = 0;
 
 		// Loop through all questions
-		for (let i = 0; i < randomQuestions.length; i++) {
+		for (let i = 0; i < questionsToDisplay.length; i++) {
 			const selectedAnswer = getSelectedAnswer(`answer${i}`);
 			userAnswers.push(selectedAnswer);
 
-			currentQuestion = randomQuestions[i];
+			currentQuestion = questionsToDisplay[i];
 			//const currentQuestion = questions[i];
 			
 			 // Verifica se almeno un elemento radio è selezionato
@@ -141,7 +142,7 @@ document.addEventListener("DOMContentLoaded", function ()
 
 		// Mostra lo score nella pagina
 		const scoreContainer = document.getElementById("score-container");
-		scoreContainer.innerHTML = `Your Score: ${score} / ${randomQuestions.length}`;
+		scoreContainer.innerHTML = `Your Score: ${score} / ${questionsToDisplay.length}`;
 		console.log("Score:", score);
 	}
 
