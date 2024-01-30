@@ -44,7 +44,7 @@ document.addEventListener("DOMContentLoaded", function ()
 		console.log("Showing questions:");
 		
 		numDom = 20;
-		randomQuestions = getRandomSample(questions, numDom);
+		randomQuestions = getRandomSample(...questions, numDom);
         questionsToDisplay = questionsToShow || randomQuestions;
 
 		// Loop through all questions
