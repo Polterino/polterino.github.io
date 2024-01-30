@@ -249,7 +249,7 @@
             "Steganography",
             "Watermarking"
         ],
-        "correctAnswer": 1
+        "correctAnswer": 0
     },
     {
         "question": "Concerning facial landmark extraction algorithms, select the <u>wrong</u> statement among the following ones.",
