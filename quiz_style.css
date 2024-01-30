@@ -53,6 +53,12 @@ button:hover {
   background-color: darkred;  /* Opzionale: cambia il colore al passaggio del mouse */
 }
 
+#home-button {
+	background-color: #4285f4;
+	cursor: pointer;
+	font-size: 24px;
+}
+
 
 /* Stile generale per i bottoni radio */
 input[type="radio"] {
