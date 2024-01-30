@@ -11,7 +11,7 @@ document.addEventListener("DOMContentLoaded", function () {
     const currentPage = urlParams.get('page');
 
     // Determina il percorso del file questions.json in base alla pagina corrente
-    const questionsPath = `questions/questions_${currentPage}.json`;
+    const questionsPath = `questions_${currentPage}.json`;
 
     // Fetch questions from the JSON file
     fetch(questionsPath)
