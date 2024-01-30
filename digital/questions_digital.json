@@ -222,7 +222,7 @@
         "correctAnswer": 3
     },
     {
-        "question": "Given an audio track to analyze, select among the following speps the one witch is not useful in an enhancement",
+        "question": "Given an audio track to analyze, select among the following steps the one witch is not useful in an enhancement",
         "options": [
             "Equalization",
             "De-reverberation",
