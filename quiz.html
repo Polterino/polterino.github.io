@@ -4,13 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Quiz App</title>
-    <link rel="stylesheet" href="../quiz_style.css">
+    <link rel="stylesheet" href="quiz_style.css">
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <style>
         .question {
             border: 1px solid #ddd;
             padding: 10px;
             margin-bottom: 10px;
             border-radius: 5px;
+			max-width: 600px;
             background-color: #fff;
         }
 
@@ -21,17 +24,16 @@
     </style>
 </head>
 <body>
-	<!-- -->
     <div id="quiz-container">
-        <h1>Machine Learning Pre-exam Quiz</h1>
-		<a href="../"><button id="home-button">&#127968;</button></a>
-		<button id="show-all-questions-button">Show All Answers</button>
+        <h1>Quiz</h1>
+		<a href="index.html"><button id="home-button">&#127968;</button></a>
+		<button id="show-all-questions-button">Show all questions and answers</button>
 		<div id="total-questions"></div>
         <div id="question-container"></div>
 		<div id="score-container"></div>
         <button id="calculate-button">Calculate Score</button>
 		<a href=""><button id="reset-button">Clear answers and start again</button></a>
     </div>
-    <script src="../app.js"></script>
+    <script src="app.js"></script>
 </body>
 </html>
