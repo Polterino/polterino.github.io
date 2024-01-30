@@ -99,6 +99,16 @@
 		"image": "img/domanda.png"
 	},
 	{
+		"question": "How can we factorize the joint distribution for the following Bayesian network?",
+        "options": ["P(A,B,C,D) = P(A)P(B)P(C)P(D)",
+					"P(A,B,C,D) = P(A|B,C,D)P(B)P(C)P(D|C,A)",
+					"P(A,B,C,D) = P(A)P(B)P(C|A,D)",
+					"P(A,B,C,D) = P(A)P(B|A)P(C|A,D)P(D|A)",
+					"P(A,B,C,D) = P(A,B)P(A,C,D)"],
+        "correctAnswer": 3,
+		"image": "img/factorize.png"
+	},
+	{
 		"question": "In the delta rule, the weight changes are given",
         "options": ["by the mean squared error between desired output and network output",
 					"by the difference between target and output, multiplied by the input",
@@ -268,6 +278,15 @@
 					"the parent nodes",
 					"the children nodes"],
         "correctAnswer": 0
+	},
+	{
+		"question": "In a Markov network, the Markov blanket of a node contains",
+        "options": ["the parent, children and children of the children nodes",
+					"the set of nodes that, when observed, makes a node correlated to all the others",
+					"the set of directly connected nodes",
+					"the parent nodes",
+					"the children nodes"],
+        "correctAnswer": 2
 	},
 	{
 		"question": "in the <u>computational</u> level in marr's \"three level of analysis\"",
