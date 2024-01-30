@@ -44,7 +44,9 @@ document.addEventListener("DOMContentLoaded", function ()
 		console.log("Showing questions:");
 		
 		numDom = 20;
-		const shuffledArray = shuffleArray(...questions);
+		// randomizzo le domande e ne prendo numDom
+		const shuffledArray = questions.concat();
+		shuffledArray = shuffleArray(shuffledArray);
 		randomQuestions = shuffledArray.slice(0, numDom);
         questionsToDisplay = questionsToShow || randomQuestions;
 
