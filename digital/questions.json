@@ -577,5 +577,16 @@
             "It is robust to noise"
         ],
         "correctAnswer": 2
+    },
+    {
+        "question": "Select the WRONG statement:",
+        "options": [
+            "y_i  is the ground truth label for the sample x_i",
+            "The update strategies is part of a gradient descent strategy",
+            "Α is the gradient and changes for each x_i",
+            "Dataset is made of couple (x_i, y_i )"
+        ],
+        "correctAnswer": 2,
+        "image": "img/gradient.png"
     }
 ]
