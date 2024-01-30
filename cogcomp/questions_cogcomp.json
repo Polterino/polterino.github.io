@@ -106,7 +106,7 @@
 					"P(A,B,C,D) = P(A)P(B|A)P(C|A,D)P(D|A)",
 					"P(A,B,C,D) = P(A,B)P(A,C,D)"],
         "correctAnswer": 3,
-		"image": "img/factorize.png"
+		"image": "img/factorize2.png"
 	},
 	{
 		"question": "In the delta rule, the weight changes are given",
