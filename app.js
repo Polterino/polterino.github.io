@@ -1,7 +1,9 @@
-document.addEventListener("DOMContentLoaded", function () {
+document.addEventListener("DOMContentLoaded", function ()
+{
     const questionContainer = document.getElementById("question-container");
     const calculateButton = document.getElementById("calculate-button");
 	const totalQuestionsContainer = document.getElementById("total-questions");
+    const showAllButton = document.getElementById("show-all-questions-button");
 
     let questions;
     let userAnswers = [];
@@ -24,8 +26,9 @@ document.addEventListener("DOMContentLoaded", function () {
         })
         .catch(error => console.error("Error loading questions:", error));
 
-    // Event listener for the Calculate Score button
+    // Event listener for the Calculate Score button and show all questions
     calculateButton.addEventListener("click", calculateScore);
+    showAllButton.addEventListener("click", showAllQuestions);
 	
 	function shuffleArray(array) {
 		for (let i = array.length - 1; i > 0; i--) {
@@ -36,15 +39,16 @@ document.addEventListener("DOMContentLoaded", function () {
 	}
 
     // Aggiorna questa parte nel tuo file JavaScript
-	function showQuestions() {
+	function showQuestions(questionsToShow) {
 		console.log("Showing questions:");
 		
 		numDom = 20;
 		randomQuestions = getRandomSample(questions, numDom);
+        const questionsToDisplay = questionsToShow || randomQuestions;
 
 		// Loop through all questions
-		for (let i = 0; i < randomQuestions.length; i++) {
-			const currentQuestion = randomQuestions[i];
+		for (let i = 0; i < questionsToDisplay.length; i++) {
+			const currentQuestion = questionsToDisplay[i];
 			//const currentQuestion = questions[i];
 			const correctAnswerIndex = currentQuestion.correctAnswer;
 			
@@ -141,6 +145,12 @@ document.addEventListener("DOMContentLoaded", function () {
 		console.log("Score:", score);
 	}
 
+
+	function showAllQuestions() {
+        // Svuota il contenitore delle domande prima di visualizzare tutte le domande
+        questionContainer.innerHTML = '';
+        showQuestions(questions);
+    }
 
 	function getRandomSample(array, size) {
 	  const shuffledArray = shuffleArray(array);
