@@ -52,7 +52,7 @@
         "correctAnswer": 2
     },
 	{
-        "question": "The algorithmic level in Marr's \"three levels of analysis\"",
+        "question": "The <u>algorithmic</u> level in Marr's \"three levels of analysis\"",
         "options": ["describes how the computation can be physically implemented",
 					"describes the goal of the computation",
 					"describes the goal of the computation and how inputs and outputs are represented",
@@ -204,5 +204,238 @@
 					"knowledge is discovered primarly by deduction",
 					"most of our knowledge is derived by sensory experience"],
         "correctAnswer": 4
+	},
+	{
+		"question": "in strucutred cognitive models",
+        "options": ["knowledge is embedded in the connection weights of a neural network",
+					"concepts are represented in a distributed fashon",
+					"the topology of the computational graph is usually learned from the data",
+					"each hypothesis is represented by a vector of activations over basic processing units",
+					"we assume that knowledge and reasoning are separate processes"],
+        "correctAnswer": 4
+	},
+	{
+		"question": "The actual weights update in NN learning",
+        "options": ["correspond to the derivative of the activation function",
+					"should be initialized to random values at the beginning of learning",
+					"should be small to obtain a faster learning",
+					"should be scaled down to avoid deletion of previously learned knowledge",
+					"are equal to the gradient of the cost function"],
+        "correctAnswer": 3
+	},
+	{
+		"question": "the symbolic approach for modelling cognition",
+        "options": ["argues that thinking can be simulated in a universal machine",
+					"argues that simulating intelligence requires to understand the details of the brain",
+					"is based on implict knowledge representations",
+					"emphatizes the central role of learning in knowledge development",
+					"argues that cognition cannot be programmed using syntactic rules"],
+        "correctAnswer": 0
+	},
+	{
+		"question": "according to the Turing test, a machine can be considered intelligent if",
+        "options": ["it can be programmed to manipulate mathematical expressions",
+					"it's able to solve challenging tasks, such as playing chess or Go",
+					"it's over behavior is undistinguishable from that of a human being",
+					"it's internal functioning replicates the details of a human brain",
+					"it can be implemented in a real robot"],
+        "correctAnswer": 2
+	},
+	{
+		"question": "the vanishing gradient problem in deep network",
+        "options": ["can be solved using ReLU neurons",
+					"can be solved using dropout",
+					"can be solved using sigmoid neurons",
+					"can be solved using sparse connectivity",
+					"can be solved using weight sharing"],
+        "correctAnswer": 0
+	},
+	{
+		"question": "Rejection sampling",
+        "options": ["discard samples that are not consistent with the evidence",
+					"only generates samples consistent with the evidence",
+					"expoints the markov blanket of a node to iteratively refine the estimated values",
+					"allows to implement exact inference using variable elimination",
+					"is an efficient inference procedure for bayesian network"],
+        "correctAnswer": 0
+	},
+	{
+		"question": "Long Short Term Memory networks",
+        "options": ["exploit the vanishing gradient to learn long range temporal dependencies",
+					"simulates the memorization of temporal informations in the hippocampus",
+					"exploit a seq-to-seq architecture to memorize informations",
+					"use gated units to regulate the flow of informations",
+					"map an entire sequence into a variable-length vector"],
+        "correctAnswer": 3
+	},
+	{
+		"question": "In bayesian network the markov blanket of a node contains",
+        "options": ["the parents, the children, and the parent of the children",
+					"the set of nodes that, when observed, makes a node correlated to all the others",
+					"the set of directly connected nodes",
+					"the parent nodes",
+					"the children nodes"],
+        "correctAnswer": 0
+	},
+	{
+		"question": "in the <u>computational</u> level in marr's \"three level of analysis\"",
+        "options": ["describes the algorithm that can achieve the goal",
+					"describes the goal of the computation and why it is appropriate",
+					"describes the goal of the algorithm and how it can be implemented",
+					"describes the goal of the computation and how inputs and outputs are represented",
+					"describes how the computation can be implemented"],
+        "correctAnswer": 1
+	},
+	{
+		"question": "in restricted boltzmann machine",
+        "options": ["activations of all units within a layer can be computed at the same time",
+					"during the positive phase visible units are reconstructed",
+					"contrastive divergence is used to minimize the classification error",
+					"units in the same layer are statistically independent",
+					"lateral connections are presented only in the hidden layer"],
+        "correctAnswer": 0
+	},
+	{
+		"question": "Which method promotes good generalization in a neural network?",
+        "options": ["using decay of the bias",
+					"using a small learning rate",
+					"performing a prolonged training",
+					"using cross-validation to tune the loss function",
+					"using a small number of hidden units"],
+        "correctAnswer": 4
+	},
+	{
+		"question": "In convolutional neural networks",
+        "options": ["pooling layers are used to simulate the connectivity of a rectangular neighborhood",
+					"the goal is to learn a generative model of the data",
+					"pooling layers are used to reduce the dimensionality of receptive fields",
+					"neurons have local receptive fields",
+					"the number of layers depends on the size of the input"],
+        "correctAnswer": 3
+	},
+	{
+		"question": "the chinese room experiment",
+        "options": ["proposes a solution to the symbol grounding problem",
+					"argues that syntactic manipulations can lead to semantic content",
+					"argues that displaying the correct behavior does not imply understanding",
+					"can be used to establish if a machine could pass the turing test"],
+        "correctAnswer": 2
+	},
+	{
+		"question": "In hierarchical generative models",
+        "options": ["we use deep belief network to approximate a linear function",
+					"the system learns an internal model of the world in a discriminative way",
+					"bottom up processing can support perceptual inference over ambiguous input",
+					"top down processing is separate from learning",
+					"different variables can share the same prior"],
+        "correctAnswer": 2
+	},
+	{
+		"question": "two random variable are statistically independent",
+        "options": ["the joint distribution corresponds to the product of their individual distributions",
+					"the joint distribution corresponds to the sum of their individual distributions",
+					"the conditional distribution can be factorized using the same prior",
+					"the joint distribution is defined by a fully connected graph",
+					"they can be represented using a direct graph"],
+        "correctAnswer": 0
+	},
+	{
+		"question": "inductive reasoning",
+        "options": ["assumes that we can infer general properties from sample evidences",
+					"does not support analogical inference",
+					"allows to enstablish whether an argument is true or false",
+					"does not support causal inference",
+					"is based on logical deduction"],
+        "correctAnswer": 0
+	},
+	{
+		"question": "The backpropagation algorithm",
+        "options": ["is an extension of the delta rule used to train single-layer networks",
+					"can only be applied when the activation function is continuous",
+					"propagates the classification error through a separate set of backward connections",
+					"cannot learn the XOR problem",
+					"can approximate non-linear functions through unsupervised learning"],
+        "correctAnswer": 0
+	},
+	{
+		"question": "In probabilistic programming",
+        "options": ["we use computer programs to represent and manipulate neural network models",
+					"we represent uncertainty as a conditional probability distribution",
+					"we can exploit Bayesian inference to estimate the program parameters",
+					"we can use recursion and control flow statements to speed-up inference",
+					"learning consists of constructing programs that best explain the likelihood of the data"],
+        "correctAnswer": 4
+	},
+	{
+		"question": "Large-scale neural language models",
+        "options": ["can produce word embeddings that capture the semantic of language",
+					"need to exploit positional encoding to preserve the order of the elements",
+					"assume that each token depends only on the previous n-1 tokens",
+					"can learn word representation using n-grams",
+					"need exploit attention mechanisms to discover lexical categories"],
+        "correctAnswer": 0
+	},
+	{
+		"question": "The complementary learning systems theory suggests that",
+        "options": ["catastrophic interference is due to similarity weighted interleaved learning",
+					"there are separate memory systems in the neocortex",
+					"the neocortex slowly learns sparse representations of the data",
+					"the hippocampus rapidly learns new semantic information",
+					"interleaved learning can take advantage of generative replay"],
+        "correctAnswer": 4
+	},
+	{
+		"question": "Connection weights in a classic multy-layer perceptron",
+        "options": ["are gradually modified to solve the interference problem",
+					"encode short-term semantic memory",
+					"are gradually modified to encode episodic memory",
+					"enable the use of working memory during statistical inference",
+					"are gradually tuned to represent statistical regularities"],
+        "correctAnswer": 4
+	},
+	{
+	"question": "Long-term memory in artificial neural networks",
+	"options": ["is encoded in the hidden neurons activations",
+				"is based on a fast semantic learning process",
+				"exploits distributed representations to avoid catastrophic interference",
+				"is encoded by gradually tuning connection weights",
+				"is encoded by connection weights that represent individual learning episodes"],
+	"correctAnswer": 3
+	},
+	{
+		"question": "The complementary learning systems theory suggests that",
+		"options": ["fast learning of new information requires pattern separation",
+					"catastrophic interference is due to sparse coding in the hippocampus",
+					"episodic information is encoded by distributed representation in the hippocampus",
+					"slow learning of old information requires sparse coding",
+					"fast learning of new information requires pattern completion"],
+		"correctAnswer": 0
+	},
+	{
+		"question": "Strong inference testing",
+		"options": ["can improve transparency of black-box models",
+					"establishes whether a model has good descriptive adequacy",
+					"is based on the assumption that simpler models should be preferred",
+					"allows to adjudicate between competing models through falsification",
+					"allows to test the statistical validity of a null hypothesis"],
+		"correctAnswer": 3
+	},
+	{
+		"question": "Catastrophic forgetting in artificial neural networks",
+		"options": ["is due to the overlapping nature of distributed representations",
+					"can be mitigated using continual learning",
+					"can be mitigated by decreasing the learning rate",
+					"is partially due to the vanishing gradient problem",
+					"can be solved using sparse representation in the neocortex"],
+		"correctAnswer": 1
+	},
+	{
+		"question": "In probabilistic programming",
+        "options": ["we can estimate the value of the program parameters using gradient descent",
+					"we define a computer program with stochastic behavior",
+					"we use computer programs to represent probabilistic models",
+					"the output of the algorithm is always a probability distribution",
+					"we exploit graphical models to perform Bayesian inference"],
+        "correctAnswer": 1
 	}
 ]
