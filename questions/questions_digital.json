@@ -379,7 +379,7 @@
             "They can detect out-of-band attacks.",
             "They are not robust to fragmentation and TTL attack"
         ],
-        "correctAnswer": 3
+        "correctAnswer": 2
     },
     {
         "question": "Given two PRNU patterns (one estimate from an image and the other from a set of 20 flat field pictures taken with the suspect camera), select the <u>wrong</u> statement among the following ones.",
