@@ -1,17 +1,25 @@
 document.addEventListener("DOMContentLoaded", function () {
     const questionContainer = document.getElementById("question-container");
     const calculateButton = document.getElementById("calculate-button");
+	const totalQuestionsContainer = document.getElementById("total-questions");
 
     let questions;
     let userAnswers = [];
 	let randomQuestions;
+	
+	const urlParams = new URLSearchParams(window.location.search);
+    const currentPage = urlParams.get('page');
+
+    // Determina il percorso del file questions.json in base alla pagina corrente
+    const questionsPath = `questions/questions_${currentPage}.json`;
 
     // Fetch questions from the JSON file
-    fetch("questions.json")
+    fetch(questionsPath)
         .then(response => response.json())
         .then(data => {
             questions = data;
             console.log("Questions loaded:", questions);
+			totalQuestionsContainer.textContent = `Total Questions found on database: ${questions.length}`;
             showQuestions();
         })
         .catch(error => console.error("Error loading questions:", error));
