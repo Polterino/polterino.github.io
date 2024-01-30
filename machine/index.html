@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz App</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .question {
+            border: 1px solid #ddd;
+            padding: 10px;
+            margin-bottom: 10px;
+            border-radius: 5px;
+            background-color: #fff;
+        }
+
+        .feedback {
+            margin-top: 10px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div id="quiz-container">
+        <h1>Machin Learning Pre-exam Quiz</h1>
+        <div id="question-container"></div>
+		<div id="score-container"></div>
+        <button id="calculate-button">Calculate Score</button>
+		<a href=""><button id="reset-button">Clear answers and start again</button></a>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
