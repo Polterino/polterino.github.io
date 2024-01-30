@@ -120,7 +120,7 @@
         "options": ["during the positive phase visible units are reconstructed",
 					"lateral connections are present only in the hidden layer",
 					"contrastive divergence is used to minimize the classification error",
-					"units in the same laver are statistically independent",
+					"units in the same layer are statistically independent",
 					"activations of all units within a layer can be computed at the same time"],
         "correctAnswer": 4
 	},
@@ -143,7 +143,7 @@
         "correctAnswer": 3
 	},
 	{
-		"question": "In the formal neuron, the signals coming trom other neurons are",
+		"question": "In the formal neuron, the signals coming from other neurons are",
         "options": ["multiplied by the threshold",
 					"multiplied by the synaptic weights and then subtracted",
 					"subtracted to the average activation",
@@ -206,7 +206,7 @@
         "correctAnswer": 4
 	},
 	{
-		"question": "in strucutred cognitive models",
+		"question": "in structured cognitive models",
         "options": ["knowledge is embedded in the connection weights of a neural network",
 					"concepts are represented in a distributed fashon",
 					"the topology of the computational graph is usually learned from the data",
