@@ -98,7 +98,7 @@
             "The equation defines the Independent Component Analysis decomposition and S_0 is the between class scatter matrix.",
             "The equation defines the Linear Discriminant analysis decomposition and S_0 is the between class scatter matrix."
         ],
-        "correctAnswer": "3",
+        "correctAnswer": 3,
         "image": "img/LDA.png"
     },
     {
@@ -108,7 +108,7 @@
             "Pupillary boundary, eyelids, eyelashes.",
             "Specular reflections, eyelids, eyelashes."
         ],
-        "correctAnswer": "2"
+        "correctAnswer": 2
     },
     {
         "question": "Which of the following features is <u>NOT</u> useful to detect deepfakes?",
@@ -118,7 +118,7 @@
             "Facial hair",
             "Glare of glasses"
         ],
-        "correctAnswer": "1"
+        "correctAnswer": 1
     },
     {
         "question": "Profiling a stream of packet lengths (sniffed via Wireshark), it is possible to detect which application is run by an Android phone. 5 different SVM classifiers were obtained by training a common dataset (made of 1000 training vectors) with different configuration parameters. According to the final accuracy and the number of support vectors (#SV), select the most reliable one.",
@@ -138,7 +138,7 @@
             "Deepfake detection, integrity verification, ghosting artifacts detection.",
             "Contrast enhancement, stabilization, interlacing detection."
         ],
-        "correctAnswer": "0"
+        "correctAnswer": 0
     },
     {
         "question": "In the integro-difference operator for iris recognition systems, we can <u>surely</u> say that...",
