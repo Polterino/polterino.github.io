@@ -25,7 +25,7 @@
 </head>
 <body>
     <div id="quiz-container">
-        <h1>Quiz</h1>
+        <h1 id="quiz-title">Quiz</h1>
 		<a href="index.html"><button id="home-button">&#127968;</button></a>
 		<button id="show-all-questions-button">Show all questions and answers</button>
 		<div id="total-questions"></div>
@@ -35,5 +35,23 @@
 		<a href=""><button id="reset-button">Clear answers and start again</button></a>
     </div>
     <script src="app.js"></script>
+	<script>
+        // Recupera il parametro "page" dalla query string
+        const urlParams = new URLSearchParams(window.location.search);
+        const quizPage = urlParams.get('page');
+
+        // Mappa il parametro "page" a titoli personalizzati
+        const pageTitles = {
+            'digital': 'Digital Forensic and Biometrics Quiz',
+            'cogcomp': 'Cognition and Computation Quiz',
+            'machine': 'Machine Learning Quiz'
+        };
+
+        // Imposta dinamicamente il titolo dell'elemento h1
+        const quizTitleElement = document.getElementById('quiz-title');
+        if (pageTitles.hasOwnProperty(quizPage)) {
+            quizTitleElement.textContent = pageTitles[quizPage];
+        }
+    </script>
 </body>
 </html>
