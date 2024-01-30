@@ -7,14 +7,6 @@
 					"the posterior probability can be estimated using maximum-likelihood"],
         "correctAnswer": 0
     },
-    {
-        "question": "In probabilistic programming",
-        "options": ["The output is always a probability distribution",
-					"You create a computer program that...", 
-					"Another answer with computer program",
-					"last answer"],
-        "correctAnswer": 1
-    },
 	{
         "question": "Intercausal reasoning in Bayesian networks updates the estimate of a variable",
         "options": ["using information from the parents of its children",

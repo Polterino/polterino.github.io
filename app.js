@@ -40,7 +40,7 @@ document.addEventListener("DOMContentLoaded", function ()
 	}
 
     // Aggiorna questa parte nel tuo file JavaScript
-	function showQuestions(questionsToShow) {
+	function showQuestions(questionsToShow, selectCorrectAnswer = false) {
 		console.log("Showing questions:");
 		
 		numDom = 20;
@@ -66,7 +66,7 @@ document.addEventListener("DOMContentLoaded", function ()
 			//const correctAnswerIndex = currentQuestion.options.indexOf(currentQuestion.options[currentQuestion.correctAnswer]);
 			
 			const optionsHTML = shuffledOptions.map((option, index) => `
-				<input type="radio" name="answer${i}" value="${option.index}">
+				<input type="radio" name="answer${i}" value="${option.index}" ${selectCorrectAnswer && option.index === correctAnswerIndex ? 'checked' : ''}>
 				<label>${option.value}</label><br>
 			`).join("");
 
@@ -150,7 +150,7 @@ document.addEventListener("DOMContentLoaded", function ()
 	function showAllQuestions() {
         // Svuota il contenitore delle domande prima di visualizzare tutte le domande
         questionContainer.innerHTML = '';
-        showQuestions(questions);
+        showQuestions(questions, true);
     }
 
 	function getRandomSample(array, size) {
