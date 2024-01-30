@@ -369,7 +369,7 @@
             "...to associate the image to a specific acquisition time.",
             "...to associate the image to a specific camera."
         ],
-        "correctAnswer": 3
+        "correctAnswer": 0
     },
     {
         "question": "Among the following, select the <u>wrong</u> statement concerning Network-based IDS.",
