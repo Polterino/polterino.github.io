@@ -298,15 +298,6 @@
         "correctAnswer": 1
 	},
 	{
-		"question": "in restricted boltzmann machine",
-        "options": ["activations of all units within a layer can be computed at the same time",
-					"during the positive phase visible units are reconstructed",
-					"contrastive divergence is used to minimize the classification error",
-					"units in the same layer are statistically independent",
-					"lateral connections are presented only in the hidden layer"],
-        "correctAnswer": 0
-	},
-	{
 		"question": "Which method promotes good generalization in a neural network?",
         "options": ["using decay of the bias",
 					"using a small learning rate",
