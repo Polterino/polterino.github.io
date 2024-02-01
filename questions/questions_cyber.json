@@ -37,7 +37,7 @@
 			"Encrypting packages.",
 			"Detecting buffer-overflow attacks."
 		],
-		"correctAnswer": 1
+		"correctAnswer": 3
 	},
 	{
 		"question": "What is a common practice for attackers during DoS attacks?",
@@ -48,5 +48,55 @@
 			"None of the above."
 		],
 		"correctAnswer": 1
-	}
+	},
+	{
+        "question": "Where is the malicious script executed in a cross-site scripting attack?",
+        "options": [
+            "On the attacker’s browser.",
+            "On the user’s browser.",
+            "On the user’s network connection.",
+            "On the web server"
+        ],
+        "correctAnswer": 1
+    },
+    {
+        "question": "How can an attacker bypass input sanitization in a web app?",
+        "options": [
+            "By exploiting the existence of multiple encodings for the same character.",
+            "Through random characters in the input.",
+            "Through hidden characters in the input.",
+            "None of the above"
+        ],
+        "correctAnswer": 0
+    },
+    {
+        "question": "Which of the following definitions might apply to a “bastion host”?",
+        "options": [
+            "A compromised device.",
+            "A host that implements a firewall.",
+            "A host that gives certificates on private-public keys.",
+            "A host that controls zombies in a botnet."
+        ],
+        "correctAnswer": 1
+    },
+    {
+        "question": "What is the main property that a pseudo-random number generator must have?",
+        "options": [
+            "Using a fixed seed.",
+            "Sampling from a Uniform Distribution.",
+            "Using deterministic sources.",
+            "Sampling from a Normal Distribution (Gaussian)"
+        ],
+        "correctAnswer": 2
+    },
+    {
+        "question": "Which one is a good countermeasure against “workstation hijacking”?",
+        "options": [
+            "Strong authentication mechanism.",
+            "Automatic logout mechanism.",
+            "Anomaly behavior detection.",
+            "Automatic logout mechanism and Anomaly behavior detection"
+        ],
+        "correctAnswer": 3
+    }
 ]
