@@ -37,7 +37,7 @@
 			"Encrypting packages.",
 			"Detecting buffer-overflow attacks."
 		],
-		"correctAnswer": 3
+		"correctAnswer": 1
 	},
 	{
 		"question": "What is a common practice for attackers during DoS attacks?",
