@@ -1,0 +1,52 @@
+[
+	{
+		"question": "In authentication systems, which property of a hash function is the least significant?",
+		"options": [
+			"Strong collision resistant.",
+			"Computationally hard to identify two inputs x, y such that H(x) = H(y).",
+			"Computationally fast.",
+			"Computationally infeasible to find x such that H(x) = h."
+		],
+		"correctAnswer": 2
+	},
+	{
+		"question": "How can you prevent SQL injection attacks?",
+		"options": [
+			"By dropping network connections to the database.",
+			"By perturbing the raw data of the database.",
+			"By perturbing the output returned to the user.",
+			"By sanitizing users’ input."
+		],
+		"correctAnswer": 3
+	},
+	{
+		"question": "A discretionary access control can be represented with:",
+		"options": [
+			"Matrix structure.",
+			"List structure.",
+			"Both with Matrix Structure and List Structure.",
+			"None of the above."
+		],
+		"correctAnswer": 2
+	},
+	{
+		"question": "What are “canaries” used for?",
+		"options": [
+			"Detecting DDoS attacks.",
+			"Detecting intruders.",
+			"Encrypting packages.",
+			"Detecting buffer-overflow attacks."
+		],
+		"correctAnswer": 3
+	},
+	{
+		"question": "What is a common practice for attackers during DoS attacks?",
+		"options": [
+			"Injection codes.",
+			"IP forgery.",
+			"Buffer overflow commands.",
+			"None of the above."
+		],
+		"correctAnswer": 3
+	}
+]
