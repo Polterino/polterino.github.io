@@ -29,6 +29,14 @@ p {
     justify-content: center;
 }
 
+@media (max-width: 600px) {
+    .buttons-container a {
+        display: block;
+        width: 100%;
+        margin-bottom: 10px; /* Aggiungi un margine inferiore per separare i bottoni */
+    }
+}
+
 .button {
     display: inline-block;
     padding: 10px 20px;
