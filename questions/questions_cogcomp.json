@@ -438,6 +438,6 @@
 					"we use computer programs to represent probabilistic models",
 					"the output of the algorithm is always a probability distribution",
 					"we exploit graphical models to perform Bayesian inference"],
-        "correctAnswer": 1
+        "correctAnswer": 2
 	}
 ]
