@@ -146,3 +146,21 @@ input[type="radio"]:hover {
     color: red;
 }
 
+.verification-icon {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 20px; /* Imposta la larghezza dell'icona */
+    height: 20px; /* Imposta l'altezza dell'icona */
+    background-size: cover;
+}
+
+/* Stile per l'icona di conferma (tick verde) */
+.question[data-verified="1"] .verification-icon {
+    background-image: url('img/tick.png');
+}
+
+/* Stile per l'icona di avviso (triangolo giallo) */
+.question[data-verified="0"] .verification-icon {
+    background-image: url('img/warning.png');
+}

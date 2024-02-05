@@ -163,7 +163,7 @@
         "correctAnswer": 3
 	},
 	{
-		"question": "In Boltzmann machines, during the positive phase",
+		"question": "In Boltzmann machines, during the <u>positive</u> phase",
         "options": ["correlations are computed between hidden units and model reconstructions",
 					"the hidden units are clamped to the previous state",
 					"both visible and hidden units can change their activation",
@@ -439,5 +439,14 @@
 					"the output of the algorithm is always a probability distribution",
 					"we exploit graphical models to perform Bayesian inference"],
         "correctAnswer": 2
+	},
+	{
+		"question": "In Boltzmann machines, during the <u>negative</u> phase",
+		"options": ["both visible and hidden units can change their activation",
+					"only hidden units can change their activation",
+					"correlations are computed between all hidden units",
+					"the visible units are clamped to the input data",
+					"the hidden units are clamped to the previous input data"],
+		"correctAnswer": 0
 	}
 ]

@@ -81,8 +81,9 @@ document.addEventListener("DOMContentLoaded", function ()
 			const questionNumberHTML = `<div class="question-number">${i + 1}</div>`;
 			
 			questionContainer.innerHTML += `
-				<div class="question" id="question${i}">
+				<div class="question" id="question${i}" data-verified="0">
 					${questionNumberHTML}
+					<div class="verification-icon"></div>
 					<h2>${currentQuestion.question}</h2>
 					${imageHTML}
 					${optionsHTML}
