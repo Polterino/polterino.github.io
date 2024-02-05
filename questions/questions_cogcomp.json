@@ -429,7 +429,7 @@
 					"can be mitigated by decreasing the learning rate",
 					"is partially due to the vanishing gradient problem",
 					"can be solved using sparse representation in the neocortex"],
-		"correctAnswer": 1
+		"correctAnswer": 0
 	},
 	{
 		"question": "In probabilistic programming",
