@@ -7,7 +7,8 @@
 			"Computationally fast.",
 			"Computationally infeasible to find x such that H(x) = h."
 		],
-		"correctAnswer": 2
+		"correctAnswer": 2,
+		"verified": 1
 	},
 	{
 		"question": "How can you prevent SQL injection attacks?",
@@ -17,7 +18,8 @@
 			"By perturbing the output returned to the user.",
 			"By sanitizing users’ input."
 		],
-		"correctAnswer": 3
+		"correctAnswer": 3,
+		"verified": 1
 	},
 	{
 		"question": "A discretionary access control can be represented with:",
@@ -27,7 +29,8 @@
 			"Both with Matrix Structure and List Structure.",
 			"None of the above."
 		],
-		"correctAnswer": 2
+		"correctAnswer": 2,
+		"verified": 1
 	},
 	{
 		"question": "What are “canaries” used for?",
@@ -37,7 +40,8 @@
 			"Encrypting packages.",
 			"Detecting buffer-overflow attacks."
 		],
-		"correctAnswer": 3
+		"correctAnswer": 3,
+		"verified": 0
 	},
 	{
 		"question": "What is a common practice for attackers during DoS attacks?",
@@ -47,7 +51,8 @@
 			"Buffer overflow commands.",
 			"None of the above."
 		],
-		"correctAnswer": 1
+		"correctAnswer": 1,
+		"verified": 0
 	},
 	{
         "question": "Where is the malicious script executed in a cross-site scripting attack?",
@@ -57,7 +62,8 @@
             "On the user’s network connection.",
             "On the web server"
         ],
-        "correctAnswer": 1
+        "correctAnswer": 1,
+        "verified": 1
     },
     {
         "question": "How can an attacker bypass input sanitization in a web app?",
@@ -67,7 +73,8 @@
             "Through hidden characters in the input.",
             "None of the above"
         ],
-        "correctAnswer": 0
+        "correctAnswer": 0,
+        "verified": 0
     },
     {
         "question": "Which of the following definitions might apply to a “bastion host”?",
@@ -77,7 +84,8 @@
             "A host that gives certificates on private-public keys.",
             "A host that controls zombies in a botnet."
         ],
-        "correctAnswer": 1
+        "correctAnswer": 1,
+        "verified": 1
     },
     {
         "question": "What is the main property that a pseudo-random number generator must have?",
@@ -87,7 +95,8 @@
             "Using deterministic sources.",
             "Sampling from a Normal Distribution (Gaussian)"
         ],
-        "correctAnswer": 2
+        "correctAnswer": 2,
+        "verified": 1
     },
     {
         "question": "Which one is a good countermeasure against “workstation hijacking”?",
@@ -97,6 +106,7 @@
             "Anomaly behavior detection.",
             "Automatic logout mechanism and Anomaly behavior detection"
         ],
-        "correctAnswer": 3
+        "correctAnswer": 3,
+        "verified": 1
     }
 ]
