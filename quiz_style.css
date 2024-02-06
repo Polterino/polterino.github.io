@@ -21,7 +21,7 @@ body.dark-mode {
         transition: background-color 0.7s ease;
     }
 
-    h1, h2{
+    h1, h2, label {
         color: #b6b6b6
     }
 
