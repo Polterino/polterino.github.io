@@ -126,7 +126,7 @@
             "Memory Leak.",
             "Memory exhaustion.",
             "Segmentation fault.",
-            "Memory fault."
+            "Memory corruption."
         ],
         "correctAnswer": 0,
         "verified": 1
@@ -146,8 +146,8 @@
         "question": "What steps should be taken when a Network DoS attack is detected?",
         "options": [
             "Packet filtering through pattern recognition and attack source traceback.",
-            "Packet filtering through pattern recognition and backup of data.",
-            "Backup of data, address traceback.",
+            "Packet filtering through pattern recognition and backup resources.",
+            "Backup resources, attack source traceback.",
             "None of above."
         ],
         "correctAnswer": 0,
