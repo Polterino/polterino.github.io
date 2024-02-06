@@ -164,6 +164,7 @@ document.addEventListener("DOMContentLoaded", function ()
 		showAllButton.style.backgroundColor = "orange";
 		showQuestions();
 	}
+    }
 
     // Function to get the selected answer for a question
     function getSelectedAnswer(name) {
