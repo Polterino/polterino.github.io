@@ -888,5 +888,72 @@
         ],
         "correctAnswer": 2,
         "verified": 1
+    },
+	{
+        "question": "Which of the following approaches is <u>not</u> a possible solution to the landmark extraction problem for face alignment?",
+        "options": [
+            "Kazemi and Sullivans's solution",
+            "Ren's solution",
+            "Pantic's approach",
+            "Viola-Jones"
+        ],
+        "correctAnswer": 3,
+        "verified": 1
+    },
+    {
+        "question": "Select the wrong answer about FACE RECOGNITION:",
+        "options": [
+            "Generally speaking, we use 5 steps: face localization, face alignment/normalization, face processing, feature extraction and face comparison.",
+            "We use 3 levels for facial features, the first is about the coarsest details and the third is related to micro level features.",
+            "Global facial features are related to the whole appearance, while local features are focused in some salient points.",
+            "Deep learning algorithms demonstrated that Gabor filters are not effective for face recognition."
+        ],
+        "correctAnswer": 3,
+        "verified": 0
+    },
+    {
+        "question": "Which of the followings belong to the so-called PIE challenges to face recognition",
+        "options": [
+            "Wardrobe",
+            "Light intensity",
+            "Frontal poses",
+            "Compression"
+        ],
+        "correctAnswer": 0,
+        "verified": 1
+    },
+    {
+        "question": "Which of the followings belong to the so-called PIE challenges to face recognition",
+        "options": [
+            "Light intensity",
+            "Aging",
+            "Frontal poses",
+            "Compression"
+        ],
+        "correctAnswer": 1,
+        "verified": 1
+    },
+    {
+        "question": "In the context of biometrics eye related, select the CORRECT statement",
+        "options": [
+            "The retinal scanner authentication in not affected by the health condition",
+            "The sclera vein authentication is not affected by the presence of contact lenses",
+            "The pigmentation of the iris affects the performance of authentication",
+            "The iris formation is genetically determine"
+        ],
+        "correctAnswer": 2,
+        "verified": 0
+    },
+    {
+        "question": "In the context of gait analysis, select the CORRECT statement",
+        "options": [
+            "The silhouette extraction is not necessary in the model free approach",
+            "The DL best network for model base approach is PoseNet",
+            "Wearable sensors are not suitable for the acquisition of the signal",
+            "The gait is a non-repetitive signal"
+        ],
+        "correctAnswer": 1,
+        "verified": 0
     }
+	
 ]
