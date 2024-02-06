@@ -46,6 +46,10 @@ body.dark-mode {
 	.question-image {
 		filter: invert(1)
 	}
+
+	input[type="radio"]:checked + label {
+    color: #bdbdbd;
+}
 }
 
 #quiz-container {
