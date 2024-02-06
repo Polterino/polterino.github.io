@@ -108,5 +108,49 @@
         ],
         "correctAnswer": 3,
         "verified": 1
+    },
+    {
+        "question": "What is the role of an host-based Intrusion Detection System?",
+        "options": [
+            "Monitor single host activities.",
+            "Monitor multiple host activities.",
+            "Both, single host and multiple host.",
+            "None of above."
+        ],
+        "correctAnswer": 0,
+        "verified": 1
+    },
+    {
+        "question": "A program that dynamically allocates the memory, but it doesn’t release it properly, leads to:",
+        "options": [
+            "Memory Leak.",
+            "Memory execution.",
+            "Segmentation fault.",
+            "???."
+        ],
+        "correctAnswer": 0,
+        "verified": 1
+    },
+    {
+        "question": "Which of the following is not a strong security protocol?",
+        "options": [
+            "SMTP",
+            "SSL",
+            "HTTPS",
+            "SFTP"
+        ],
+        "correctAnswer": 0,
+        "verified": 1
+    },
+    {
+        "question": "What steps should be taken when a Network DoS attack is detected?",
+        "options": [
+            "Packet filtering through pattern recognition and attack source traceback.",
+            "acket filtering through pattern recognition and backup ???? ",
+            "Backup???.",
+            "None of above."
+        ],
+        "correctAnswer": 0,
+        "verified": 1
     }
 ]
