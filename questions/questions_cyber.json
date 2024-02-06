@@ -114,7 +114,7 @@
         "options": [
             "Monitor single host activities.",
             "Monitor multiple host activities.",
-            "Both, single host and multiple host.",
+            "Both, single and multiple host.",
             "None of above."
         ],
         "correctAnswer": 0,
@@ -124,9 +124,9 @@
         "question": "A program that dynamically allocates the memory, but it doesn’t release it properly, leads to:",
         "options": [
             "Memory Leak.",
-            "Memory execution.",
+            "Memory Execution.",
             "Segmentation fault.",
-            "???."
+            "Memory fault."
         ],
         "correctAnswer": 0,
         "verified": 1
@@ -146,8 +146,8 @@
         "question": "What steps should be taken when a Network DoS attack is detected?",
         "options": [
             "Packet filtering through pattern recognition and attack source traceback.",
-            "acket filtering through pattern recognition and backup ???? ",
-            "Backup???.",
+            "Packet filtering through pattern recognition and backup of data.",
+            "Backup of data, address traceback.",
             "None of above."
         ],
         "correctAnswer": 0,
