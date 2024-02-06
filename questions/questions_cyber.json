@@ -114,7 +114,7 @@
         "options": [
             "Monitor single host activities.",
             "Monitor multiple host activities.",
-            "Both, single and multiple host.",
+            "Both monitor single host activities and multiple hosts activities.",
             "None of above."
         ],
         "correctAnswer": 0,
