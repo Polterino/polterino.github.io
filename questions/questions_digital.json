@@ -657,5 +657,249 @@
         "correctAnswer": 2,
         "image": "img/gradient.png",
 	"verified": 1
+    },
+
+
+    {
+        "question": "Select which set of model-free modellings for gait recognition uses binary (bilevel) images.",
+        "options": [
+            "backward Single-step History Image (bSHI) and forward Single-step History Image (fSHI)",
+            "Motion-History Image and Motion-Silhouette Image",
+            "Motion-History Image and Active-Energy Image",
+            "Motion-Energy Image and forward Single-step History Image (fSHI)"
+        ],
+        "correctAnswer": 1,
+        "verified": 1
+    },
+    {
+        "question": "Given the following set of biometric scheme, select the one which is not processing bilevel signals.",
+        "options": [
+            "Voice recognition.",
+            "DNA sequence matching (in Voss representation).",
+            "Vision-based gait analysis.",
+            "Fingerprint identification."
+        ],
+        "correctAnswer": 0,
+        "verified": 1
+    },
+    {
+        "question": "Considering the dilation ratio of a pupil, select which of the following statements is <u>wrong</u>",
+        "options": [
+            "It depends on health and decision making.",
+            "It depends on the emotional state and the illumination.",
+            "Larger dilation decreases the mean of authentic distribution.",
+            "The higher, the larger is the pupil."
+        ],
+        "correctAnswer": 2,
+        "verified": 1
+    },
+    {
+        "question": "Considering an ear-based biometric system, select the <u>wrong</u> statement among the following one.",
+        "options": [
+            "It can be acoustic based or geometry based.",
+            "It is safe against ID stealing since ear canal is part of a hidden structure.",
+            "It can be implemented with specific ear bud.",
+            "Features do not change with age."
+        ],
+        "correctAnswer": 3,
+        "verified": 1
+    },
+    {
+        "question": "In relation to the Kazemi-Sullivan algorithm, select the <u>wrong</u> statement among the following:",
+        "options": [
+            "Split decisions are made on the same pixel set.",
+            "It is based on cascade regressors.",
+            "Landmarks are warped in order to make pixel intensities match."
+        ],
+        "correctAnswer": 0,
+        "verified": 1
+    },
+    {
+        "question": "Considering the ISO/IEC JTC1 SC37 standardization activity and the related work groups, select the <u>correct</u> statement among the following ones.",
+        "options": [
+            "The standardization activity only aims at the definition of a common data exchange format.",
+            "Hand geometry is not considered since it can be related to soft biometrics.",
+            "The Biometric Data Interchange Format (ISO/IEC 19794) also deals with non-technical issues like presentation.",
+            "It can be divided into 6 different work groups."
+        ],
+        "correctAnswer": 3,
+        "verified": 1
+    },
+    {
+        "question": "Concerning the problem of fairness for deep learning solution in face recognition, please select the <u>wrong</u> statement among the following:",
+        "options": [
+            "Training set-ups are usually ideal; real life cases are different.",
+            "Fairness in relational domains considers social, organizational, and other relational connections.",
+            "In fairness through awareness, any two individuals with a certain similarity receive a similar outcome",
+            "Fairness can be granted post-processing by adopting a cost-sensitive learning."
+        ],
+        "correctAnswer": 3,
+        "verified": 1
+    },
+    {
+        "question": "Select the <u>wrong</u> answer about Viola and Jones algorithm:",
+        "options": [
+            "The use of integral image, rectangular filters, and cascading are some of the peculiarities of this algorithm.",
+            "VJ algorithm can be used in real time applications.",
+            "The best set of rectangular features is selected using majority voting.",
+            "An integral image is a representation that stores the sum of the intensity values above and to the left of the image point."
+        ],
+        "correctAnswer": 2,
+        "verified": 1
+    },
+    {
+        "question": "Select the <u>wrong</u> statement concerning the M82 algorithm:",
+        "options": [
+            "Small deformation can be compensated by a tensor transformation.",
+            "The list of matching minutiae pairs is ordered according to their weights.",
+            "A coarse pre-alignment is performed using the Top 2 matching pair.",
+            "A weight is assigned to each matching pair."
+        ],
+        "correctAnswer": 2,
+        "verified": 1
+    },
+    {
+        "question": "Among the following facial feature set, select the one that contains only local features.",
+        "options": [
+            "PCA, Eigenfaces",
+            "Eigenfaces, LDA.",
+            "Tensorface, PCA.",
+            "Dlib facial landmark, LBP"
+        ],
+        "correctAnswer": 3,
+        "verified": 1
+    },
+    {
+        "question": "Traditional iris segmentation uses the integro-difference operator, Select the <u>correct</u> statement among the following ones.",
+        "options": [
+            "It can be used to find both limbic and pupillary boundaries.",
+            "Filtering ensures that crypts, freckles, and furrows are reasonably enhanced.",
+            "It finds the maximum in the blurred partial derivative with respect to the (x0,y0) coordinates."
+        ],
+        "correctAnswer": 0,
+        "image": "img/Segmentation.png",
+        "verified": 1
+    },
+    {
+        "question": "Considering a rubber sheet image of an iris, we can surely <u>state</u> that:",
+        "options": [
+            "It can not be used if the image is partially covered by eyelids.",
+            "It allows removing occlusions from iris image.",
+            "It includes the primary specular reflection.",
+            "It includes reflection artifacts."
+        ],
+        "correctAnswer": 3,
+        "verified": 1
+    },
+    {
+        "question": "Concerning the use of deep learning solution in face recognition, please select the <u>wrong</u> statement among the following:",
+        "options": [
+            "Generalization can be difficult because of bias.",
+            "Large networks are more efficient and require smaller training sets.",
+            "Large backbone networks for facial features can be reused from previous trainings on different datasets.",
+            "Training set-ups are usually ideal; real life cases are different."
+        ],
+        "correctAnswer": 1,
+        "verified": 1
+    },
+    {
+        "question": "In a ridge-based relative orientation, we can <u>erroneously</u> state that",
+        "options": [
+            "Ridges consents a more robust matching than using simple minutiae",
+            "Ridges are defined between couples of minutiae",
+            "Ridges are normalized.",
+            "Ridges are sampled at regular points"
+        ],
+        "correctAnswer": 1,
+        "verified": 1
+    },
+    {
+        "question": "Considering the Viola-Jones algorithm and the equation of the error for a weak classifier",
+        "options": [
+            "hj(wi) are filter responses.",
+            "wi is the considered window.",
+            "The optimal classifier hj(wi), All j is selected at the end of the iteration t."
+        ],
+        "correctAnswer": 0,
+        "image": "img/????.png",
+        "verified": 1
+    },
+    {
+        "question": "Given the integral image S(x,y) and a rectangular region within a frame defined by coordinates (x0,y0),(x0,y1),(x1,y0),(x1,y1), with x0<x1 and y0<y1, it is possible to compute the response of rectangular filter with the equation ...",
+        "options": [
+            "S(x1,y1)-S(x0,y1)-S(x1,y0)-S(x0,y0)",
+            "S(x1,y1)-S(x0,y1)+S(x1,y0)-S(x0,y0)",
+            "S(x1,y1)-S(x0,y1)-S(x1,y0)+S(x0,y0)",
+            "S(x1,y1)-S(x0,y1)-S(x1,y0)+S(x0,y0)"
+        ],
+        "correctAnswer": 3,
+        "verified": 1
+    },
+    {
+        "question": "Concerning an iris code, select the <u>wrong</u> statement among the following.",
+        "options": [
+            "Masks identifies valid samples.",
+            "Sampling is performed using 8 radii.",
+            "Gabor response gives a two bit representation.",
+            "It is generated from a set of Gabor filters that output real values values quantized on 4 levels."
+        ],
+        "correctAnswer": 3,
+        "verified": 1
+    },
+    {
+        "question": "Given the Pointcare index equation,select the <u>wrong</u> statement among the following:",
+        "options": [
+            "PI=2 correspond to a whorl point.",
+            "The function delta outputs values from -pi/2 to pi/2.",
+            "It computes a cumulative change on minutiae coordinates.",
+            "PI=1 corresponds to a loop point."
+        ],
+        "correctAnswer": 2,
+        "image": "img/???.png",
+        "verified": 1
+    },
+    {
+        "question": "Considering the thinning operation and the minutiae computation, select the <u>wrong</u> answer among the following:",
+        "options": [
+            "More than one structuring element can be applied.",
+            "Thinning is operated on gray scale images",
+            "After thinning and minutiae computation, minutiae can be filtered out because of noise.",
+            "After the thinning operation, ridges have one pixel width"
+        ],
+        "correctAnswer": 1,
+        "verified": 1
+    },
+    {
+        "question": "Given a generic face recognition system and the different phases, select the <u>correct</u> statements among the following.",
+        "options": [
+            "Processing is the very last step.",
+            "Feature extraction must be done before alignment.",
+            "Localization must be done before alignment.",
+            "Comparison is performed before feature extraction."
+        ],
+        "correctAnswer": 2,
+        "verified": 1
+    },
+    {
+        "question": "Concerning the spectrum (Fourier transform representation) of a fingerprint patch in a 2D image, we can surely <u>state</u> that ...",
+        "options": [
+            "Phase is related to the intensity of ridges",
+            "Most of the information is retained by the absolute values of the coefficients",
+            "It can be approximated by a rect function.",
+            "It is characterized by two simmetric peaks (w.r.t. coordinate center)"
+        ],
+        "correctAnswer": 3,
+        "verified": 1
+    },
+    {
+        "question": "Which of the following types of minutiae are <u>not</u> considered by the ANSI/NIST-ITL 1, 2007 standard.",
+        "options": [
+            "Compound",
+            "Endings",
+            "Islands",
+            "Trifurcations"
+        ],
+        "correctAnswer": 2,
+        "verified": 1
     }
 ]
