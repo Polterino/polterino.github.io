@@ -36,16 +36,15 @@
     </div>
     <script src="app.js"></script>
 	<script>
-        // Recupera il parametro "page" dalla query string
         const urlParams = new URLSearchParams(window.location.search);
         const quizPage = urlParams.get('page');
 
-        // Mappa il parametro "page" a titoli personalizzati
         const pageTitles = {
             'digital': 'Digital Forensic and Biometrics Quiz',
             'cogcomp': 'Cognition and Computation Quiz',
             'machine': 'Machine Learning Quiz',
-			'cyber': 'Cybersecurity Quiz'
+			'cyber': 'Cybersecurity Quiz',
+            'law': 'Law and Data Quiz'
         };
 
         // Imposta dinamicamente il titolo dell'elemento h1

@@ -1,0 +1,45 @@
+[
+    {
+        "question": "The main difference between the EU and the US approaches to the legal regime of personal data is",
+        "options": ["that the EU treats personal data as as an aspect of individual personality, whereas the US treats data as a market",
+                    "that only EU protects privacy",
+                    "that only the US protect privacy",
+                    "that only the US approach leverages individual consent to protect privacy"],
+        "correctAnswer": 0,
+        "verified": 0
+    },
+    {
+        "question": "Correcting illegal bias in AI",
+        "options": ["is always legitimate",
+                    "must be done in a way that does not violate basic legal principles such as equality",
+                    "is legally impossible",
+                    "can be done only by amending the algorithm or the dataset for the training"],
+        "correctAnswer": 1,
+        "verified": 0
+    },
+    {
+        "question": "The processing of personal data pursuant to the GDPR may be lawfully carried out ",
+        "options": ["When data subjects expressed their own consent",
+                    "Based on the controller’s free choice",
+                    "When there is no consent by data subjects, but the processing is needed for protecting the data subjects’ or other individuals’ vital interests",
+                    "When there is no consent, but the processing must take place to perform a contract between the controller and any third party"],
+        "correctAnswer": 2,
+        "verified": 0
+    },
+    {
+        "question": "Which of the following are legislative instruments belonging to EU primary law?",
+        "options": ["Treaty of the European Union, Treaty on the functioning of the European Union, Case-law of the European Court of Justice",
+                    "Treaty of the European Union, Treaty on the functioning of the European Union, Charter of fundamental rights of the European Union",
+                    "Charter of fundamental rights of the European Union, Regulations, Case-law of the European Court of Justice"],
+        "correctAnswer": 1,
+        "verified": 0
+    },
+    {
+        "question": "Which of the following answers is correct? The hierarchical system of EU law is structured as such:",
+        "options": ["(1) Primary Law, (2) Secondary Law, (3) International Agreements",
+                    "(1) Founding treaties, (2) International Agreements, (3) Secondary Law",
+                    "(1) Primary Law, (3) Secondary Law, (3) Member States law"],
+        "correctAnswer": 1,
+        "verified": 0
+    }
+]

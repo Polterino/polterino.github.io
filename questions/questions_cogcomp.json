@@ -5,7 +5,8 @@
 					"the amount of observed data does not influence the estimate of the posteriorthe prior probability should be uniform",
 					"the normalization factor represents the likelihood of the data",
 					"the posterior probability can be estimated using maximum-likelihood"],
-        "correctAnswer": 0
+        "correctAnswer": 0,
+        "verified": 1
     },
 	{
         "question": "Intercausal reasoning in Bayesian networks updates the estimate of a variable",
@@ -14,7 +15,8 @@
 					"using information from the variables in the Markov blanket",
 					"using an iterative procedure",
 					"using information from its children"],
-        "correctAnswer": 0
+        "correctAnswer": 0,
+        "verified": 1
     },
     {
         "question": "A universal computing machine",
@@ -23,7 +25,8 @@
 					"is an ideal computing machine with continuous states",
 					"is a theoretical device that can simulate any algorithm",
 					"can simulate any algorithm using a finite amount of memory"],
-        "correctAnswer": 3
+        "correctAnswer": 3,
+        "verified": 1
     },
 	{
         "question": "According to Innatism",
@@ -32,7 +35,8 @@
 					"the nature of our knowledge is probabilistic",
 					"we can generalize the property of a population from the property of a sample",
 					"a rational agent can select the best action regardless of the sensory evidence"],
-        "correctAnswer": 0
+        "correctAnswer": 0,
+        "verified": 1
     },
     {
         "question": "The emergentist approach for modeling cognition",
@@ -41,7 +45,8 @@
 					"argues that thinking arises from the activation dynamics of neuronal networks",
 					"argues that cognition can be programmed using syntactic rules",
 					"argues that intelligence can be programmed in a universal computing machine"],
-        "correctAnswer": 2
+        "correctAnswer": 2,
+        "verified": 0
     },
 	{
         "question": "The <u>algorithmic</u> level in Marr's \"three levels of analysis\"",
@@ -50,7 +55,8 @@
 					"describes the goal of the computation and how inputs and outputs are represented",
 					"describes the goal of the algorithm and how it can be implemented",
 					"describes the representation for the input and the output of the model"],
-        "correctAnswer": 4
+        "correctAnswer": 4,
+        "verified": 1
     },
 	{
         "question": "In order to adjudicate between competing theories",
@@ -59,7 +65,8 @@
 					"verbal theories should be preferred over black-box models",
 					"we should choose the model with better descriptive adequacy",
 					"we should use strong inference to test the transparency of the model"],
-        "correctAnswer": 3
+        "correctAnswer": 3,
+        "verified": 1
     },
 	{
         "question": "In emergentist cognitive models",
@@ -68,7 +75,8 @@
 					"knowledge is represented in a declarative form",
 					"knowledge is represented explicitly",
 					"knowledge is represented by a vector of activations over basic processing units"],
-        "correctAnswer": 4
+        "correctAnswer": 4,
+        "verified": 0
     },
 	{
 		"question": "Elman networks",
@@ -77,7 +85,8 @@
 					"use as context the previous state of the hidden layer",
 					"use lateral connections to process temporal information",
 					"use bidirectionals connections between Internal output units"],
-        "correctAnswer": 2
+        "correctAnswer": 2,
+        "verified": 0
 	},
 	{
 		"question": "In reinforcement learning",
@@ -86,7 +95,8 @@
 					"the environment can be defined as a Markov Decision Process",
 					"the agent learns from trial and error",
 					"the goal is to maximize the control policy"],
-        "correctAnswer": 3
+        "correctAnswer": 3,
+        "verified": 1
 	},
 	{
 		"question": "How can we factorize the joint distribution for the following Bayesian network?",
@@ -96,7 +106,8 @@
 					"P(A,B,C,D,E) = P(A)P(B|D)P(C|A,B)P(C,E)",
 					"P(A,B,C,D,E) = P(A|C)P(B|C)P(D|B)P(C|E)"],
         "correctAnswer": 2,
-		"image": "img/domanda.png"
+		"image": "img/domanda.png",
+        "verified": 1
 	},
 	{
 		"question": "How can we factorize the joint distribution for the following Bayesian network?",
