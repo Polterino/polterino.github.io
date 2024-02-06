@@ -124,7 +124,7 @@
         "question": "A program that dynamically allocates the memory, but it doesn’t release it properly, leads to:",
         "options": [
             "Memory Leak.",
-            "Memory Execution.",
+            "Memory exhaustion.",
             "Segmentation fault.",
             "Memory fault."
         ],
