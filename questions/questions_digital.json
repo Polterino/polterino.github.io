@@ -808,7 +808,7 @@
             "The optimal classifier h_j(w_i), All j is selected at the end of the iteration t."
         ],
         "correctAnswer": 0,
-        "image": "img/????.png",
+        "image": "img/ViolaJones.png",
         "verified": 1
     },
     {
@@ -842,7 +842,7 @@
             "PI=1 corresponds to a loop point."
         ],
         "correctAnswer": 2,
-        "image": "img/???.png",
+        "image": "img/pointcare.png",
         "verified": 1
     },
     {
