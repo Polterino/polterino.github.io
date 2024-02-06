@@ -3,11 +3,37 @@ body {
     margin: 0;
     padding: 0;
     background-color: #f4f4f4;
+
+    transition: background-color 0.3s ease;
 }
 
 body.dark-mode {
-    background-color: #333;
+    background-color: #333333;
     color: #fff;
+
+    transition: background-color 0.3s ease;
+
+    .container {
+        background-color: #222;
+        transition: background-color 0.7s ease;
+    }
+
+    h1, h2{
+        color: #b6b6b6
+    }
+
+    p {
+        color: #808080;
+    }
+
+    .button {
+        background-color: rgb(53, 70, 179);
+        transition: background-color 1s ease;
+    }
+
+    #toggleDarkMode{
+        filter: none;
+    }
 }
 
 .container {
@@ -18,14 +44,16 @@ body.dark-mode {
     background-color: #fff;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    position: relative;
+    transition: background-color 0.7s ease;
 }
 
-h1 {
-    color: #333;
+h1, h2{
+    color: #333333;
 }
 
 p {
-    color: #666;
+    color: #666666;
     margin-bottom: 20px;
 }
 
@@ -49,9 +77,28 @@ p {
     color: #fff;
     background-color: #4285f4;
     border-radius: 5px;
-    transition: background-color 0.3s ease;
+    transition: background-color 1s ease;
 }
 
 .button:hover {
     background-color: #3367d6;
+}
+
+#toggleDarkMode {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #ffffff;
+    border: none; 
+    cursor: pointer;
+    filter: invert(1);
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+#toggleDarkMode img {
+    display: block;
+    width: 100%; 
+    height: auto; 
 }

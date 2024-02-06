@@ -7,14 +7,46 @@ body {
     flex-direction: column;  /* Aggiunto per evitare il taglio del contenuto alla fine della pagina */
     align-items: center;
     min-height: 100vh;
+    transition: background-color 0.3s ease;
+}
+
+body.dark-mode {
+    background-color: #333333;
+    color: #fff;
+
+    transition: background-color 0.3s ease;
+
+    #quiz-container {
+        background-color: #222;
+        transition: background-color 0.7s ease;
+    }
+
+    h1, h2{
+        color: #b6b6b6
+    }
+
+    p {
+        color: #808080;
+    }
+
+    .button {
+        background-color: rgb(53, 70, 179);
+        transition: background-color 1s ease;
+    }
+
+    #toggleDarkMode{
+        filter: none;
+    }
 }
 
 #quiz-container {
     background-color: #fff;
+    margin: 20px auto;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     padding: 20px;
     text-align: center;
+    position: relative;
     margin-bottom: 20px;  /* Aggiunto spazio sotto il container delle domande */
 }
 
@@ -163,4 +195,28 @@ input[type="radio"]:hover {
 /* Stile per l'icona di avviso (triangolo giallo) */
 .question[data-verified="0"] .verification-icon {
     background-image: url('img/warning.png');
+}
+
+
+#toggleDarkMode {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    background-color: #ffffff;
+    border: none; 
+    cursor: pointer;
+    filter: invert(1);
+    position: absolute;
+    top: 15px;
+    right: 15px;
+
+    padding: 0;
+    margin-top: 0;
+}
+
+#toggleDarkMode img {
+    padding: 1px 6px;
+    display: block;
+    width: 24px; 
+    height: 24px;
 }
