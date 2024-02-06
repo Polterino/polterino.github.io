@@ -670,7 +670,7 @@
         "verified": 1
     },
     {
-        "question": "Given the following set of biometric scheme, select the one which is not processing bilevel signals.",
+        "question": "Given the following set of biometric scheme, select the one which is <u>not</u> processing bilevel signals.",
         "options": [
             "Voice recognition.",
             "DNA sequence matching (in Voss representation).",
@@ -746,18 +746,7 @@
         "verified": 1
     },
     {
-        "question": "Select the <u>wrong</u> statement concerning the M82 algorithm:",
-        "options": [
-            "Small deformation can be compensated by a tensor transformation.",
-            "The list of matching minutiae pairs is ordered according to their weights.",
-            "A coarse pre-alignment is performed using the Top 2 matching pair.",
-            "A weight is assigned to each matching pair."
-        ],
-        "correctAnswer": 2,
-        "verified": 1
-    },
-    {
-        "question": "Among the following facial feature set, select the one that contains only local features.",
+        "question": "Among the following facial feature set, select the one that contains <u>only</u> local features.",
         "options": [
             "PCA, Eigenfaces",
             "Eigenfaces, LDA.",
@@ -779,7 +768,7 @@
         "verified": 1
     },
     {
-        "question": "Considering a rubber sheet image of an iris, we can surely <u>state</u> that:",
+        "question": "Considering a rubber sheet image of an iris, we can <u>surely</u> state that:",
         "options": [
             "It can not be used if the image is partially covered by eyelids.",
             "It allows removing occlusions from iris image.",
@@ -814,16 +803,16 @@
     {
         "question": "Considering the Viola-Jones algorithm and the equation of the error for a weak classifier",
         "options": [
-            "hj(wi) are filter responses.",
-            "wi is the considered window.",
-            "The optimal classifier hj(wi), All j is selected at the end of the iteration t."
+            "h_j(w_i) are filter responses.",
+            "w_i is the considered window.",
+            "The optimal classifier h_j(w_i), All j is selected at the end of the iteration t."
         ],
         "correctAnswer": 0,
         "image": "img/????.png",
         "verified": 1
     },
     {
-        "question": "Given the integral image S(x,y) and a rectangular region within a frame defined by coordinates (x0,y0),(x0,y1),(x1,y0),(x1,y1), with x0<x1 and y0<y1, it is possible to compute the response of rectangular filter with the equation ...",
+        "question": "Given the integral image S(x,y) and a rectangular region within a frame defined by coordinates (x0,y0),(x0,y1),(x1,y0),(x1,y1), with x0<x1 and y0<y1, it is possible to compute the response of rectangular filter with the equation:",
         "options": [
             "S(x1,y1)-S(x0,y1)-S(x1,y0)-S(x0,y0)",
             "S(x1,y1)-S(x0,y1)+S(x1,y0)-S(x0,y0)",
