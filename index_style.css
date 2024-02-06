@@ -5,11 +5,9 @@ body {
     background-color: #f4f4f4;
 }
 
-@media (prefers-color-scheme: dark) {
-    body {
-        background-color: #333;
-        color: #fff;
-    }
+body.dark-mode {
+    background-color: #333;
+    color: #fff;
 }
 
 .container {
