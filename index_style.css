@@ -31,6 +31,10 @@ body.dark-mode {
         transition: background-color 1s ease;
     }
 
+    .button:hover {
+        background-color: #3d70dd;
+    }
+
     #toggleDarkMode{
         filter: none;
     }
