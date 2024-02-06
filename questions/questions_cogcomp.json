@@ -2,7 +2,8 @@
     {
         "question": "According to Bayesian inference",
         "options": ["the posterior probability is proportional to the likelihood multiplied by the prior", 
-					"the amount of observed data does not influence the estimate of the posteriorthe prior probability should be uniform",
+					"the amount of observed data does not influence the estimate of the posterior",
+					"the prior probability should be uniform",
 					"the normalization factor represents the likelihood of the data",
 					"the posterior probability can be estimated using maximum-likelihood"],
         "correctAnswer": 0,
