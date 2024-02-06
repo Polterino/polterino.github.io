@@ -560,7 +560,7 @@
 	"verified": 1
     },
     {
-        "question": "Conserning an isolation forest algorithm, select the <u>wrong</u> statement among the following:",
+        "question": "Concerning an isolation forest algorithm, select the <u>wrong</u> statement among the following:",
         "options": [
             "Classification is performed computing the average depth for a given input samples.",
             "Anomalies usually place at the lowest average depth for the trees",
