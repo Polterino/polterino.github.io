@@ -956,7 +956,7 @@
         "verified": 0
     },
 	{
-        "question": "Considering a GAN architecture which is being trained to generate fake faces and the corresponding training loss $$ {L(D,G) = 0} $$ select the wrong statement among the following ones.",
+        "question": "Considering a GAN architecture which is being trained to generate fake faces and the corresponding training loss, select the wrong statement among the following ones.",
         "options": [
             "The discriminator wants to maximize L(D, G).",
             "The generator aims at having D(x) = 0 and D(G(z)) = 1.",
