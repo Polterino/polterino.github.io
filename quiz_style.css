@@ -42,6 +42,10 @@ body.dark-mode {
     #toggleDarkMode{
         filter: none;
     }
+
+	.question-image {
+		filter: invert(1)
+	}
 }
 
 #quiz-container {
@@ -159,6 +163,7 @@ input[type="radio"]:hover {
     max-width: 100%; /* Assicura che l'immagine non superi la larghezza massima della domanda */
     display: block;  /* Evita spazi vuoti sotto l'immagine */
     margin-bottom: 10px; /* Aggiunge spazio sotto l'immagine */
+	filter: none;
 }
 
 .question-number {
