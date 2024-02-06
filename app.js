@@ -153,18 +153,20 @@ document.addEventListener("DOMContentLoaded", function ()
 
 	function showAllQuestions() {
         // Svuota il contenitore delle domande prima di visualizzare tutte le domande
-        questionContainer.innerHTML = '';
-
-	if (showAllButton.textContent === "Show all questions and answers") {
-		questionContainer.innerHTML = '';
-		showAllButton.style.backgroundColor = "";
-		showQuestions(questions, true);
-	} else {
-		showAllButton.textContent = "Back to quiz";
-		showAllButton.style.backgroundColor = "orange";
-		showQuestions();
-	}
-    }
+	        questionContainer.innerHTML = '';
+	
+		if (showAllButton.textContent === "Show all questions and answers") {
+			console.log("showAllQuestions: Show all questions and answers");
+			questionContainer.innerHTML = '';
+			showAllButton.style.backgroundColor = "";
+			showQuestions(questions, true);
+		} else {
+			console.log("showAllQuestions: Back to quiz");
+			showAllButton.textContent = "Back to quiz";
+			showAllButton.style.backgroundColor = "orange";
+			showQuestions();
+		}
+    	}
 
     // Function to get the selected answer for a question
     function getSelectedAnswer(name) {
