@@ -658,8 +658,6 @@
         "image": "img/gradient.png",
 	"verified": 1
     },
-
-
     {
         "question": "Select which set of model-free modellings for gait recognition uses binary (bilevel) images.",
         "options": [
