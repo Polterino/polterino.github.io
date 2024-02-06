@@ -117,7 +117,8 @@
 					"P(A,B,C,D) = P(A)P(B|A)P(C|A,D)P(D|A)",
 					"P(A,B,C,D) = P(A,B)P(A,C,D)"],
         "correctAnswer": 3,
-		"image": "img/factorize2.png"
+		"image": "img/factorize2.png",
+        "verified": 1
 	},
 	{
 		"question": "In the delta rule, the weight changes are given",
@@ -126,7 +127,8 @@
 					"by the difference between target and output, multiplied by the gradient",
 					"by the difference between input and output",
 					"by the difference between target and output, multiplied by the bias"],
-        "correctAnswer": 1
+        "correctAnswer": 1,
+        "verified": 1
 	},
 	{
 		"question": "In a restricted Boltzmann machine",
@@ -135,7 +137,8 @@
 					"contrastive divergence is used to minimize the classification error",
 					"units in the same layer are statistically independent",
 					"activations of all units within a layer can be computed at the same time"],
-        "correctAnswer": 4
+        "correctAnswer": 4,
+        "verified": 1
 	},
 	{
 		"question": "We have a conjugate prior",
@@ -144,7 +147,8 @@
 					"when the prior distribution is Gaussian",
 					"when the prior distribution is uniform",
 					"when the posterior distribution is in the same family as the prior distribution"],
-        "correctAnswer": 4
+        "correctAnswer": 4,
+        "verified": 1
 	},
 	{
 		"question": "Gibbs sampling",
@@ -153,7 +157,8 @@
 					"exploits the Markov blanket to discard samples that are not consistent with the evidence",
 					"use a Markov chain to iteratively approximate the target distribution",
 					"exploits the Markov blanket to sample conditionally dependent variables at the same time"],
-        "correctAnswer": 3
+        "correctAnswer": 3,
+        "verified": 0
 	},
 	{
 		"question": "In the formal neuron, the signals coming from other neurons are",
@@ -162,7 +167,8 @@
 					"subtracted to the average activation",
 					"multiplied by the synaptic weights and then summed",
 					"added to the synaptic weights using a sigmoid activation function"],
-        "correctAnswer": 3
+        "correctAnswer": 3,
+        "verified": 1
 	},
 	{
 		"question": "What distinguishes a multilayer feed-forward network from a perceptron?",
@@ -171,7 +177,8 @@
 					"the use of the delta rule",
 					"the ability to learn non-linear functions",
 					"the use of the Hebb rule"],
-        "correctAnswer": 3
+        "correctAnswer": 3,
+        "verified": 1
 	},
 	{
 		"question": "In Boltzmann machines, during the <u>positive</u> phase",
@@ -180,16 +187,18 @@
 					"both visible and hidden units can change their activation",
 					"only hidden units can change their activation",
 					"Gibbs sampling is used to reconstruct the input data"],
-        "correctAnswer": 3
+        "correctAnswer": 3,
+        "verified": 1
 	},
 	{
-		"question": "In Boltzmann machines, during the positive phase",
+		"question": "In Boltzmann machines, during the <u>positive</u> phase",
         "options": ["both visible and hidden units can change their activation",
 					"only hidden units can change their activation",
 					"correlations are computed between all hidden units",
 					"the visible units are clamped to the input data",
 					"the hidden units are clamped to the previous input data"],
-        "correctAnswer": 1
+        "correctAnswer": 1,
+        "verified": 1
 	},
 	{
 		"question": "A deep belief network",
@@ -198,7 +207,8 @@
 					"is formed by hierarchy of linear layer",
 					"is formed by hierarchy of stochastic networks",
 					"requires training labels that express probabilities"],
-        "correctAnswer": 3
+        "correctAnswer": 3,
+        "verified": 1
 	},
 	{
 		"question": "Descriptive adequacy is",
@@ -207,7 +217,8 @@
 					"the accuracy of the model in predicting the dataset",
 					"the accuracy in describing the model architecture and parameters",
 					"the accurate description and justification of all model assumptions"],
-        "correctAnswer": 2
+        "correctAnswer": 2,
+        "verified": 1
 	},
 	{
 		"question": "According to empiricism",
@@ -216,7 +227,8 @@
 					"there is a clear distinction between mental processes and physical processes",
 					"knowledge is discovered primarly by deduction",
 					"most of our knowledge is derived by sensory experience"],
-        "correctAnswer": 4
+        "correctAnswer": 4,
+        "verified": 1
 	},
 	{
 		"question": "in structured cognitive models",
@@ -225,7 +237,8 @@
 					"the topology of the computational graph is usually learned from the data",
 					"each hypothesis is represented by a vector of activations over basic processing units",
 					"we assume that knowledge and reasoning are separate processes"],
-        "correctAnswer": 4
+        "correctAnswer": 4,
+        "verified": 0
 	},
 	{
 		"question": "The actual weights update in NN learning",
@@ -234,7 +247,8 @@
 					"should be small to obtain a faster learning",
 					"should be scaled down to avoid deletion of previously learned knowledge",
 					"are equal to the gradient of the cost function"],
-        "correctAnswer": 3
+        "correctAnswer": 3,
+        "verified": 0
 	},
 	{
 		"question": "the symbolic approach for modelling cognition",
@@ -243,7 +257,8 @@
 					"is based on implict knowledge representations",
 					"emphatizes the central role of learning in knowledge development",
 					"argues that cognition cannot be programmed using syntactic rules"],
-        "correctAnswer": 0
+        "correctAnswer": 0,
+        "verified": 0
 	},
 	{
 		"question": "according to the Turing test, a machine can be considered intelligent if",
@@ -252,7 +267,8 @@
 					"it's over behavior is undistinguishable from that of a human being",
 					"it's internal functioning replicates the details of a human brain",
 					"it can be implemented in a real robot"],
-        "correctAnswer": 2
+        "correctAnswer": 2,
+        "verified": 1
 	},
 	{
 		"question": "the vanishing gradient problem in deep network",
@@ -261,7 +277,8 @@
 					"can be solved using sigmoid neurons",
 					"can be solved using sparse connectivity",
 					"can be solved using weight sharing"],
-        "correctAnswer": 0
+        "correctAnswer": 0,
+        "verified": 0
 	},
 	{
 		"question": "Rejection sampling",
@@ -270,7 +287,8 @@
 					"expoints the markov blanket of a node to iteratively refine the estimated values",
 					"allows to implement exact inference using variable elimination",
 					"is an efficient inference procedure for bayesian network"],
-        "correctAnswer": 0
+        "correctAnswer": 0,
+        "verified": 1
 	},
 	{
 		"question": "Long Short Term Memory networks",
@@ -279,7 +297,8 @@
 					"exploit a seq-to-seq architecture to memorize informations",
 					"use gated units to regulate the flow of informations",
 					"map an entire sequence into a variable-length vector"],
-        "correctAnswer": 3
+        "correctAnswer": 3,
+        "verified": 0
 	},
 	{
 		"question": "In bayesian network the markov blanket of a node contains",
@@ -288,7 +307,8 @@
 					"the set of directly connected nodes",
 					"the parent nodes",
 					"the children nodes"],
-        "correctAnswer": 0
+        "correctAnswer": 0,
+        "verified": 1
 	},
 	{
 		"question": "In a Markov network, the Markov blanket of a node contains",
@@ -297,7 +317,8 @@
 					"the set of directly connected nodes",
 					"the parent nodes",
 					"the children nodes"],
-        "correctAnswer": 2
+        "correctAnswer": 2,
+        "verified": 1
 	},
 	{
 		"question": "in the <u>computational</u> level in marr's \"three level of analysis\"",
@@ -306,7 +327,8 @@
 					"describes the goal of the algorithm and how it can be implemented",
 					"describes the goal of the computation and how inputs and outputs are represented",
 					"describes how the computation can be implemented"],
-        "correctAnswer": 1
+        "correctAnswer": 1,
+        "verified": 1
 	},
 	{
 		"question": "Which method promotes good generalization in a neural network?",
@@ -315,7 +337,8 @@
 					"performing a prolonged training",
 					"using cross-validation to tune the loss function",
 					"using a small number of hidden units"],
-        "correctAnswer": 4
+        "correctAnswer": 4,
+        "verified": 0
 	},
 	{
 		"question": "In convolutional neural networks",
@@ -324,7 +347,8 @@
 					"pooling layers are used to reduce the dimensionality of receptive fields",
 					"neurons have local receptive fields",
 					"the number of layers depends on the size of the input"],
-        "correctAnswer": 3
+        "correctAnswer": 3,
+        "verified": 0
 	},
 	{
 		"question": "the chinese room experiment",
@@ -332,7 +356,8 @@
 					"argues that syntactic manipulations can lead to semantic content",
 					"argues that displaying the correct behavior does not imply understanding",
 					"can be used to establish if a machine could pass the turing test"],
-        "correctAnswer": 2
+        "correctAnswer": 2,
+        "verified": 0
 	},
 	{
 		"question": "In hierarchical generative models",
@@ -341,7 +366,8 @@
 					"bottom up processing can support perceptual inference over ambiguous input",
 					"top down processing is separate from learning",
 					"different variables can share the same prior"],
-        "correctAnswer": 2
+        "correctAnswer": 2,
+        "verified": 0
 	},
 	{
 		"question": "two random variable are statistically independent",
@@ -350,7 +376,8 @@
 					"the conditional distribution can be factorized using the same prior",
 					"the joint distribution is defined by a fully connected graph",
 					"they can be represented using a direct graph"],
-        "correctAnswer": 0
+        "correctAnswer": 0,
+        "verified": 1
 	},
 	{
 		"question": "inductive reasoning",
@@ -359,7 +386,8 @@
 					"allows to enstablish whether an argument is true or false",
 					"does not support causal inference",
 					"is based on logical deduction"],
-        "correctAnswer": 0
+        "correctAnswer": 0,
+        "verified": 0
 	},
 	{
 		"question": "The backpropagation algorithm",
@@ -368,7 +396,8 @@
 					"propagates the classification error through a separate set of backward connections",
 					"cannot learn the XOR problem",
 					"can approximate non-linear functions through unsupervised learning"],
-        "correctAnswer": 0
+        "correctAnswer": 0,
+        "verified": 0
 	},
 	{
 		"question": "In probabilistic programming",
@@ -377,7 +406,8 @@
 					"we can exploit Bayesian inference to estimate the program parameters",
 					"we can use recursion and control flow statements to speed-up inference",
 					"learning consists of constructing programs that best explain the likelihood of the data"],
-        "correctAnswer": 4
+        "correctAnswer": 4,
+        "verified": 0
 	},
 	{
 		"question": "Large-scale neural language models",
@@ -386,7 +416,8 @@
 					"assume that each token depends only on the previous n-1 tokens",
 					"can learn word representation using n-grams",
 					"need exploit attention mechanisms to discover lexical categories"],
-        "correctAnswer": 0
+        "correctAnswer": 0,
+        "verified": 0
 	},
 	{
 		"question": "The complementary learning systems theory suggests that",
@@ -395,7 +426,8 @@
 					"the neocortex slowly learns sparse representations of the data",
 					"the hippocampus rapidly learns new semantic information",
 					"interleaved learning can take advantage of generative replay"],
-        "correctAnswer": 4
+        "correctAnswer": 4,
+        "verified": 0
 	},
 	{
 		"question": "Connection weights in a classic multy-layer perceptron",
@@ -404,16 +436,18 @@
 					"are gradually modified to encode episodic memory",
 					"enable the use of working memory during statistical inference",
 					"are gradually tuned to represent statistical regularities"],
-        "correctAnswer": 4
+        "correctAnswer": 4,
+        "verified": 0
 	},
 	{
-	"question": "Long-term memory in artificial neural networks",
-	"options": ["is encoded in the hidden neurons activations",
-				"is based on a fast semantic learning process",
-				"exploits distributed representations to avoid catastrophic interference",
-				"is encoded by gradually tuning connection weights",
-				"is encoded by connection weights that represent individual learning episodes"],
-	"correctAnswer": 3
+		"question": "Long-term memory in artificial neural networks",
+		"options": ["is encoded in the hidden neurons activations",
+					"is based on a fast semantic learning process",
+					"exploits distributed representations to avoid catastrophic interference",
+					"is encoded by gradually tuning connection weights",
+					"is encoded by connection weights that represent individual learning episodes"],
+		"correctAnswer": 3,
+        "verified": 0
 	},
 	{
 		"question": "The complementary learning systems theory suggests that",
@@ -422,7 +456,8 @@
 					"episodic information is encoded by distributed representation in the hippocampus",
 					"slow learning of old information requires sparse coding",
 					"fast learning of new information requires pattern completion"],
-		"correctAnswer": 0
+		"correctAnswer": 0,
+        "verified": 0
 	},
 	{
 		"question": "Strong inference testing",
@@ -431,7 +466,8 @@
 					"is based on the assumption that simpler models should be preferred",
 					"allows to adjudicate between competing models through falsification",
 					"allows to test the statistical validity of a null hypothesis"],
-		"correctAnswer": 3
+		"correctAnswer": 3,
+        "verified": 0
 	},
 	{
 		"question": "Catastrophic forgetting in artificial neural networks",
@@ -440,7 +476,8 @@
 					"can be mitigated by decreasing the learning rate",
 					"is partially due to the vanishing gradient problem",
 					"can be solved using sparse representation in the neocortex"],
-		"correctAnswer": 0
+		"correctAnswer": 0,
+        "verified": 1
 	},
 	{
 		"question": "In probabilistic programming",
@@ -449,7 +486,8 @@
 					"we use computer programs to represent probabilistic models",
 					"the output of the algorithm is always a probability distribution",
 					"we exploit graphical models to perform Bayesian inference"],
-        "correctAnswer": 2
+        "correctAnswer": 2,
+        "verified": 1
 	},
 	{
 		"question": "In Boltzmann machines, during the <u>negative</u> phase",
@@ -458,6 +496,7 @@
 					"correlations are computed between all hidden units",
 					"the visible units are clamped to the input data",
 					"the hidden units are clamped to the previous input data"],
-		"correctAnswer": 0
+		"correctAnswer": 0,
+        "verified": 1
 	}
 ]
