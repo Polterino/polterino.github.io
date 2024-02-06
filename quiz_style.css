@@ -34,6 +34,11 @@ body.dark-mode {
         transition: background-color 1s ease;
     }
 
+	.question {
+		background-color: #222;
+        transition: background-color 1s ease;
+	}
+
     #toggleDarkMode{
         filter: none;
     }
