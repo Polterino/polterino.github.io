@@ -155,9 +155,9 @@ document.addEventListener("DOMContentLoaded", function ()
         // Svuota il contenitore delle domande prima di visualizzare tutte le domande
 	        questionContainer.innerHTML = '';
 	
-		if (showAllButton.textContent === "Show all questions and answers") {
+		if (showAllButton.textContent !== "Show all questions and answers") {
 			console.log("showAllQuestions: Show all questions and answers");
-			questionContainer.innerHTML = '';
+			showAllButton.textContent = "Show all questions and answers";
 			showAllButton.style.backgroundColor = "";
 			showQuestions(questions, true);
 		} else {
