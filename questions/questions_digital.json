@@ -8,7 +8,7 @@
             "Upsampling and filtering, template extraction, sample normalization, classification."
         ],
         "correctAnswer": 3,
-		"verified": 1
+	"verified": 1
     },
     {
         "question": "Considering a copy-move image tampering detection, select the <u>correct</u> statement among the following ones.",
@@ -19,7 +19,7 @@
             "It uses local image descriptors"
         ],
         "correctAnswer": 3,
-		"verified": 1
+	"verified": 1
     },
     {
         "question": "Concerning the Photo-Response Non-Uniformity (PRNU) equation, which among the following statements is surely <u>wrong</u>.",
@@ -31,7 +31,7 @@
         ],
         "correctAnswer": 0,
         "image": "img/PRNU.png",
-		"verified": 1
+	"verified": 1
     },
     {
         "question": "Select the <u>wrong</u> statement concerning the major fingerprint types",
@@ -42,7 +42,7 @@
             "Singular points can be loops or deltas."
         ],
         "correctAnswer": 0,
-		"verified": 1
+	"verified": 1
     },
     {
         "question": "Considering the metric Frechet Inception Distance (FID) for the evaluation of the performance of GAN, select the <u>wrong</u> statement among the following ones.",
@@ -53,7 +53,7 @@
             "It can detect mode dropping."
         ],
         "correctAnswer": 2,
-		"verified": 1
+	"verified": 1
     },
     {
         "question": "Considering a hash function that generates the digest <u>d</u> from a string <u>s</u>, <u>s -> d(s)</u>, select the <u>correct</u> statement referred to the resilience to second pre-image property.",
@@ -64,7 +64,7 @@
             "The length of s must be a multiple of a predefined minimum length."
         ],
         "correctAnswer": 0,
-		"verified": 1
+	"verified": 1
     },
     {
         "question": "Among the following list, select the strategies that can be employed by multimedia forensics to authenticate the origin of visual data (acquiring device).",
@@ -75,7 +75,7 @@
             "Sharpening, distortion correction, magnification."
         ],
         "correctAnswer": 1,
-		"verified": 1
+	"verified": 1
     },
     {
         "question": "What is the main role of geometric hashing in fingerprint indexing?",
@@ -86,7 +86,7 @@
             "Determining the length of the longest side of a triangle formed by minutiae."
         ],
         "correctAnswer": 1,
-		"verified": 1
+	"verified": 1
     },
     {
         "question": "Which of the following challenges to face recognition does <u>NOT</u> belong to the PIE set?",
@@ -97,7 +97,7 @@
             "Blurring."
         ],
         "correctAnswer": 1,
-		"verified": 1
+	"verified": 1
     },
     {
         "question": "Considering the equation select among the following sentences the <u>correct</u> one",
@@ -109,7 +109,7 @@
         ],
         "correctAnswer": 3,
         "image": "img/LDA.png",
-		"verified": 1
+	"verified": 1
     },
     {
         "question": "In iris recognition, occlusion masks allow to localize...",
@@ -119,7 +119,7 @@
             "Specular reflections, eyelids, eyelashes."
         ],
         "correctAnswer": 2,
-		"verified": 1
+	"verified": 1
     },
     {
         "question": "Which of the following features is <u>NOT</u> useful to detect deepfakes?",
@@ -130,7 +130,7 @@
             "Glare of glasses"
         ],
         "correctAnswer": 1,
-		"verified": 1
+	"verified": 1
     },
     {
         "question": "Profiling a stream of packet lengths (sniffed via Wireshark), it is possible to detect which application is run by an Android phone. 5 different SVM classifiers were obtained by training a common dataset (made of 1000 training vectors) with different configuration parameters. According to the final accuracy and the number of support vectors (#SV), select the most reliable one.",
@@ -141,7 +141,7 @@
             "#SV=100, accuracy=97%"
         ],
         "correctAnswer": 1,
-		"verified": 1
+	"verified": 1
     },
     {
         "question": "Among the following list, select the strategies that can be employed by multimedia forensics to authenticate the origin of visual data (acquiring device).",
@@ -152,7 +152,7 @@
             "Contrast enhancement, stabilization, interlacing detection."
         ],
         "correctAnswer": 0,
-		"verified": 1
+	"verified": 1
     },
     {
         "question": "In the integro-difference operator for iris recognition systems, we can <u>surely</u> say that...",
@@ -164,7 +164,7 @@
         ],
         "correctAnswer": 2,
         "image": "img/Segmentation.png",
-		"verified": 1
+	"verified": 1
     },
     {
         "question": "Concerning unsupervised anomaly detection on a dataset where a is the fraction of anomalies, select the <u>wrong</u> answer among the following ones.",
@@ -175,7 +175,7 @@
             "If alfa is large, you can fit a two components mixture model."
         ],
         "correctAnswer": 0,
-		"verified": 1
+	"verified": 1
     },
     {
         "question": "Concerning different methods to recover fairness, which of the following strategies are related to a pre-processing phase.",
@@ -186,7 +186,7 @@
             "Disentanglement methods."
         ],
         "correctAnswer": 0,
-		"verified": 1
+	"verified": 1
     },
     {
         "question": "Considering the analysis of a storage disk, which of the following statement would you use to explain what the <u>non-indexed</u> space is (select <u>the most fitting</u> option)?",
@@ -197,7 +197,7 @@
             "It is the space within a sector between the end of the contained file and the end of the corresponding sector."
         ],
         "correctAnswer": 1,
-		"verified": 1
+	"verified": 1
     },
     {
         "question": "Concerning the figure of Digital Evidence First Responder in ISO IEC 27037/2012, select the <u>wrong</u> statement among the following ones:",
@@ -208,7 +208,7 @@
             "He/She profiles all the persons authorized to access the area."
         ],
         "correctAnswer": 1,
-		"verified": 1
+	"verified": 1
     },
     {
         "question": "Among the following criteria, which is <u>NOT</u> used to filter spurious minutiae in minutiae extraction?",
@@ -219,7 +219,7 @@
             "Too many minutiae in a small neighborhood."
         ],
         "correctAnswer": 1,
-		"verified": 1
+	"verified": 1
     },
     {
         "question": "Considering the isolation tree anomaly detection algorithm, which of the following statements is <u>NOT</u> correct?",
@@ -230,7 +230,7 @@
             "For a given tree, attribute selection is repeated until every sample in the dataset is a leaf."
         ],
         "correctAnswer": 2,
-		"verified": 1
+	"verified": 1
     },
     {
         "question": "Assuming that an audio forensic analyst is processing an audio sequence and, at a certain point, he starts selecting the harmonics that are multiples of 50 Hz. Which type of analysis is he/she carrying on?",
@@ -241,7 +241,7 @@
             "Analyzing the electrical network frequencies"
         ],
         "correctAnswer": 3,
-		"verified": 1
+	"verified": 1
     },
     {
         "question": "Given an audio track to analyze, select among the following steps the one witch is not useful in an enhancement",
@@ -252,7 +252,7 @@
             "Analyze frequencies around f = 50 Hz (and multiples)"
         ],
         "correctAnswer": 3,
-		"verified": 1
+	"verified": 1
     },
     {
         "question": "Select the <u>correct</u> statement concerning the M82 algorithm:",
@@ -263,7 +263,7 @@
             "A list of minutiae couples is sorted according to the matching weights."
         ],
         "correctAnswer": 3,
-		"verified": 1
+	"verified": 1
     },  
     {
         "question": "Given the following multimedia processing strategies, select the <u>passive</u> one.",
@@ -274,7 +274,7 @@
             "Watermarking"
         ],
         "correctAnswer": 0,
-		"verified": 1
+	"verified": 1
     },
     {
         "question": "Concerning facial landmark extraction algorithms, select the <u>wrong</u> statement among the following ones.",
@@ -285,7 +285,7 @@
             "Kazemi and Sullivan's solution uses 15 points instead of 68 used by dlib."
         ],
         "correctAnswer": 3,
-		"verified": 1
+	"verified": 1
     },
     {
         "question": "Among the following list, select the strategies that can be employed by multimedia forensics to enhance the quality of visual data.",
@@ -296,7 +296,7 @@
             "Sharpening, distortion correction, magnification"
         ],
         "correctAnswer": 3,
-		"verified": 1
+	"verified": 1
     },
     {
         "question": "Considering a Fast Sign Gradient Method (FGSM) to perform a targeted attack on an image classifier (e.g. converting the classification of the image of a labrador into a komodo dragon - see lab session nr. 2), an adversarial image is generated by the equation adv_i = image + epsilon - perturbation. It is possible to state that... (select the <u>correct</u> statement)",
@@ -308,7 +308,7 @@
         ],
         "correctAnswer": 1,
         "image": "img/FGSM.png",
-		"verified": 1
+	"verified": 1
     },
     {
         "question": "Which feature set is useful to compensate face deformation in face recognition?",
@@ -318,7 +318,7 @@
             "Level 1 features"
         ],
         "correctAnswer": 1,
-		"verified": 1
+	"verified": 1
     },
     {
         "question": "Consider the following anomaly example 'A packet loss which is not expected.' How would you define it?",
@@ -328,7 +328,7 @@
             "Collective anomaly"
         ],
         "correctAnswer": 1,
-		"verified": 1
+	"verified": 1
     },
     {
         "question": "Considering the equations for a spread-spectrum watermarking, select the <u>wrong</u> statement among the following ones.",
@@ -340,7 +340,7 @@
         ],
         "correctAnswer": 3,
         "image": "img/spectrum.png",
-		"verified": 1
+	"verified": 1
     },
     {
         "question": "What is the purpose of face alignment/normalization in facial recognition systems?",
@@ -351,7 +351,7 @@
             "To improve the speed of face recognition."
         ],
         "correctAnswer": 2,
-		"verified": 1
+	"verified": 1
     },
     {
         "question": "Considering the ISO/IEC JTC1 SC37 standardization activity and the related work groups, select the <u>correct</u> statement among the following ones.",
@@ -362,7 +362,7 @@
             "It can be divided into 6 different work groups."
         ],
         "correctAnswer": 3,
-		"verified": 1
+	"verified": 1
     },
     {
         "question": "Considering a spread-spectrum watermarking algorithm, select the <u>correct</u> statement on perceptual mask among the following ones.",
@@ -373,7 +373,7 @@
             "The perceptual mask is dependent on the information to be embedded."
         ],
         "correctAnswer": 1,
-		"verified": 1
+	"verified": 1
     },
     {
         "question": "Concerning a forensic technical report to be presented in court, which of the following elements should <u>not be included</u> in the initial summary?",
@@ -384,7 +384,7 @@
             "The objectives of the report."
         ],
         "correctAnswer": 0,
-		"verified": 1
+	"verified": 1
     },
     {
         "question": "In adversarial machine learning, which among the following definitions proves to be more suitable for an attack algorithm that aims at forcing the classifier into misclassifying one specific sample into generically <u>wrong</u> class without knowing the detection algorithm.",
@@ -395,7 +395,7 @@
             "Universal targeted blackbox attack."
         ],
         "correctAnswer": 2,
-		"verified": 1
+	"verified": 1
     },
     {
         "question": "Given a digital image, estimating the CFA interpolation strategy adopted on that image allows...",
@@ -406,7 +406,7 @@
             "...to associate the image to a specific camera."
         ],
         "correctAnswer": 0,
-		"verified": 1
+	"verified": 1
     },
     {
         "question": "Among the following, select the <u>wrong</u> statement concerning Network-based IDS.",
@@ -417,7 +417,7 @@
             "They are not robust to fragmentation and TTL attack"
         ],
         "correctAnswer": 2,
-		"verified": 1
+	"verified": 1
     },
     {
         "question": "Given two PRNU patterns (one estimate from an image and the other from a set of 20 flat field pictures taken with the suspect camera), select the <u>wrong</u> statement among the following ones.",
@@ -428,7 +428,7 @@
             "If the image has not been taken with the suspected camera, PCE or NCC values are more or less the same for different analysis windows."
         ],
         "correctAnswer": 1,
-		"verified": 1
+	"verified": 1
     },
     {
         "question": "Considering the analysis of a storage disk, which of the following statement would you use to explain what the <u>slack space</u> is (select <u>the most fitting</u> option)?",
@@ -439,7 +439,7 @@
             "It is a memory space which is not indexed anymore since the table of indexes has been lost with file removal."
         ],
         "correctAnswer": 0,
-		"verified": 1
+	"verified": 1
     },
     {
         "question": "Select the <u>wrong</u> statement concerning the M82 algorithm:",
@@ -450,7 +450,7 @@
             "The list of matching minutiae pairs is ordered according to their weights."
         ],
         "correctAnswer": 2,
-		"verified": 1
+	"verified": 1
     },
     {
         "question": "In adversarial machine learning, which among the following definitions proves to be more suitable for an attack algorithm that aims at forcing the classifier into misclassifying all the samples into generically <u>wrong</u> class without knowing the detection algorithm.",
@@ -461,7 +461,7 @@
             "Universal untargeted blackbox attack."
         ],
         "correctAnswer": 3,
-		"verified": 1
+	"verified": 1
     },
     {
         "question": "Considering a hash function that generates the digest <u>d</u> from a string <u>s</u>, <u>s -> d(s)</u>, select the <u>correct</u> statement referred to the resilience to collision property.",
@@ -472,7 +472,7 @@
             "Given a digest d, creating s s.t. d(s)=d must be computationally-unfeasible."
         ],
         "correctAnswer": 0,
-		"verified": 1
+	"verified": 1
     },
     {
         "question": "Considering a hash function that generates the digest <u>d</u> from a string <u>s</u>, <u>s -> d(s)</u>, select the <u>correct</u> statement referred to the resilience to pre-image property.",
@@ -483,7 +483,7 @@
             "Given a digest d, creating s s.t. d(s)=d must be computationally-unfeasible."
         ],
         "correctAnswer": 3,
-		"verified": 1
+	"verified": 1
     },
     {
         "question": "Given two PRNU patterns (one estimate from an image and the other from a set of 20 flat field pictures taken with the suspect camera), select the <u>correct</u> statement among the following ones.",
@@ -494,7 +494,7 @@
             "If the image has not been taken with the suspected camera, PCE or NCC values are more or less the same for different analysis windows."
         ],
         "correctAnswer": 3,
-		"verified": 1
+	"verified": 1
     },
     {
         "question": "Concerning the figure of Digital Evidence First Responder in ISO IEC 27037/2012, select the <u>wrong</u> statement among the following ones:",
@@ -503,7 +503,7 @@
                     "He/She can be someone who is not in charge of the investigation.",
                     "He/She checks and seizures the area containing digital devices."],
         "correctAnswer": 2,
-		"verified": 1
+	"verified": 1
     },
     {
         "question": "Which among the following conditions makes the WDAD (Well-Defined Anomaly Distribution) assumption NOT valid?",
@@ -513,7 +513,7 @@
             "Impossibility of using deep learning for anomaly detection"
         ],
         "correctAnswer": 0,
-		"verified": 1
+	"verified": 1
     },
     {
         "question": "Which among the following ones is NOT an anomaly type?",
@@ -524,7 +524,7 @@
             "Systematic anomaly"
         ],
         "correctAnswer": 3,
-		"verified": 1
+	"verified": 1
     },
     {
         "question": "Considering a sudden decrease of temperature in July (Northern emisphere), we can state that it is a ....",
@@ -534,7 +534,7 @@
             "Contextual anomaly"
         ],
         "correctAnswer": 2,
-		"verified": 1
+	"verified": 1
     },
     {
         "question": "Which of the following metrics is used to create a ROC (receiver operative characteristics) curve?",
@@ -545,7 +545,7 @@
             "Precision"
         ],
         "correctAnswer": 2,
-		"verified": 1
+	"verified": 1
     },
     {
         "question": "Which of the following classification strategies is suitable for anomaly detection?",
@@ -557,7 +557,7 @@
             "All of the mentioned strategies"
         ],
         "correctAnswer": 4,
-		"verified": 1
+	"verified": 1
     },
     {
         "question": "Conserning an isolation forest algorithm, select the wrong statement among the following:",
@@ -568,7 +568,7 @@
             "For each tree, the attribute selection order is random."
         ],
         "correctAnswer": 1,
-		"verified": 1
+	"verified": 1
     },
     {
         "question": "In clean data learning for anomaly detection, we can NOT use the training set to create ...",
@@ -579,7 +579,7 @@
             "A dynamical system from Partial Differential Equations"
         ],
         "correctAnswer": 1,
-		"verified": 1
+	"verified": 1
     },
     {
         "question": "In adversarial machie learning, which of the following attack combination scenarios prove to be the most challenging ...",
@@ -590,7 +590,7 @@
             "Whitebox targeted attack"
         ],
         "correctAnswer": 1,
-		"verified": 1
+	"verified": 1
     },
     {
         "question": "Which of the following attack types are most likely adressing an IDS?",
@@ -600,7 +600,7 @@
             "Model extraction"
         ],
         "correctAnswer": 1,
-		"verified": 1
+	"verified": 1
     },
     {
         "question": "Which among the following adversarial ML attacks is the LEAST computationally expensive?",
@@ -612,7 +612,7 @@
             "Broyden-Fletcher-Goldfarb-Shanno method (BFGS)"
         ],
         "correctAnswer": 1,
-		"verified": 1
+	"verified": 1
     },
     {
         "question": "The metric Inception Score (IS) will provide a high values for GANs that .... (select the correct statement)",
@@ -623,7 +623,7 @@
             "aim at making p(y) as uniform as possible."
         ],
         "correctAnswer": 3,
-		"verified": 1
+	"verified": 1
     },
     {
         "question": "Among the following, select the wrong statement about the Frechet Inception Distance or FID.",
@@ -634,7 +634,7 @@
             "It is robust to noise"
         ],
         "correctAnswer": 2,
-		"verified": 1
+	"verified": 1
     },
     {
         "question": "Select the WRONG statement:",
@@ -646,6 +646,6 @@
         ],
         "correctAnswer": 2,
         "image": "img/gradient.png",
-		"verified": 1
+	"verified": 1
     }
 ]
