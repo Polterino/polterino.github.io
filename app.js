@@ -159,12 +159,12 @@ document.addEventListener("DOMContentLoaded", function ()
 			console.log("showAllQuestions: Show all questions and answers");
 			showAllButton.textContent = "Show all questions and answers";
 			showAllButton.style.backgroundColor = "";
-			showQuestions(questions, true);
+			showQuestions();
 		} else {
 			console.log("showAllQuestions: Back to quiz");
 			showAllButton.textContent = "Back to quiz";
 			showAllButton.style.backgroundColor = "orange";
-			showQuestions();
+			showQuestions(questions, true);
 		}
     	}
 
