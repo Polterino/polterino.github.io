@@ -190,17 +190,4 @@ document.addEventListener("DOMContentLoaded", function () {
     );
     return selectedOption ? selectedOption.value : null;
   }
-
-  if (window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches) {
-    document.body.classList.add("dark-mode");
-  }
-
-  const toggleDarkModeButton = document.getElementById("toggleDarkMode");
-	toggleDarkModeButton.addEventListener("click", darkMode);
-
-  function darkMode() {
-    document.body.classList.toggle("dark-mode");
-    console.log("dark-mode");
-  }
-
 });
