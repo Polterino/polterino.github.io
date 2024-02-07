@@ -4,24 +4,27 @@ body {
     margin: 0;
     padding: 0;
     display: flex;
-    flex-direction: column;  /* Aggiunto per evitare il taglio del contenuto alla fine della pagina */
+    flex-direction: column;
+    /* Aggiunto per evitare il taglio del contenuto alla fine della pagina */
     align-items: center;
     min-height: 100vh;
-    transition: background-color 0.3s ease;
+    /* transition: background-color 0.3s ease; */
 }
 
 body.dark-mode {
     background-color: #333333;
     color: #fff;
 
-    transition: background-color 0.3s ease;
+    /* transition: background-color 0.3s ease; */
 
     #quiz-container {
         background-color: #222;
-        transition: background-color 0.7s ease;
+        /* transition: background-color 0.7s ease; */
     }
 
-    h1, h2, label {
+    h1,
+    h2,
+    label {
         color: #b6b6b6
     }
 
@@ -31,25 +34,38 @@ body.dark-mode {
 
     .button {
         background-color: rgb(53, 70, 179);
-        transition: background-color 1s ease;
+        /* transition: background-color 1s ease; */
     }
 
-	.question {
-		background-color: #222;
-        transition: background-color 1s ease;
-	}
+    .question {
+        background-color: #222;
+        /* transition: background-color 1s ease; */
+    }
 
-    #toggleDarkMode{
+    #toggleDarkMode {
         filter: none;
     }
 
-	.question-image {
-		filter: invert(1)
-	}
+    .question-image {
+        filter: invert(1)
+    }
 
-	input[type="radio"]:checked + label {
-    color: #bdbdbd;
+    input[type="radio"]:checked+label {
+        color: #bdbdbd;
+    }
 }
+
+.changing-theme {
+    animation: themeChangeAnimation 0.5s ease;
+}
+
+@keyframes themeChangeAnimation {
+    from {
+        opacity: 0; /* Esempio di effetto di animazione */
+    }
+    to {
+        opacity: 1;
+    }
 }
 
 #quiz-container {
@@ -60,11 +76,13 @@ body.dark-mode {
     padding: 20px;
     text-align: center;
     position: relative;
-    margin-bottom: 20px;  /* Aggiunto spazio sotto il container delle domande */
+    margin-bottom: 20px;
+    /* Aggiunto spazio sotto il container delle domande */
 }
 
 #score-container {
-    margin-top: 20px;  /* Aggiunto spazio sopra lo score */
+    margin-top: 20px;
+    /* Aggiunto spazio sopra lo score */
 }
 
 h1 {
@@ -87,62 +105,67 @@ button:hover {
 }
 
 #reset-button {
-  background-color: red;
-  color: white;  /* Opzionale: imposta il colore del testo */
-  border: none;  /* Opzionale: rimuovi il bordo */
-  padding: 10px 20px;  /* Opzionale: aggiusta il padding per una migliore presentazione */
-  cursor: pointer;
+    background-color: red;
+    color: white;
+    /* Opzionale: imposta il colore del testo */
+    border: none;
+    /* Opzionale: rimuovi il bordo */
+    padding: 10px 20px;
+    /* Opzionale: aggiusta il padding per una migliore presentazione */
+    cursor: pointer;
 }
 
 #reset-button:hover {
-  background-color: darkred;  /* Opzionale: cambia il colore al passaggio del mouse */
+    background-color: darkred;
+    /* Opzionale: cambia il colore al passaggio del mouse */
 }
 
 #home-button {
-	background-color: #4285f4;
-	cursor: pointer;
-	font-size: 24px;
-	padding: 10px 20px;
+    background-color: #4285f4;
+    cursor: pointer;
+    font-size: 24px;
+    padding: 10px 20px;
 }
 
 
 /* Stile generale per i bottoni radio */
 input[type="radio"] {
-  appearance: none;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  width: 20px;
-  height: 20px;
-  border: 2px solid #3498db;
-  border-radius: 50%;
-  outline: none;
-  cursor: pointer;
-  transition: border-color 0.3s ease-in-out;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    width: 20px;
+    height: 20px;
+    border: 2px solid #3498db;
+    border-radius: 50%;
+    outline: none;
+    cursor: pointer;
+    transition: border-color 0.3s ease-in-out;
 }
 
 /* Stile quando il bottone radio è selezionato */
 input[type="radio"]:checked {
-  border-color: #000000;
-  background-color: #464646; /* Aggiungi un colore di sfondo se desiderato */
+    border-color: #000000;
+    background-color: #464646;
+    /* Aggiungi un colore di sfondo se desiderato */
 }
 
 /* Stile del segnaposto (label) per il testo accanto al bottone radio */
 label {
-  margin-left: 8px;
-  font-family: 'Arial', sans-serif;
-  font-size: 16px;
-  color: #333;
+    margin-left: 8px;
+    font-family: 'Arial', sans-serif;
+    font-size: 16px;
+    color: #333;
 }
 
 /* Stile del testo accanto al bottone radio quando è selezionato */
-input[type="radio"]:checked + label {
-  color: #464646;
-  font-weight: bold;
+input[type="radio"]:checked+label {
+    color: #464646;
+    font-weight: bold;
 }
 
 /* Aggiungi stile hover */
 input[type="radio"]:hover {
-  border-color: #2980b9;
+    border-color: #2980b9;
 }
 
 
@@ -157,17 +180,24 @@ input[type="radio"]:hover {
     background-color: #fff;
     text-align: left;
     position: relative;
-	max-width: 400px;  /* Imposta la larghezza massima della domanda */
-    margin: 0 auto;   /* Centra la domanda orizzontalmente */
+    max-width: 400px;
+    /* Imposta la larghezza massima della domanda */
+    margin: 0 auto;
+    /* Centra la domanda orizzontalmente */
 }
 
 .question-image {
-    width: 100%;  /* Imposta la larghezza dell'immagine al 100% della larghezza della domanda */
-    height: auto; /* Mantiene le proporzioni dell'immagine */
-    max-width: 100%; /* Assicura che l'immagine non superi la larghezza massima della domanda */
-    display: block;  /* Evita spazi vuoti sotto l'immagine */
-    margin-bottom: 10px; /* Aggiunge spazio sotto l'immagine */
-	filter: none;
+    width: 100%;
+    /* Imposta la larghezza dell'immagine al 100% della larghezza della domanda */
+    height: auto;
+    /* Mantiene le proporzioni dell'immagine */
+    max-width: 100%;
+    /* Assicura che l'immagine non superi la larghezza massima della domanda */
+    display: block;
+    /* Evita spazi vuoti sotto l'immagine */
+    margin-bottom: 10px;
+    /* Aggiunge spazio sotto l'immagine */
+    filter: none;
 }
 
 .question-number {
@@ -196,8 +226,10 @@ input[type="radio"]:hover {
     position: absolute;
     top: 10px;
     right: 10px;
-    width: 20px; /* Imposta la larghezza dell'icona */
-    height: 20px; /* Imposta l'altezza dell'icona */
+    width: 20px;
+    /* Imposta la larghezza dell'icona */
+    height: 20px;
+    /* Imposta l'altezza dell'icona */
     background-size: cover;
 }
 
@@ -217,7 +249,7 @@ input[type="radio"]:hover {
     height: 35px;
     border-radius: 50%;
     background-color: #ffffff;
-    border: none; 
+    border: none;
     cursor: pointer;
     filter: invert(1);
     position: absolute;
@@ -231,6 +263,6 @@ input[type="radio"]:hover {
 #toggleDarkMode img {
     padding: 1px 6px;
     display: block;
-    width: 24px; 
+    width: 24px;
     height: 24px;
 }

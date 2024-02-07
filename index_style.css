@@ -4,18 +4,18 @@ body {
     padding: 0;
     background-color: #f4f4f4;
 
-    transition: background-color 0.3s ease;
+    /* transition: background-color 0.3s ease; */
 }
 
 body.dark-mode {
     background-color: #333333;
     color: #fff;
 
-    transition: background-color 0.3s ease;
+    /* transition: background-color 0.3s ease; */
 
     .container {
         background-color: #222;
-        transition: background-color 0.7s ease;
+        /* transition: background-color 0.7s ease; */
     }
 
     h1, h2{
@@ -28,7 +28,7 @@ body.dark-mode {
 
     .button {
         background-color: rgb(53, 70, 179);
-        transition: background-color 1s ease;
+        /* transition: background-color 1s ease; */
     }
 
     .button:hover {
@@ -37,6 +37,19 @@ body.dark-mode {
 
     #toggleDarkMode{
         filter: none;
+    }
+}
+
+.changing-theme {
+    animation: themeChangeAnimation 1s ease;
+}
+
+@keyframes themeChangeAnimation {
+    from {
+        opacity: 0; /* Esempio di effetto di animazione */
+    }
+    to {
+        opacity: 1;
     }
 }
 
@@ -49,7 +62,7 @@ body.dark-mode {
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     position: relative;
-    transition: background-color 0.7s ease;
+    /* transition: background-color 0.7s ease; */
 }
 
 h1, h2{
@@ -81,7 +94,7 @@ p {
     color: #fff;
     background-color: #4285f4;
     border-radius: 5px;
-    transition: background-color 1s ease;
+    /* transition: background-color 1s ease; */
 }
 
 .button:hover {
