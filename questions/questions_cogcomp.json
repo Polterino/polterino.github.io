@@ -279,7 +279,7 @@
 					"can be solved using sparse connectivity",
 					"can be solved using weight sharing"],
         "correctAnswer": 0,
-        "verified": 0
+        "verified": 1
 	},
 	{
 		"question": "Rejection sampling",
@@ -299,7 +299,7 @@
 					"use gated units to regulate the flow of informations",
 					"map an entire sequence into a variable-length vector"],
         "correctAnswer": 3,
-        "verified": 0
+        "verified": 1
 	},
 	{
 		"question": "In bayesian network the markov blanket of a node contains",
@@ -438,7 +438,7 @@
 					"enable the use of working memory during statistical inference",
 					"are gradually tuned to represent statistical regularities"],
         "correctAnswer": 4,
-        "verified": 0
+        "verified": 1
 	},
 	{
 		"question": "Long-term memory in artificial neural networks",
