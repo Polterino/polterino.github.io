@@ -367,7 +367,7 @@
 					"bottom up processing can support perceptual inference over ambiguous input",
 					"top down processing is separate from learning",
 					"different variables can share the same prior"],
-        "correctAnswer": 2,
+        "correctAnswer": 4,
         "verified": 0
 	},
 	{
