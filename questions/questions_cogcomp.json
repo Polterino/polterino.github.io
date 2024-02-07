@@ -458,7 +458,7 @@
 					"slow learning of old information requires sparse coding",
 					"fast learning of new information requires pattern completion"],
 		"correctAnswer": 0,
-        "verified": 0
+        "verified": 1
 	},
 	{
 		"question": "Strong inference testing",
