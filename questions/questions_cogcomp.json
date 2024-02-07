@@ -87,7 +87,7 @@
 					"use lateral connections to process temporal information",
 					"use bidirectionals connections between Internal output units"],
         "correctAnswer": 2,
-        "verified": 0
+        "verified": 1
 	},
 	{
 		"question": "In reinforcement learning",
@@ -159,7 +159,7 @@
 					"use a Markov chain to iteratively approximate the target distribution",
 					"exploits the Markov blanket to sample conditionally dependent variables at the same time"],
         "correctAnswer": 3,
-        "verified": 0
+        "verified": 1
 	},
 	{
 		"question": "In the formal neuron, the signals coming from other neurons are",
@@ -239,7 +239,7 @@
 					"each hypothesis is represented by a vector of activations over basic processing units",
 					"we assume that knowledge and reasoning are separate processes"],
         "correctAnswer": 4,
-        "verified": 0
+        "verified": 1
 	},
 	{
 		"question": "The actual weights update in NN learning",
@@ -259,7 +259,7 @@
 					"emphatizes the central role of learning in knowledge development",
 					"argues that cognition cannot be programmed using syntactic rules"],
         "correctAnswer": 0,
-        "verified": 0
+        "verified": 1
 	},
 	{
 		"question": "according to the Turing test, a machine can be considered intelligent if",
@@ -339,7 +339,7 @@
 					"using cross-validation to tune the loss function",
 					"using a small number of hidden units"],
         "correctAnswer": 4,
-        "verified": 0
+        "verified": 1
 	},
 	{
 		"question": "In convolutional neural networks",
@@ -349,7 +349,7 @@
 					"neurons have local receptive fields",
 					"the number of layers depends on the size of the input"],
         "correctAnswer": 3,
-        "verified": 0
+        "verified": 1
 	},
 	{
 		"question": "the chinese room experiment",
@@ -358,7 +358,7 @@
 					"argues that displaying the correct behavior does not imply understanding",
 					"can be used to establish if a machine could pass the turing test"],
         "correctAnswer": 2,
-        "verified": 0
+        "verified": 1
 	},
 	{
 		"question": "In hierarchical generative models",
@@ -388,7 +388,7 @@
 					"does not support causal inference",
 					"is based on logical deduction"],
         "correctAnswer": 0,
-        "verified": 0
+        "verified": 1
 	},
 	{
 		"question": "The backpropagation algorithm",
@@ -398,7 +398,7 @@
 					"cannot learn the XOR problem",
 					"can approximate non-linear functions through unsupervised learning"],
         "correctAnswer": 0,
-        "verified": 0
+        "verified": 1
 	},
 	{
 		"question": "In probabilistic programming",
