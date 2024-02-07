@@ -23,6 +23,7 @@
     </style>
 </head>
 <body>
+    <script src="darkMode.js"></script>
     <div id="quiz-container">
         <button id="toggleDarkMode"><img src="img/dark-mode.png" alt="Toggle Dark Mode"></button>
         <h1 id="quiz-title">Quiz</h1>
@@ -35,7 +36,6 @@
 		<a href=""><button id="reset-button">Clear answers and start again</button></a>
     </div>
     <script src="app.js"></script>
-    <script src="darkMode.js"></script>
 	<script>
         const urlParams = new URLSearchParams(window.location.search);
         const quizPage = urlParams.get('page');
