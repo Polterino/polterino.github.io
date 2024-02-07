@@ -53,6 +53,10 @@ body.dark-mode {
     input[type="radio"]:checked+label {
         color: #bdbdbd;
     }
+
+    input[type="radio"]:checked {
+        background-color: #afafaf;
+    }
 }
 
 .changing-theme {
