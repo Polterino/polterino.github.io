@@ -170,7 +170,7 @@
         "question": "Concerning unsupervised anomaly detection on a dataset where a is the fraction of anomalies, select the <u>wrong</u> answer among the following ones.",
         "options": [
             "Heavy tails in distributions facilitate the detection process.",
-            "If alfa > 5%, DAD assumption is needed.",
+            "If alfa > 5%, WDAD assumption is needed.",
             "If alfa is small, a simple outlier detector is required.",
             "If alfa is large, you can fit a two components mixture model."
         ],
