@@ -407,7 +407,7 @@
 					"we can exploit Bayesian inference to estimate the program parameters",
 					"we can use recursion and control flow statements to speed-up inference",
 					"learning consists of constructing programs that best explain the likelihood of the data"],
-        "correctAnswer": 4,
+        "correctAnswer": 2,
         "verified": 0
 	},
 	{
@@ -417,7 +417,7 @@
 					"assume that each token depends only on the previous n-1 tokens",
 					"can learn word representation using n-grams",
 					"need exploit attention mechanisms to discover lexical categories"],
-        "correctAnswer": 0,
+        "correctAnswer": 1,
         "verified": 0
 	},
 	{
