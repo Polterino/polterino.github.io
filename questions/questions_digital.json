@@ -812,7 +812,7 @@
         "verified": 1
     },
     {
-        "question": "Given the integral image S(x,y) and a rectangular region within a frame defined by coordinates (x0,y0),(x0,y1),(x1,y0),(x1,y1), with x0<x1 and y0<y1, it is possible to compute the response of rectangular filter with the equation:",
+        "question": "Given the integral image S(x,y) and a rectangular region within a frame defined by coordinates (x0,y0),(x0,y1),(x1,y0),(x1,y1), with x0&lt;x1 and y0&lt;y1, it is possible to compute the response of rectangular filter with the equation:",
         "options": [
             "S(x1,y1)-S(x0,y1)-S(x1,y0)-S(x0,y0)",
             "S(x1,y1)-S(x0,y1)+S(x1,y0)-S(x0,y0)",
