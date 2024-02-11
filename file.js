@@ -1,5 +1,6 @@
 // Percorso della cartella dei file
-const folderPath = 'files/';
+//const folderPath = 'files/';
+const folderPath = 'https://github.com/Polterino/polterino.github.io/blob/8b65901f762ae2eb7173fbb24de65824ea7208a8/files/';
 
 function getFileList() {
     fetch(folderPath)
