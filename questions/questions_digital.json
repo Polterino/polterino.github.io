@@ -912,7 +912,7 @@
         "verified": 0
     },
     {
-        "question": "Which of the followings belong to the so-called PIE challenges to face recognition",
+        "question": "Which of the followings <u>NOT</u> belong to the so-called PIE challenges to face recognition",
         "options": [
             "Wardrobe",
             "Light intensity",
@@ -923,7 +923,7 @@
         "verified": 1
     },
     {
-        "question": "Which of the followings belong to the so-called PIE challenges to face recognition",
+        "question": "Which of the followings <u>NOT</u> belong to the so-called PIE challenges to face recognition",
         "options": [
             "Light intensity",
             "Aging",
