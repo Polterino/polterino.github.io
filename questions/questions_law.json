@@ -41,5 +41,38 @@
                     "(1) Primary Law, (3) Secondary Law, (3) Member States law"],
         "correctAnswer": 1,
         "verified": 0
-    }
+    },
+    {
+        "question": "The European Data Protection Board is",
+        "options": ["An agency of the European Commission with the aim of protecting the fundamental right to data protection",
+                    "An independent body gathering the national supervisory authorities of each EU Member State",
+                    "An institution provided for by the Treaty on the European Union"],
+        "correctAnswer": 1,
+        "verified": 0
+	},
+	{
+		"question": "Which of the following statements is correct",
+		"options": ["Freedom of thought cannot be affected by AI technologies",
+					"Freedom of thought is not considered as a human right in most jurisdictions",
+					"Freedom of thought deserves protection only once the individual shares his thoughts with others",
+					"Freedom of thought is considered as a human right in most jurisdictions but hardly protected in itself"],
+		"correctAnswer": 3,
+        "verified": 0
+	},
+	{
+		"question": "The charter of fundamental rights recognizes the right to privacy and the right to data protection to",
+		"options": ["Only to individuals with EU citizenship",
+					"All individuals provided that they are in the EU",
+					"Only to EU companies"],
+		"correctAnswer": 1,
+        "verified": 0
+	},
+	{
+		"question": "Which of the following statements is correct",
+		"options": ["EU regulations and directives must be directly applied in any of their provision in all Member States",
+					"Regulations are directly applicable in all Member States as such, whereas directives need to be implemented by every Member State",
+					"Directives are directly applicable in all Member States as such, whereas regulations need to be implemented by every Member State"],
+		"correctAnswer": 1,
+        "verified": 0
+	}
 ]
