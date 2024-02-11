@@ -1,7 +1,6 @@
 document.addEventListener('DOMContentLoaded', function() {
-//    const folderPath = 'files/';
-    const folderPath = 'https://github.com/Polterino/polterino.github.io/blob/8b65901f762ae2eb7173fbb24de65824ea7208a8/files/';
-
+    const folderPath = 'files/';
+    
     const fileList = document.getElementById('file-list');
     const backButton = document.getElementById('back-button');
 
@@ -80,8 +79,8 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     }
 
-    // Richiama la funzione per ottenere la lista dei file iniziale
     //getFileList(folderPath);
+
     function showFiles(user, repo, directory) 
     {
         list_directory(user, repo, directory)
