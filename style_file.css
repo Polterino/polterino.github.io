@@ -1,0 +1,84 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+button {
+    background-color: #4caf50;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+#home-button {
+    background-color: #4285f4;
+    cursor: pointer;
+    font-size: 24px;
+    padding: 10px 20px;
+    display: block;
+    margin: 0 auto;
+}
+
+
+.container {
+    max-width: 800px;
+    margin: 50px auto;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+}
+
+h1 {
+    color: #333;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+/* Aggiungi stile per l'icona della cartella */
+.file-icon {
+    max-width: 20px; /* Imposta la larghezza massima dell'icona */
+    height: auto; /* Imposta l'altezza automaticamente per mantenere le proporzioni */
+}
+
+/* Stili per l'icona della freccia indietro */
+.back-icon {
+    width: 24px; /* Regola la larghezza dell'icona */
+    height: 24px; /* Regola l'altezza dell'icona */
+    margin-right: 8px; /* Aggiunge spazio tra l'icona e il testo */
+    cursor: pointer; /* Cambia il cursore al passaggio del mouse */
+}
+
+/* Nascondi l'icona della freccia indietro quando non è necessaria */
+#back-button {
+    display: none; /* Nasconde l'elemento */
+}
+
+
+li {
+    margin-bottom: 10px;
+}
+
+a {
+    color: #4285f4;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
