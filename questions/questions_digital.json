@@ -1054,5 +1054,17 @@
         ],
         "correctAnswer": 1,
         "verified": 1
+    },
+    {
+        "question": "What are the four main phases involved in the Gait Identification Scheme?",
+        "options": [
+            "Image/video acquisition, silhouette extraction, extraction of salient points, feature computation and dimensionality reduction, classification/identification",
+            "Model-free acquisition, Model-based acquisition, feature extraction, dimensionality reduction, classification/identification",
+            "Silhouette extraction, feature computation, dimensionality reduction, identification/classification",
+            "Camera acquisition, feature extraction, model-free identification, model-based identification, database comparison",
+	    "None of the above."
+        ],
+        "correctAnswer": 0,
+        "verified": 0
     }
 ]
