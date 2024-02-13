@@ -1168,7 +1168,7 @@
             "Face inpainting",
             "Image-to-Image translation"],
         "correctAnswer": 0,
-        "verified": 0
+        "verified": 1
     },
     {
         "question": "Which is not useful against adversarial attacks?",
@@ -1198,7 +1198,7 @@
             "Motion History image",
             "Skeleton fitting"],
         "correctAnswer": 4,
-        "verified": 0
+        "verified": 1
     },
     {
         "question": "For a blurred frame of a video, how can we sharpen the details?",
@@ -1208,7 +1208,7 @@
             "Enhance contrast",
             "Magnify image"],
         "correctAnswer": 1,
-        "verified": 0
+        "verified": 1
     },
     {
         "question": "About facial features and levels, which is <u>wrong</u>?",
