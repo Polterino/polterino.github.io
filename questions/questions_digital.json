@@ -828,7 +828,7 @@
             "Masks identifies valid samples.",
             "Sampling is performed using 8 radii.",
             "Gabor response gives a two bit representation.",
-            "It is generated from a set of Gabor filters that output real values values quantized on 4 levels."
+            "It is generated from a set of Gabor filters that output real values quantized on 4 levels."
         ],
         "correctAnswer": 3,
         "verified": 1
