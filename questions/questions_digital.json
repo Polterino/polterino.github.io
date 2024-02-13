@@ -889,6 +889,17 @@
         "correctAnswer": 2,
         "verified": 1
     },
+    {
+        "question": "Which of the following types of minutiae are <u>not</u> considered by the ANSI/NIST-ITL 1, 2007 standard.",
+        "options": [
+            "Crossovers",
+            "Lake",
+            "Bifourcation",
+            "Undefined"
+        ],
+        "correctAnswer": 1,
+        "verified": 1
+    },
 	{
         "question": "Which of the following approaches is <u>not</u> a possible solution to the landmark extraction problem for face alignment?",
         "options": [
@@ -1062,8 +1073,187 @@
             "Model-free acquisition, Model-based acquisition, feature extraction, dimensionality reduction, classification/identification",
             "Silhouette extraction, feature computation, dimensionality reduction, identification/classification",
             "Camera acquisition, feature extraction, model-free identification, model-based identification, database comparison",
-	    "None of the above."
-        ],
+            "None of the above."],
+        "correctAnswer": 0,
+        "verified": 0
+    },
+    {
+        "question": "Ghosting artifacts in video recapture are related to",
+        "options": [
+            "Video compression",
+            "Lens distortion",
+            "Overlapping of 2 consecutive frames",
+            "CPA filter interpolation"],
+        "correctAnswer": 2,
+        "verified": 0
+    },
+    {
+        "question": "About TTL manipulation attack, which is <u>wrong</u>?",
+        "options": [
+            "Attacker must have detailed knowledge of network topology",
+            "It requires to encrypt packets",
+            "Network IDS could be fooled by this strategy",
+            "Traffic is shaped by fragmenting the malicious packets into smaller ones",
+            "Traffic is shaped by adding dummy packets with smaller TTL values"],
+        "correctAnswer": 1,
+        "verified": 0
+    },
+    {
+        "question": "About level 1 features of fingerprint, which is <u>wrong</u>?",
+        "options": [
+            "Singular types can be characterized by computing a cumulative change of orientations",
+            "The core is the north most loop",
+            "In full prints, the number of loops must be equal to the number of deltas",
+            "Minimum resolution of 500 dpi is required"],
+        "correctAnswer": 3,
+        "verified": 0
+    },
+    {
+        "question": "Strategy to prevent correct authentication of image publicly-distributed across the network is",
+        "options": [
+            "Watermarking",
+            "Geolocalization",
+            "Anti-forensics algorithms",
+            "Encryption"],
+        "correctAnswer": 2,
+        "verified": 0
+    },
+    {
+        "question": "In gait analysis strategy, what <u>cannot</u> be used for joint-coordinate acquisition",
+        "options": [
+            "Pressure sensor",
+            "Gyroscopic sensor",
+            "RGB camera",
+            "Depth camera"],
+        "correctAnswer": 0,
+        "verified": 0
+    },
+    {
+        "question": "About HIDS, which is <u>wrong</u>?",
+        "options": [
+            "Could detect juice jacking attacks",
+            "Robust to fragmentation and TTL attack",
+            "Can not monitor entire network segment",
+            "Multiple sensors can be easily updated and installed"],
+        "correctAnswer": 3,
+        "verified": 0
+    },
+    {
+        "question": "Which is not related to GAN?",
+        "options": [
+            "Face recognition",
+            "Text-to-Image synthesis",
+            "Face inpainting",
+            "Image-to-Image translation"],
+        "correctAnswer": 0,
+        "verified": 0
+    },
+    {
+        "question": "Which is not useful against adversarial attacks?",
+        "options": [
+            "GAN defenses",
+            "Ensemble of NN",
+            "Deep autoencoder"],
+        "correctAnswer": 2,
+        "verified": 0
+    },
+    {
+        "question": "About watermarking, which is <u>wrong</u>?",
+        "options": [
+            "Allows free distribution of image/video content",
+            "Prevents unauthorized access to image/video",
+            "Can be applied multiple times without compromising the accessibility",
+            "Embeds a key-dependent binary message"],
+        "correctAnswer": 1,
+        "verified": 0
+    },
+    {
+        "question": "Which is a gait-modeling strategy not model free?",
+        "options": [
+            "Motion Energy Image",
+            "Active Energy Image",
+            "Forward Single-step",
+            "History image",
+            "Skeleton fitting"],
+        "correctAnswer": 4,
+        "verified": 0
+    },
+    {
+        "question": "For a blurred frame of a video, how can we sharpen the details?",
+        "options": [
+            "Equalize color histogram",
+            "Filter image with High Pass Filter",
+            "Enhance contrast",
+            "Magnify image"],
+        "correctAnswer": 1,
+        "verified": 0
+    },
+    {
+        "question": "About facial features and levels, which is <u>wrong</u>?",
+        "options": [
+            "Level 2 features allow to compensate deformation",
+            "Level 3 features are unconstructed and microlevelel",
+            "Level 1 features allow estimate wether subject is male or female",
+            "IPD = Intra-Pupillary Deformation"],
+        "correctAnswer": 3,
+        "verified": 0
+    },
+    {
+        "question": "Which is an active forensic strategy?",
+        "options": [
+            "PRNU estimation",
+            "Leveraging compression traces",
+            "Watermarking",
+            "CFA estimation"],
+        "correctAnswer": 2,
+        "verified": 0
+    },
+    {
+        "question": "Which is a not useful strategy to detect image splicing composing two different images?",
+        "options": [
+            "PRNU estimation",
+            "Multiple JPEG compression detection",
+            "CFA interpolation strategy estimation",
+            "Copy-move detection"],
+        "correctAnswer": 0,
+        "verified": 0
+    },
+    {
+        "question": "About fingerprint description on fingerprint indexing, which is <u>wrong</u>?",
+        "options": [
+            "Triangle information is stored in a hash table",
+            "Number of ridges between couples of minutiae could be used",
+            "Length of triangle sides could be considered",
+            "Geometric properties are usually defined by arrays of 4 values"],
+        "correctAnswer": 3,
+        "verified": 0
+    },
+    {
+        "question": "Whis is more suitable in anomaly detection supervised learning?",
+        "options": [
+            "Deep autoencoder",
+            "Spectral clustering",
+            "CNN classifier",
+            "One-class SVM"],
+        "correctAnswer": 3,
+        "verified": 0
+    },
+    {
+        "question": "About JPEG process, which is <u>wrong</u>?",
+        "options": [
+            "After quantization there is entropy coding",
+            "transform coding operation is performed on 8x8 blocks",
+            "Different quantization steps are used on coefficient form R, G and B components",
+            "DCT is used"],
+        "correctAnswer": 2,
+        "verified": 0
+    },
+    {
+        "question": "About data carving, which is <u>wrong</u>?",
+        "options": [
+            "Magic numbers are the same for all file types",
+            "45% data are in slack and non-indexed spaces",
+            "Photorec can be used for image data carving"],
         "correctAnswer": 0,
         "verified": 0
     }
