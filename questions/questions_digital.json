@@ -1194,8 +1194,8 @@
         "options": [
             "Motion Energy Image",
             "Active Energy Image",
-            "Forward Single-step",
-            "History image",
+            "Forward Single-step history image",
+            "Motion History image",
             "Skeleton fitting"],
         "correctAnswer": 4,
         "verified": 0
