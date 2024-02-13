@@ -603,6 +603,16 @@
 	"verified": 1
     },
     {
+        "question": "Consider an adversarial machine learning where attacker manipulates samples in order to trick a pre-trained detector/classifier, what is the name of this type of attack?",
+        "options": [
+            "Poisoning attack",
+            "Evasion attack",
+            "Model extraction"
+        ],
+        "correctAnswer": 1,
+    "verified": 1
+    },
+    {
         "question": "Which among the following adversarial ML attacks is the LEAST computationally expensive?",
         "options": [
             "Carlini & Wagner",
@@ -979,6 +989,18 @@
         "verified": 1
     },
     {
+        "question": "Considering a GAN architecture which is being trained to generate fake faces and the corresponding training loss, select the <u>wrong</u> statement among the following ones.",
+        "options": [
+            "The discriminator wants to maximize L(D, G).",
+            "The discriminator aims at having D(x) = 0 and D(G(z)) = 1.",
+            "the learning process can be assimilated to a MAP estimation problem",
+            "Generator operates on the term integral_x(p_g(x) log(1-D(x))) dx."
+        ],
+        "correctAnswer": 1,
+        "image": "img/lossGAN.png",
+        "verified": 1
+    },
+    {
         "question": "Consider the following description of a sniffer detection method \"During the transmission, send a packet with the IP address of the suspect machine without or with a wrong MAC address. All machines should reject it since MAC does not match IP. Only a sniffer would answer\". The statement can be referred to:",
         "options": [
             "Local host analysis",
@@ -1256,5 +1278,16 @@
             "Photorec can be used for image data carving"],
         "correctAnswer": 0,
         "verified": 0
+    },
+    {
+        "question": "What is called “Any two individuals with a certain similarity metric should receive a similar outcome”?",
+        "options": [
+            "Fairness through awareness",
+            "Fairness through unawareness",
+            "Counterfactual fairness",
+            "Fairness in relational domains",
+            "Group fairness"],
+        "correctAnswer": 0,
+        "verified": 1
     }
 ]
