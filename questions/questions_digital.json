@@ -1289,5 +1289,14 @@
             "Group fairness"],
         "correctAnswer": 0,
         "verified": 1
+    },
+    {
+        "question": "Considering the SO/IEC STC1 SC37 standardization which activities are carried on within the WG2?",
+        "options": ["Standardization of all necessary interfaces and interactions between biometric components and subsystems",
+                    "Defines a BDB format for the features that can be identified and extracted from a digitized fingerprint",
+                    "Provide a multipart standard with the first part defining a reference architecture for biometric profiles and subsequent parts focusing on particular applications",
+                    "Deals with legal and other issues related to biometrics"],
+        "correctAnswer": 0,
+        "verified": 0
     }
 ]
