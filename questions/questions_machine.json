@@ -10,6 +10,16 @@
         "verified": 1
     },
     {
+        "question": "The goal of supervised learning is",
+        "options": ["to learn what features are useful", 
+                    "to learn a model with low true risk",
+                    "to learn a model with low empirical risk",
+                    "to learn a deep neural network",
+                    "None of the above"],
+        "correctAnswer": 1,
+        "verified": 1
+    },
+    {
         "question": "If you flip 10 times a coin that has probability 0.25 to give tail, the probability that you obtain 10 heads is",
         "options": ["0.25 × 10", 
                     "(1 − 0.25) × 10",
@@ -17,6 +27,16 @@
                     "(0.25)^10",
                     "None of the above"],
         "correctAnswer": 2,
+        "verified": 1
+    },
+    {
+        "question": "If you flip 10 times a coin that has probability 0.25 to give tail, the probability that you obtain exactly 1 head is",
+        "options": ["0.25^9 × (1 − 0.25)", 
+                    "(1 − 0.25)^9 × 0.25",
+                    "10 × 0.25^9 × (1 − 0.25)",
+                    "10 × 0.25 × (1 − 0.25)^9",
+                    "None of the above"],
+        "correctAnswer": 0,
         "verified": 1
     },
     {
