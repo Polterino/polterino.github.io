@@ -70,6 +70,16 @@
         "verified": 1
     },
     {
+        "question": "What does “overfitting” refer to?",
+        "options": ["Learning a model that has perfect accuracy on all datasets", 
+                    "Learning a model that performs well on both training data and validation data",
+                    "Learning a model that performs well on training data but poorly on new data",
+                    "Failing to converge during training",
+                    "None of the above"],
+        "correctAnswer": 2,
+        "verified": 1
+    },
+    {
         "question": "For an hypothesis class H, being PAC learnable with respect to a loss function L, means",
         "options": ["that for all D we can find the best h in H, with enough data", 
                     "that for some D we can find the best h in H, independently of the amount of data",
@@ -171,5 +181,55 @@
         "correctAnswer": 1,
         "image": "img/real_assumption.png",
         "verified": 1
+    },
+    {
+        "question": "Ideally, the choice of the loss function should depend on",
+        "options": ["the real-world problem you are trying to solve", 
+                    "the hypothesis class you want to use",
+                    "the implementation that is available",
+                    "the amount of data you have",
+                    "None of the above"],
+        "correctAnswer": 0,
+        "verified": 1
+    },
+    {
+        "question": "A dataset is linearly separable if",
+        "options": ["you can connect its instances with a line",
+                    "you can learn a linear model from it",
+                    "there is a linear model that perfectly classifies it",
+                    "you can plot it in 2 dimensions",
+                    "None of the above"],
+        "correctAnswer": 2,
+        "verified": 1
+    },
+    {
+        "question": "In the context of machine learning algorithms, what does the term “gradient descent” refer to?",
+        "options": ["A method for solving linear equations",
+                    "An optimization algorithm used to minimize a cost function",
+                    "A technique for clustering data points",
+                    "A form of unsupervised learning",
+                    "None of the above"],
+        "correctAnswer": 1,
+        "verified": 0
+    },
+    {
+        "question": "What is the purpose of using a test set?",
+        "options": ["To test the model on multiple datasets",
+                    "To assess the model’s performance on the training set",
+                    "To compare different models on unseen data",
+                    "To obtain a good estimate of the generalization error",
+                    "None of the above"],
+        "correctAnswer": 3,
+        "verified": 1
+    },
+    {
+        "question": "What is the key idea behind hierarchical clustering?",
+        "options": ["Assigning each data point to the nearest centroid",
+                    "Dividing the dataset into a fixed number of clusters",
+                    "Creating a tree-like structure representing various clusterings",
+                    "Determining the density of data points in different regions",
+                    "None of the above"],
+        "correctAnswer": 2,
+        "verified": 0
     }
 ]
