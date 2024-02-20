@@ -1,3 +1,10 @@
-1 - What are the different phases in the acquisition and handling of a digital evidences? Which are the main operators that interplay within these phases and what are their roles? Provide a description of the process as exhaustive as possible.
-2 - Overviews the different acquisition-based footprints for digital cameras and how they can be used to authenticate an image (associated the image to a given device or model).
-3 - Concerning fingerprint matching, present and discuss the different types of level 2 features and how we can extract them (describe the whole extraction process). Can you mention/describe some speed-up/enhancement strategy for the matching progress?
+1 - What are the different phases in the acquisition and handling of a digital evidences?
+Which are the main operators that interplay within these phases and what are their roles?
+Provide a description of the process as exhaustive as possible.
+
+2 - Overviews the different acquisition-based footprints for digital cameras and
+how they can be used to authenticate an image (associated the image to a given device or model).
+
+3 - Concerning fingerprint matching, present and discuss the different types of
+level 2 features and how we can extract them (describe the whole extraction process).
+Can you mention/describe some speed-up/enhancement strategy for the matching progress?

@@ -1,4 +1,12 @@
-1- Describe different types of IDS and how they works stating pros and cons.
-anomalybased signature based
-2- Gan
-3- Iris recognition 
+1- Intrusion Detection Systems (IDS): Explain what they are and their purpose.
+Describe different types of IDS and how they works stating pros and cons.
+Discuss the main triggers upon which IDS are based
+
+2- Generative Adversarial Netowrks: Describe their formation, including an explanation
+of how they are structured and function. Discuss the various components of GANs,
+including the loss functions used and the problems that can arise from the choice of these losses.
+Finally, identify the metrics used to evaluate the performance of a GAN and explain how they are employed to assess the effectiveness of the generative model
+
+3- Describe the processing steps of an iris recognition system describing different
+phases in detail and the different methodologies that are employed (e.g. segmentation and normalization). Provide a detailed overview of the rubber sheet model. State pros and cons
+of iris recognition. 
