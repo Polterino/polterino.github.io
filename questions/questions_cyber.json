@@ -152,5 +152,23 @@
         ],
         "correctAnswer": 0,
         "verified": 1
+    },
+    {
+        "question": "Which one of the following is <u>NOT</u> a useful and recommended technique to harden an operating system?",
+        "options": ["Avoid testing security of the system to avoid potential risks",
+                    "Install and setup additional security controls such as IDS, firewall or antivirus",
+                    "Strictly apply the least-privilege principle for users and groups",
+                    "Regularly update and patch the system"],
+        "correctAnswer": 0,
+        "verified": 1
+    },
+    {
+        "question": "In Linux, what is a shadow file?",
+        "options": ["File containing hashed passwords",
+                    "File containing common passwords",
+                    "File containing plain passwords",
+                    "File containing users behaviors (i.e., Intrusion Detection System)"],
+        "correctAnswer": 0,
+        "verified": 1
     }
 ]
