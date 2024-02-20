@@ -32,7 +32,7 @@
                     "Treaty of the European Union, Treaty on the functioning of the European Union, Charter of fundamental rights of the European Union",
                     "Charter of fundamental rights of the European Union, Regulations, Case-law of the European Court of Justice"],
         "correctAnswer": 1,
-        "verified": 0
+        "verified": 1
     },
     {
         "question": "Which of the following answers is correct? The hierarchical system of EU law is structured as such:",
@@ -48,7 +48,7 @@
                     "An independent body gathering the national supervisory authorities of each EU Member State",
                     "An institution provided for by the Treaty on the European Union"],
         "correctAnswer": 1,
-        "verified": 0
+        "verified": 1
 	},
 	{
 		"question": "Which of the following statements is correct",
@@ -57,7 +57,7 @@
 					"Freedom of thought deserves protection only once the individual shares his thoughts with others",
 					"Freedom of thought is considered as a human right in most jurisdictions but hardly protected in itself"],
 		"correctAnswer": 3,
-        "verified": 0
+        "verified": 1
 	},
 	{
 		"question": "The charter of fundamental rights recognizes the right to privacy and the right to data protection to",
@@ -65,7 +65,7 @@
 					"All individuals provided that they are in the EU",
 					"Only to EU companies"],
 		"correctAnswer": 1,
-        "verified": 0
+        "verified": 1
 	},
 	{
 		"question": "Which of the following statements is correct",
@@ -73,6 +73,6 @@
 					"Regulations are directly applicable in all Member States as such, whereas directives need to be implemented by every Member State",
 					"Directives are directly applicable in all Member States as such, whereas regulations need to be implemented by every Member State"],
 		"correctAnswer": 1,
-        "verified": 0
+        "verified": 1
 	}
 ]
