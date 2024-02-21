@@ -8,7 +8,7 @@
 			"Computationally infeasible to find x such that H(x) = h."
 		],
 		"correctAnswer": 2,
-		"verified": 1
+		"verified": 0
 	},
 	{
 		"question": "How can you prevent SQL injection attacks?",

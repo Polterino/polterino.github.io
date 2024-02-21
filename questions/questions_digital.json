@@ -1297,6 +1297,16 @@
                     "Provide a multipart standard with the first part defining a reference architecture for biometric profiles and subsequent parts focusing on particular applications",
                     "Deals with legal and other issues related to biometrics"],
         "correctAnswer": 0,
+        "verified": 1
+    },
+    {
+        "question": "Which of the following <u>involves</u> working with bilevel images (i.e. the one that always use binary images)",
+        "options": [
+            "Face recognition",
+            "Gait recognition",
+            "Iris recognition",
+            "Fingerprint recognition"],
+        "correctAnswer": 0,
         "verified": 0
     }
 ]
