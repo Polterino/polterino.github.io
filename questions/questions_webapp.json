@@ -15,7 +15,7 @@
         "question": "What are the main technologies of Web 1.0?",
         "options": [
             "HTTP, RDF, MIME, URL",
-            "HTTP, HTML, A JAX, URL",
+            "HTTP, HTML, AJAX, URL",
             "HTTP, SPARQL, MIME, URL",
             "HTTP, HTML, MIME, URL",
             "Not assigned"
@@ -28,7 +28,7 @@
         "options": [
             "It is a relationship among rows belonging to three different tables",
             "It is a mechanism to encode information in a more secure way",
-            "It is the way to connect HTTP, A JAX, and REST",
+            "It is the way to connect HTTP, AJAX, and REST",
             "It is a statement of the form subject, predicate, object",
             "Not assigned"
         ],
