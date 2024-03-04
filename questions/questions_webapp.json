@@ -178,5 +178,113 @@
         ],
         "correctAnswer": 3,
         "verified": 1
+    },
+    {
+        "question": "What are the issues of extended ASCII?",
+        "options": [
+            "Compatibility issues among different countries",
+            "Waste of space issues due to many unused characters",
+            "Not assigned",
+            "Compatibility issues with the previous 7 bits version of ASCII",
+            "Compatibility issues with the previous 32 bits version of Unicode"
+        ],
+        "correctAnswer": 0,
+        "verified": 1
+    },
+    {
+        "question": "What is Maven?",
+        "options": [
+            "It is a site and documentation tool",
+            "Not assigned",
+            "It is a tool for managing the build process of Java software projects",
+            "It is a Web server for running Java servlets",
+            "It is a tool for managing the cooperative development of source code"
+        ],
+        "correctAnswer": 2,
+        "verified": 1
+    },
+    {
+        "question": "What does the following element represent? &lt;a src=&quot;http://www.example.com/index.html#bottom&quot;&gt;",
+        "options": [
+            "None of the other answers",
+            "A link to a specific page fragment",
+            "Not assigned",
+            "A link to an element on the same page",
+            "A link to a specific web page"
+        ],
+        "correctAnswer": 0,
+        "verified": 1
+    },
+    {
+        "question": "What is the purpose of the <u>service</u> method in a Java servlet?",
+        "options": [
+            "Not assigned",
+            "It allows the servlet to cleanup resources",
+            "It allows the servlet to send a request",
+            "It allows the servlet to respond to a request",
+            "It allows the servlet to accept a response"
+        ],
+        "correctAnswer": 3,
+        "verified": 1
+    },
+    {
+        "question": "How can you associate an image with its caption with HTML5?",
+        "options": [
+            "Use the &lt;figure&gt;, &lt;img&gt; and &lt;p&gt; elements",
+            "Not assigned",
+            "Use the &lt;figure&gt;, &lt;img&gt; and &lt;figcaption&gt; elements",
+            "You need only the &lt;img&gt; and &lt;figcaption&gt; elements",
+            "You need only the &lt;figure&gt; and &lt;figcaption&gt; elements"
+        ],
+        "correctAnswer": 2,
+        "verified": 1
+    },
+    {
+        "question": "What is AJAX?",
+        "options": [
+            "It is a server-side technology to programmatically issue HTTP requests",
+            "It is a technology to define the structure of a Web page",
+            "It is a client-side technology to programmatically issue HTTP requests",
+            "It is a technology to define the presentation of a Web page",
+            "Not assigned"
+        ],
+        "correctAnswer": 2,
+        "verified": 1
+    },
+    {
+        "question": "Who did invent the memex?",
+        "options": [
+            "Ted Nelson",
+            "Douglas Engelbart",
+            "Tim Berners-Lee",
+            "Vannevar Bush",
+            "Not assigned"
+        ],
+        "correctAnswer": 3,
+        "verified": 1
+    },
+    {
+        "question": "What does the HTTP PUT method do?",
+        "options": [
+            "It request the server to accept the entity enclosed in the request under the resource identified by a URI",
+            "Not assigned",
+            "It retrieves the resource identified by a URI",
+            "Represents a request for information about the resource identified by a URI",
+            "It requests that the resource identified by a URI is updated by the enclosed entity"
+        ],
+        "correctAnswer": 4,
+        "verified": 1
+    },
+    {
+        "question": "What is a browser?",
+        "options": [
+            "A client for sending email to an email server",
+            "A server which provides Web pages",
+            "A software which allows for displaying Web pages",
+            "Not assigned",
+            "Part of the HTTP protocol"
+        ],
+        "correctAnswer": 2,
+        "verified": 1
     }
 ]
