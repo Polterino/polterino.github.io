@@ -1,0 +1,182 @@
+[
+    {
+        "question": "What does the Content-Type HTTP response header do?",
+        "options": [
+            "Not assigned",
+            "It contains information about the software used by the origin server",
+            "It specifies response MIME media types which are acceptable",
+            "It indicates whether the response has been compressed or not",
+            "It specifies the MIME media type of the associated resource"
+        ],
+        "correctAnswer": 4,
+        "verified": 1
+    },
+    {
+        "question": "What are the main technologies of Web 1.0?",
+        "options": [
+            "HTTP, RDF, MIME, URL",
+            "HTTP, HTML, A JAX, URL",
+            "HTTP, SPARQL, MIME, URL",
+            "HTTP, HTML, MIME, URL",
+            "Not assigned"
+        ],
+        "correctAnswer": 3,
+        "verified": 1
+    },
+    {
+        "question": "What is an RDF triple?",
+        "options": [
+            "It is a relationship among rows belonging to three different tables",
+            "It is a mechanism to encode information in a more secure way",
+            "It is the way to connect HTTP, A JAX, and REST",
+            "It is a statement of the form subject, predicate, object",
+            "Not assigned"
+        ],
+        "correctAnswer": 3,
+        "verified": 1
+    },
+    {
+        "question": "What is an Element Node in XML?",
+        "options": [
+            "It represents the additional properties of a Node",
+            "It is a fragment of unstructured information",
+            "It is a logical grouping of the information represented by its descendant",
+            "It is a fragment of textual content ignored in the processing",
+            "Not assigned"
+        ],
+        "correctAnswer": 2,
+        "verified": 1
+    },
+    {
+        "question": "How does HTTP basic authentication work?",
+        "options": [
+            "Username and password are concatenated with a colon and then Base64 encoded in the WWW-Authenticate header",
+            "Username and password are Base64 encoded and then concatenated with a colon in the WWW-Authenticate header",
+            "Username and password are concatenated with a colon and then Base64 encoded in the Authorization header",
+            "Username and password are Base64 encoded and then concatenated with a colon in the Authorization header",
+            "Not assigned"
+        ],
+        "correctAnswer": 2,
+        "verified": 1
+    },
+    {
+        "question": "What is a descriptive markup language?",
+        "options": [
+            "It defines the type or class of the content to indicate its intended use",
+            "It provides the means for extending the vocabulary of the language",
+            "Not assigned",
+            "It refers to entities external to the document",
+            "It contains commands to format and layout the content"
+        ],
+        "correctAnswer": 0,
+        "verified": 1
+    },
+    {
+        "question": "What is the purpose of the application logic layer?",
+        "options": [
+            "To manage the persistent storage of the data",
+            "To define and control the flow of operations in the application",
+            "To manage the interaction with the user",
+            "Not assigned",
+            "To define the format and visualisation of information"
+        ],
+        "correctAnswer": 1,
+        "verified": 1
+    },
+    {
+        "question": "What is a single-tier architecture?",
+        "options": [
+            "A Web server/database server architecture",
+            "A fat client/database server architecture",
+            "Not assigned",
+            "A thin client/Web server architecture",
+            "A dumb terminal/mainframe architecture"
+        ],
+        "correctAnswer": 4,
+        "verified": 1
+    },
+    {
+        "question": "How does the JSP technology work?",
+        "options": [
+            "Not assigned",
+            "A pre-processor translates a JSP into a servlet and then the servlet processes the request",
+            "The JSP page directly returns the response to the client, after processing the request",
+            "The JSP is executed by an interpreter, like PHP, and processes the request",
+            "The JSP page forwards the request to a servlet which processes it"
+        ],
+        "correctAnswer": 1,
+        "verified": 1
+    },
+    {
+        "question": "Which elements are selected by the following CSS selector? <br>p a {<br>...<br>}",
+        "options": [
+            "Any &lt;a&gt; element inside a &lt;p&gt; element",
+            "Any &lt;p&gt; element that has at least one &lt;a&gt; element as direct child",
+            "Only &lt;a&gt; elements that are direct children of a &lt;p&gt; element",
+            "Any &lt;p&gt; element which has an &lt;a&gt; element inside",
+            "Not assigned"
+        ],
+        "correctAnswer": 0,
+        "verified": 1
+    },
+    {
+        "question": "What is a jQuery object?",
+        "options": [
+            "It is an object similar to the DOM object in JavaScript.",
+            "It is a set of zero or more DOM elements.",
+            "Not assigned",
+            "It is a single DOM element in jQuery language.",
+            "It is an object similar to the Window object in JavaScript."
+        ],
+        "correctAnswer": 1,
+        "verified": 1
+    },
+    {
+        "question": "What is the dark Web?",
+        "options": [
+            "It is the Web ensuring anonymity",
+            "It is the Web of static pages",
+            "It is the not indexable Web",
+            "It is the Web originated from databases",
+            "Not assigned"
+        ],
+        "correctAnswer": 0,
+        "verified": 1
+    },
+    {
+        "question": "What is the purpose of the MIME multipart media type?",
+        "options": [
+            "To split a single body into multiple parts for more efficient transmission",
+            "To multiplex multiple requests and responses into a single stream of data",
+            "To describe content where one or more sets of data are combined into a single body",
+            "To describe each single part constituting an URI",
+            "Not assigned"
+        ],
+        "correctAnswer": 2,
+        "verified": 1
+    },
+    {
+        "question": "How can you attach an external CSS to your HTML document?",
+        "options": [
+            "Insert the following element in the &lt;heading&gt; element &lt;link rel=\"stylesheet\" type=\"text/css\" src=\"mystyle.css\"&gt;",
+            "Insert the following element at the beginning of the &lt;body&gt; element &lt;link rel=\"stylesheet\" type=\"text/css\" href=\"mystyle.css\"&gt;",
+            "Insert the following element in the &lt;head&gt; element &lt;link rel=\"stylesheet\" type=\"text/css\" href=\"mystyle.css\"&gt;",
+            "Insert the following element in the &lt;head&gt; element &lt;link rel=\"stylesheet\" type=\"text/css\" src=\"mystyle.css\"&gt;",
+            "Not assigned"
+        ],
+        "correctAnswer": 2,
+        "verified": 1
+    },
+    {
+        "question": "What is the percent encoding?",
+        "options": [
+            "A compression encoding for textual resources",
+            "The UTF-8 encoding of characters",
+            "Not assigned",
+            "An escaping of reserved and not plain ASCII characters in URI, based on % plus hexadecimal representation of octets",
+            "A way to represent binary data in textual HTTP requests"
+        ],
+        "correctAnswer": 3,
+        "verified": 1
+    }
+]
