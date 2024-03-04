@@ -73,11 +73,40 @@ p {
     color: #666666;
     margin-bottom: 20px;
 }
-
+/*
 .buttons-container {
     display: flex;
 	flex-wrap: wrap;
     justify-content: center;
+}
+*/
+
+.buttons-container {
+    display: flex;
+    flex-direction: column; /* Imposta la direzione del layout su colonna */
+    align-items: center; /* Centra gli elementi verticalmente */
+    text-align: center; /* Allinea il testo al centro */
+}
+
+.buttons-container h2 {
+    margin-bottom: 10px; /* Aggiunge un margine inferiore al titolo */
+}
+/*
+.buttons-container .button {
+    margin: 5px; 
+}
+*/
+@media screen and (min-width: 600px) {
+    .buttons-container {
+        flex-direction: row; /* Imposta la direzione del layout su riga */
+        flex-wrap: wrap; /* Permette il wrap dei bottoni quando finisce lo spazio */
+        justify-content: center; /* Centra i bottoni lungo l'asse orizzontale */
+    }
+
+    /* Rimuovi la regola di margin dei bottoni per sovrascrivere quella precedente */
+    .buttons-container .button {
+        margin: 5px; /* Aggiunge uno spazio tra i bottoni */
+    }
 }
 
 .buttons-container a {

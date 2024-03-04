@@ -6,10 +6,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Homepage</title>
     <link rel="stylesheet" href="index_style.css">
-    <style>
-        /* Add this style to left-align the paragraph */
+    <style type="text/css">
         .container p {
             text-align: left;
+        }
+
+        .divider {
+            border-top: 1px solid black;
+            margin-top: 20px; /* Adjust the margin as needed */
+            margin-bottom: 20px; /* Adjust the margin as needed */
         }
     </style>
 </head>
@@ -25,6 +30,14 @@
             questions."
         </p>
 
+        <h2 style="text-align: center;">Second semester</h2> 
+        <div class="buttons-container">
+            <a href="quiz.html?page=webapp" class="button">Web Applications Quiz</a>
+        </div>
+
+        <div class="divider"></div>
+
+        <h2>First semester</h2> 
         <div class="buttons-container">
             <a href="quiz.html?page=cogcomp" class="button">Cognition and computation Quiz</a>
 
@@ -36,6 +49,9 @@
 
             <a href="quiz.html?page=law" class="button">Law and Data Quiz</a>
         </div>
+
+        <div class="divider"></div>
+
         <div class="explanation">
             <h2>Understanding Quiz Results</h2>
             <p>If a question has a green checkmark, it means that the answer the site gives as "correct" is 100%
