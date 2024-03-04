@@ -286,5 +286,281 @@
         ],
         "correctAnswer": 2,
         "verified": 1
+    },
+    {
+        "question": "What is an URI?",
+        "options": [
+            "It is a specific and concrete identification mechanism",
+            "It is a standard to support the encoding of resources",
+            "Not assigned",
+            "It is the format of a resource",
+            "It is a sequence of character which uniquely identifies a resource"
+        ],
+        "correctAnswer": 4,
+        "verified": 1
+    },
+    {
+        "question": "What is the canvas element?",
+        "options": [
+            "Not assigned",
+            "It is a CSS3 media query element for responsive applications",
+            "It is a CSS3 container for floating objects",
+            "It is an HTML5 element which allows for drawing graphics by using JavaScript",
+            "It is an HTML5 element which allows for drawing graphics by using SVG"
+        ],
+        "correctAnswer": 3,
+        "verified": 1
+    },
+    {
+        "question": "What is a Java servlet?",
+        "options": [
+            "It is a client-side technology which loads dynamic Web content",
+            "It is a client-side technology which generates dynamic Web content",
+            "It is a server-side technology which cannot provide static Web content",
+            "Not assigned",
+            "It is a server-side technology which generates dynamic Web content"
+        ],
+        "correctAnswer": 4,
+        "verified": 1
+    },
+    {
+        "question": "What does the HTTP POST method do?",
+        "options": [
+            "It requests that the resource identified by a URI is updated by the enclosed entity",
+            "Represents a request for information about the resource identified by a URI",
+            "It request the server to accept the entity enclosed in the request under the resource identified by a URI",
+            "It retrieves the resource identified by a URI",
+            "Not assigned"
+        ],
+        "correctAnswer": 2,
+        "verified": 1
+    },
+    {
+        "question": "What is a cookie?",
+        "options": [
+            "It contains information about the software used by the origin server",
+            "Not assigned",
+            "It is a way for the client to store state information into the server",
+            "It is a way of implementing a caching mechanism for HTTP",
+            "It is a way for the server to store state information into the client"
+        ],
+        "correctAnswer": 4,
+        "verified": 1
+    },
+    {
+        "question": "What is MIME?",
+        "options": [
+            "A way to authenticating resources on the Web",
+            "A way to encode Unicode characters",
+            "An encoding for escaping reserved and not plain ASCII characters in URI",
+            "An Internet standard to support the encoding of information for email and the Web",
+            "Not assigned"
+        ],
+        "correctAnswer": 3,
+        "verified": 1
+    },
+    {
+        "question": "What is a Text Node in XML?",
+        "options": [
+            "It is a logical grouping of the information represented by its descendant",
+            "It represents the additional properties of an element",
+            "Not assigned",
+            "It is a fragment of textual content ignored in the processing",
+            "It is a fragment of unstructured information"
+        ],
+        "correctAnswer": 4,
+        "verified": 1
+    },
+    {
+        "question": "Which of the following is an HTML5 page layout element?",
+        "options": [
+            "&lt;title&gt;",
+            "&lt;head&gt;",
+            "Not assigned",
+            "&lt;nav&gt;",
+            "&lt;content&gt;"
+        ],
+        "correctAnswer": 3,
+        "verified": 1
+    },
+    {
+        "question": "What is a Web Application Architecture?",
+        "options": [
+            "It is a case of two-tiers architecture",
+            "It is a case of single-tier architecture",
+            "It is a case of three-tiers architecture",
+            "It is a fat client/thin server architecture",
+            "Not assigned"
+        ],
+        "correctAnswer": 2,
+        "verified": 1
+    },
+    {
+        "question": "How do you specify a paragraph box with top padding of 10 px, bottom padding of 20 px, left padding of 1 px, and right padding of 5px?",
+        "options": [
+            "p { padding: 10px 20px 1px 5px; }",
+            "p { padding: 10px 1px 20px 5px; }",
+            "Not assigned",
+            "p { padding: 5px 20px 1px 10px; }",
+            "p { padding: 10px 5px 20px 1px; }"
+        ],
+        "correctAnswer": 4,
+        "verified": 1
+    },
+    {
+        "question": "What is the purpose of the &lt;title&gt; element?",
+        "options": [
+            "It does not display its content since it is only used by search engines",
+            "It displays the title of the page on the url bar",
+            "Not assigned",
+            "It displays the title of the page on the body",
+            "It displays the title of the page on the window tab"
+        ],
+        "correctAnswer": 4,
+        "verified": 1
+    },
+    {
+        "question": "What is the correct jQuery code to set the color of all p elements to red?",
+        "options": [
+            "$(\"p\").attr(\"color\",\"red\");",
+            "$(\"p\").css(\"color\",\"red\");",
+            "$(\"p\").style(\"color\",\"red\");",
+            "$(\"p\").style(\"text-color\",\"red\");",
+            "Not assigned"
+        ],
+        "correctAnswer": 1,
+        "verified": 1
+    },
+    {
+        "question": "What is a Web service?",
+        "options": [
+            "A Web service is an AJAX-based application which allows for the mash-up of different APIs into a rich client interface",
+            "Not assigned",
+            "A Web service is a Web container, like Apache Tomcat, to run Web applications",
+            "A Web service is a software system designed to support interoperable machine-to-machine interaction over a network, exploiting standard Web technologies",
+            "A Web service is a design pattern for Web application, allowing for distributed transaction processing"
+        ],
+        "correctAnswer": 3,
+        "verified": 1
+    },
+    {
+        "question": "What did Vannevar Bush proposed?",
+        "options": [
+            "The Xanadu project",
+            "The term hypertext",
+            "Not assigned",
+            "The Memex",
+            "The first browser"
+        ],
+        "correctAnswer": 3,
+        "verified": 1
+    },
+    {
+        "question": "What is the main feature of the DOM API?",
+        "options": [
+            "It creates an in-memory representation of XML tree",
+            "It provides an unidirectional access (forward only) to the XML tree",
+            "It facilitates the parsing of huge XML files",
+            "Not assigned",
+            "It is a streaming push API"
+        ],
+        "correctAnswer": 0,
+        "verified": 1
+    },
+    {
+        "question": "Which of the following sentences is correct?",
+        "options": [
+            "Only positive values are admissible for the margin property",
+            "Top and bottom margins do not affect inline text elements",
+            "Not assigned",
+            "The value of the margin property is inherited by child elements",
+            "The top and bottom margins of neighboring elements do not collapse"
+        ],
+        "correctAnswer": 1,
+        "verified": 1
+    },
+    {
+        "question": "Which of the following is a mouse event?",
+        "options": [
+            "Not assigned",
+            "mouseonclick",
+            "mousemove",
+            "mousescroll",
+            "rightclick"
+        ],
+        "correctAnswer": 2,
+        "verified": 1
+    },
+    {
+        "question": "What does the Content-Encoding HTTP response header do?",
+        "options": [
+            "It specifies response MIME media types which are acceptable",
+            "It indicates how the response has been compressed",
+            "It specifies the MIME media type of the associated resource",
+            "It contains information about the software used by the origin server",
+            "Not assigned"
+        ],
+        "correctAnswer": 1,
+        "verified": 1
+    },
+    {
+        "question": "What is server push?",
+        "options": [
+            "It is a bidirectional communication modality enabled via Websockets",
+            "It is an HTTP/2 feature used by the clients to proactively ask for contents to the server",
+            "It is an HTTP/2 feature used by the server to proactively send contents to the client",
+            "It is the cause of the HTTP HOL blocking issue",
+            "Not assigned"
+        ],
+        "correctAnswer": 2,
+        "verified": 1
+    },
+    {
+        "question": "What is Git?",
+        "options": [
+            "It is a tool for managing the build process of Java software projects",
+            "Not assigned",
+            "It is a tool for managing the cooperative development of source code",
+            "It is a continuous integration framework",
+            "It is a site and documentation tool"
+        ],
+        "correctAnswer": 2,
+        "verified": 1
+    },
+    {
+        "question": "What is a procedural mark-up language?",
+        "options": [
+            "It defines the type or class of the content, e.g. to indicate its intended use",
+            "It consists of commands indicating how text should be formatted",
+            "It deals with the actual laying out of contents on a page",
+            "Not assigned",
+            "It provides the means for extending the vocabulary of descriptive markup languages"
+        ],
+        "correctAnswer": 1,
+        "verified": 1
+    },
+    {
+        "question": "Which of the following is an HTML block element?",
+        "options": [
+            "&lt;img&gt;",
+            "&lt;a&gt;",
+            "&lt;b&gt;",
+            "Not assigned",
+            "&lt;li&gt;"
+        ],
+        "correctAnswer": 4,
+        "verified": 1
+    },
+    {
+        "question": "What is the purpose of the HTTP DELETE request method in REST?",
+        "options": [
+            "To read a resource",
+            "To delete a resource",
+            "To update a resource",
+            "To create a resource",
+            "Not assigned"
+        ],
+        "correctAnswer": 1,
+        "verified": 1
     }
 ]
