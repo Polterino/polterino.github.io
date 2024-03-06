@@ -562,5 +562,71 @@
         ],
         "correctAnswer": 1,
         "verified": 1
+    },
+    {
+        "question": "What is a recursive relationship in the ER model?",
+        "options": [
+            "It is a relationships where at least one entity participates more than once",
+            "It is a relationship between an entity and itself",
+            "It is a relationships where only one entity participates more than once",
+            "It is a relationship nested with another relationship"
+        ],
+        "correctAnswer": 1,
+        "verified": 0
+    },
+    {
+        "question": "What is HTTP/2 server push?",
+        "options": [
+            "The server can push additional resources to the client without the client having to request for each of them",
+            "The server can store session information in a dedicated storage on the client",
+            "The client can push multiple requests to the server in parallel without waiting for the responses",
+            "The client can store multiple contents in a server-side cache"
+        ],
+        "correctAnswer": 0,
+        "verified": 1
+    },
+    {
+        "question": "The JavaScript ForEach() method:",
+        "options": [
+            "Iterates through an array of objects, providing access to the object properties.",
+            "Iterates through an array, invoking a function you specify for each element.",
+            "Iterates through an object, invoking a function you specify for each property.",
+            "It is a simple iterator on the array elements"
+        ],
+        "correctAnswer": 1,
+        "verified": 1
+    },
+    {
+        "question": "What is a one-to-one relationship in the ER model?",
+        "options": [
+            "A relationship where each instance of an entity is associated with one or more instances of another entity",
+            "A relationship where each instance of an entity is associated with one and only one instance of another entity",
+            "A relationship where one or more instances of an entity are associated with one or more instances of another entity",
+            "A recursive relationship where only one entity takes part"
+        ],
+        "correctAnswer": 1,
+        "verified": 0
+    },
+    {
+        "question": "What is an external identiﬁer in the ER model?",
+        "options": [
+            "It is an identiﬁer constituted only by attributes of other entities in relationship with a given entity",
+            "It is an identiﬁer constituted only by attributes of a single entity",
+            "It is an identiﬁer which is managed outside from the database",
+            "It is an identiﬁer constituted by attributes of a given entity and also those of other entities in relationship with that entity"
+        ],
+        "correctAnswer": 0,
+        "verified": 1
+    },
+    {
+        "question": "Suppose you need to create a foreign key towards the following table <br>CREATE TABLE Example (<br> i INT,<br> j INT,<br> PRIMARY KEY (i, j)<br> );<br> Which statement is correct?",
+        "options": [
+            "CREATE TABLE Example2 (<br> a INT PRIMARY KEY,<br> i INT,<br> j INT,<br> FOREIGN KEY (i, j) REFERENCES Example(i, j)<br> );",
+            "CREATE TABLE Example2 (<br> a INT PRIMARY KEY,<br> i INT REFERENCES Example(i),<br> j INT REFERENCES Example(j)<br> );",
+            "CREATE TABLE Example2 (<br> a INT PRIMARY KEY,<br> i INT,<br> j INT,<br> FOREIGN KEY (i) REFERENCES Example(i),<br> FOREIGN KEY (j) REFERENCES Example(j)<br> );",
+            "CREATE TABLE Example2 (<br> a INT PRIMARY KEY,<br> i, j INT REFERENCES Example(i, j)<br> );"
+        ],
+        "correctAnswer": 0,
+        "verified": 0
     }
 ]
