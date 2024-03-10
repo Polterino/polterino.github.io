@@ -628,5 +628,115 @@
         ],
         "correctAnswer": 0,
         "verified": 0
+    },
+    {
+        "question": "What does IDEMPOTENT HTTP method mean?",
+        "options": [
+            "It is a method which prevents the automatic repetition of the same request",
+            "It is a method whose multiple invocations produce different effects",
+            "It is a method which cannot be cached",
+            "It is a method whose multiple invocations produce the same effect as a single one"
+        ],
+        "correctAnswer": 3,
+        "verified": 1
+    },
+    {
+        "question": "What is the typical implementation of the MVC pattern using Java technologies?",
+        "options": [
+            "JavaBeans are the model, servlets are the View, and JSP are the Controller",
+            "Servlets are the model, JSP are the View, and JavaBeans are the Controller",
+            "JSP are the model, JavaBeans are the View, and servlets are the Controller",
+            "JavaBeans are the model, JSP are the View, and servlets are the Controller"
+        ],
+        "correctAnswer": 3,
+        "verified": 1
+    },
+    {
+        "question": "What is the hypertext design?",
+        "options": [
+            "It specifies the site views to be constructed on top of the data schema to realize the content publishing and manipulation services",
+            "It specifies the appearance of the Web site by means of physical structures, dependent on the DBMS structure",
+            "It is a representation of the mini-world by means of the physical schema and mockups, according to the customer’s requirements",
+            "It is a representation of the mini-world by means of a high-level site view models, integrating all the relevant concepts and independent from the DBMS"
+        ],
+        "correctAnswer": 0,
+        "verified": 1
+    },
+    {
+        "question": "Suppose you have the following table <br>CREATE TABLE Example (<br> taskID INT,<br> description VAR-CHAR(64),<br> supertask INT,<br> PRIMARY KEY (taskID),<br> FOREIGN KEY (supertask) REFERENCES Example(taskID));<br> containing the following<br> dataTaskID Description Supertask<br>10 Task 1011 Task 11 4512 Task 12 3713 Task 13 2929 Task 29 37194 Task 194 29<br> and that you need to determine how many sub-tasks there are for each task. Which statement is correct?",
+        "options": [
+            "SELECT supertask,<br> COUNT(*) AS subtasks FROM Example<br> GROUP BY supertask;",
+            "SELECT taskID,<br> COUNT(*) AS subtasks FROM Example<br> GROUP BY supertask;",
+            "SELECT supertask,<br> COUNT(*) AS subtasks FROM Example<br> WHERE supertask IS NOT NULL<br> GROUP BY supertask;",
+            "SELECT taskID,<br> COUNT(*) AS subtasks FROM Example<br> GROUP BY taskID;"
+        ],
+        "correctAnswer": 2,
+        "verified": 0
+    },
+    {
+        "question": "What is a relationship in the ER model?",
+        "options": [
+            "It is a class of objects of the real world which exist autonomously",
+            "It is a local property of some objects relevant for the application",
+            "It is a container of connections",
+            "It is an association among two or more entities"
+        ],
+        "correctAnswer": 3,
+        "verified": 0
+    },
+    {
+        "question": "What is the effect of position: float?",
+        "options": [
+            "It removes an element from the normal flow and places it in the first available slot",
+            "It moves an element as far as possible to the left or right",
+            "It removes an element from the normal flow and it is used to place elements side by side",
+            "Nothing, the syntax is not correct"
+        ],
+        "correctAnswer": 3,
+        "verified": 1
+    },
+    {
+        "question": "What is the jQuery method which corresponds to the JavaScript load event on the Window object?",
+        "options": [
+            "ready()",
+            "load()",
+            "documentLoad()",
+            "documentReady()"
+        ],
+        "correctAnswer": 0,
+        "verified": 1
+    },
+    {
+        "question": "How are different parts separated in a MIME multipart content?",
+        "options": [
+            "There is a blank line separating each part",
+            "There is an arbitrary sequence of characters, not appearing in any part, used a boundary",
+            "There is a random boundary which is the same for each part and it is prefixed by –",
+            "There is a random boundary which changes for each part and it is prefixed by -"
+        ],
+        "correctAnswer": 1,
+        "verified": 1
+    },
+    {
+        "question": "What data type is most appropriate for representing a telephone number?",
+        "options": [
+            "INT",
+            "VARCHAR(11)",
+            "BIGINT",
+            "CHAR(11)"
+        ],
+        "correctAnswer": 1,
+        "verified": 1
+    },
+    {
+        "question": "What is a foreign key in the relational model?",
+        "options": [
+            "It is a set of one or more attributes of a relation which refer to a primary key of another table in order to link tuples",
+            "It is the primary key of the table when using foreign data wrappers",
+            "It is a single attribute of a relation whose value is unique for each tuple of the relation",
+            "It is a set of one or more attributes of a relation whose values are unique for each tuple of the relation"
+        ],
+        "correctAnswer": 0,
+        "verified": 0
     }
 ]
