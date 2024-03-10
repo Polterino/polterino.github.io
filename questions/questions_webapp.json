@@ -770,7 +770,7 @@
             "It means that you express what you need but not the actual sequence of operations needed to produce it"
         ],
         "correctAnswer": 1,
-        "verified": 1
+        "verified": 0
     },
     {
         "question": "Suppose you need to create a table with a primary key constituted by a pair of columns. Which statement is correct?",
@@ -781,7 +781,7 @@
             "CREATE TABLE Example ( i, j INT PRIMARY KEY );"
         ],
         "correctAnswer": 2,
-        "verified": 1
+        "verified": 0
     },
     {
         "question": "What is an entity in the ER model?",
@@ -792,7 +792,7 @@
             "It is a local property of some objects relevant for the application"
         ],
         "correctAnswer": 1,
-        "verified": 1
+        "verified": 0
     },
     {
         "question": "What is a primary key in the relational model?",
@@ -803,10 +803,10 @@
             "It is a single attribute of a relation whose value is unique for each tuple of the relation"
         ],
         "correctAnswer": 2,
-        "verified": 1
+        "verified": 0
     },
     {
-        "question": "Suppose you have the following table CREATE TABLE Example ( taskID INT, description VAR- CHAR(64), supertask INT, PRIMARY KEY (taskID), FOREIGN KEY (supertask) REFERENCES Ex ample(taskID)); containing the following dataTaskID Description Supertask10 Task 1011 Task 11 4512 Task 12 3713 Task 13 2929 Task 29 37194 Task 194 29 and that you need to determine which are the root tasks. Which statement is correct?",
+        "question": "Suppose you have the following table<br> CREATE TABLE Example (<br> taskID INT,<br> description VAR-CHAR(64),<br> supertask INT,<br> PRIMARY KEY (taskID),<br> FOREIGN KEY (supertask)<br> REFERENCES Example(taskID));<br> containing the following data<br>TaskID Description Supertask<br>10 Task 1011 Task 11 4512 Task 12 3713 Task 13 2929 Task 29 37194 Task 194 29<br> and that you need to determine which are the root tasks. Which statement is correct?",
         "options": [
             "SELECT taskID FROM Example WHERE supertask IS NULL;",
             "SELECT taskID FROM Example WHERE supertask = NULL;",
@@ -814,18 +814,18 @@
             "SELECT taskID FROM Example WHERE supertask <> NULL;"
         ],
         "correctAnswer": 0,
-        "verified": 1
+        "verified": 0
     },
     {
         "question": "What is the WebML Hypertext Model?",
         "options": [
-            "It is a methodology for hypertext design which follows the style of both, Entity- Relationship and UML offering a proprietary notation and a graphical representation",
+            "It is a methodology for hypertext design which follows the style of both, Entity-Relationship and UML offering a proprietary notation and a graphical representation",
             "It is a methodology for hypertext design which is based on a UML profile for the hypermedia domain",
             "It is a methodology for hypertext design which is based on a precise OMT model that characteizes the different notation elements and the relationships between them",
             "It is a methodology for hypertext design which uses the user interaction diagrams (UIDs) to graphically model the interaction between the users and the system"
         ],
         "correctAnswer": 0,
-        "verified": 1
+        "verified": 0
     },
     {
         "question": "Which of the following are popular techniques used for requirements validation?",
@@ -836,7 +836,7 @@
             "Formal description"
         ],
         "correctAnswer": 3,
-        "verified": 1
+        "verified": 0
     },
     {
         "question": "How is an entity represented in the ER model?",
@@ -846,8 +846,8 @@
             "By means of a rectangle with a name inside",
             "By means of a rhombus with a name inside"
         ],
-        "correctAnswer": 2,
-        "verified": 1
+        "correctAnswer": 1,
+        "verified": 0
     },
     {
         "question": "What is a cardinality constraint in the ER model?",
@@ -858,7 +858,7 @@
             "A bound to the number of values which can be associated to an attribute"
         ],
         "correctAnswer": 0,
-        "verified": 1
+        "verified": 0
     },
     {
         "question": "What does SAFE HTTP method mean?",
@@ -868,7 +868,7 @@
             "It is a method with side effects, i.e. read-write",
             "It is a method without side effects, i.e. read-only"
         ],
-        "correctAnswer": 0,
+        "correctAnswer": 3,
         "verified": 1
     }
 ]
