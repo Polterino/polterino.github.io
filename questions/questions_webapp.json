@@ -738,5 +738,137 @@
         ],
         "correctAnswer": 0,
         "verified": 0
+    },
+    {
+        "question": "What data type is most appropriate for representing a ZIP code?",
+        "options": [
+            "CHAR(5)",
+            "SMALLINT",
+            "INT",
+            "VARCHAR(5)"
+        ],
+        "correctAnswer": 3,
+        "verified": 1
+    },
+    {
+        "question": "Which of the following is <u>NOT</u> JavaScript primitive type?",
+        "options": [
+            "Byte",
+            "Boolean",
+            "Null",
+            "String"
+        ],
+        "correctAnswer": 0,
+        "verified": 1
+    },
+    {
+        "question": "What does it mean that SQL is a declarative language?",
+        "options": [
+            "It means that you can declare variables",
+            "It means that you express what you need and the actual sequence of operations needed to produce it",
+            "It means that you can express functional dependencies among instructions",
+            "It means that you express what you need but not the actual sequence of operations needed to produce it"
+        ],
+        "correctAnswer": 1,
+        "verified": 1
+    },
+    {
+        "question": "Suppose you need to create a table with a primary key constituted by a pair of columns. Which statement is correct?",
+        "options": [
+            "CREATE TABLE Example ( i INT, j INT, PRIMARY KEY (i), PRIMARY KEY (j) );",
+            "CREATE TABLE Example ( i INT PRIMARY KEY, j INT PRIMARY KEY );",
+            "CREATE TABLE Example ( i INT, j INT, PRIMARY KEY (i, j) );",
+            "CREATE TABLE Example ( i, j INT PRIMARY KEY );"
+        ],
+        "correctAnswer": 2,
+        "verified": 1
+    },
+    {
+        "question": "What is an entity in the ER model?",
+        "options": [
+            "It is a connection among two or more objects",
+            "It is a class of objects of the real world which exist autonomously",
+            "It is a container of records",
+            "It is a local property of some objects relevant for the application"
+        ],
+        "correctAnswer": 1,
+        "verified": 1
+    },
+    {
+        "question": "What is a primary key in the relational model?",
+        "options": [
+            "It is a set of one or more attributes of a relation used to link rows to rows of another relation",
+            "It is the most important attribute of a relation",
+            "It is a set of one or more attributes of a relation whose values are unique for each tuple of the relation",
+            "It is a single attribute of a relation whose value is unique for each tuple of the relation"
+        ],
+        "correctAnswer": 2,
+        "verified": 1
+    },
+    {
+        "question": "Suppose you have the following table CREATE TABLE Example ( taskID INT, description VAR- CHAR(64), supertask INT, PRIMARY KEY (taskID), FOREIGN KEY (supertask) REFERENCES Ex ample(taskID)); containing the following dataTaskID Description Supertask10 Task 1011 Task 11 4512 Task 12 3713 Task 13 2929 Task 29 37194 Task 194 29 and that you need to determine which are the root tasks. Which statement is correct?",
+        "options": [
+            "SELECT taskID FROM Example WHERE supertask IS NULL;",
+            "SELECT taskID FROM Example WHERE supertask = NULL;",
+            "SELECT taskID FROM Example WHERE supertask IS NOT NULL;",
+            "SELECT taskID FROM Example WHERE supertask <> NULL;"
+        ],
+        "correctAnswer": 0,
+        "verified": 1
+    },
+    {
+        "question": "What is the WebML Hypertext Model?",
+        "options": [
+            "It is a methodology for hypertext design which follows the style of both, Entity- Relationship and UML offering a proprietary notation and a graphical representation",
+            "It is a methodology for hypertext design which is based on a UML profile for the hypermedia domain",
+            "It is a methodology for hypertext design which is based on a precise OMT model that characteizes the different notation elements and the relationships between them",
+            "It is a methodology for hypertext design which uses the user interaction diagrams (UIDs) to graphically model the interaction between the users and the system"
+        ],
+        "correctAnswer": 0,
+        "verified": 1
+    },
+    {
+        "question": "Which of the following are popular techniques used for requirements validation?",
+        "options": [
+            "Prototyping",
+            "Checklist",
+            "Interview",
+            "Formal description"
+        ],
+        "correctAnswer": 3,
+        "verified": 1
+    },
+    {
+        "question": "How is an entity represented in the ER model?",
+        "options": [
+            "By means of a rhombus with a unique name inside",
+            "By means of a rectangle with a unique name inside",
+            "By means of a rectangle with a name inside",
+            "By means of a rhombus with a name inside"
+        ],
+        "correctAnswer": 2,
+        "verified": 1
+    },
+    {
+        "question": "What is a cardinality constraint in the ER model?",
+        "options": [
+            "A bound to the number of instances of a relationship to which each instance of an entity can participate",
+            "A bound to the number of entities which can participate to a relationship",
+            "A bound to the number of instances of an entity which have the same value for an attribute",
+            "A bound to the number of values which can be associated to an attribute"
+        ],
+        "correctAnswer": 0,
+        "verified": 1
+    },
+    {
+        "question": "What does SAFE HTTP method mean?",
+        "options": [
+            "It is a method with side effects, i.e. read-only",
+            "It is a method without side effects, i.e. read-write",
+            "It is a method with side effects, i.e. read-write",
+            "It is a method without side effects, i.e. read-only"
+        ],
+        "correctAnswer": 0,
+        "verified": 1
     }
 ]
