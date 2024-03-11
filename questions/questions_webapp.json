@@ -870,5 +870,148 @@
         ],
         "correctAnswer": 3,
         "verified": 1
+    },
+    {
+        "question": "A RDF predicate can be",
+        "options": [
+            "A function call",
+            "An HTTP request method",
+            "An URI",
+            "A literal"
+        ],
+        "correctAnswer": 2,
+        "verified": 1
+    },
+    {
+        "question": "JavaScript arrays:",
+        "options": [
+            "Can have elements of any type, the type and the array length should be declared.",
+            "Can have elements of any type, but different elements of the same array can not be of different types.",
+            "Can have elements of any type, and different elements of the same array may be of different types.",
+            "Can have elements of any type except of objects, and different elements of the same array may be of different types"
+        ],
+        "correctAnswer": 2,
+        "verified": 1
+    },
+    {
+        "question": "Is it a good practice to use the &lt;h1&gt; element whenever you need a large font?",
+        "options": [
+            "No, since the browser does not display more than one &lt;h1&gt; element on the same page",
+            "Yes, since the resulting page will be responsive, indeed on every device the content of the &lt;h1&gt; element will have a bigger font",
+            "Yes, since we will be sure that each browser will display the content of the &lt;h1&gt; element with a bigger font",
+            "No, since by doing it we violate the semantic meaning associated to the &lt;h1&gt; element"
+        ],
+        "correctAnswer": 3,
+        "verified": 1
+    },
+    {
+        "question": "What is UTF-8?",
+        "options": [
+            "A control character for line printers",
+            "An encoding of binary data over textual data",
+            "A compact encoding of Unicode characters",
+            "A subset of the extend ASCII character set"
+        ],
+        "correctAnswer": 2,
+        "verified": 1
+    },
+    {
+        "question": "Who did invent the Web?",
+        "options": [
+            "Ted Nelson",
+            "Nicola Pellow",
+            "Tim Berners-Lee",
+            "Vannevar Bush"
+        ],
+        "correctAnswer": 2,
+        "verified": 1
+    },
+    {
+        "question": "What data type is most appropriate for portably representing a specific instant in time?",
+        "options": [
+            "TIME WITH TIMEZONE",
+            "TIMESTAMP WITHOUT TIMEZONE",
+            "TIMESTAMP WITH TIMEZONE",
+            "TIME WITHOUT TIMEZONE"
+        ],
+        "correctAnswer": 2,
+        "verified": 0
+    },
+    {
+        "question": "What is a procedural markup language?",
+        "options": [
+            "It contains commands to format and layout the content",
+            "It defines the type or class of the content to indicate its intended use",
+            "It refers to entities external to the document",
+            "It provides the means for extending the vocabulary of the language"
+        ],
+        "correctAnswer": 0,
+        "verified": 1
+    },
+    {
+        "question": "How do you specify the background color and opacity of a paragraph with CSS3?",
+        "options": [
+            "background-color: rgb(0,0,0); opacity: 0.5;",
+            "background-color: rgba(0,0,0,0.5);",
+            "background-color: rgb(0,0,0,0.5);",
+            "background: rgb(0,0,0); opacity: 0.5;"
+        ],
+        "correctAnswer": 0,
+        "verified": 1
+    },
+    {
+        "question": "What is an HTTP/2 message?",
+        "options": [
+            "It is an exchange of binary-encoded frames",
+            "It is a bidirectional flow of byte within a connection which may carry one or messages",
+            "It is a complete sequence of frames which map to a logical request or response",
+            "It is the smallest unit of communication, containing also an header"
+        ],
+        "correctAnswer": 2,
+        "verified": 1
+    },
+    {
+        "question": "When programming with JavaScript you have to:",
+        "options": [
+            "Pay attention to lower and upper case letters since the language is case sensitive.",
+            "Use the semicolon at the end of each statement.",
+            "Declare the type of each variable.",
+            "Perform garbage collection for memory management"
+        ],
+        "correctAnswer": 0,
+        "verified": 1
+    },
+    {
+        "question": "What is an identifier in the ER model?",
+        "options": [
+            "It is only one attribute of an entity whose value is unique for each instance of that entity",
+            "It is a set of one or more attributes of an entity whose values are unique for each instance of that entity",
+            "It is only one attribute of a relationship whose value is unique for each instance of that relationship",
+            "It is a set of one or more attributes of a relationship whose values are unique for each instance of that relationship"
+        ],
+        "correctAnswer": 1,
+        "verified": 1
+    },
+    {
+        "question": "What is one of the goals of distributed applications?",
+        "options": [
+            "To increase the complexity of the application",
+            "To hamper interoperability",
+            "To distribute the computational load of the data, application, and presentation logic on different machines",
+            "To decrease the complexity of the application"
+        ],
+        "correctAnswer": 2,
+        "verified": 1
+    },
+    {
+        "question": "What is a session/transient HTTP cookie?",
+        "options": [
+            "It is limited to encrypted transmissions",
+            "It stores information which lasts also after the end of a session",
+            "It belongs to a domain different from the one shown in the address bar",
+            "It stores information which is deleted at the end of a session"
+        ],
+        "correctAnswer": 3,
+        "verified": 1
     }
 ]
