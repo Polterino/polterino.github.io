@@ -1013,5 +1013,137 @@
         ],
         "correctAnswer": 3,
         "verified": 1
+    },
+    {
+        "question": "How do you group the following selectors: h1, h2, p?",
+        "options": [
+            "h1 h2 p ...",
+            "h1, h2, p ...",
+            "h1: h2: p ...",
+            "h1; h2; p ..."
+        ],
+        "correctAnswer": 1,
+        "verified": 1
+    },
+    {
+        "question": "What is the purpose of the &lt;head&gt; element?",
+        "options": [
+            "It is contained in the body element and specifies general information about the page",
+            "It can contain only the title of the page",
+            "It contains the main heading of the page and the navigation bar",
+            "It contains information about the page, as the title element and the meta elements"
+        ],
+        "correctAnswer": 3,
+        "verified": 1
+    },
+    {
+        "question": "Which of the following is a CSS id selector?",
+        "options": [
+            "#id ...",
+            ".id ...",
+            ":id ...",
+            "id"
+        ],
+        "correctAnswer": 0,
+        "verified": 1
+    },
+    {
+        "question": "Suppose you have the following table <br>CREATE TABLE Example (<br> taskID INT,<br> description VAR-CHAR(64),<br> supertask INT,<br> PRIMARY KEY (taskID),<br> FOREIGN KEY (supertask) REFERENCES Example(taskID));<br> containing the following data<br>TaskID Description Supertask<br>10 Task 1011 Task 11 4512 Task 12 3713 Task 13 2929 Task 2937 Task 37 1045 Task 45 10101 Task 101 37194 Task 194 29 <br>and that you need to determine which tasks have more than one sub-task. Which statement is correct?",
+        "options": [
+            "SELECT supertask,<br> COUNT(*) AS subtasks<br> FROM Example<br> GROUP BY supertask<br> HAVING COUNT(*) > 1;",
+            "SELECT supertask,<br> COUNT(*) AS subtasks<br> FROM Example<br> WHERE COUNT(*) > 1<br> GROUP BY supertask;",
+            "SELECT supertask,<br> COUNT(*) AS subtasks<br> FROM Example<br> WHERE supertask IS NOT NULL AND COUNT(*) > 1 <br>GROUP BY supertask;",
+            "SELECT supertask,<br> COUNT(*) AS subtasks<br> FROM Example<br> WHERE supertask IS NOT NULL<br> GROUP BY supertask <br>HAVING COUNT(*) > 1;"
+        ],
+        "correctAnswer": 0,
+        "verified": 0
+    },
+    {
+        "question": "Suppose you need to check that a laude is given only if the mark is 30. Which statement is correct?",
+        "options": [
+            "CREATE TABLE Example (<br> studentID INT,<br> courseID INT,<br> mark INT CHECK(mark >= 18 AND mark <= 30),<br> laude BOOLEAN,<br> PRIMARY KEY (studentID, courseID),<br> CHECK (mark = 30 OR NOT laude = TRUE) );",
+            "CREATE TABLE Example (<br> studentID INT,<br> courseID INT,<br> mark INT CHECK(mark >= 18 AND mark <= 30),<br> laude BOOLEAN,<br> PRIMARY KEY (studentID, courseID),<br> CHECK (mark = 30 AND laude = TRUE) );",
+            "CREATE TABLE Example (<br> studentID INT,<br> courseID INT,<br> mark INT CHECK(mark >= 18 AND mark <= 30),<br> laude BOOLEAN,<br> PRIMARY KEY (studentID, courseID),<br> CHECK (mark = 30 AND NOT laude = TRUE) );",
+            "CREATE TABLE Example (<br> studentID INT,<br> courseID INT,<br> mark INT CHECK(mark >= 18 AND mark <= 30),<br> laude BOOLEAN,<br> PRIMARY KEY (studentID, courseID),<br> CHECK (mark = 30 OR laude = TRUE) );"
+        ],
+        "correctAnswer": 0,
+        "verified": 0
+    },
+    {
+        "question": "What is the semantic Web?",
+        "options": [
+            "It is a new type of Web applications where users can express themselves using the natural language semantics",
+            "It is the Web of data where resources are connected by means of typed links",
+            "It is the evolution of the Web where contents are more meaningful to human beings",
+            "It is the evolution of the Web where the contents of an HTML page are clearly described"
+        ],
+        "correctAnswer": 1,
+        "verified": 1
+    },
+    {
+        "question": "What is a WebML non-contextual link?",
+        "options": [
+            "It is a link which does not transport information",
+            "It is a link between two different units on the same page",
+            "It is a link which transport information",
+            "It is a link between two different pages"
+        ],
+        "correctAnswer": 1,
+        "verified": 1
+    },
+    {
+        "question": "What is the purpose of the JavaScript confirm() method?",
+        "options": [
+            "It displays a message, waits for the user to click an OK or Cancel button and returns a boolean value.",
+            "It display a message to the user and write the corresponding console log.",
+            "It displays a message, waits for the user to enter a string, and returns that string.",
+            "It displays a message to the user and waits for the user to dismiss the dialog"
+        ],
+        "correctAnswer": 0,
+        "verified": 1
+    },
+    {
+        "question": "What is an HTTP/2 frame?",
+        "options": [
+            "It is a bidirectional flow of byte within a connection which may carry one or messages",
+            "It is the smallest unit of communication, containing also an header",
+            "It is a complete sequence of frames which map to a logical request or response",
+            "It is an exchange of binary-encoded messages"
+        ],
+        "correctAnswer": 1,
+        "verified": 1
+    },
+    {
+        "question": "What is XML?",
+        "options": [
+            "It is an extension of HTML",
+            "It is a markup language for representing and exchanging semi-structured information",
+            "It is an implementation of WebML",
+            "It is an extension of SGML"
+        ],
+        "correctAnswer": 1,
+        "verified": 1
+    },
+    {
+        "question": "JavaScript objects:",
+        "options": [
+            "Are static utility methods.",
+            "Are a collection of values.",
+            "Have only a fixed number of properties defined in advance.",
+            "Are represented as associative arrays"
+        ],
+        "correctAnswer": 3,
+        "verified": 1
+    },
+    {
+        "question": "What are the disadvantages of a three-tiers architecture?",
+        "options": [
+            "Management of the terminals",
+            "Scalability",
+            "Difficulty of implementation",
+            "Possibility to balance the load"
+        ],
+        "correctAnswer": 2,
+        "verified": 1
     }
 ]
