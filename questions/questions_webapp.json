@@ -461,7 +461,7 @@
             "It creates an in-memory representation of XML tree",
             "It provides an unidirectional access (forward only) to the XML tree",
             "It facilitates the parsing of huge XML files",
-            "Not assigned",
+            "It provides a bi-directional access to the XML tree",
             "It is a streaming push API"
         ],
         "correctAnswer": 0,
