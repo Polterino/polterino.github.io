@@ -144,6 +144,18 @@
         "verified": 1
     },
     {
+        "question": "What is the deep Web?",
+        "options": [
+            "It is the Web ensuring anonymity",
+            "It is the Web of static pages",
+            "It is the not indexable Web",
+            "It is the Web originated from databases",
+            "Not assigned"
+        ],
+        "correctAnswer": 2,
+        "verified": 1
+    },
+    {
         "question": "What is the purpose of the MIME multipart media type?",
         "options": [
             "To split a single body into multiple parts for more efficient transmission",
