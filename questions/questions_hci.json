@@ -1,0 +1,156 @@
+[
+    {
+        "question": "Which design principle refers to the attribute of an object that intuitively indicates how it should be used?",
+        "options": [
+            "Constraints",
+            "Affordance",
+            "Visibility",
+            "Feedback"
+        ],
+        "correctAnswer": 1,
+        "verified": 1
+    },
+    {
+        "question": "\"Calm technology that stays in the background and activates unobtrusively when needed\" is the definition of:",
+        "options": [
+            "GUI",
+            "multimodal interface",
+            "command-line interface",
+            "ubiquitous computing"
+        ],
+        "correctAnswer": 3,
+        "verified": 1
+    },
+    {
+        "question": "During the iterative design process:",
+        "options": [
+            "cycles of design-test-measure-redesign are repeated as often as necessary",
+            "the number of design-test-measure-redesign cycles is decided prior",
+            "the number of design-test-measure-redesign cycles is 3",
+            "feedback and consequent refinement are taken into consideration only at the end of the development"
+        ],
+        "correctAnswer": 0,
+        "verified": 1
+    },
+    {
+        "question": "Compared to labels, icons are:",
+        "options": [
+            "less visually attractive and distinctive",
+            "easier to learn and remember",
+            "able to represent only concrete objects",
+            "larger and require more screen space"
+        ],
+        "correctAnswer": 1,
+        "verified": 1
+    },
+    {
+        "question": "______ involves selecting things on which to concentrate, at a point in time, from the range of possibilities available:",
+        "options": [
+            "perception",
+            "memory",
+            "learning",
+            "attention"
+        ],
+        "correctAnswer": 3,
+        "verified": 1
+    },
+    {
+        "question": "Questionnaires are a well-established technique:",
+        "options": [
+            "used for collecting demographic data and users' opinions",
+            "used because the participants' responses can always be controlled",
+            "used always with other methods (e.g., interviews, performance data, psychophysiological co-recording)",
+            "used only in controlled settings (e.g., lab setting)"
+        ],
+        "correctAnswer": 0,
+        "verified": 1
+    },
+    {
+        "question": "One important design implication of the reading-speaking-listening cognitive system is:",
+        "options": [
+            "to don't use accentuated intonation of artificially generated speech voices",
+            "to use short speech-based menus and instructions",
+            "to use fixed text dimensions on screens",
+            "to provide up ot 10 options in a speech-based menu"
+        ],
+        "correctAnswer": 1,
+        "verified": 1
+    },
+    {
+        "question": "Referring to the double diamond model of the design, the \"discover phase\" involves:",
+        "options": [
+            "proposing a solution that works after being evaluated",
+            "implementing working prototypes",
+            "producing the conceptual model for the product",
+            "getting insight into the problem"
+        ],
+        "correctAnswer": 3,
+        "verified": 1
+    },
+    {
+        "question": "Voice and gesture interfaces can be classified as:",
+        "options": [
+            "natural user interfaces",
+            "brain computer interface",
+            "sharable interfaces",
+            "tangible interfaces"
+        ],
+        "correctAnswer": 0,
+        "verified": 0
+    },
+    {
+        "question": "An interface metaphor that has become popular in the last few years, especially in social media apps is:",
+        "options": [
+            "Hyperlinks",
+            "Cards",
+            "Manipulation",
+            "Window, icon, menu, pointer (WIMP)"
+        ],
+        "correctAnswer": 1,
+        "verified": 1
+    },
+    {
+        "question": "The usability goal named \"effectiveness\" refers to:",
+        "options": [
+            "the way the product supports the user in the task",
+            "how good a product is at doing what it is supposed to do",
+            "protecting the user from potential dangers",
+            "the extent to which the product provides the needed functionalities"
+        ],
+        "correctAnswer": 1,
+        "verified": 1
+    },
+    {
+        "question": "Which of the following is NOT an advantage of online questionnaires?",
+        "options": [
+            "data can be collected in the database for subsequent analysis",
+            "errors can be corrected easily",
+            "relatively easy and quick to distribute",
+            "low drop-out of users"
+        ],
+        "correctAnswer": 3,
+        "verified": 1
+    },
+    {
+        "question": "User eXperience:",
+        "options": [
+            "is unrelated to system usability",
+            "is related to cultural identity",
+            "depends on the researchers",
+            "depends on the method employed to assess"
+        ],
+        "correctAnswer": 1,
+        "verified": 1
+    },
+    {
+        "question": "Sentiment analysis:",
+        "options": [
+            "follows a process similar to thematic analysis",
+            "is meant to construct a theory around the phenomenon of interest",
+            "aims to identify the objective truth",
+            "is a technique that is used to infer the effect of what a group of people is feeling"
+        ],
+        "correctAnswer": 3,
+        "verified": 1
+    }
+]
