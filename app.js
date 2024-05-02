@@ -132,33 +132,48 @@ document.addEventListener("DOMContentLoaded", function ()
 			? currentQuestion.correctAnswer 
 			: [currentQuestion.correctAnswer];
 			
-			// check that at least one answer is selected
-			const selectedRadio = document.querySelector(
-				`input[name="answer${i}"]:checked`
-			);
-
 			const feedbackElement = document
 			.getElementById(`question${i}`)
 			.querySelector(".feedback");
 
-			if (selectedRadio)
+			// if there's at least one selected answer for that question
+			if (selectedAnswer)
 			{
-				const correctAnswerIndex = currentQuestion.correctAnswer;
+				//const correctAnswerIndex = currentQuestion.correctAnswer;
 
-				// Converti selectedAnswer in stringa per confronto
-				//const selectedAnswerString = selectedAnswer !== null ? selectedAnswer.toString() : null;
-
-				// if the answer is correct
-				if (parseInt(selectedAnswer) === parseInt(correctAnswerIndex))
+				// single choice question
+				if (correctAnswers.length === 1)
 				{
-					feedbackElement.innerHTML = "Correct!";
-					feedbackElement.classList.add("correct");
-					score += 1;
+					const correctAnswerIndex = correctAnswers[0];
+					// if the answer is correct
+					if (parseInt(selectedAnswer[0]) === parseInt(correctAnswerIndex))
+					{
+						feedbackElement.innerHTML = "Correct!";
+						feedbackElement.classList.add("correct");
+						score += 1;
+					} 
+					else
+					{
+						feedbackElement.innerHTML = `Incorrect. Correct answer: ${currentQuestion.options[correctAnswerIndex]}`;
+						feedbackElement.classList.add("incorrect");
+					}
 				}
+				// multiple choice question
 				else
 				{
-					feedbackElement.innerHTML = `Incorrect. Correct answer: ${currentQuestion.options[correctAnswerIndex]}`;
-					feedbackElement.classList.add("incorrect");
+					const isCorrect = correctAnswers.every(answer => selectedAnswer.includes(answer));
+
+					if (isCorrect)
+					{
+						feedbackElement.innerHTML = "Correct!";
+						feedbackElement.classList.add("correct");
+						score += 1;
+					}
+					else
+					{
+						feedbackElement.innerHTML = `Incorrect. Correct answer(s): ${correctAnswers.map(answer => currentQuestion.options[answer]).join(", ")}`;
+						feedbackElement.classList.add("incorrect");
+					}
 				}
 			}
 			else
@@ -199,9 +214,13 @@ document.addEventListener("DOMContentLoaded", function ()
 	// Function to get the selected answer for a question
 	function getSelectedAnswer(name)
 	{
-		const selectedOption = document.querySelector(
+		const selectedOption = document.querySelectorAll(
 			`input[name="${name}"]:checked`
 		);
-		return selectedOption ? selectedOption.value : null;
+		const selectedValues = [];
+		selectedOption.forEach(option => {
+			selectedValues.push(option.value);
+	    });
+    	return selectedValues.length > 0 ? selectedValues : null;	
 	}
 });
