@@ -21,7 +21,7 @@ document.addEventListener("DOMContentLoaded", function ()
 	.then((data) => {
 		questions = data;
 		console.log("Questions loaded:", questions);
-		totalQuestionsContainer.textContent = `Total Questions found on database: ${questions.length}`;
+		totalQuestionsContainer.innerHTML = `Total questions found on database: <b>${questions.length}</b>`;
 		showQuestions();
 	})
 	.catch((error) => console.error("Error loading questions:", error));
