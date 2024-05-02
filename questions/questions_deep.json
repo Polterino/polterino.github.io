@@ -1,0 +1,32 @@
+[
+	{
+		"question": "Which of the following are advantages of using deep neural networks over shallow ones?",
+		"options": ["The number of neurons required at each layer is exponentially smaller compared to the neurons required for a shallow network",
+					"The number of neurons required at each layer in a deep network may be exponentially smaller compared to the neurons required for a shallow network",
+					"A deep network with N neurons per layer overfit less than a shallow network with a single layer of N neurons",
+					"A deep network tend to overfit less than a wider shallow network (i.e. a shallow network with more neurons)"],
+		"correctAnswer": [1, 3],
+        "verified": 1
+	},
+	{
+		"question": "Let P and Q be two probability distributions, where Q is parametric. Which of the following sentences about the Kullback-Leibler divergence is true?",
+		"options": ["KL divergence is a <b>distance</b> between two probability distributions",
+					"KL divergence is a measure of the dissimilarity between two probability distributions",
+					"KL divergence is the same as Cross Entropy",
+					"Minimising the Cross-Entropy of P w.r.t. Q is equivalent to minimising the KL dvergence between P and Q",
+					"Minimising the Mean Squared Error of P w.r.t. Q is equivalent to minimising the KL dvergence between P and Q"],
+		"correctAnswer": [1, 3],
+        "verified": 1
+	},
+	{
+		"question": "For which label distribution and with which loss is reasonable to adopt the <u>linear</u> activation function for the output layer?",
+		"options": ["Gaussian distribution / Mean squared error",
+					"Gaussian distribution / Cross-Entropy",
+					"Multinoulli distribution / Cross-Entropy",
+					"Multinoulli distribution / Mean squared error",
+					"Bernoulli distribution / Cross-Entropy",
+					"Bernoulli distribution / Mean squared error"],
+		"correctAnswer": 0,
+        "verified": 1
+	}
+]

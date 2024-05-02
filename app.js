@@ -61,27 +61,56 @@ document.addEventListener("DOMContentLoaded", function ()
 		for (let i = 0; i < questionsToDisplay.length; i++)
 		{
 			const currentQuestion = questionsToDisplay[i];
-			const correctAnswerIndex = currentQuestion.correctAnswer;
+			
+			const isMCQ = Array.isArray(currentQuestion.correctAnswer);
+			let optionsHTML;
 
-			// Before shuffling the answers, save the correctAnswerIndex
-			const optionsWithIndices = currentQuestion.options.map(
-				(option, index) => ({
+			// if it's a single choice question
+			if(!isMCQ)
+			{
+				const correctAnswerIndex = currentQuestion.correctAnswer;
+
+				// Before shuffling the answers, save the correctAnswerIndex
+				const optionsWithIndices = currentQuestion.options.map(
+					(option, index) => ({
+						value: option,
+						index: index,
+					})
+				);
+
+				// Shuffle the array of options (answers)
+				const shuffledOptions = shuffleArray(optionsWithIndices);
+
+				// Find the index of the correct answer in the shuffled array
+				//const correctAnswerIndex = currentQuestion.options.indexOf(currentQuestion.options[currentQuestion.correctAnswer]);
+
+				optionsHTML = shuffledOptions.map((option, index) => `
+					<input type="radio" name="answer${i}" value="${option.index}" ${
+					selectCorrectAnswer && option.index === correctAnswerIndex? "checked": ""}>
+					<label>${option.value}</label><br>
+				`).join("");
+			}
+			// multiple choice question
+			else
+			{
+				const correctAnswers = currentQuestion.correctAnswer;
+				const optionsWithIndices = currentQuestion.options.map((option, index) => ({
 					value: option,
 					index: index,
-				})
-			);
+					isCorrect: correctAnswers.includes(index) // Check if the option index is correct
+				}));
 
-			// Shuffle the array of options (answers)
-			const shuffledOptions = shuffleArray(optionsWithIndices);
+				// Shuffle the array of options (answers)
+				const shuffledOptions = shuffleArray(optionsWithIndices);
 
-			// Find the index of the correct answer in the shuffled array
-			//const correctAnswerIndex = currentQuestion.options.indexOf(currentQuestion.options[currentQuestion.correctAnswer]);
-
-			const optionsHTML = shuffledOptions.map((option, index) => `
-				<input type="radio" name="answer${i}" value="${option.index}" ${
-				selectCorrectAnswer && option.index === correctAnswerIndex? "checked": ""}>
-				<label>${option.value}</label><br>
-			`).join("");
+				// Generate HTML for each option
+				optionsHTML = shuffledOptions.map((option) => `
+					<input type="checkbox" name="answer${i}" value="${option.index}" ${
+					selectCorrectAnswer && option.isCorrect ? "checked" : ""
+					}>
+					<label>${option.value}</label><br>
+				`).join("");
+			}
 
 			const imageHTML = currentQuestion.image? 
 			`<img src="${currentQuestion.image}" alt="Question Image" class="question-image">`
@@ -124,7 +153,7 @@ document.addEventListener("DOMContentLoaded", function ()
 		// Loop through all questions
 		for (let i = 0; i < questionsToDisplay.length; i++)
 		{
-			const selectedAnswer = getSelectedAnswer(`answer${i}`);
+			let selectedAnswer = getSelectedAnswer(`answer${i}`);
 			userAnswers.push(selectedAnswer);
 
 			currentQuestion = questionsToDisplay[i];
@@ -161,6 +190,7 @@ document.addEventListener("DOMContentLoaded", function ()
 				// multiple choice question
 				else
 				{
+					selectedAnswer = selectedAnswer.map(element => parseInt(element));
 					const isCorrect = correctAnswers.every(answer => selectedAnswer.includes(answer));
 
 					if (isCorrect)
