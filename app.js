@@ -190,8 +190,10 @@ document.addEventListener("DOMContentLoaded", function ()
 				// multiple choice question
 				else
 				{
-					selectedAnswer = selectedAnswer.map(element => parseInt(element));
-					const isCorrect = correctAnswers.every(answer => selectedAnswer.includes(answer));
+					selectedAnswer = selectedAnswer.map(element => parseInt(element)); // change all the elements from string to int
+					const allCorrectSelected = correctAnswers.every(answer => selectedAnswer.includes(answer));
+					const noIncorrectSelected = selectedAnswer.every(answer => correctAnswers.includes(answer));
+					const isCorrect = allCorrectSelected && noIncorrectSelected;
 
 					if (isCorrect)
 					{
