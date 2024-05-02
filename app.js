@@ -128,7 +128,10 @@ document.addEventListener("DOMContentLoaded", function ()
 			userAnswers.push(selectedAnswer);
 
 			currentQuestion = questionsToDisplay[i];
-
+			const correctAnswers = Array.isArray(currentQuestion.correctAnswer) 
+			? currentQuestion.correctAnswer 
+			: [currentQuestion.correctAnswer];
+			
 			// check that at least one answer is selected
 			const selectedRadio = document.querySelector(
 				`input[name="answer${i}"]:checked`
