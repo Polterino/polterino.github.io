@@ -168,13 +168,12 @@ input[type="checkbox"] {
     width: 20px;
     height: 20px;
     border: 2px solid #3498db;
-    border-radius: 50%;
+    border-radius: 4px; /* Rendi i bordi più squadrati */
     outline: none;
     cursor: pointer;
     transition: border-color 0.3s ease-in-out;
 }
 
-/* Stile quando il bottone radio è selezionato */
 input[type="checkbox"]:checked {
     border-color: #000000;
     background-color: #464646;
