@@ -152,5 +152,137 @@
         ],
         "correctAnswer": 3,
         "verified": 1
+    },
+    {
+        "question": "During _________, eyes stop scanning the scene and hold the foveal area of our field of vision in one place",
+        "options": [
+            "Saccades",
+            "Tremors",
+            "Smooth pursuit",
+            "Fixations"
+        ],
+        "correctAnswer": 3,
+        "verified": 1
+    },
+    {
+        "question": "Technology that overlays digitally created content onto the real world, typically through the use of devices such as smartphones, tablets, or specialized glasses, is called:",
+        "options": [
+            "Virtual Reality (VR)",
+            "Augmented Reality (AR)",
+            "VR CAVE",
+            "IoT"
+        ],
+        "correctAnswer": 1,
+        "verified": 1
+    },
+    {
+        "question": "Referred to the type of setting chosen for an evaluation study, natural settings involving users:",
+        "options": [
+            "Show how people use technology in a natural context but are time-consuming and more difficult to conduct.",
+            "Reveal usability problems but poorly capture the context of use.",
+            "Are time-saving and easy to conduct but make it difficult to capture usability problems.",
+            "Are time-saving and easy to conduct but can miss subtle aspects of the user experience."
+        ],
+        "correctAnswer": 0,
+        "verified": 1
+    },
+    {
+        "question": "Examples of robot design patterns include:",
+        "options": [
+            "Motion pattern, Transform pattern, Initial introduction pattern",
+            "Affordance pattern, Initial introduction pattern, Anthropomorphization pattern",
+            "Didactic communication pattern, Motion pattern, Initial introduction pattern",
+            "Didactic communication pattern, Appearance pattern, Affordance pattern"
+        ],
+        "correctAnswer": 2,
+        "verified": 1
+    },
+    {
+        "question": "Pupil dilatation variation can be caused by:",
+        "options": [
+            "Saccades velocity, Light, Cognitive load",
+            "Light, Saccades frequency, Emotional stimuli",
+            "Cognitive load, Emotional stimuli, Light",
+            "Overt attention, Light, Cognitive load"
+        ],
+        "correctAnswer": 2,
+        "verified": 1
+    },
+    {
+        "question": "In the video analysis methodology, ____________ is a list of events of interest within the video",
+        "options": [
+            "Modifier",
+            "State Event",
+            "Breakdown",
+            "Coding scheme"
+        ],
+        "correctAnswer": 3,
+        "verified": 1
+    },
+    {
+        "question": "__________ is the degree to which the VR environment surrounds and captivates the user's senses, creating a convincing illusion of reality",
+        "options": [
+            "Immersion",
+            "Social Interaction",
+            "Spatial Awareness",
+            "Emotional Engagement"
+        ],
+        "correctAnswer": 0,
+        "verified": 1
+    },
+    {
+        "question": "The eye tracking metric \"Time for first fixation (TFF)\" is:",
+        "options": [
+            "The amount of time that it takes a respondent to look at a specific stimulus",
+            "The state in which the gaze remains stationary at a point from 100 to 500 ms",
+            "The number of fixations per second",
+            "A graphical combination of Fixations and Saccades"
+        ],
+        "correctAnswer": 0,
+        "verified": 1
+    },
+    {
+        "question": "When all participants perform all the experimental conditions, the experimental design is a:",
+        "options": [
+            "Within-subject design",
+            "Between-subject design",
+            "One-tailed design",
+            "Two-tailed design"
+        ],
+        "correctAnswer": 0,
+        "verified": 1
+    },
+    {
+        "question": "In Human-Robot Interaction, the design process that emphasizes the characteristics of the users and the context of use is called:",
+        "options": [
+            "Industrial robot design",
+            "Exploration robot design",
+            "Inside-out approach",
+            "Outside-in approach"
+        ],
+        "correctAnswer": 3,
+        "verified": 1
+    },
+    {
+        "question": "In a top-down video analysis:",
+        "options": [
+            "Events of interest are determined during the analysis",
+            "Analyzed videos are less than 10 minutes long",
+            "Events of interest are determined a priori",
+            "Analyzed videos are longer than 10 minutes"
+        ],
+        "correctAnswer": 2,
+        "verified": 1
+    },
+    {
+        "question": "Dependent variables are:",
+        "options": [
+            "What the researcher manipulates",
+            "Variables that show a positive correlation between them",
+            "What the researcher measures",
+            "Variables that show a negative correlation between them"
+        ],
+        "correctAnswer": 2,
+        "verified": 1
     }
 ]
