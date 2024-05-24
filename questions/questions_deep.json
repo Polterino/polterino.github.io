@@ -28,5 +28,162 @@
 					"Bernoulli distribution / Mean squared error"],
 		"correctAnswer": 0,
         "verified": 1
+	},
+	{
+		"question": "For which label distribution and with which loss is reasonable to adopt the <u>softmax</u> activation function for the output layer?",
+		"options": ["Gaussian distribution / Mean squared error",
+					"Gaussian distribution / Cross-Entropy",
+					"Multinoulli distribution / Cross-Entropy",
+					"Multinoulli distribution / Mean squared error",
+					"Bernoulli distribution / Cross-Entropy",
+					"Bernoulli distribution / Mean squared error"],
+		"correctAnswer": 2,
+        "verified": 1
+	},
+	{
+		"question": "Let D and Q be two probability distributions, where Q is parameteric. Which one of the following sentences about the Kullback-Leibler divergence is true?",
+		"options": [
+			"KL divergence is a <b>distance</b> between two probability distributions",
+			"Minimising the Mean Squared Error between P and Q is equivalent to minimising the KL divergence between P and Q",
+			"KL divergence is the same as Cross Entropy between P and Q",
+			"Minimizing the Cross-Entropy between P and Q is equivalent to minimising the KL divergence",
+			"none of the above"
+		],
+		"correctAnswer": 3,
+		"verified": 1
+	},
+	{
+		"question": "Consider a CNN layer with 10 filters of size 4x4, a stride of 2 and input images of size 6x6 on a single channel (i.e. black and white). How many multiplications (between two numbers) are performed to compute the output (feature map) of such a layer? (do not consider bias terms or activation functions)",
+		"options": [
+			"640",
+			"545",
+			"610",
+			"590",
+			"663"
+		],
+		"correctAnswer": 0,
+		"verified": 1
+	},
+	{
+		"question": "Consider an <u>unshared</u> CNN layer (i.e. a convolution layer where the weights are not shared across different positions) with just 1 filter of size 3x3, a stride of 1, input images of size 4x4 and no padding. How many parameters are we required to train for such a layer? (do not consider bias terms or activation functions)",
+		"options": [
+			"36",
+			"120",
+			"510",
+			"22",
+			"356"
+		],
+		"correctAnswer": 0,
+		"verified": 1
+	},
+	{
+		"question": "Multi-task learning can improve the predictive performance over single-task learning (select the correct answer)",
+		"options": [
+			"because there are more training data to train on",
+			"because the network is more complex and thus more expressive",
+			"only if the considered tasks are somehow related",
+			"only if there are many tasks to use (usually at least 3)",
+			"None of the above"
+		],
+		"correctAnswer": 2,
+		"verified": 1
+	},
+	{
+		"question": "Which one of the following sentences about Second-order optimisation methods is <u>WRONG</u>?",
+		"options": [
+			"They consider the Hessian of the function to optimise",
+			"They are computationally slower than first-order methods",
+			"If used instead of first-order gradient descent, the optimisation will converge faster in terms of number of steps needed",
+			"They are not widely used in optimising neural networks because they converge to a worse solution compared to first-order methods",
+			"None of the others (i.e. you think that all other sentences are correct, this is not a logic test!)"
+		],
+		"correctAnswer": 3,
+		"verified": 1
+	},
+	{
+		"question": "Consider a time series prediction task where, given a time sequence in input up to time t, the output should predict the value of the input at time t+1. Which architecture cannot be used to perform the task?",
+		"options": [
+			"A feed-forward network",
+			"A recurrent network with short-cut connections from the hidden state at time t to the output at time t+1",
+			"A recurrent network with feedback connection from output at time t to input at time t+1",
+			"A bidirectional recurrent network",
+			"A recurrent network with short-cut connections from the input to the output"
+		],
+		"correctAnswer": 3,
+		"verified": 1
+	},
+	{
+		"question": "Given stochastic variables x1, x2, x3, x4, and the following Markov Network with factors ϕi: The joint probability distribution P(x1, x2, x3, x4) can be factorized as:",
+		"options": [
+			"a",
+			"b",
+			"c",
+			"d",
+			"e"
+		],
+		"correctAnswer": 3,
+		"verified": 1,
+		"image": "img/deep_joint_distribution.png"
+	},
+	{
+		"question": "Suppose to have a IO-isomorphic prediction task and a RNN with the following Recurrent Network: where y is the target, L the loss function, o the RNN output, h the hidden state, x the input at time t, and the black square represents the time-shift operator q^-1. U, W, Vx and Vh are weights matrices. Suppose to use back-propagation through time with mini-batch equal to 2 for training. Given input sequences composed of 2 and 4 items, respectively, how many terms should be summed up to compute the gradient of the loss with respect to U?",
+		"options": [
+			"13",
+			"15",
+			"8",
+			"10",
+			"20"
+		],
+		"correctAnswer": 0,
+		"verified": 1,
+		"image": "img/deep_rnn_1.png"
+	},
+	{
+		"question": "Suppose to have a IO-isomorphic prediction task and a RNN with the following Recurrent Network: where y is the target, L the loss function, o the RNN output, h the hidden state, x the input at time t, and the black square represents the time-shift operator q^-1. U, W, Vx and Vh are weights matrices. Suppose to use back-propagation through time with mini-batch equal to 3 for training. Given input sequences composed of 3 items, how many terms should be summed up to compute the gradient of the loss with respect to U?",
+		"options": [
+			"13",
+			"18",
+			"8",
+			"10",
+			"20"
+		],
+		"correctAnswer": 1,
+		"verified": 1,
+		"image": "img/deep_rnn_1.png"
+	},
+	{
+		"question": "Which of the following statements about the Universal Approximation theorem for neural networks is true?",
+		"options": [
+			"A neural network with at least two hidden layers and a squashing activation function can approximate any continuous function",
+			"A neural network with at least one hidden layer and a squashing activation function can approximate arbitrarily well any continuous function with any number of hidden neurons",
+			"A neural network with one hidden layer and a squashing activation function can approximate arbitrarily well any continuous function given enough hidden neurons",
+			"The minimum number of hidden neurons required for a neural network with one hidden layer and a squashing activation function to approximate up to a given extent a continuous function is linear in the input dimension",
+			"The number of hidden neurons required for a neural network with many hidden layers and a squashing activation function to approximate up to a given extent a continuous function is linear in the depth of the network"
+		],
+		"correctAnswer": 2,
+		"verified": 1
+	},
+	{
+		"question": "A leaky integrator with a ReLU activation function and a = 0.5 can be implemented by a GRU with:",
+		"options": [
+			"Activation function = ReLU, z = 0.5, r = 1, input and recurrent weights multiplied by 2",
+			"Activation function = tanh, z = 0.5, r = 1",
+			"Activation function = ReLU, z = 0.5, r = 0, input and recurrent weights multiplied by 0.5",
+			"Activation function = ReLU, z = 0.5, r = 1, input and recurrent weights multiplied by 0.5",
+			"A GRU cannot implement the described leaky integrator"
+		],
+		"correctAnswer": 0,
+		"verified": 1
+	},
+	{
+		"question": "Given stochastic variables X1, X2, X3, X4 and the fact that: <ul><li>X2 is conditionally independent from X3 given X4</li><li>X1 is conditionally independent from X4 given X2</li></ul> the joint probability distribution P(X1, X2, X3, X4) can be factorized as:",
+		"options": [
+			"P(X2) P(X4|X2) P(X1|X2) P(X3|X1, X2, X4)",
+			"P(X1) P(X2) P(X3) P(X4|X3, X2)",
+			"P(X3) P(X2|X1) P(X3|X1) P(X4|X2)",
+			"P(X1) P(X2|X1) P(X3|X2) P(X4|X3)"
+		],
+		"correctAnswer": 0,
+		"verified": 1
 	}
 ]
