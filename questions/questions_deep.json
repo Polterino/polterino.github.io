@@ -41,6 +41,17 @@
         "verified": 1
 	},
 	{
+		"question": "For which label distribution and with which loss is reasonable to adopt the <u>sigmoid</u> activation function for the output layer?",
+		"options": ["Gaussian distribution / Mean squared error",
+					"Gaussian distribution / Cross-Entropy",
+					"Multinoulli distribution / Cross-Entropy",
+					"Multinoulli distribution / Mean squared error",
+					"Bernoulli distribution / Cross-Entropy",
+					"Bernoulli distribution / Mean squared error"],
+		"correctAnswer": 4,
+        "verified": 1
+	},
+	{
 		"question": "Let D and Q be two probability distributions, where Q is parameteric. Which one of the following sentences about the Kullback-Leibler divergence is true?",
 		"options": [
 			"KL divergence is a <b>distance</b> between two probability distributions",
