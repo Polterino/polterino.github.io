@@ -774,6 +774,17 @@
         "verified": 1
     },
     {
+        "question": "Which of the following are JavaScript primitive type?",
+        "options": [
+            "Byte",
+            "Boolean",
+            "Null",
+            "String"
+        ],
+        "correctAnswer": [1, 2, 3],
+        "verified": 1
+    },
+    {
         "question": "What does it mean that SQL is a declarative language?",
         "options": [
             "It means that you can declare variables",
