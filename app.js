@@ -15,6 +15,11 @@ document.addEventListener("DOMContentLoaded", function ()
 	const currentPage = urlParams.get("page");
 	const questionsPath = `questions/questions_${currentPage}.json`;
 
+	// check if user wants a quiz with all the questions from the file
+	const isAllQuestion = urlParams.get("allQuestion");
+	// check if user don't want to shuffle them
+	const noShuffle = urlParams.get("noShuffle");
+
 	// Fetch questions from the JSON file
 	fetch(questionsPath)
 	.then((response) => response.json())
@@ -51,8 +56,14 @@ document.addEventListener("DOMContentLoaded", function ()
 
 		// shuffling questions and taking numDom of them
 		shuffledArray = questions.concat();
-		shuffledArray = shuffleArray(shuffledArray);
-		randomQuestions = shuffledArray.slice(0, numDom);
+	
+		if(noShuffle !== "true")
+			shuffledArray = shuffleArray(shuffledArray);
+
+		if(isAllQuestion === "true")
+			randomQuestions = shuffledArray;
+		else
+			randomQuestions = shuffledArray.slice(0, numDom);
 		// if questionToShow is not null ==> questionsToDisplay = questionsToShow
 		// otherwise questionsToDisplay = randomQuestions (almost always the case, except when showAllQuestions is called)
 		questionsToDisplay = questionsToShow || randomQuestions;
