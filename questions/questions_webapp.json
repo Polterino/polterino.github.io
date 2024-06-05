@@ -672,7 +672,7 @@
             "It is a representation of the mini-world by means of a high-level site view models, integrating all the relevant concepts and independent from the DBMS"
         ],
         "correctAnswer": 0,
-        "verified": 1
+        "verified": 0
     },
     {
         "question": "Suppose you have the following table <br>CREATE TABLE Example (<br> taskID INT,<br> description VAR-CHAR(64),<br> supertask INT,<br> PRIMARY KEY (taskID),<br> FOREIGN KEY (supertask) REFERENCES Example(taskID));<br> containing the following<br> dataTaskID Description Supertask<br>10 Task 1011 Task 11 4512 Task 12 3713 Task 13 2929 Task 29 37194 Task 194 29<br> and that you need to determine how many sub-tasks there are for each task. Which statement is correct?",
