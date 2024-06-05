@@ -1067,8 +1067,8 @@
             "SELECT supertask,<br> COUNT(*) AS subtasks<br> FROM Example<br> WHERE supertask IS NOT NULL AND COUNT(*) > 1 <br>GROUP BY supertask;",
             "SELECT supertask,<br> COUNT(*) AS subtasks<br> FROM Example<br> WHERE supertask IS NOT NULL<br> GROUP BY supertask <br>HAVING COUNT(*) > 1;"
         ],
-        "correctAnswer": 0,
-        "verified": 0
+        "correctAnswer": 3,
+        "verified": 1
     },
     {
         "question": "Suppose you need to check that a laude is given only if the mark is 30. Which statement is correct?",
