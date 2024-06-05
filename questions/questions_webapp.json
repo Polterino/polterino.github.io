@@ -781,7 +781,7 @@
             "It means that you can express functional dependencies among instructions",
             "It means that you express what you need but not the actual sequence of operations needed to produce it"
         ],
-        "correctAnswer": 1,
+        "correctAnswer": 3,
         "verified": 0
     },
     {
