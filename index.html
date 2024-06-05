@@ -30,6 +30,11 @@
             questions."
         </p>
 
+        <div>
+            <label><input type="checkbox" id="allQuestion" value="true"> Show all question</label>
+            <label><input type="checkbox" id="noShuffle" value="true"> Questions not shuffled</label>
+        </div>
+
         <div class="divider"></div>
 
         <h2 style="text-align: center;">Second semester</h2> 
@@ -67,6 +72,28 @@
             <a href="https://github.com/Polterino/polterino.github.io/tree/main/files" target="_blank" class="button">Uploaded files</a>
         </div>
     </div>
+    <script>
+        document.querySelectorAll('.buttons-container .button').forEach(button => {
+            button.addEventListener('click', function(event) 
+            {
+                event.preventDefault(); // Prevent default link behavior
+
+                // Get current URL
+                let url = new URL(this.href);
+
+                // Add parameters based on checkbox values
+                if (document.getElementById('allQuestion').checked) {
+                    url.searchParams.append('allQuestion', document.getElementById('allQuestion').value);
+                }
+                if (document.getElementById('noShuffle').checked) {
+                    url.searchParams.append('noShuffle', document.getElementById('noShuffle').value);
+                }
+
+                // Redirect to the new URL
+                window.location.href = url.toString();
+            });
+        });
+    </script>
 </body>
 
 </html>
