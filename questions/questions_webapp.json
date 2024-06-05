@@ -979,7 +979,7 @@
             "background-color: rgb(0,0,0,0.5);",
             "background: rgb(0,0,0); opacity: 0.5;"
         ],
-        "correctAnswer": 0,
+        "correctAnswer": [0, 1],
         "verified": 1
     },
     {
