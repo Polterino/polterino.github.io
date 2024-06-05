@@ -683,7 +683,7 @@
             "SELECT taskID,<br> COUNT(*) AS subtasks FROM Example<br> GROUP BY taskID;"
         ],
         "correctAnswer": 2,
-        "verified": 0
+        "verified": 1
     },
     {
         "question": "What is a relationship in the ER model?",
