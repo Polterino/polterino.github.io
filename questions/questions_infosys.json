@@ -1,0 +1,336 @@
+[
+    {
+	"question": "Given two vertices in a graph s and t, which of the two traversals (BFS and DFS) can be used to find if there is path from s to t?",
+	"options": ["Only DFS", 
+			"neither BFS nor DFS",
+			"Both BFS and DFS",
+			"Only BFS"],
+	"correctAnswer": 2,
+	"verified": 1
+    },
+	{
+	"question": "If a DFS of a directed graph contains a back edge, any other DFS of the same graph will also contain at least one back edge.",
+	"options": ["Vero",
+			"Falso"],
+	"correctAnswer": 0,
+	"verified": 1
+    },
+{
+	"question": "Consider a binary search tree. For a node u, let: key(u) be its key; left(u) be its left child; and right(u) be its right child. Which of the following properties is true?",
+	"options": ["key(left(u)) <= key(u) <= key(right(u))", 
+			"key(right(u)) <= key(u) <= key(left(u))",
+			"key(u) >= max{key(left(u)), key(right(u))}",
+			"key(u) <= min{key(left(u)), key(right(u))}"],
+	"correctAnswer": 0,
+	"verified": 1
+    },
+{
+	"question": "What approach is being followed in Floyd Warshall Algorithm?",
+	"options": ["Divide and Conquer", 
+			"Dynamic Programming",
+			"None of above",
+			"Greedy"],
+	"correctAnswer": 1,
+	"verified": 1
+    },
+{
+	"question": "A vector implementation of binary min-heap can be employed to perform efficiently",
+	"options": ["Search and deletion of an arbitrary key", 
+			"None of the present choice",
+			"Search and deletion of a random key",
+			"Search and deletion of the minimum key"],
+	"correctAnswer": 3,
+	"verified": 1
+    },
+{
+	"question": "Let T be a binary tree where every internal node has exactly 2 children. Let n_i be the number of internal nodes and n_e the number of external nodes. Which of the following relations is true?",
+	"options": ["n_e = n_i/2", 
+			"n_e = n_i + 1",
+			"n_i = n_e + 1",
+			"n_i = n_e"],
+	"correctAnswer": 1,
+	"verified": 1
+    },
+
+{
+	"question": "Which of the following algorithms inverts the contents of queue A, using only stack B as auxiliary memory, initially empty?",
+	"options": ["while (!A.isEmpty()) { B.push(A.dequeue()); A.dequeue(); } <br> &emsp; while(!B.isEmpty()) { A.enqueue(B.pop()); B.pop(); }", 
+			"while (!A.isEmpty()) B.push(A.dequeue()); <br> &emsp; while(!B.isEmpty()) A.enqueue(B.pop());",
+			"while (!A.isEmpty()) { B.push(A.front()); A.enqueue(B.top()); }",
+			"You can't invert the queue without using two auxiliary stacks"],
+	"correctAnswer": 1,
+	"verified": 1
+    },
+{
+	"question": "To compare in alphabetic order two alphabetic strings with m and n characters, respectively (m >= n), how many couples of characters must be compared in the best case",
+	"options": ["1", 
+			"n",
+			"n+m",
+			"m"],
+	"correctAnswer": 0,
+	"verified": 1
+    },
+{
+	"question": "Which of the following is the most commonly used data structure for implementing Dijstrak's Algorithm?",
+	"options": ["Max-priority queue",
+			"Stack",
+			"Min-priority queue",
+			"Doubly linked list"],
+	"correctAnswer": 2,
+	"verified": 1
+    },
+{
+	"question": "In a heap data structure, what is the location of a parent node for any arbitary node i?",
+	"options": ["floor(i/2) position",
+			"(i/2) position",
+			"(i+1) position",
+			"ceil(i/2) position"],
+	"correctAnswer": 0,
+	"verified": 1
+    },
+{
+	"question": "Consider you want to get a longest common subsequence of two char sequences x[1 ... m] and y[1 ... n]. The algorithm that checks every subsequence of x to see if it is also a sequence of y, in a worst-case scenario, requires:",
+	"options": ["Exponential running time",
+			"Logarithmic running time",
+			"Quadratic running time",
+			"Cubic running time",
+			"Linear running time"],
+	"correctAnswer": 0,
+	"verified": 1
+    },
+{
+	"question": "Which sorting algorithm will take least time when all elements of input array are identical? Consider typical implementations of sorting algorithms.",
+	"options": ["insertion sort",
+			"heap sort",
+			"selection sort",
+			"merge sort"],
+	"correctAnswer": 0,
+	"verified": 1
+    },
+{
+	"question": "Consider a hash table of size seven, with starting index zero, and a hash function (3x + 4)mod7. Assuming the hash table is initially empty, which of the following is the contents of the table when the sequence 1, 3, 8, 10 is inserted into the table using linear probing? Note that '_' denotes an empty location in the table.",
+	"options": ["1,_,_,_,_,_,3",
+			"1,8,10,_,_,_,3",
+			"8,_,_,_,_,_,10",
+			"1,10,8,_,_,_,3"],
+	"correctAnswer": 1,
+	"verified": 1
+    },
+{
+	"question": "Consider a situation where swap operation is very costly. Which of the following sorting algorithms should be preferred so that the number of swap operations are minimized in general?",
+	"options": ["Mergesort",
+			"Heapsort",
+			"Selection sort",
+			"Insertion sort"],
+	"correctAnswer": 2,
+	"verified": 1
+    },
+{
+	"question": "We can solve any recurrence by using Master's theorem",
+	"options": ["True",
+			"False"],
+	"correctAnswer": 1,
+	"verified": 1
+    },
+{
+	"question": "Which of the given options provides the increasing order of asymptotic complexity of functions f1, f2, f3 and f4? <br>f1(n) = 2^n <br> f2(n) = n^(3/2) <br> f3(n) = n*log(n) <br> f4(n) = n^(log(n))",
+	"options": ["f2, f3, f4, f1",
+			"f3, f2, f1, f4",
+			"f3, f2, f4, f1",
+			"f2, f3, f1, f4"],
+	"correctAnswer": 2,
+	"verified": 1
+    },
+{
+	"question": "A binary search tree T contains n distinct elements. What is the time complexity of picking an element in T that is smaller than the maximum element in T?",
+	"options": ["O(n)",
+			"O(log n)",
+			"O(n log n)",
+			"O(1)"],
+	"correctAnswer": 3,
+	"verified": 1
+    },
+{
+	"question": "A hash function h defined h(key)=key mod 7, with linear probing, is used to insert the keys 44, 45, 79, 55, 91, 18, 63 into a table indexed from 0 to 6. What wiil be the location of key 18?",
+	"options": ["4",
+			"5",
+			"6",
+			"3"],
+	"correctAnswer": 3,
+	"verified": 1
+	},
+{
+	"question": "The preorder traversal sequence of a binary search tree is 30, 20, 10, 15, 25, 23, 39, 35, 42. Which one of the following is the postorder traversal sequence of the same tree?",
+	"options": ["10, 20, 15, 23, 25, 32, 42, 39, 30",
+			"15, 10, 23, 25, 20, 35, 42, 39, 30",
+			"15, 10, 25, 23, 20, 42, 35, 39, 30",
+			"15, 20, 10, 23, 25, 42, 35, 39, 30"],
+	"correctAnswer": 1,
+	"verified": 1
+	},
+{
+	"question": "What will be the best case time complexity of merge sort",
+	"options": ["O(1)",
+			"O(n^2)",
+			"O(n)",
+			"O(n log n)"],
+	"correctAnswer": 3,
+	"verified": 1
+	},
+{
+	"question": "Consider a complete undirect graph with vertex {0, 1, 2, 3, 4}. Entry W_(ij) in the matrix W below is the weight of the edge {i,j}. What is the minimum possible weight of a spanning tree T in this graph such that vertex 0 is a leaf node in tree T?",
+	"options": ["9",
+			"8",
+			"7",
+			"10"],
+	"correctAnswer": 3,
+	"image": "img/infosys/matrix_W.jpg",
+	"verified": 1
+	},
+{
+	"question": "Assume that a mergesort algorithm in the worst case takes 30 seconds for an input of size 64. Which of the following most closely approximates the maximum input size of a problem that can be solved in 6 minutes?",
+	"options": ["2048",
+			"1024",
+			"256",
+			"512"],
+	"correctAnswer": 3,
+	"verified": 1
+	},
+{
+	"question": "In Depth First Search, how many times is a node visited?",
+	"options": ["Once",
+			"None of the answers is correct",
+			"Twice",
+			"Equivalent to the number of indegree of the node"],
+	"correctAnswer": 3,
+	"verified": 1
+	},
+{
+	"question": "Consider a single linked list where F and L are pointers to the first and last elements, respectively, of the linked list. The time for performing which of the given operations depends on the lenght of the linked list?",
+	"options": ["Add an element at the end of the list",
+			"Delete the last element of the list",
+			"Swap the first two elements of the list",
+			"Delete the first element of the list"],
+	"correctAnswer": 1,
+	"verified": 0
+	},
+{
+	"question": "What is the additional space required to merge two sorted arrays in the mergesort algorithm?",
+	"options": ["O(n)",
+			"O(log n)",
+			"No additional space is required",
+			"O(n log n)"],
+	"correctAnswer": 0,
+	"verified": 1
+	},
+{
+	"question": "What is the complexity of fun()?",
+	"options": ["O(n)",
+			"O(n^2)",
+			"O(n^2 log n)",
+			"O(n log n)"],
+	"correctAnswer": 3,
+	"image": "img/infosys/function.jpg",
+	"verified": 1
+	},
+{
+	"question": "Using the Master Theorem, what is the running time of the following recurrence? <br> 0.7 T(n/2) + 1/n",
+	"options": ["T(n) = O(n^2 log n",
+			"T(n) = O(n)",
+			"Master theorem does not apply here",
+			"T(n) = O(log n)"],
+	"correctAnswer": 2,
+	"verified": 1
+	},
+{
+	"question": "Consider the graph M with 3 vertices. Its adjacency matrix is shown below. Which of the following is true?",
+	"options": ["Graph M has no minimum spanning tree",
+			"Graph M has a unique minimum spanning trees of cost 2",
+			"Graph M has 3 spanning trees of different costs",
+			"Graph has 3 distinct minumum spanning trees, each of cost 2"],
+	"correctAnswer": 3,
+	"image": "img/infosys/matrix_M.jpg",
+	"verified": 1
+	},
+{
+	"question": "If a DFS of a directed graph contains a back edge, any other DFS of the same graph will also contain at least one back edge.",
+	"options": ["Vero",
+			"Falso"],
+	"correctAnswer": 0,
+	"verified": 1
+	},
+{
+	"question": "What is the time complexity of Dijikstra's algorithm?",
+	"options": ["O(n log n)",
+			"O(n^2)",
+			"O(log n)",
+			"O(n^3)"],
+	"correctAnswer": 1,
+	"verified": 1
+	},
+{
+	"question": "Suppose we are sorting an array of eight integers using heapsort, and we have just finished some heapify (either maxheapify or minheapify) operations. <br>The array now looks like this: 16 14 15 10 12 27 28.<br>How many heapify operations have been performed on the root of the heap?",
+	"options": ["4 or 5",
+			"1",
+			"3 or 4",
+			"2"],
+	"correctAnswer": 3,
+	"verified": 1
+	},
+{
+	"question": "Which of the following is not O(n^2)?",
+	"options": ["n^1.98",
+			"15^10 n + 20000",
+			"2^20 n",
+			"n^(3/sqrt(n))"],
+	"correctAnswer": 3,
+	"verified": 1
+	},
+{
+	"question": "Consider the following graph with 8 nodes wherein each node (x/y) indicates the starting time (x) and the end time (y) of the depth first search algorithm (whenever there is ambiguity choose the node in lexicographical order). What are the starting time and the end time of node G?",
+	"options": ["x:5; y:6",
+			"x:13; y:14",
+			"x:8; y:9",
+			"x:4; y:7"],
+	"correctAnswer": 2,
+	"image": "img/infosys/dfs.jpg",
+	"verified": 1
+	},
+{
+	"question": "In BFS, how many times a node is visited?",
+	"options": ["None of the above",
+			"Three times",
+			"Once",
+			"Twice",
+			"Equivalent to number of in-degree of the node"],
+	"correctAnswer": 4,
+	"verified": 1
+	},
+{
+	"question": "Define the max heap property for a tree",
+	"options": ["The key (value) of a node is smaller or equal to the keys of its children",
+			"The key (value) of a node is the sum of the keys of its children",
+			"The key (value) of a node is smaller than the keys of its children",
+			"The key (value) of a node is greater or equal to the keys of is children"],
+	"correctAnswer": 3,
+	"verified": 1
+	},
+	{
+	"question": "In dynamic programming, the technique of storing the previously calculated values is called",
+	"options": ["Top-down storing strategy",
+			"Memorization",
+			"Bottom-up storing strategy",
+			"Storing value property"],
+	"correctAnswer": 1,
+	"verified": 1
+	},
+	{
+	"question": "If the selection sort algorithm requires one second to order a list with 1000 values, how much time will it require to sort 2000 values on the same machine?",
+	"options": ["1 second",
+				"0.5 seconds",
+				"2 seconds",
+				"4 seconds"],
+	"correctAnswer": 3,
+	"verified": 1
+	}
+]
