@@ -726,8 +726,9 @@
             "There is a random boundary which is the same for each part and it is prefixed by –",
             "There is a random boundary which changes for each part and it is prefixed by -"
         ],
-        "correctAnswer": 2,
-        "verified": 0
+        "correctAnswer": 1,
+        "verified": 1,
+        "motivation": "The professor said that the boundary is arbitrary, not random. \"Not appearing in any part\" is wrong because it appears in the header, but whatever, we didn't ask this to the professor."
     },
     {
         "question": "What data type is most appropriate for representing a telephone number?",

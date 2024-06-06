@@ -49,7 +49,7 @@ document.addEventListener("DOMContentLoaded", function ()
 	// show given questions. If selectCorrectAnswer = true, check correct answers when printing them
 	function showQuestions(questionsToShow, selectCorrectAnswer = false)
 	{
-		console.log("Showing questions:");
+		console.log("Showing questions");
 
 		// number of questions to show
 		numDom = 20;
@@ -127,7 +127,7 @@ document.addEventListener("DOMContentLoaded", function ()
 			`<img src="${currentQuestion.image}" alt="Question Image" class="question-image">`
 			: "";
 
-			console.log(`Question ${i + 1}:`, currentQuestion.question);
+			//console.log(`Question ${i + 1}:`, currentQuestion.question);
 
 			// Add index of question before showing it
 			const questionNumberHTML = `<div class="question-number">${i + 1}</div>`;
@@ -140,6 +140,7 @@ document.addEventListener("DOMContentLoaded", function ()
 			${imageHTML}
 			${optionsHTML}
 			<div class="feedback"></div>
+			<div class="motivation" style="margin-top: 10px"></div>
 			</div>
 			`;
 		}
@@ -159,6 +160,11 @@ document.addEventListener("DOMContentLoaded", function ()
 			feedback.classList.remove("correct", "incorrect");
 		});
 
+		// Reset all the motivations
+		document.querySelectorAll(".motivation").forEach((motivation) => {
+			motivation.innerHTML = "";
+		});
+
 		let score = 0;
 
 		// Loop through all questions
@@ -175,6 +181,10 @@ document.addEventListener("DOMContentLoaded", function ()
 			const feedbackElement = document
 			.getElementById(`question${i}`)
 			.querySelector(".feedback");
+
+			const motivationElement = document
+            .getElementById(`question${i}`)
+            .querySelector(".motivation");
 
 			// if there's at least one selected answer for that question
 			if (selectedAnswer)
@@ -196,6 +206,9 @@ document.addEventListener("DOMContentLoaded", function ()
 					{
 						feedbackElement.innerHTML = `Incorrect. Correct answer: ${currentQuestion.options[correctAnswerIndex]}`;
 						feedbackElement.classList.add("incorrect");
+	
+						if (currentQuestion.motivation)
+	                        motivationElement.innerHTML = `Motivation: ${currentQuestion.motivation}`;                	
 					}
 				}
 				// multiple choice question
@@ -216,6 +229,8 @@ document.addEventListener("DOMContentLoaded", function ()
 					{
 						feedbackElement.innerHTML = `Incorrect. Correct answer(s): ${correctAnswers.map(answer => currentQuestion.options[answer]).join(", ")}`;
 						feedbackElement.classList.add("incorrect");
+						if (currentQuestion.motivation)
+	                        motivationElement.innerHTML = `Motivation: ${currentQuestion.motivation}`;
 					}
 				}
 			}
