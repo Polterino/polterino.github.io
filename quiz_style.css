@@ -305,3 +305,32 @@ input[type="checkbox"]:hover {
     width: 24px;
     height: 24px;
 }
+
+
+#scrollTopButton, #scrollBottomButton {
+    position: fixed;
+    display: none;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    font-size: 24px; /* Increase font size for the arrow */
+    z-index: 1000;
+}
+
+#scrollTopButton:hover, #scrollBottomButton:hover {
+    background-color: #0056b3;
+}
+
+#scrollTopButton {
+    bottom: 20px;
+    right: 20px;
+}
+
+#scrollBottomButton {
+    bottom: 20px;
+    left: 20px;
+}
