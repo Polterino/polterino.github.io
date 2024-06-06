@@ -480,6 +480,17 @@
         "verified": 1
     },
     {
+        "question": "What is the DOM API?",
+        "options": [
+            "It is an API which creates an in-memory representation of the XML",
+            "It is a simple API for XML which operates on each piece of the XML document sequentially",
+            "It is a push streaming API for XML which notifies the applications of events by means of call-backs",
+            "It is a pull streaming API for XML which returns events to the applications when asked"
+        ],
+        "correctAnswer": 0,
+        "verified": 1
+    },
+    {
         "question": "Which of the following sentences is correct?",
         "options": [
             "Only positive values are admissible for the margin property",
@@ -1168,6 +1179,70 @@
             "Possibility to balance the load"
         ],
         "correctAnswer": 2,
+        "verified": 1
+    },
+    {
+        "question": "Which of the following is the correct HTML5 document type declaration?",
+        "options": ["&lt;!DOCTYPE html PUBLIC&gt;",
+                    "&lt;!DOCTYPE html5&gt;",
+                    "&lt;!DOCTYPE html5 PUBLIC&gt;",
+                    "&lt;!DOCTYPE html&gt;"],
+        "correctAnswer": 3,
+        "verified": 1
+    },
+    {
+        "question": "Which of the following sentences is correct?",
+        "options": ["Both javascript and HTML are case-sensitive languages",
+                    "Javascript is case-sensitive, while HTML is not case-sensitive",
+                    "Javascript is not case-sensitive, while HTML is case-sensitive",
+                    "Both javascript and HTML are not case-sensitive"],
+        "correctAnswer": 1,
+        "verified": 1
+    },
+    {
+        "question": "What is correct to say? \"Surfing the web\" and/or \"Surfing the internet\"?",
+        "options": ["Both of them",
+                    "Surfing the internet",
+                    "None of them",
+                    "Surfing the web"],
+        "correctAnswer": 3,
+        "verified": 1,
+        "motivation": "Literally no idea why. Check webapp uploaded file \"first call 6 june 2024\" if you don't believe this is the correct answer."
+    },
+    {
+        "question": "What is the purpose of the CSS clear property?",
+        "options": ["It clears the content of a float element without removing the space that it would have occupied",
+                    "It prevents the element from appearing next to a floated element and forces it to start against the next available space",
+                    "It removes a float element from the normal flow and allows it to start on the next available space",
+                    "It clears both sides of a floating element, allowing it to be surrounded only by elements inside the normal flow and not by float elements"],
+        "correctAnswer": 1,
+        "verified": 1
+    },
+    {
+        "question": "Which kind of diagram is most appropriate to describe the detailed functioning of a given operation?",
+        "options": ["An ER schema",
+                    "An interface mockup",
+                    "An UML sequence diagram",
+                    "An UML class"],
+        "correctAnswer": 2,
+        "verified": 1
+    },
+    {
+        "question": "What is a docker image?",
+        "options": ["It is a standalone, lightweight, and isolated runtime enviroment",
+                    "It represents a component of an application",
+                    "It is a snapshot of the libraries and dependencies required by a container to run properly",
+                    "It is a tool for managing the cooperative development of source code"],
+        "correctAnswer": 2,
+        "verified": 1
+    },
+    {
+        "question": "What is the purpose of the init method in a Java servlet?",
+        "options": ["It is called by the container only once upon servlet creation to setup any needed resources",
+                    "It is called by the container to release any needed resources every time after servicing a request",
+                    "It is called by the container to setup any needed resources every time before servicing a request",
+                    "It is called by the container only once before servlet disposal to release any needed resources"],
+        "correctAnswer": 0,
         "verified": 1
     }
 ]
