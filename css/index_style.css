@@ -148,3 +148,13 @@ p {
     width: 100%; 
     height: auto; 
 }
+
+.container p {
+    text-align: left;
+}
+
+.divider {
+    border-top: 1px solid black;
+    margin-top: 20px; /* Adjust the margin as needed */
+    margin-bottom: 20px; /* Adjust the margin as needed */
+}

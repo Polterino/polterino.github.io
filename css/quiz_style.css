@@ -274,12 +274,12 @@ input[type="checkbox"]:hover {
 
 /* Stile per l'icona di conferma (tick verde) */
 .question[data-verified="1"] .verification-icon {
-    background-image: url('img/tick.png');
+    background-image: url('../img/tick.png');
 }
 
 /* Stile per l'icona di avviso (triangolo giallo) */
 .question[data-verified="0"] .verification-icon {
-    background-image: url('img/warning.png');
+    background-image: url('../img/warning.png');
 }
 
 

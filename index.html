@@ -5,24 +5,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Homepage</title>
-    <link rel="stylesheet" href="index_style.css">
-    <style type="text/css">
-        .container p {
-            text-align: left;
-        }
-
-        .divider {
-            border-top: 1px solid black;
-            margin-top: 20px; /* Adjust the margin as needed */
-            margin-bottom: 20px; /* Adjust the margin as needed */
-        }
-    </style>
+    <link rel="stylesheet" href="css/index_style.css">
 </head>
 
 <body>
     <div class="container">
         <button id="toggleDarkMode"><img src="img/dark-mode.png" alt="Toggle Dark Mode"></button>
-        <script src="darkMode.js"></script>
+        <script src="js/darkMode.js"></script>
         <h1>Welcome</h1>
         <p>For each quiz, 20 random questions (or fewer if the question file contains less) will be displayed. Answer them to assess your preparation or, if you want to view all questions related to that topic along with their answers, simply click "Show all questions" inside the quiz page.
         </p>
@@ -34,31 +23,7 @@
             <label><input type="checkbox" id="noShuffle" value="true"> Questions not shuffled</label>
         </div>
 
-        <div class="divider"></div>
-
-        <h2 style="text-align: center;">Second semester</h2> 
-        <div class="buttons-container">
-            <a href="quiz.html?page=webapp" class="button">Web Applications Quiz</a>
-            <a href="quiz.html?page=hci" class="button">Human computer interaction Quiz</a>
-            <a href="quiz.html?page=deep" class="button">Deep learning Quiz</a>
-        </div>
-
-        <div class="divider"></div>
-
-        <h2>First semester</h2> 
-        <div class="buttons-container">
-            <a href="quiz.html?page=infosys" class="button">Fundamentals of information systems</a>
-
-            <a href="quiz.html?page=cogcomp" class="button">Cognition and computation Quiz</a>
-
-            <a href="quiz.html?page=digital" class="button">Digital Forensics and Biometrics Quiz</a>
-
-            <a href="quiz.html?page=machine" class="button">Machine Learning Quiz</a>
-
-            <a href="quiz.html?page=cyber" class="button">Cybersecurity Quiz</a>
-
-            <a href="quiz.html?page=law" class="button">Law and Data Quiz</a>
-        </div>
+        <div id="content"></div>
 
         <div class="divider"></div>
 
@@ -73,32 +38,8 @@
             <a href="https://github.com/Polterino/polterino.github.io/tree/main/files" target="_blank" class="button no-event">Uploaded files</a>
         </div>
     </div>
-    <script>
-        document.querySelectorAll('.buttons-container .button').forEach(button => 
-        {
-            if (!button.classList.contains('no-event')) 
-            {
-                button.addEventListener('click', function(event) 
-                {
-                    event.preventDefault(); // Prevent default link behavior
-
-                    // Get current URL
-                    let url = new URL(this.href);
-
-                    // Add parameters based on checkbox values
-                    if (document.getElementById('allQuestion').checked) {
-                        url.searchParams.append('allQuestion', document.getElementById('allQuestion').value);
-                    }
-                    if (document.getElementById('noShuffle').checked) {
-                        url.searchParams.append('noShuffle', document.getElementById('noShuffle').value);
-                    }
-
-                    // Redirect to the new URL
-                    window.location.href = url.toString();
-                });
-            }
-        });
-    </script>
+    <script src="js/utils.js"></script>
+    <script src="js/index.js"></script>
 </body>
 
 </html>
