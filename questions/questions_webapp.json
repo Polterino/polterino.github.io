@@ -1244,5 +1244,62 @@
                     "It is called by the container only once before servlet disposal to release any needed resources"],
         "correctAnswer": 0,
         "verified": 1
+    },
+    {
+        "question": "Which of the following is the correct way to define a radio button?",
+        "options": [
+            "&lt;input type=\"radio\" name=\"male\" value=\"gender\" checked&gt; Male &lt;br&gt; <br> &lt;input type=\"radio\" name=\"female\" value=\"gender\"&gt; Female &lt;br&gt; <br> &lt;input type=\"radio\" name=\"other\" value=\"gender\" &gt; Other",
+            "&lt;input type=\"radio\" name=\"gender_m\" value=\"male\" checked&gt; Male &lt;br&gt;&lt;/input&gt; <br> &lt;input type=\"radio\" name=\"gender_f\" value=\"female\"&gt; Female &lt;br&gt;&lt;/input&gt; <br> &lt;input type=\"radio\" name=\"gender_o\" value=\"other\" &gt; Other&lt;/input&gt;",
+            "&lt;input type=\"radio\" name=\"gender_m\" value=\"male\" checked&gt; Male &lt;br&gt; <br> &lt;input type=\"radio\" name=\"gender_f\" value=\"female\"&gt; Female &lt;br&gt; <br> &lt;input type=\"radio\" name=\"gender_o\" value=\"other\" &gt; Other",
+            "&lt;input type=\"radio\" name=\"gender\" value=\"male\" checked&gt; Male &lt;br&gt; <br> &lt;input type=\"radio\" name=\"gender\" value=\"female\"&gt; Female &lt;br&gt; <br> &lt;input type=\"radio\" name=\"gender\" value=\"other\" &gt; Other"
+        ],
+        "correctAnswer": 3,
+        "verified": 1
+    },
+    {
+        "question": "What is XSS?",
+        "options": [
+            "It allows for sharing cookies across domains, i.e. Cross-Site Sharing",
+            "It injects malicious code into victim's browser, i.e. Cross-Site Scripting",
+            "It is the way of representing a session with XML, i.e. XML Session Sheet",
+            "It is the newer version of CSS, i.e. eXtreme Style Sheets"
+        ],
+        "correctAnswer": 1,
+        "verified": 1
+    },
+    {
+        "question": "What is a problem in this servlet code?",
+        "options": [
+            "It may throw exceptions",
+            "It may not find the file on the disk",
+            "There is no problem: the code compiles and executes correctly",
+            "It may present thread-safety problems"
+        ],
+        "correctAnswer": 3,
+        "image": "img/webapp/servlet_code.png",
+        "motivation": "It's true that it may throw exceptions or that it may not find the file on the disk, but the most important problem is thread-related",
+        "verified": 1
+    },
+    {
+        "question": "Javascript programs are:",
+        "options": [
+            "Loaded in the same order as they appear in the document and executed when an event is registered",
+            "Loaded and executed in the same order as they appear in the document",
+            "Loaded and executed first if they are embedded script and later if they are external script",
+            "Loaded and executed first if they are embedded or external script and later if they are exported from another web server"
+        ],
+        "correctAnswer": 1,
+        "verified": 1
+    },
+    {
+        "question": "What is the purpose of the MIME application/x-www-form-urlencoded media type?",
+        "options": [
+            "To upload files and send form fields",
+            "To percent encode URL",
+            "Only to upload files",
+            "Only to send form fields"
+        ],
+        "correctAnswer": 3,
+        "verified": 1
     }
 ]
