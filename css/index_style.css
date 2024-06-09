@@ -158,3 +158,22 @@ p {
     margin-top: 20px; /* Adjust the margin as needed */
     margin-bottom: 20px; /* Adjust the margin as needed */
 }
+
+/* Stili personalizzati per il menu a discesa */
+select.form-control
+{
+  border: 1px solid #ced4da; /* Bordo */
+  border-radius: 4px; /* Bordi arrotondati */
+  background-color: #fff; /* Colore di sfondo */
+  color: #495057; /* Colore del testo */
+  padding: 0.375rem 0.75rem; /* Spaziatura interna */
+  width: 100%; /* Larghezza */
+  margin-bottom: 20px;
+  margin-top: 10px;
+}
+
+/* Stili personalizzati per le opzioni */
+select.form-control option {
+  background-color: #fff; /* Colore di sfondo */
+  color: #495057; /* Colore del testo */
+}

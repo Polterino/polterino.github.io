@@ -9,3 +9,38 @@ const pageTitles = {
     'infosys': 'Fundamentals of information systems',
     'deep': 'Deep learning'
 };
+
+const faculties = {
+    cybersex: {
+        secondSemester: ['webapp', 'hci', 'deep'],
+        firstSemester: ['cogcomp', 'digital', 'machine', 'cyber', 'law']
+    },
+    compfin: {
+        //secondSemester: [],
+        firstSemester: ['infosys']
+    }
+};
+
+function setCookie(name, value, days) 
+{
+    let expires = "";
+    if (days) {
+        const date = new Date();
+        date.setTime(date.getTime() + (days * 24 * 60 * 60 * 1000));
+        expires = "; expires=" + date.toUTCString();
+    }
+    document.cookie = name + "=" + (value || "") + expires + "; path=/";
+}
+
+function getCookie(name) 
+{
+    const cookieString = document.cookie;
+    const cookies = cookieString.split('; ');
+    for (let i = 0; i < cookies.length; i++) {
+        const cookie = cookies[i].split('=');
+        if (cookie[0] === name) {
+            return cookie[1];
+        }
+    }
+    return null;
+}
