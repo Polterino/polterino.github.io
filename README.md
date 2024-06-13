@@ -47,17 +47,17 @@ The file contains an array of question objects. Each question object should foll
 
 ### Field Descriptions
 
-- **question** (required): A string representing the question.
+- **question** (required): A string representing the question. HTML tags can be used within the question.
   ```json
-  "question": "What is the capital of France?"
+  "question": "What is the capital of <u>France</u>?"
   ```
 
-- **options** (required): An array of strings, each representing a possible answer to the question.
+- **options** (required): An array of strings, each representing a possible answer to the question. HTML tags can be used within the options.
   ```json
   "options": [
       "Berlin",
       "Madrid",
-      "Paris",
+      "<b>Paris</b>",
       "Rome"
   ]
   ```
@@ -77,12 +77,12 @@ The file contains an array of question objects. Each question object should foll
   "image": "images/paris.jpg"
   ```
 
-- **motivation** (optional): A string explaining why the selected answer is correct.
+- **motivation** (optional): A string explaining why the selected answer is correct. HTML tags can be used within the motivation.
   ```json
-  "motivation": "Paris is the capital of France."
+  "motivation": "Paris is the <u>capital</u> of France."
   ```
 
-- **verified** (optional): An integer (1 or 0) indicating whether the question has been verified. If `verified` is 1, it prints a checkmark; if it is 0, it prints a yellow triangle.
+- **verified** (optional): An integer (1 or 0) indicating whether the question has been verified. If `verified` is 1, it prints a green checkmark; if it is 0, it prints a yellow warning triangle.
   ```json
   "verified": 1
   ```
@@ -93,7 +93,7 @@ Here is an example of a properly formatted JSON file for a course named "Geograp
 ```json
 [
     {
-        "question": "What is the capital of France?",
+        "question": "What is the <u>capital</u> of France?",
         "options": [
             "Berlin",
             "Madrid",
@@ -119,7 +119,7 @@ Here is an example of a properly formatted JSON file for a course named "Geograp
         "verified": 0
     },
     {
-        "question": "Select the prime numbers:",
+        "question": "Select the <b>prime</b> numbers:",
         "options": [
             "2",
             "3",
