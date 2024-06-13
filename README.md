@@ -89,7 +89,7 @@ The file contains an array of question objects. Each question object should foll
 
 ## Example
 
-Here is an example of a properly formatted JSON file for a course named "Geography":
+Here is an example of a properly formatted JSON file:
 ```json
 [
     {
