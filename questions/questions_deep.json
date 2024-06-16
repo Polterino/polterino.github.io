@@ -73,6 +73,7 @@
 			"663"
 		],
 		"correctAnswer": 0,
+		"motivation": "10 x 4x4 x ( (6-4)/2 + 1)<sup>2</sup>",
 		"verified": 1
 	},
 	{
@@ -85,6 +86,7 @@
 			"356"
 		],
 		"correctAnswer": 0,
+		"motivation": "1 x 3x3 x ( (4-3)/1 + 1)<sup>2</sup>",
 		"verified": 1
 	},
 	{
