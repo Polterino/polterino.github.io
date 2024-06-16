@@ -6,7 +6,7 @@ This documentation explains how to format a JSON file containing questions and a
 
 The file should be named in the following format:
 ```
-question_{course_name}.json
+questions_{course_name}.json
 ```
 - `course_name` is the name of the course the questions are related to.
 
