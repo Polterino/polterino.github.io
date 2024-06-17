@@ -139,7 +139,7 @@
 		"image": "img/deep_joint_distribution.png"
 	},
 	{
-		"question": "Suppose to have a IO-isomorphic prediction task and a RNN with the following Recurrent Network: where y is the target, L the loss function, o the RNN output, h the hidden state, x the input at time t, and the black square represents the time-shift operator q^-1. U, W, Vx and Vh are weights matrices. Suppose to use back-propagation through time with mini-batch equal to 2 for training. Given input sequences composed of 2 and 4 items, respectively, how many terms should be summed up to compute the gradient of the loss with respect to U?",
+		"question": "Suppose to have a IO-isomorphic prediction task and a RNN with the following Recurrent Network: where y is the target, L the loss function, o the RNN output, h the hidden state, x the input at time t, and the black square represents the time-shift operator q<sup>-1</sup>. U, W, Vx and Vh are weights matrices. Suppose to use back-propagation through time with mini-batch equal to 2 for training. Given input sequences composed of 2 and 4 items, respectively, how many terms should be summed up to compute the gradient of the loss with respect to U?",
 		"options": [
 			"13",
 			"15",
@@ -148,11 +148,12 @@
 			"20"
 		],
 		"correctAnswer": 0,
+		"motivation": "4 + 3 + 2 + 1 + 2 + 1",
 		"verified": 1,
 		"image": "img/deep_rnn_1.png"
 	},
 	{
-		"question": "Suppose to have a IO-isomorphic prediction task and a RNN with the following Recurrent Network: where y is the target, L the loss function, o the RNN output, h the hidden state, x the input at time t, and the black square represents the time-shift operator q^-1. U, W, Vx and Vh are weights matrices. Suppose to use back-propagation through time with mini-batch equal to 3 for training. Given input sequences composed of 3 items, how many terms should be summed up to compute the gradient of the loss with respect to U?",
+		"question": "Suppose to have a IO-isomorphic prediction task and a RNN with the following Recurrent Network: where y is the target, L the loss function, o the RNN output, h the hidden state, x the input at time t, and the black square represents the time-shift operator q<sup>-1</sup>. U, W, Vx and Vh are weights matrices. Suppose to use back-propagation through time with mini-batch equal to 3 for training. Given input sequences composed of 3 items, how many terms should be summed up to compute the gradient of the loss with respect to U?",
 		"options": [
 			"13",
 			"18",
@@ -161,6 +162,7 @@
 			"20"
 		],
 		"correctAnswer": 1,
+		"motivation": "(1 + 2 + 3) x 3",
 		"verified": 1,
 		"image": "img/deep_rnn_1.png"
 	},
