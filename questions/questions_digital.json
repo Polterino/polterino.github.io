@@ -1251,7 +1251,7 @@
         "verified": 0
     },
     {
-        "question": "Whis is more suitable in anomaly detection supervised learning?",
+        "question": "Which is more suitable in anomaly detection supervised learning?",
         "options": [
             "Deep autoencoder",
             "Spectral clustering",
