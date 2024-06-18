@@ -19,6 +19,30 @@
         "verified": 1
 	},
 	{
+		"question": "Let P and Q be two probability distributions, where Q is parameteric. Which one of the following sentences about the Kullback-Leibler divergence is true?",
+		"options": [
+			"The KL divergence between P and Q is equivalent to the KL divergence between Q and P",
+			"Maximizing the Mean Squared Error between P and Q is equivalent to minimising the KL divergence between the two distributions",
+			"Minimizing the KL divergence between P and Q corresponds to minimizing the conditional log-likelihood between P and Q",
+			"KL divergence measures how different two probability distributions are",
+			"None of the above."
+		],
+		"correctAnswer": 3,
+		"verified": 1
+	},
+	{
+		"question": "Let D and Q be two probability distributions, where Q is parameteric. Which one of the following sentences about the Kullback-Leibler divergence is true?",
+		"options": [
+			"KL divergence is a <b>distance</b> between two probability distributions",
+			"Minimising the Mean Squared Error between P and Q is equivalent to minimising the KL divergence between P and Q",
+			"KL divergence is the same as Cross Entropy between P and Q",
+			"Minimizing the Cross-Entropy between P and Q is equivalent to minimising the KL divergence",
+			"none of the above"
+		],
+		"correctAnswer": 3,
+		"verified": 1
+	},
+	{
 		"question": "For which label distribution and with which loss is reasonable to adopt the <u>linear</u> activation function for the output layer?",
 		"options": ["Gaussian distribution / Mean squared error",
 					"Gaussian distribution / Cross-Entropy",
@@ -52,15 +76,30 @@
         "verified": 1
 	},
 	{
-		"question": "Let D and Q be two probability distributions, where Q is parameteric. Which one of the following sentences about the Kullback-Leibler divergence is true?",
+		"question": "Consider a CNN layer with 2 filters of size 3x3, stride 1, input images of size 4x4 and padding=\"same\" on a colour image (i.e. with three channels). How many <u>multiplications</u> (between two numbers) are performed to compute the output (feature map) of such a layer? (do not consider bias terms or activation functions)",
 		"options": [
-			"KL divergence is a <b>distance</b> between two probability distributions",
-			"Minimising the Mean Squared Error between P and Q is equivalent to minimising the KL divergence between P and Q",
-			"KL divergence is the same as Cross Entropy between P and Q",
-			"Minimizing the Cross-Entropy between P and Q is equivalent to minimising the KL divergence",
-			"none of the above"
+			"864",
+			"216",
+			"522",
+			"120",
+			"445",
+			"288"
 		],
-		"correctAnswer": 3,
+		"correctAnswer": 0,
+		"motivation": "2 x 3x3 x 4x4 x 3",
+		"verified": 0
+	},
+	{
+		"question": "Consider a CNN layer with 5 filters of size 3x3, stride 3, input images of size 6x6 and padding=\"valid\" on a black and white image (i.e. with one input channel). How many <u>multiplications</u> (between two numbers) are performed to compute the output (feature map) of such a layer? (do not consider bias terms or activation functions)",
+		"options": [
+			"180",
+			"200",
+			"1620",
+			"490",
+			"900"
+		],
+		"correctAnswer": 0,
+		"motivation": "5 x 3x3 x ( (6-3)/3 + 1)<sup>2</sup>",
 		"verified": 1
 	},
 	{
@@ -226,20 +265,6 @@
 		"verified": 1
 	},
 	{
-		"question": "Consider a CNN layer with 2 filters of size 3x3, stride 1, input images of size 4x4 and padding=\"same\" on a colour image (i.e. with three channels). How many <u>multiplications</u> (between two numbers) are performed to compute the output (feature map) of such a layer? (do not consider bias terms or activation functions)",
-		"options": [
-			"864",
-			"216",
-			"522",
-			"120",
-			"445",
-			"288"
-		],
-		"correctAnswer": 0,
-		"motivation": "2 x 3x3 x 4x4 x 3",
-		"verified": 0
-	},
-	{
 		"question": "Which one of the following sentences about model selection is true?",
 		"options": [
 			"In order to select a model (i.e. during model selection), the estimation of the model's true error is conducted using the <u>test data</u>",
@@ -249,31 +274,6 @@
 			"None of the above"
 		],
 		"correctAnswer": 1,
-		"verified": 1
-	},
-	{
-		"question": "Let P and Q be two probability distributions, where Q is parameteric. Which one of the following sentences about the Kullback-Leibler divergence is true?",
-		"options": [
-			"The KL divergence between P and Q is equivalent to the KL divergence between Q and P",
-			"Maximizing the Mean Squared Error between P and Q is equivalent to minimising the KL divergence between the two distributions",
-			"Minimizing the KL divergence between P and Q corresponds to minimizing the conditional log-likelihood between P and Q",
-			"KL divergence measures how different two probability distributions are",
-			"None of the above."
-		],
-		"correctAnswer": 3,
-		"verified": 1
-	},
-	{
-		"question": "Consider a CNN layer with 5 filters of size 3x3, stride 3, input images of size 6x6 and padding=\"valid\" on a black and white image (i.e. with one input channel). How many <u>multiplications</u> (between two numbers) are performed to compute the output (feature map) of such a layer? (do not consider bias terms or activation functions)",
-		"options": [
-			"180",
-			"200",
-			"1620",
-			"490",
-			"900"
-		],
-		"correctAnswer": 0,
-		"motivation": "5 x 3x3 x ( (6-3)/3 + 1)<sup>2</sup>",
 		"verified": 1
 	}
 ]
