@@ -103,7 +103,7 @@
 		"verified": 1
 	},
 	{
-		"question": "Consider a CNN layer with 10 filters of size 4x4, a stride of 2 and input images of size 6x6 on a single channel (i.e. black and white). How many multiplications (between two numbers) are performed to compute the output (feature map) of such a layer? (do not consider bias terms or activation functions)",
+		"question": "Consider a CNN layer with 10 filters of size 4x4, a stride of 2 and input images of size 6x6 on a single channel (i.e. black and white). How many <u>multiplications</u> (between two numbers) are performed to compute the output (feature map) of such a layer? (do not consider bias terms or activation functions)",
 		"options": [
 			"640",
 			"545",
@@ -113,6 +113,19 @@
 		],
 		"correctAnswer": 0,
 		"motivation": "10 x 4x4 x ( (6-4)/2 + 1)<sup>2</sup>",
+		"verified": 1
+	},
+	{
+		"question": "Consider a CNN layer with 10 filters of size 4x4, a stride of 1 and input images of size 8x8. How many <u>parameters</u> are we required to train for such a layer? (do not consider bias terms)",
+		"options": [
+			"640",
+			"4000",
+			"610",
+			"590",
+			"160"
+		],
+		"correctAnswer": 4,
+		"motivation": "10 x 4x4",
 		"verified": 1
 	},
 	{
