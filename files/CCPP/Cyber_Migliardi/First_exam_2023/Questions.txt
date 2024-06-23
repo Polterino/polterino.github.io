@@ -22,7 +22,7 @@ Stack protectors are usually placed in addresses before the return adddress, and
 
 6/10) Can ASLR prevent the return loop in loop3.c?
 (If yes why, if no why)
-ASLR can not prevent the loop since the randomization does not change the order between the addresses but randomizes only the global positioning in the stack. So the index used in the function will be effective in any case.
+No, ASLR can not prevent the loop since the randomization does not change the order between the addresses but randomizes only the global positioning in the stack. So the index used in the function will be effective in any case.
 
 Let's make the Hypothesis that there is no "system" function call in the libc library
 7/10) Is it still possible to make a Return Oriented Programming attack?

