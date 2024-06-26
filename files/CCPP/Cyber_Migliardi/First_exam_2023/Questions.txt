@@ -12,7 +12,7 @@ Yes. In this case the attacker could use a smaller size of the buffer given in i
 (If yes why, if no why)
 Yes it is, since the program does not overrite any address value. The canary address infact needs to be modified to be activated.
 
-4/10) Can not executable stack prevent the return loop in loop3.c?
+4/10) Can non executable stack prevent the return loop in loop3.c?
 (If yes why, if no why)
 No it can not, since any malicious code is injected in the stack to be executed. The loop infact simply ovverrites the return address in order to call the function loop every time, causing a segmantation fault. The executable stack is indeed effective if we would have changed the return address to point to any maliciuos shell code to be executed in the stack.
 
