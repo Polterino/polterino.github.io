@@ -26,7 +26,7 @@ The file contains an array of question objects. Each question object should foll
         "correctAnswer": 3,
         "image": "path to img",
         "motivation": "reason why selected answer is correct",
-        "motivation_image":"path_to_img explaining better the motivation",
+        "motivation_image":"path_to_img explaining the motivation in a better way",
         "verified": 1
     },
     {

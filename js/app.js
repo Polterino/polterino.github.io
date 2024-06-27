@@ -130,6 +130,17 @@ document.addEventListener("DOMContentLoaded", function ()
 			`<img src="${currentQuestion.image}" alt="Question Image" class="question-image">`
 			: "";
 
+			// show motivation if selectCorrectAnswer===true and if there exists a motivation
+			motivation_local = "";
+			motivation_image_local = "";
+			if(selectCorrectAnswer)
+			{
+				if(currentQuestion.motivation)
+					motivation_local = `Motivation: ${currentQuestion.motivation}`;
+				if (currentQuestion.motivation_image)
+	            	motivation_image_local = `<img src="${currentQuestion.motivation_image}" alt="Motivation Image" class="question-image" style="margin-top: 10px;">`;
+			}
+
 			//console.log(`Question ${i + 1}:`, currentQuestion.question);
 
 			// Add index of question before showing it
@@ -143,7 +154,9 @@ document.addEventListener("DOMContentLoaded", function ()
 			${imageHTML}
 			${optionsHTML}
 			<div class="feedback"></div>
-			<div class="motivation" style="margin-top: 10px"></div>
+			<div class="motivation" style="margin-top: 10px">
+			${motivation_local}
+			${motivation_image_local}</div>
 			</div>
 			`;
 		}
