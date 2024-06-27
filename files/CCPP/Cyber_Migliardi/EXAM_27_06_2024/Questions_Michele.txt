@@ -1,0 +1,77 @@
+1/10) Is the program leak.c vulnerable to a buffer overflow of type stack smashing/control hijacking?
+(If yes why, if no why)
+No. The program is vulnerable to a buffer overflow but it's not a stack smashing attack.
+We copy i char inside an array of size i from a src array of size 16, where i is a 
+int variable that can be set by the user that runs the program. 
+Since the destination array, retval, has the size equals to the number of char that will be read,
+there's no buffer overflow of type stack smashing.
+
+
+2/10) Is the program leak.c vulnerable to an attack of type heap manipulation?
+(If yes why, if no why)
+The function isThisVulnerable takes a size parameter size that is directly used in the malloc call to allocate memory without validating the size. Since such size is controlled by the user
+as an input (for instance calling ./leak 10000000), this allows an attacker to specify
+a very large value, potentially causing heap overflow or excessive memory allocation.
+
+
+3/10) Is the program leak.c vulnerable to an attack of type stack information exfiltration?
+(If yes why, if no why)
+Yes, the program is vulnerable to buffer overflow of type information exfiltration because it can read out-of-bounds memory contents from the stack.
+The user can give in input a size i > SIZE=16 using for instance ./leak 30 . 
+Then, 30 char will be read in an array of size 16 (src) to be copied inside retval, 
+thus reading memory cells not owned by the process ==> buffer overflow of type information exfiltration.
+
+
+4/10) Is the program leak.c vulnerable to an attack of type heap information exfiltration?
+(If yes why, if no why)
+No, since you are not reading from a dynamically allocated section of memory, but the program
+reads from an array which is stored in the stack. So while it's true that
+you can read from out of bounds regions of memory, you are not reading out of bounds in the heap,
+so it's not vulnerable to a heap information exfiltration.
+
+5/10) Is the program leak.c vulnerable to any of the previously mentioned attacks if stack protectors (canaries) are in place?
+(If yes why, if no why)
+No it's not vulnerable if the vulnerability is stack smashing, because there's no writing
+out of bounds of an array so the program isn't vulnerable both if there are or there aren't canaries
+(so even if there were canaries, they aren't going to be overwritten, thus activated).
+No it's not vulnerable to heap information exfiltration as mentioned in question 4, and the 
+presence of canaries doesn't change the reasons explained in question 4.
+Yes it's vulnerable if the vulnerability is information exfiltration or heap manipulation,
+because considering stack information exfiltration it's only a readonly buffer overflow
+and canaries aren't activated because they are not overwritten.
+In the latter (heap manipulation) the attacker can just decide how much
+memory to allocate in the heap, so this doesn't touch canaries present in the stack.
+
+6/10) Can not executable stack prevent the return loop in loop3.c?
+(If yes why, if no why)
+No, a non-executable stack does not prevent the return loop because the vulnerability exploits
+out-of-bounds writes, not stack execution. The loop infact simply ovverrites the
+return address in order to call the function loop every time, and non executable stack
+doesn't protect from overwriting the return address.
+
+7/10) Can stack protectors (canaries) prevent the return loop in loop3.c?
+(If yes why, if no why)
+No. Stack protectors typically reside at addresses just before the return address and
+are triggered when they are overwritten. However, in this scenario, the function
+modifies only the return address, bypassing the stack canaries. Because this
+isn't a "contiguous" buffer overflow, the canaries remain untouched and therefore are not triggered.
+
+8/10) Can ASLR prevent the return loop in loop3.c?
+(If yes why, if no why)
+No. ASLR randomizes the base address of the stack to make it harder for an attacker to predict the location of specific memory regions. However, it does not affect the relative order of addresses within a single function's stack frame, so the index used to access and modify buf[SIZE + 4] will still point to the same relative location regardless of the global stack position. Thus, the return loop cannot be prevented by ASLR.
+
+
+Let's make the Hypothesis that there is no "system" function call in the libc library
+9/10) Is it possible to make a return to libc attack that activates any program that is present on the system?
+(If yes why, if no why, are there any restrictions)
+Yes, it is possible to perform a return to libc attack to activate any program present on the system by finding and using other functions in libc that allow execution of external programs, such as the exec() family function, like execve().
+In this case we need then to set the three arguments of the function using assembly, so the attack would be more difficult to perform, but is still possible.
+There are restrictions: If the program you want to execute is a program which needs ROOT privileges,
+the program you're exploiting needs to be set user id, otherwise it can only run programs
+for which the exploited program has the permissions to run.
+
+10/10) Does ASLR protect from a return to libc attack?
+(If yes why, if no why)
+No, ASLR does not directly protect against return to libc attacks.
+ret2libc attacks do not rely on knowing the exact addresses of libraries inmemory. ASLR primarily randomizes the base addresses of executables and libraries but does not prevent an attacker from finding the addresses of functions within those libraries dynamically during runtime. Therefore, while ASLR makes exploitation
+more challenging by introducing randomness, it does not entirely protect from return to libc attacks.
