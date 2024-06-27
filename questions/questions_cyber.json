@@ -96,6 +96,8 @@
             "Sampling from a Normal Distribution (Gaussian)"
         ],
         "correctAnswer": 1,
+        "motivation": "This explanation, written by the professor on February 20th, 2024, clarifies why the Uniform distribution is the correct answer:",
+        "motivation_image": "img/cyber/motivation_uniform_distribution.png",
         "verified": 1
     },
     {
@@ -169,6 +171,50 @@
                     "File containing plain passwords",
                     "File containing users behaviors (i.e., Intrusion Detection System)"],
         "correctAnswer": 0,
+        "verified": 1
+    },
+    {
+        "question": "Which of the following Unix file access control notations represents a file that can be read by everyone, written only by the owner and the people in the owner’s group, and executed only by the owner?",
+        "options": [
+            "rwxr--r-x",
+            "rwxrwxr--",
+            "r--rw-rwx",
+            "rwxrw-r--"
+        ],
+        "correctAnswer": 3,
+        "verified": 1
+    },
+    {
+        "question": "Which of the following are good practices for OS hardening?",
+        "options": [
+            "Regularly test the system security",
+            "Patch and update the system",
+            "Remove unnecessary services/apps",
+            "All of the above"
+        ],
+        "correctAnswer": 3,
+        "verified": 1
+    },
+    {
+        "question": "Which of the following is not an appropriate countermeasure for web server hacking?",
+        "options": [
+            "Use IDS and firewalls with signature updates.",
+            "Use low-speed internet.",
+            "Patch updates need to be done regularly.",
+            "Not to use default configurations."
+        ],
+        "correctAnswer": 1,
+        "verified": 1
+    },
+    {
+        "question": "If you post a message containing malicious code on a generic website, which exploit could you potentially carry out?",
+        "options": [
+            "Cross-site scripting.",
+            "SQL injection.",
+            "Both Cross-site scripting and SQL injection.",
+            "None of the above."
+        ],
+        "correctAnswer": 2,
         "verified": 1
     }
 ]

@@ -26,6 +26,7 @@ The file contains an array of question objects. Each question object should foll
         "correctAnswer": 3,
         "image": "path to img",
         "motivation": "reason why selected answer is correct",
+        "motivation_image":"path_to_img explaining better the motivation",
         "verified": 1
     },
     {
@@ -82,6 +83,11 @@ The file contains an array of question objects. Each question object should foll
   "motivation": "Paris is the <u>capital</u> of France."
   ```
 
+- **motivation_image** (optional): A string representing the path to an image related to the motivation
+  ```json
+  "motivation_image": "images/eiffel_tower.png"
+  ```
+
 - **verified** (optional): An integer (1 or 0) indicating whether the question has been verified. If `verified` is 1, it prints a green checkmark; if it is 0, it prints a yellow warning triangle.
   ```json
   "verified": 1
@@ -103,6 +109,7 @@ Here is an example of a properly formatted JSON file:
         "correctAnswer": 2,
         "image": "images/paris.jpg",
         "motivation": "Paris is the capital of France.",
+        "motivation_image": "images/eiffel_tower.png",
         "verified": 1
     },
     {

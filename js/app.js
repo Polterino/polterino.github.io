@@ -186,8 +186,8 @@ document.addEventListener("DOMContentLoaded", function ()
 			.querySelector(".feedback");
 
 			const motivationElement = document
-            .getElementById(`question${i}`)
-            .querySelector(".motivation");
+						.getElementById(`question${i}`)
+						.querySelector(".motivation");
 
 			// if there's at least one selected answer for that question
 			if (selectedAnswer)
@@ -211,7 +211,9 @@ document.addEventListener("DOMContentLoaded", function ()
 						feedbackElement.classList.add("incorrect");
 	
 						if (currentQuestion.motivation)
-	                        motivationElement.innerHTML = `Motivation: ${currentQuestion.motivation}`;                	
+							motivationElement.innerHTML = `Motivation: ${currentQuestion.motivation}`;
+						if (currentQuestion.motivation_image)
+							motivationElement.innerHTML += `<img src="${currentQuestion.motivation_image}" alt="Motivation Image" class="question-image" style="margin-top: 10px;">`;            	
 					}
 				}
 				// multiple choice question
@@ -233,7 +235,9 @@ document.addEventListener("DOMContentLoaded", function ()
 						feedbackElement.innerHTML = `Incorrect. Correct answer(s): ${correctAnswers.map(answer => currentQuestion.options[answer]).join(", ")}`;
 						feedbackElement.classList.add("incorrect");
 						if (currentQuestion.motivation)
-	                        motivationElement.innerHTML = `Motivation: ${currentQuestion.motivation}`;
+							motivationElement.innerHTML = `Motivation: ${currentQuestion.motivation}`;
+						if (currentQuestion.motivation_image)
+			            	motivationElement.innerHTML += `<img src="${currentQuestion.motivation_image}" alt="Motivation Image" class="question-image" style="margin-top: 10px;">`;
 					}
 				}
 			}
@@ -281,7 +285,7 @@ document.addEventListener("DOMContentLoaded", function ()
 		const selectedValues = [];
 		selectedOption.forEach(option => {
 			selectedValues.push(option.value);
-	    });
-    	return selectedValues.length > 0 ? selectedValues : null;	
+			});
+			return selectedValues.length > 0 ? selectedValues : null;	
 	}
 });
