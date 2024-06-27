@@ -2,63 +2,66 @@
 <html lang="en">
 
 <head>
-        
-    <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-R42KSLDEJS"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
+		
+	<!-- Google tag (gtag.js) -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=G-R42KSLDEJS"></script>
+	<script>
+	  window.dataLayer = window.dataLayer || [];
+	  function gtag(){dataLayer.push(arguments);}
+	  gtag('js', new Date());
 
-      gtag('config', 'G-R42KSLDEJS');
-    </script>
+	  gtag('config', 'G-R42KSLDEJS');
+	</script>
 
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Homepage</title>
-    <link rel="stylesheet" href="css/index_style.css">
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Homepage</title>
+	<link rel="stylesheet" href="css/index_style.css">
 </head>
 
 <body>
-    <div class="container">
-        <button id="toggleDarkMode"><img src="img/dark-mode.png" alt="Toggle Dark Mode"></button>
-        <script src="js/darkMode.js"></script>
-        <h1>Welcome</h1>
-        <p>For each quiz, 20 random questions (or fewer if the question file contains less) will be displayed. Answer them to assess your preparation or, if you want to view all questions related to that topic along with their answers, simply click "Show all questions" inside the quiz page.
-        </p>
-        <p>If you want to do a quiz with <u>all</u> the questions in the database or if you don't want the questions to be shuffled, select the respective checkbox here and then open the quiz you want to do.
-        </p>
+	<div class="container">
+		<button id="toggleDarkMode"><img src="img/dark-mode.png" alt="Toggle Dark Mode"></button>
+		<script src="js/darkMode.js"></script>
+		<h1>Welcome</h1>
+		<p>For each quiz, 20 random questions (or fewer if the question file contains less) will be displayed. Answer them to assess your preparation or, if you want to view all questions related to that topic along with their answers, simply click "Show all questions" inside the quiz page.
+		</p>
+		<p>If you want to do a quiz with <u>all</u> the questions in the database or if you don't want the questions to be shuffled, select the respective checkbox here and then open the quiz you want to do.
+		</p>
 
-        <div>
-            <label for="facultySelect">Choose a faculty:</label>
-            <select id="facultySelect" class="form-control">
-                <option selected value="cybersex">Cybersecurity</option>
-                <option value="compfin">Computational Finance</option>
-            </select>
+		<div>
+			<label for="facultySelect">Choose a faculty:</label>
+			<select id="facultySelect" class="form-control">
+				<option selected value="cybersex">Cybersecurity</option>
+				<option value="compfin">Computational Finance</option>
+			</select>
+		</div>
+
+		<div>
+			<label><input type="checkbox" id="allQuestion" value="true"> Show all question</label>
+			<label><input type="checkbox" id="noShuffle" value="true"> Questions not shuffled</label>
+		</div>
+
+		<div id="content"></div>
+
+		<div class="divider"></div>
+
+		<div class="explanation">
+			<h2>Understanding Quiz Results</h2>
+			<p>If a question has a green checkmark, it means that the answer the site gives as "correct" is 100%
+				correct, because it has been verified. However, if there is a yellow warning sign, it indicates that the
+				marked answer may not be correct, although it is likely to be so. Please pay attention to these symbols
+				when reviewing your quiz results.</p>
+		</div>
+		<div class="buttons-container">
+			<a href="https://github.com/Polterino/polterino.github.io/tree/main/files" target="_blank" class="button no-event">Uploaded files</a>
+		</div>
+		<div class="buttons-container">
+            <a href="https://github.com/Polterino/polterino.github.io/commits" target="_blank" class="button no-event">When was this website last updated?</a>
         </div>
-
-        <div>
-            <label><input type="checkbox" id="allQuestion" value="true"> Show all question</label>
-            <label><input type="checkbox" id="noShuffle" value="true"> Questions not shuffled</label>
-        </div>
-
-        <div id="content"></div>
-
-        <div class="divider"></div>
-
-        <div class="explanation">
-            <h2>Understanding Quiz Results</h2>
-            <p>If a question has a green checkmark, it means that the answer the site gives as "correct" is 100%
-                correct, because it has been verified. However, if there is a yellow warning sign, it indicates that the
-                marked answer may not be correct, although it is likely to be so. Please pay attention to these symbols
-                when reviewing your quiz results.</p>
-        </div>
-        <div class="buttons-container">
-            <a href="https://github.com/Polterino/polterino.github.io/tree/main/files" target="_blank" class="button no-event">Uploaded files</a>
-        </div>
-    </div>
-    <script src="js/utils.js"></script>
-    <script src="js/index.js"></script>
+	</div>
+	<script src="js/utils.js"></script>
+	<script src="js/index.js"></script>
 </body>
 
 </html>
