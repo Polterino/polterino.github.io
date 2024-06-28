@@ -22,7 +22,7 @@ function generateSection(title, containerId, subjects)
 			const button = document.createElement('a');
 			button.href = `quiz.html?page=${subject}`;
 			button.className = 'button';
-			button.textContent = `${pageTitles[subject]} Quiz`;
+			button.textContent = `${pageTitles[subject]}`;
 			buttonsContainer.appendChild(button);
 		});
 	}

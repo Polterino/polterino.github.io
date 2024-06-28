@@ -1,162 +1,189 @@
 body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f4f4f4;
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+	margin: 0;
+	padding: 0;
+	background-color: #f4f4f4;
 
-    /* transition: background-color 0.3s ease; */
+	/* transition: background-color 0.3s ease; */
 }
 
 body.dark-mode {
-    background-color: #333333;
-    color: #fff;
+	background-color: #333333;
+	color: #fff;
 
-    /* transition: background-color 0.3s ease; */
+	/* transition: background-color 0.3s ease; */
 
-    .container {
-        background-color: #222;
-        /* transition: background-color 0.7s ease; */
-    }
+	.container {
+		background-color: #222;
+		/* transition: background-color 0.7s ease; */
+	}
 
-    h1, h2{
-        color: #b6b6b6
-    }
+	h1, h2{
+		color: #b6b6b6
+	}
 
-    p {
-        color: #808080;
-    }
+	p {
+		color: #808080;
+	}
 
-    .button {
-        background-color: rgb(53, 70, 179);
-        /* transition: background-color 1s ease; */
-    }
+	.button {
+		background-color: rgb(53, 70, 179);
+		/* transition: background-color 1s ease; */
+	}
 
-    .button:hover {
-        background-color: #3d70dd;
-    }
+	.button:hover {
+		background-color: #3d70dd;
+	}
 
-    #toggleDarkMode{
-        filter: none;
-    }
+	#toggleDarkMode{
+		filter: none;
+	}
 }
 
 .changing-theme {
-    animation: themeChangeAnimation 1s ease;
+	animation: themeChangeAnimation 1s ease;
 }
 
 @keyframes themeChangeAnimation {
-    from {
-        opacity: 0; /* Esempio di effetto di animazione */
-    }
-    to {
-        opacity: 1;
-    }
+	from {
+		opacity: 0; /* Esempio di effetto di animazione */
+	}
+	to {
+		opacity: 1;
+	}
 }
 
 .container {
-    max-width: 800px;
-    margin: 50px auto;
-    text-align: center;
-    padding: 20px;
-    background-color: #fff;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    position: relative;
-    /* transition: background-color 0.7s ease; */
+	max-width: 800px;
+	margin: 50px auto;
+	text-align: center;
+	padding: 20px;
+	background-color: #fff;
+	border-radius: 8px;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+	position: relative;
+	/* transition: background-color 0.7s ease; */
 }
 
 h1, h2{
-    color: #333333;
+	color: #333333;
 }
 
 p {
-    color: #666666;
-    margin-bottom: 20px;
+	color: #666666;
+	margin-bottom: 20px;
 }
 /*
 .buttons-container {
-    display: flex;
+	display: flex;
 	flex-wrap: wrap;
-    justify-content: center;
+	justify-content: center;
 }
 */
 
 .buttons-container {
-    display: flex;
-    flex-direction: column; /* Imposta la direzione del layout su colonna */
-    align-items: center; /* Centra gli elementi verticalmente */
-    text-align: center; /* Allinea il testo al centro */
+	display: flex;
+	flex-direction: column; /* Imposta la direzione del layout su colonna */
+	align-items: center; /* Centra gli elementi verticalmente */
+	text-align: center; /* Allinea il testo al centro */
 }
 
 .buttons-container h2 {
-    margin-bottom: 10px; /* Aggiunge un margine inferiore al titolo */
+	margin-bottom: 10px; /* Aggiunge un margine inferiore al titolo */
 }
 /*
 .buttons-container .button {
-    margin: 5px; 
+	margin: 5px; 
 }
 */
 @media screen and (min-width: 600px) {
-    .buttons-container {
-        flex-direction: row; /* Imposta la direzione del layout su riga */
-        flex-wrap: wrap; /* Permette il wrap dei bottoni quando finisce lo spazio */
-        justify-content: center; /* Centra i bottoni lungo l'asse orizzontale */
-    }
+	.buttons-container {
+		flex-direction: row; /* Imposta la direzione del layout su riga */
+		flex-wrap: wrap; /* Permette il wrap dei bottoni quando finisce lo spazio */
+		justify-content: center; /* Centra i bottoni lungo l'asse orizzontale */
+	}
 
-    /* Rimuovi la regola di margin dei bottoni per sovrascrivere quella precedente */
-    .buttons-container .button {
-        margin: 5px; /* Aggiunge uno spazio tra i bottoni */
-    }
+	/* Rimuovi la regola di margin dei bottoni per sovrascrivere quella precedente */
+	.buttons-container .button {
+		margin: 5px; /* Aggiunge uno spazio tra i bottoni */
+
+		width: 200px; 
+		height: 40px; 
+	}
 }
 
 .buttons-container a {
-    flex: 1;
-    max-width: 300px; /* Imposta una larghezza massima per mantenere la leggibilità su schermi più grandi */
-    margin: 0 10px 10px 10px;
-}
+	flex: 1;
+	max-width: 300px; /* Imposta una larghezza massima per mantenere la leggibilità su schermi più grandi */
+	margin: 0 10px 10px 10px;
 
+	display: flex; /* Usa flexbox per i link per gestire meglio il layout */
+	justify-content: center; /* Centra il contenuto orizzontalmente */
+	align-items: center;
+}
+/*
 .button {
-    display: inline-block;
-    padding: 10px 20px;
-    margin: 0 10px;
-    text-decoration: none;
-    color: #fff;
-    background-color: #4285f4;
-    border-radius: 5px;
-    /* transition: background-color 1s ease; */
+	display: inline-block;
+	padding: 10px 20px;
+	margin: 0 10px;
+	text-decoration: none;
+	color: #fff;
+	background-color: #4285f4;
+	border-radius: 5px;
+	
+	flex-grow: 1;
+	flex-shrink: 1;
+	flex-basis: 100px;
+	text-align: center;
+}
+*/
+.button {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 10px 20px;
+	margin: 10px;
+	text-decoration: none;
+	color: #fff;
+	background-color: #4285f4;
+	border-radius: 5px;
+	flex: 1 1 100px;
+	width: 100%; 
+	height: 100px; 
+	text-align: center; 
 }
 
 .button:hover {
-    background-color: #3367d6;
+	background-color: #3367d6;
 }
 
 #toggleDarkMode {
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-    background-color: #ffffff;
-    border: none; 
-    cursor: pointer;
-    filter: invert(1);
-    position: absolute;
-    top: 20px;
-    right: 20px;
+	width: 40px;
+	height: 40px;
+	border-radius: 50%;
+	background-color: #ffffff;
+	border: none; 
+	cursor: pointer;
+	filter: invert(1);
+	position: absolute;
+	top: 20px;
+	right: 20px;
 }
 
 #toggleDarkMode img {
-    display: block;
-    width: 100%; 
-    height: auto; 
+	display: block;
+	width: 100%; 
+	height: auto; 
 }
 
 .container p {
-    text-align: left;
+	text-align: left;
 }
 
 .divider {
-    border-top: 1px solid black;
-    margin-top: 20px; /* Adjust the margin as needed */
-    margin-bottom: 20px; /* Adjust the margin as needed */
+	border-top: 1px solid black;
+	margin-top: 20px; /* Adjust the margin as needed */
+	margin-bottom: 20px; /* Adjust the margin as needed */
 }
 
 
