@@ -1,0 +1,52 @@
+Final Grade: 30 (i.e. all answers are 3/3)
+
+1/10) Is the program leak.c vulnerable to a buffer overflow of type stack smashing/control hijacking?
+(If yes why, if no why)
+
+No. This code is not vulnerable to buffer overflow of type stack smashing/control hijacking because all the buffers that are initialized stays in their boundaries and in the code we do not want to write outside of them. From the code we can see that retval has the size provided by user and with memcpy we are taking exact that much memory that can be stored in that buffer from the buffer that is on the stack so we are not overwhelming anything on the stack in this way. 
+
+2/10) Is the program leak.c vulnerable to an attack of type heap manipulation?
+(If yes why, if no why)
+
+No. Heap manipulation in the way that we want to do overflow of the buffer that is already on the heap is not able to be done, because for the retval that is defined on the heap we are staying in its boundaries with the function memcpy that will bring us data to that buffer.
+
+3/10) Is the program leak.c vulnerable to an attack of type stack information exfiltration?
+(If yes why, if no why)
+
+Yes. Since the malicious user can give us the input that is greater than the SIZE static variable defined in the code, in that way we can exploit more information than we would like to allow to the user. This all happens because there was not done proper sanitizing of the input.
+
+4/10) Is the program leak.c vulnerable to an attack of type heap information exfiltration?
+(If yes why, if no why)
+
+No. It is not vulnerable to the heap information exfiltration because for the retval that is initialized on the heap we do not provide any information that is coming from the heap that could lead us to the leakage of information about the heap.
+
+5/10) Is the program leak.c vulnerable to any of the previously mentioned attacks if stack protectors (canaries) are in place?
+(If yes why, if no why)
+
+Yes. It is vulnerable to the information exfiltration because in that way we are not changing anything in the code, we are just taking information from the memory, but stack smashing can be prevented because in that attack we are overwriting the canaries and it prevents further execution of the code.
+
+6/10) Can not executable stack prevent the return loop in loop3.c?
+(If yes why, if no why)
+
+No. Not executable stack cannot prevent the return loop, because in this code we see that just return address to which we have to jump in memory is changed to the same address of the function which is currently executing. In this way we are not asking anything to be executed, we are just changing pointers.
+
+7/10) Can stack protectors (canaries) prevent the return loop in loop3.c?
+(If yes why, if no why)
+
+No. The canaries cannot prevent return loop because in the code we are jumping over them and in that way that we want immediately to go to change return address. In this way we are not changing the canaries that could prevent us from doing this return loop.
+
+8/10) Can ASLR prevent the return loop in loop3.c?
+(If yes why, if no why)
+
+No. ASLR cannot prevent the return loop, because it is true that the ASLR will give the new random location in the memory every time when we are loading our function in the memory but this is just absolute location, the relative location of return address and reference to the function will be still accessible by the program. 
+
+Let's make the Hypothesis that there is no "system" function call in the libc library
+9/10) Is it possible to make a return to libc attack that activates any program that is present on the system?
+(If yes why, if no why, are there any restrictions)
+
+Yes. Even that we are not having system function we still can be able to activate program with the function from the exec() family of the functions. In this case we have 2 restrictions and they are that we need to write assembly code in order to execute this commands and the second one is that for the some program in order to be executed we need privileges of the root user so we would need to ask for a constraint that our program is SetUID.
+
+10/10) Does ASLR protect from a return to libc attack?
+(If yes why, if no why)
+
+Yes. ASLR protect us in the way that the program gets new allocation in the memory every time when it is loaded in, just there is a problem that if user can bypass the ASLR or to exploit layout of the memory as we have seen in just 19 minutes for 32-bit system this could make security issue.
