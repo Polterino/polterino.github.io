@@ -109,8 +109,8 @@ curl -A "() { echo hello;}; echo Content_type: text/plain; echo; /bin/cat /etc/p
 (If yes why, if no why)
 
 
-3 ok (still, not steal)
+3 ok
 
 No, ASLR does not protect against return to libc attacks.
 
-ret2libc need to know exact addresses of functions in memory. ASLR randomizes the addresses of executables but does not prevent an attacker from finding the addresses of functions. So it's steal possible to find that address, e.g. with multiple execution.
+ret2libc need to know exact addresses of functions in memory. ASLR randomizes the addresses of executables but does not prevent an attacker from finding the addresses of functions. So it's still possible to find that address, e.g. with multiple execution.
