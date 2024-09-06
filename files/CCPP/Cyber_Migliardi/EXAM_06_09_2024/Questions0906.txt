@@ -28,18 +28,7 @@ So, even with canaries in place, the program is still vulnerable to heap informa
 
 [0/3]
 6/10) Modify the loop3-20240906.c program so that it loops. Give back the modified source file as part of your assignment. Explain why what you did is the right modification to achieve the goal.
-
-The main changes to create a looping program are:
-
-- Made loop function accept dim and theBuf as parameters.
-- Implemented recursion in loop with if (k < 1000) { loop(dim, theBuf); }.
-- Kept global k to count iterations, incrementing it each call.
-- In main, removed local k, added argument checking.
-- Used malloc for theBuf instead of a variable-length array.
-- Added free(theBuf) at the end of main.
-
-These changes work because recursion creates the loop, global k limits iterations to 1000, preventing infinite recursion and the parameters ensure correct data passage through recursive calls. At the end dynamic allocation improves memory management.
-The program now loops via recursion, with iteration control and proper memory handling.
+...
 
 7/10) Can not executable stack prevent the return loop in loop3-20240906.c?
 (If yes why, if no why)
