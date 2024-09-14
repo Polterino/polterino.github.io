@@ -65,6 +65,20 @@ body.dark-mode {
 	/* transition: background-color 0.7s ease; */
 }
 
+/* container delle label  */
+.labelContainer
+{
+    display: flex;
+    flex-direction: column; /* Dispone gli elementi uno sotto l'altro */
+    align-items: flex-start; /* Dispone gli elementi a sinistra */
+    margin: 20px 0; /* Opzionale: margine sopra e sotto il div */
+}
+
+.label
+{
+    margin-bottom: 10px; /* Spazio tra le label */
+}
+
 h1, h2{
 	color: #333333;
 }
