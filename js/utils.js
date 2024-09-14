@@ -7,11 +7,13 @@ const pageTitles = {
     'law': 'Law and Data',
     'hci': 'Human Computer interaction',
     'infosys': 'Fundamentals of information systems',
+    'ethical': 'Ethical Hacking',
     'deep': 'Deep learning'
 };
 
 const faculties = {
     cybersex: {
+        thirdSemester: ['ethical'],
         secondSemester: ['webapp', 'hci', 'deep'],
         firstSemester: ['cogcomp', 'digital', 'machine', 'cyber', 'law']
     },

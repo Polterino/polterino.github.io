@@ -1,0 +1,151 @@
+[
+	{
+		"question": "What do devices need to communicate?",
+		"options": [
+			"A physical address",
+			"All of them",
+			"Network address",
+			"Set of protocols"
+		],
+		"correctAnswer": 1,
+		"verified": 1
+	},
+	{
+		"question": "What is packet sniffing?",
+		"options": [
+			"The attacker blocks the communication between two or multiple nodes",
+			"The attacker impersonates another by changing the packet's transmitter address",
+			"The attackers capture and analyze the communication among other nodes"
+		],
+		"correctAnswer": 2,
+		"verified": 1
+	},
+	{
+		"question": "What does an attacker need to sniff packets?",
+		"options": [
+			"A powerful device",
+			"To be able to manipulate packets",
+			"To be connected to the communication medium of the victim"
+		],
+		"correctAnswer": 2,
+		"verified": 1
+	},
+	{
+		"question": "Choose the option(s) that hold true for the NIC card",
+		"options": [
+			"It is associated with an IP address",
+			"It is a physical and logical interface for communications",
+			"It communicates with the kernel to pass packets to the user interface",
+			"It's sole purpose is spoofing"
+		],
+		"correctAnswer": [1, 2],
+		"verified": 1
+	},
+	{
+		"question": "The promiscuous mode is needed to:",
+		"options": [
+			"Discard packets not intended to the receiver NIC",
+			"Pass to the kernel packets with MAC address different from the NIC one",
+			"Capture packets in a wireless network",
+			"Change the IP address of the sender of the current packet"
+		],
+		"correctAnswer": [1],
+		"verified": 1
+	},
+	{
+		"question": "What is spoofing?",
+		"options": [
+			"The process where all packets in the network are captured by the attacker",
+			"The process by which some critical information in the packet is forged",
+			"The process where the MAC address of the sender is changed",
+			"The process where the IP address of the sender is changed"
+		],
+		"correctAnswer": [1],
+		"verified": 1
+	},
+	{
+		"question": "What is a smurf attack?",
+		"options": [
+			"A spoofing attack in TCP to overload a victim",
+			"A spoofing attack in ICMP to overload the whole network",
+			"A spoofing attack in ICMP to overload a victim"
+		],
+		"correctAnswer": [2],
+		"verified": 1
+	},
+	{
+		"question": "Buffer overflow attacks result from careless programming in applications.",
+		"options": [
+			"True",
+			"False"
+		],
+		"correctAnswer": 0,
+		"verified": 1
+	},
+	{
+		"question": "The only consequence of a buffer overflow attack is the possible corruption of data used by the program.",
+		"options": [
+			"True",
+			"False"
+		],
+		"correctAnswer": 1,
+		"verified": 1
+	},
+	{
+		"question": "What happens when a buffer is overflowed?",
+		"options": [
+			"Whatever is in the memory space that comes after the buffer is overwritten",
+			"The memory space that comes after the buffer holds the extra data as well as keeping the data that it contained before"
+		],
+		"correctAnswer": 0,
+		"verified": 1
+	},
+	{
+		"question": "To exploit any type of buffer overflow the attacker needs to understand how that buffer will be stored in the process's memory.",
+		"options": [
+			"False",
+			"True"
+		],
+		"correctAnswer": 1,
+		"verified": 1
+	},
+	{
+		"question": "The JAVA programming language is extremely vulnerable to buffer overflows.",
+		"options": [
+			"True",
+			"False"
+		],
+		"correctAnswer": 1,
+		"verified": 1
+	},
+	{
+		"question": "What does a typical C program usually use stacks for?",
+		"options": [
+			"Permanent storage of variables",
+			"For preventing buffer overflows",
+			"Temporary storage of variables"
+		],
+		"correctAnswer": 2,
+		"verified": 1
+	},
+	{
+		"question": "If you declare an array as A[100] in C and you try to write data to A[555], what will happen?",
+		"options": [
+			"Nothing",
+			"The C compiler will give you an error and won't compile",
+			"Whatever is at A[555] will be overwritten"
+		],
+		"correctAnswer": 2,
+		"verified": 1
+	},
+	{
+		"question": "What can be overwritten by a buffer overflow that causes a security problem?",
+		"options": [
+			"The original binary code of the program",
+			"Permanent data saved on the computer",
+			"Any kind of pointer"
+		],
+		"correctAnswer": 2,
+		"verified": 1
+	}
+]

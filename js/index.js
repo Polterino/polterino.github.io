@@ -51,6 +51,8 @@ if (cookieSelectedFaculty)
 faculty_selected = document.getElementById('facultySelect').value;
 if (faculties[faculty_selected]) 
 {
+	if(faculties[faculty_selected].fourthSemester)
+		generateSection('Fourth semester', 'fourth-semester', faculties[faculty_selected].fourthSemester);
 	if(faculties[faculty_selected].thirdSemester)
 		generateSection('Third semester', 'third-semester', faculties[faculty_selected].thirdSemester);
 	if(faculties[faculty_selected].secondSemester)
