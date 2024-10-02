@@ -26,7 +26,7 @@
         iconContainer.style.gap = '5px'; // Spazio tra le due icone
         iconContainer.style.cursor = 'pointer';
         iconContainer.style.backgroundColor = 'white';
-        iconContainer.style.borderRadius = '50%';
+        iconContainer.style.borderRadius = '50px';
         iconContainer.style.padding = '5px';
         iconContainer.style.boxShadow = '0 0 5px rgba(0, 0, 0, 0.3)';
 /*
@@ -246,7 +246,6 @@
         });
 
         newDiv.style.backgroundColor = "#f4f4f4";
-        newDiv.style.padding = "10px";
         newDiv.style.marginTop = "10px";
 
         newDiv.appendChild(titolo);
