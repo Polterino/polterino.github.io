@@ -1,9 +1,9 @@
 // ==UserScript==
-// @name         Modifica Pagina
+// @name         Bookmark stem moodle (unipd) courses
 // @namespace    http://tampermonkey.net/
 // @version      2024-10-01
-// @description  try to take over the world!
-// @author       You
+// @description  This script let's you bookmark courses to find them faster
+// @author       Polterino
 // @match        https://stem.elearning.unipd.it/
 // @icon         https://www.google.com/s2/favicons?sz=64&domain=tampermonkey.net
 // @grant        none
