@@ -18,17 +18,18 @@
 
     function addIcon(inputDiv, saveIcon)
     {
-        const iconContainer = document.createElement('div'); // Crea un nuovo div per l'icona
-
-        // Imposta lo stile dell'icona
+        const iconContainer = document.createElement('div'); // Crea un nuovo div per le icone
         iconContainer.style.position = 'absolute';
         iconContainer.style.top = '10px';
         iconContainer.style.right = '10px';
+        iconContainer.style.display = 'flex'; // Usa flexbox per allineare le icone
+        iconContainer.style.gap = '5px'; // Spazio tra le due icone
         iconContainer.style.cursor = 'pointer';
         iconContainer.style.backgroundColor = 'white';
         iconContainer.style.borderRadius = '50%';
         iconContainer.style.padding = '5px';
         iconContainer.style.boxShadow = '0 0 5px rgba(0, 0, 0, 0.3)';
+/*
         if (saveIcon === true) // se voglio che sia l'icona per salvare il corso
         {
             iconContainer.innerHTML = '<i class="fa fa-star"></i>';
@@ -57,6 +58,40 @@
                 deleteCourseCookie(inputDiv.getAttribute('data-courseid'));
             };
         }
+*/
+        const mainIcon = document.createElement('i');
+        mainIcon.className = saveIcon ? 'fa fa-star' : 'fa fa-close';
+
+        mainIcon.onclick = function() {
+            mainIcon.style.transform = 'scale(1.2)'; // Effetto di ingrandimento
+            setTimeout(() => {
+                mainIcon.style.transform = 'scale(1)'; // Ripristina la dimensione
+                mainIcon.style.pointerEvents = 'none'; // Disabilita il click dopo l'animazione
+            }, 200);
+
+            if (saveIcon === true) {
+                setCourseCookie(inputDiv.getAttribute('data-courseid'), 'true', 365); // Imposta il cookie
+            } else {
+                deleteCourseCookie(inputDiv.getAttribute('data-courseid')); // Rimuove il cookie
+            }
+        };
+        iconContainer.appendChild(mainIcon);
+
+        const extraIcon = document.createElement('i');
+        extraIcon.className = 'fa fa-image'; // Cambia l'icona secondo le tue preferenze
+        extraIcon.style.marginLeft = '5px'; // Spazio tra le icone
+
+        extraIcon.onclick = function() {
+            extraIcon.style.transform = 'scale(1.2)'; // Effetto di ingrandimento
+            setTimeout(() => {
+                extraIcon.style.transform = 'scale(1)'; // Ripristina la dimensione
+            }, 200);
+            // Azione della seconda icona
+            userInput = prompt("Inserisci il link dell'immagine (lascia vuoto se vuoi rimuoverla)");
+            if (userInput !== null) { setCourseCookie(inputDiv.getAttribute('data-courseid')+"-image", userInput, 365); }
+        };
+        // Aggiungi la seconda icona al contenitore
+        iconContainer.appendChild(extraIcon);
 
         // Aggiungi l'icona al div principale
         inputDiv.style.position = 'relative'; // Necessario per il posizionamento assoluto dell'icona
@@ -81,9 +116,8 @@
         d.setTime(d.getTime() + (exdays * 24 * 60 * 60 * 1000)); // Scadenza del cookie
         const expires = "expires=" + d.toUTCString(); // Imposta la scadenza
         document.cookie = cname + "=" + cvalue + ";" + expires + '; path=/';
-        userInput = prompt("link");
-        document.cookie = cname+"-image=" + userInput + ";" + expires + '; path=/';
-        console.log('Corso correttamente salvato');
+        if (cname.endsWith("image")) { console.log('Immagine correttamente salvata'); }
+        else { console.log('Corso correttamente salvato'); }
     }
 
     function getCourseCookies()
