@@ -14,6 +14,7 @@
 
     console.log("Stem moodle extension - Developed by Polterino")
     var courseList = [];
+    var userInput = "";
 
     function addIcon(inputDiv, saveIcon)
     {
@@ -28,11 +29,12 @@
         iconContainer.style.borderRadius = '50%';
         iconContainer.style.padding = '5px';
         iconContainer.style.boxShadow = '0 0 5px rgba(0, 0, 0, 0.3)';
-        if (saveIcon === true)
+        if (saveIcon === true) // se voglio che sia l'icona per salvare il corso
         {
             iconContainer.innerHTML = '<i class="fa fa-star"></i>';
             iconContainer.onclick = function() {
                 iconContainer.style.transform = 'scale(1.2)'; // Ingrossa l'icona
+
                 // Ripristina la dimensione originale dopo 200ms
                 setTimeout(() => {
                     iconContainer.style.transform = 'scale(1)'; // Ripristina la dimensione
@@ -42,7 +44,7 @@
                 setCourseCookie(inputDiv.getAttribute('data-courseid'), 'true', 365); // Imposta il cookie
             };
         }
-        else
+        else // altrimenti l'icona serve per rimuovere il corso
         {
             iconContainer.innerHTML = '<i class="fa fa-close"></i>';
             iconContainer.onclick = function() {
@@ -62,12 +64,25 @@
         return inputDiv
     }
 
+    function setDivImage(div, url)
+    {
+        const courseImageInside = div.querySelector('.courseimageinside');
+
+        if (courseImageInside) {
+            courseImageInside.style.backgroundImage = `url("${url}")`;
+        } else {
+            console.log('Errore nel cambiare lo sfondo del corso '+ div.getAttribute('data-courseid'));
+        }
+    }
+
     function setCourseCookie(cname, cvalue, exdays)
     {
         const d = new Date();
         d.setTime(d.getTime() + (exdays * 24 * 60 * 60 * 1000)); // Scadenza del cookie
         const expires = "expires=" + d.toUTCString(); // Imposta la scadenza
-        document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/"; // Crea il cookie
+        document.cookie = cname + "=" + cvalue + ";" + expires + '; path=/';
+        userInput = prompt("link");
+        document.cookie = cname+"-image=" + userInput + ";" + expires + '; path=/';
         console.log('Corso correttamente salvato');
     }
 
@@ -82,12 +97,41 @@
             // Rimuovi eventuali spazi iniziali e dividi il cookie in nome e valore
             const [name, value] = cookie.trim().split('=');
 
-            if (value === 'true') {
+            if (value === 'true' || value.startsWith("http")) {
                 trueCookies.push(name);
             }
         });
 
         return trueCookies; // Restituisci l'array dei cookie con valore "true"
+    }
+
+    function getCookieValue(cookieName)
+    {
+        // Ottieni tutti i cookie
+        const allCookies = document.cookie.split(';');
+
+        // Cerca il cookie specifico
+        for (let cookie of allCookies)
+        {
+            const equalIndex = cookie.indexOf('=');
+
+            // Se il segno '=' esiste, separa il nome e il valore
+            if (equalIndex !== -1) {
+                const name = cookie.substring(0, equalIndex).trim()
+                const value = cookie.substring(equalIndex + 1).trim()
+
+                if (name === cookieName && name.endsWith("image")) { return value; }
+
+            } else {
+                console.log('Nessun segno "=" trovato nel cookie.');
+            }
+
+            const [name, value] = cookie.trim().split('=');
+            if (name === cookieName) {
+                return value; // Decodifica il valore e restituiscilo
+            }
+        }
+        return null; // Restituisce null se non trovato
     }
 
     function deleteCourseCookie(courseID)
@@ -115,14 +159,32 @@
 
     // Cerco i corsi che sono stati salvati
     var clonedDivList = [];
+    var bookMarkedDiv = false;
     const courseCookies = getCourseCookies();
     courseList.forEach((div) => {
         const courseId = div.getAttribute('data-courseid');
+        bookMarkedDiv = false;
 
+        const foundCookie = courseCookies.includes(courseId);
+        const foundCookieImage = courseCookies.includes(courseId+"-image");
         // Se il courseId corrisponde a quello cercato
-        if (courseCookies.includes(courseId)) {
-            clonedDivList.push(addIcon(div.cloneNode(true), false));
+        if (foundCookie)
+        {
+            if (getCookieValue(courseId) === "true")
+            {
+                clonedDivList.push(addIcon(div.cloneNode(true), false));
+                bookMarkedDiv = true;
+            }
         }
+        if (foundCookieImage)
+        {
+            const url = getCookieValue(courseId+"-image");
+            setDivImage(div, url);
+            if(bookMarkedDiv) {
+                setDivImage(clonedDivList[clonedDivList.length-1], url);
+            }
+        }
+
         // aggiungo le icone per salvare i corsi
         div = addIcon(div, true);
     });
