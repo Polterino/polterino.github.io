@@ -79,7 +79,6 @@
 
         const extraIcon = document.createElement('i');
         extraIcon.className = 'fa fa-image'; // Cambia l'icona secondo le tue preferenze
-        extraIcon.style.marginLeft = '5px'; // Spazio tra le icone
 
         extraIcon.onclick = function() {
             extraIcon.style.transform = 'scale(1.2)'; // Effetto di ingrandimento
