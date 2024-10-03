@@ -1,3 +1,7 @@
+# Table of contents
+1. [How to format a JSON file](#json-question-and-answer-file-format)
+2. [Stem moodle javascript extension](#stem-moodle-javascript-extension)
+
 # JSON Question and Answer File Format
 
 This documentation explains how to format a JSON file containing questions and answers for a course. The file should follow the specified structure and rules to ensure proper functionality.
@@ -140,3 +144,8 @@ Here is an example of a properly formatted JSON file:
     }
 ]
 ```
+
+# Stem moodle javascript extension
+This extension lets the user manage his/her courses on STEM moodle (i.e. bookmarking, changing background images...).  
+To use this, first download Tampermonkey (https://www.tampermonkey.net/) on your browser. Next, open it and click on "add a new script".  
+Delete all the new file content, copy and paste stem_moodle_extension.js code, save (Ctrl + S) and you're good to go!
