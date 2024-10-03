@@ -14,7 +14,9 @@
 
     console.log("Stem moodle extension - Developed by Polterino")
     var courseList = [];
+    var courseListClone = [];
     var userInput = "";
+    const newRowDiv = document.createElement('div');
 
     function addIcon(inputDiv, saveIcon)
     {
@@ -29,36 +31,7 @@
         iconContainer.style.borderRadius = '50px';
         iconContainer.style.padding = '5px';
         iconContainer.style.boxShadow = '0 0 5px rgba(0, 0, 0, 0.3)';
-/*
-        if (saveIcon === true) // se voglio che sia l'icona per salvare il corso
-        {
-            iconContainer.innerHTML = '<i class="fa fa-star"></i>';
-            iconContainer.onclick = function() {
-                iconContainer.style.transform = 'scale(1.2)'; // Ingrossa l'icona
 
-                // Ripristina la dimensione originale dopo 200ms
-                setTimeout(() => {
-                    iconContainer.style.transform = 'scale(1)'; // Ripristina la dimensione
-                    iconContainer.style.pointerEvents = 'none';
-                }, 200);
-
-                setCourseCookie(inputDiv.getAttribute('data-courseid'), 'true', 365); // Imposta il cookie
-            };
-        }
-        else // altrimenti l'icona serve per rimuovere il corso
-        {
-            iconContainer.innerHTML = '<i class="fa fa-close"></i>';
-            iconContainer.onclick = function() {
-                iconContainer.style.transform = 'scale(1.2)'; // Ingrossa l'icona
-                // Ripristina la dimensione originale dopo 200ms
-                setTimeout(() => {
-                    iconContainer.style.transform = 'scale(1)'; // Ripristina la dimensione
-                    iconContainer.style.pointerEvents = 'none';
-                }, 200);
-                deleteCourseCookie(inputDiv.getAttribute('data-courseid'));
-            };
-        }
-*/
         const mainIcon = document.createElement('i');
         mainIcon.className = saveIcon ? 'fa fa-star' : 'fa fa-close';
 
@@ -69,9 +42,20 @@
                 mainIcon.style.pointerEvents = 'none'; // Disabilita il click dopo l'animazione
             }, 200);
 
-            if (saveIcon === true) {
+            if (saveIcon === true)
+            {
+                courseListClone.forEach((div) => {
+                    const courseId = div.getAttribute('data-courseid');
+                    if (courseId === inputDiv.getAttribute('data-courseid')) { newRowDiv.appendChild(addIcon(div.cloneNode(true), false)); }
+                });
                 setCourseCookie(inputDiv.getAttribute('data-courseid'), 'true', 365); // Imposta il cookie
-            } else {
+            }
+            else
+            {
+                const divList = newRowDiv.querySelectorAll('div');
+                divList.forEach((div) => {
+                    if (div.getAttribute('data-courseid') === inputDiv.getAttribute('data-courseid')) { div.remove(); }
+                });
                 deleteCourseCookie(inputDiv.getAttribute('data-courseid')); // Rimuove il cookie
             }
         };
@@ -85,9 +69,20 @@
             setTimeout(() => {
                 extraIcon.style.transform = 'scale(1)'; // Ripristina la dimensione
             }, 200);
-            // Azione della seconda icona
+            // Azione dell'icona immagine
             userInput = prompt("Inserisci il link dell'immagine (lascia vuoto se vuoi rimuoverla)");
-            if (userInput !== null) { setCourseCookie(inputDiv.getAttribute('data-courseid')+"-image", userInput, 365); }
+            if (userInput !== null)
+            {
+                courseList.forEach((div) => {
+                    const courseId = div.getAttribute('data-courseid');
+                    if (courseId === inputDiv.getAttribute('data-courseid')) { setDivImage(div, userInput); }
+                });
+                const divList = newRowDiv.querySelectorAll('div');
+                divList.forEach((div) => {
+                    if (div.getAttribute('data-courseid') === inputDiv.getAttribute('data-courseid')) { setDivImage(div, userInput); }
+                });
+                setCourseCookie(inputDiv.getAttribute('data-courseid')+"-image", userInput, 365);
+            }
         };
         // Aggiungi la seconda icona al contenitore
         iconContainer.appendChild(extraIcon);
@@ -95,7 +90,7 @@
         // Aggiungi l'icona al div principale
         inputDiv.style.position = 'relative'; // Necessario per il posizionamento assoluto dell'icona
         inputDiv.appendChild(iconContainer);
-        return inputDiv
+        return inputDiv;
     }
 
     function setDivImage(div, url)
@@ -189,6 +184,8 @@
         });
     }
     else { console.log("Div con la lista di corsi non trovato."); }
+    // Salvo courseList prima di mettere le icone
+    courseListClone = courseList.slice(0);
 
     // Cerco i corsi che sono stati salvati
     var clonedDivList = [];
@@ -236,9 +233,7 @@
         const secondDiv = document.createElement('div');
         secondDiv.className = 'courses theme-list-courses frontpage-course-list-enrolled';
 
-        const newRowDiv = document.createElement('div');
         newRowDiv.classList.add('row');
-
         // inserisco ogni corso che devo clonare
         clonedDivList.forEach((div) => {
             newRowDiv.appendChild(div);
