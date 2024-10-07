@@ -15,6 +15,7 @@
     console.log("Stem moodle extension - Developed by Polterino")
     var courseList = [];
     var courseListClone = [];
+    const courseImgUrl = {}; // it contains touples structured as courseID: default background image url
     var userInput = "";
     const newRowDiv = document.createElement('div');
 
@@ -73,10 +74,17 @@
             userInput = prompt("Inserisci il link dell'immagine (lascia vuoto se vuoi rimuoverla)");
             if (userInput !== null)
             {
+                // if the input is empty, user wants to set the default image of the course
+                // replace (regex) is needed to remove url() from the string
+                if (userInput === "") { userInput = courseImgUrl[inputDiv.getAttribute('data-courseid')].replace(/^url\(["']?/, '').replace(/["']?\)$/, ''); }
+
+                // set image of non-bookmarked courses
                 courseList.forEach((div) => {
                     const courseId = div.getAttribute('data-courseid');
                     if (courseId === inputDiv.getAttribute('data-courseid')) { setDivImage(div, userInput); }
                 });
+
+                // set image of bookmarked courses
                 const divList = newRowDiv.querySelectorAll('div');
                 divList.forEach((div) => {
                     if (div.getAttribute('data-courseid') === inputDiv.getAttribute('data-courseid')) { setDivImage(div, userInput); }
@@ -168,6 +176,10 @@
         console.log("Corso correttamente eliminato");
     }
 
+
+
+
+
     // Cerco il div che contiene tutti i corsi come div figli
     const rowDiv = document.querySelector('.courses.theme-list-courses.frontpage-course-list-enrolled .row');
 
@@ -180,6 +192,13 @@
             if(div.getAttribute('data-courseid'))
             {
                 courseList.push(div);
+
+                const courseImageInside = div.querySelector('.courseimageinside');
+                if (courseImageInside) {
+                    courseImgUrl[div.getAttribute('data-courseid')] = courseImageInside.style.backgroundImage;
+                } else {
+                    console.log('Background image non trovata del corso '+ div.getAttribute('data-courseid'));
+                }
             }
         });
     }
