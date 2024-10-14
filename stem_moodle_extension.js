@@ -6,10 +6,12 @@
 // @author       Polterino
 // @match        https://stem.elearning.unipd.it/
 // @icon         https://www.google.com/s2/favicons?sz=64&domain=tampermonkey.net
+// @run-at       document-idle
 // @grant        none
 // ==/UserScript==
 
 (function() {
+
     'use strict';
 
     console.log("Stem moodle extension - Developed by Polterino")
