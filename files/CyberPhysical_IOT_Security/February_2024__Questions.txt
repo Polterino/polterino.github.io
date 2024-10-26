@@ -1,0 +1,9 @@
+- Can controller functions
+- Bus off attack: why attacker doesn’t go to passive error mode
+- Dominant bit voltage
+- Optical flow: assumes the ground is stationary
+- What is a PLC
+- DIS and DIO packets, if I remember correctly was asking about when to perform the DIS attack
+- ⁠aes-ctr counter
+- ⁠soft gps spoofing
+- ⁠which attack to perform to acc
