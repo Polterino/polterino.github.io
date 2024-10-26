@@ -8,12 +8,13 @@ const pageTitles = {
     'hci': 'Human Computer interaction',
     'infosys': 'Fundamentals of information systems',
     'ethical': 'Ethical Hacking',
-    'deep': 'Deep learning'
+    'deep': 'Deep learning',
+    'cyberphysicaliot': 'Cyber-physical systems and IOT security'
 };
 
 const faculties = {
     cybersex: {
-        thirdSemester: ['ethical'],
+        thirdSemester: ['ethical', 'cyberphysicaliot'],
         secondSemester: ['webapp', 'hci', 'deep'],
         firstSemester: ['cogcomp', 'digital', 'machine', 'cyber', 'law']
     },

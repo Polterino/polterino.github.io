@@ -148,4 +148,4 @@ Here is an example of a properly formatted JSON file:
 # Stem moodle javascript extension
 This extension lets the user manage his/her courses on STEM moodle (i.e. bookmarking, changing background images...).  
 To use this, first download Tampermonkey (https://www.tampermonkey.net/) on your browser. Next, open it and click on "add a new script".  
-Delete all the new file content, copy and paste stem_moodle_extension.js code, save (Ctrl + S) and you're good to go!
+Delete all the just-opened file content, copy and paste stem_moodle_extension.js code, save (Ctrl + S) and you're good to go!

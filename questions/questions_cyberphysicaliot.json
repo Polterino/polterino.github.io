@@ -1,0 +1,12 @@
+[
+	{
+		"question": "Given the following bit series of a message in the CAN bus, complete the attacker's bit series such that it increases the TEC of the victim (notice that bold numbers are for arbitration) <br> <table><tr><td>Victim</td><td>0</td><th><b>1</b></th><th><b>0</b></th><th><b>1</b></th><td>0</td><td>0</td><td>1</td><td>1</td></tr><tr><td>Attacker</td></tr></table>",
+		"options": [
+			"0 0 0 0 0 0 1 1",
+			"0 1 0 1 0 0 0 1",
+			"1 1 0 1 0 0 1 1"
+		],
+		"correctAnswer": 2,
+		"verified": 0
+	}
+]
