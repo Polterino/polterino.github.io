@@ -164,7 +164,8 @@ p {
 	flex: 1 1 100px;
 	width: 100%; 
 	height: 100px; 
-	text-align: center; 
+	text-align: center;
+	transition: background-color 0.3s ease;
 }
 
 .button:hover {
@@ -217,4 +218,44 @@ select.form-control option
 {
   background-color: #fff; 
   color: #495057; 
+}
+
+/* CSS for the stem extension download button  */
+.new-program-button {
+    position: relative;
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    color: #fff;
+    background-color: #3498db;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* Styling for the "New!" badge */
+.new-badge {
+    position: absolute;
+    top: -8px;
+    right: -8px;
+    background-color: #FFD700;
+    color: #333;
+    border: 2px solid #FFA500;
+    transform: rotate(15deg); 
+    font-size: 12px;
+    font-weight: bold;
+    padding: 2px 6px;
+    border-radius: 50%;
+    animation: pulsate 1.5s infinite ease-in-out;
+}
+
+/* Pulsate animation for the "New!" badge */
+@keyframes pulsate {
+    0%, 100% {
+        transform: rotate(15deg) scale(1);
+    }
+    50% {
+        transform: rotate(15deg) scale(1.2);
+    }
 }

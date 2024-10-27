@@ -9,7 +9,7 @@ const pageTitles = {
     'infosys': 'Fundamentals of information systems',
     'ethical': 'Ethical Hacking',
     'deep': 'Deep learning',
-    'cyberphysicaliot': 'Cyber-physical systems and IOT security'
+    'cyberphysicaliot': 'Cyber physical systems and IOT security'
 };
 
 const faculties = {
