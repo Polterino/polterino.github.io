@@ -8,5 +8,124 @@
 		],
 		"correctAnswer": 2,
 		"verified": 0
+	},
+	{
+		"question": "Geo-indistinguishability is",
+		"options": ["A protocol that is vulnerable to DoS attacks by an external attacker",
+					"A methodology that drones can use to preserve their location privacy",
+					"A methodology that an attacker can use to avoid being detected by drone detection systems"
+				],
+		"correctAnswer": 1,
+        "verified": 0
+	},
+	{
+		"question": "Optical flow refers to",
+		"options": [
+			"an attack methodology used to hijack the drone's trajectory",
+			"a feature detection algorithm to identify and target specific on-ground victims",
+			"the pattern of apparent motion of objects, surfaces, and edges"
+		],
+		"correctAnswer": 0,
+		"verified": 0
+	},
+	{
+		"question": "In a bus-off attack",
+		"options": [
+			"The attacker needs to reverse engineer CAN bus packets",
+			"The attacker needs to wait for the victim to be in error passive mode before delivering the attack",
+			"The attacker can disconnect a node from the CAN bus"
+		],
+		"correctAnswer": 2,
+		"verified": 0
+	},
+	{
+		"question": "Consider a platoon with N cars, where car i follows car i-1. Denoting as q<sub>i</sub> the location of car i, we can denote the distance between car i and its preceding car as d<sub>i</sub> = q<sub>i-1</sub>-q<sub>i</sub>. Cars aim at maintaining a desired distance d<sub>r,i</sub>=v<sub>i</sub>+3, and their controller computes the error as e<sub>i</sub>(t) = d<sub>i</sub>(t) - d<sub>r,i</sub>(t). Assume that the control rule is such that v<sub>i</sub>(t+1) = v<sub>i</sub>(t) + sign(e<sub>i</sub>(t)), the error value is updated accordingly, and that an attacker launches an attack able to modify the value of q<sub>i-1</sub>. What is the effect of an attacker reporting higher values for q<sub>i-1</sub> compared to the actual ones? <br>Note: sign(x) = 1 if x &gt; 0, -1 if x &lt; 0, 0 if x = 0",
+		"options": [
+			"The car will speed up to try to maintain the constant headway and will result in a crash",
+			"The attack has no effect, as the controller is able to mitigate this type of attacks",
+			"The car will slow down and increase the distance to the preceding car, thus disrupting the platoon"
+		],
+		"correctAnswer": 0,
+		"verified": 0
+	},
+	{
+		"question": "Since you have taken the CPSec course and learned about the CAN bus, you want to develop something for your car. In particular, you want a small monitor to check the car's speed since the one in the dashboard is broken. You managed to access the CAN bus, but then you need to identify what packet is responsible for transmitting such information. How can you approach this reverse engineering task?",
+		"options": [
+			"monitor the traffic on the CAN bus looking at what packet changes when increasing or decreasing the vehicle's speed",
+			"monitor the speed of packets on the CAN bus looking at what packet changes faster than the others",
+			"Monitor the traffic of a specific ECU to get information regarding the network configuration and its main features"
+		],
+		"correctAnswer": 0,
+		"verified": 0
+	},
+	{
+		"question": "In a Digital Twin",
+		"options": [
+			"the digital and physical models should be tightly coupled to avoid falling behind with the state generation process",
+			"The digital part does not need to receive information from the physical object it is representing",
+			"the unique purpose of the replica is anomaly detection"
+		],
+		"correctAnswer": 0,
+		"verified": 0
+	},
+	{
+		"question": "Stuxnet is",
+		"options": [
+			"a malicious computer worm",
+			"a zero-day vulnerability of a SCADA system",
+			"an anomaly detection system able to block malicious worms"
+		],
+		"correctAnswer": 0,
+		"verified": 0
+	},
+	{
+		"question": "A saturation attack to a LiDAR",
+		"options": [
+			"precision of the time measurements of the sensors",
+			"is a Denial of Service attack that leverages the limits in the linear region of sensors",
+			"is a Denial of Service attack that leverages the limits in the operational range of sensors"
+		],
+		"correctAnswer": 2,
+		"verified": 0
+	},
+	{
+		"question": "An ECU is",
+		"options": [
+			"an embedded system that controls one or more (sub)system(s) in a car",
+			"an in-vehicle network bus-based standard",
+			"a counter value that can be used to implement the bus-off attack"
+		],
+		"correctAnswer": 0,
+		"verified": 0
+	},
+	{
+		"question": "The CAN bus uses",
+		"options": [
+			"a differential wired-OR signalling",
+			"a differential wired-AND signalling",
+			"a current loop wired-AND signalling"
+		],
+		"correctAnswer": 1,
+		"verified": 0
+	},
+	{
+		"question": "In an ACC scenario, an attacker can",
+		"options": [
+			"deliver a replay attack by recording previously delivered instructions from the leader vehicle",
+			"create a spike in the control signal and make the vehicle accelerate",
+			"leverage the existing communication channel between two vehicles to convey malicious information"
+		],
+		"correctAnswer": 0,
+		"verified": 0
+	},
+	{
+		"question": "In the threat model related to drone technology",
+		"options": [
+			"the drone can be either a victim or an attacker",
+			"the drone is the target of malicious users and cannot be used to deliver attacks",
+			"the attacker needs to have physical access to the drone"
+		],
+		"correctAnswer": 0,
+		"verified": 0
 	}
 ]
