@@ -488,6 +488,7 @@
 					"is partially due to the vanishing gradient problem",
 					"can be solved using sparse representation in the neocortex"],
 		"correctAnswer": 0,
+		"motivation_image": "img/cogcomp/correct1.png",
         "verified": 1
 	},
 	{
@@ -498,6 +499,7 @@
 					"the output of the algorithm is always a probability distribution",
 					"we exploit graphical models to perform Bayesian inference"],
         "correctAnswer": 2,
+        "motivation_image": "img/cogcomp/correct1.png",
         "verified": 1
 	},
 	{
