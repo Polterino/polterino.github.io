@@ -1,0 +1,1105 @@
+[
+    {
+        "question": "What are the main features of the system apps?",
+        "options": [
+            "They are considered more secure than user installed apps, they cannot be uninstalled, they are installed under the /system partition",
+            "They are considered more secure than user installed apps, they can be uninstalled, they are installed under the /system partition",
+            "They are considered more secure than user installed apps, they cannot be uninstalled, they are installed under the /data partition"
+        ],
+        "correctAnswer": 0,
+        "verified": 1
+    },
+    {
+        "question": "An Android app very likely has",
+        "options": [
+            "a unique UID and multiple GIDs",
+            "a unique UID",
+            "multiple UID and multiple GIDs"
+        ],
+        "correctAnswer": 0,
+        "verified": 1
+    },
+    {
+        "question": "System services provide unique Android features and",
+        "options": [
+            "they run in dedicated processes",
+            "they run in the same process of the invoking app",
+            "they can be queried through alternative mechanisms than IPC"
+        ],
+        "correctAnswer": 0,
+        "verified": 1
+    },
+    {
+        "question": "The Android sandbox model guarantees isolation",
+        "options": [
+            "only at the process level",
+            "at both the process and the system file level",
+            "only at the file system level"
+        ],
+        "correctAnswer": 1,
+        "verified": 1
+    },
+    {
+        "question": "An Android app has many entry points",
+        "options": [
+            "as the number of exported components declared in the manifest file",
+            "as the number of activities declared in the manifest file",
+            "as the number of components declared in the manifest file"
+        ],
+        "correctAnswer": 0,
+        "verified": 1
+    },
+    {
+        "question": "The Android OS is event-driven, which means that",
+        "options": [
+            "whenever there is an event, the components able to handle it automatically intercept it",
+            "whenever there is an event, the Android OS finds the components able to handle it and forwards the event to them",
+            "whenever there is an event, the sender app finds the components able to handle it and forwards the event to them"
+        ],
+        "correctAnswer": 1,
+        "verified": 1
+    },
+    {
+        "question": "Explicit intents",
+        "options": [
+            "are secure as much as the implicit ones",
+            "are less secure than implicit ones",
+            "are more secure than implicit ones"
+        ],
+        "correctAnswer": 2,
+        "verified": 1
+    },
+    {
+        "question": "App signature",
+        "options": [
+            "can be used to check the identity of the developers with trust towards them",
+            "can be used to check the identity of the developers without any trust towards them"
+        ],
+        "correctAnswer": 1,
+        "verified": 1
+    },
+    {
+        "question": "Android permissions",
+        "options": [
+            "can be changed after the app installation",
+            "cannot be changed after the app installation",
+            "can be changed after the app installation if the app is updated, too"
+        ],
+        "correctAnswer": 2,
+        "verified": 1
+    },
+    {
+        "question": "Android permissions",
+        "options": [
+            "are all automatically granted at the installation time",
+            "are granted at different times according to their severity level",
+            "are all automatically granted at runtime"
+        ],
+        "correctAnswer": 1,
+        "verified": 1
+    },
+    {
+        "question": "Two apps can have a sharedUserID if",
+        "options": [
+            "they share the same signature",
+            "they share the same package name and the same signature",
+            "they share the same AndroidManifest file"
+        ],
+        "correctAnswer": 0,
+        "verified": 1
+    },
+    {
+        "question": "Why do we need a separation between user space and kernel space?",
+        "options": [
+            "because this is how Linux works",
+            "because apps can contain malicious code and might complete malicious actions if given access to the kernel space",
+            "because apps are sandboxed"
+        ],
+        "correctAnswer": 1,
+        "verified": 1
+    },
+    {
+        "question": "The binder kernel driver allows an app to",
+        "options": [
+            "be executed and interact with other apps",
+            "be executed, interact with other apps and access to shared resources",
+            "be executed"
+        ],
+        "correctAnswer": 1,
+        "verified": 1
+    },
+    {
+        "question": "Normal permissions",
+        "options": [
+            "are granted at runtime",
+            "are automatically granted without the user involvement",
+            "are automatically granted with a notification to inform the user"
+        ],
+        "correctAnswer": 1,
+        "verified": 1
+    },
+    {
+        "question": "Signature permissions are granted to",
+        "options": [
+            "apps signed with the same signature as the app defining the permission",
+            "system apps",
+            "apps signed with the platform keys"
+        ],
+        "correctAnswer": 0,
+        "verified": 1
+    },
+    {
+        "question": "A component declared in the manifest file",
+        "options": [
+            "is exported by default if it is an activity",
+            "is exported by default",
+            "in older Android versions, is exported by default if it declares also an intent filter"
+        ],
+        "correctAnswer": 2,
+        "verified": 1
+    },
+    {
+        "question": "In Android, what is the relationship between app permissions and GIDs (Group IDs)?",
+        "options": [
+            "Each Android permission corresponds to a unique GID, allowing apps with specific permissions to access resources and services within their associated GID.",
+            "Android app permissions are associated with various system-defined GIDs, granting apps access to resources and services based on their assigned GID.",
+            "Android app permissions and GIDs are unrelated; they serve different security purposes within the Android ecosystem."
+        ],
+        "correctAnswer": 0,
+        "verified": 1
+    },
+    {
+        "question": "Which of the following best describes the relationship between IPC (Inter-Process Communication) and RPC (Remote Procedure Call) in the context of Android development?",
+        "options": [
+            "IPC is a part of RPC, primarily used to enhance data security when performing remote method invocations.",
+            "RPC is a specific implementation of IPC that focuses on enabling direct method calls across process boundaries in Android.",
+            "IPC and RPC are completely unrelated concepts in Android, with each serving distinct purposes without overlap."
+        ],
+        "correctAnswer": 1,
+        "verified": 1
+    },
+    {
+        "question": "Which Android component is primarily used for implementing RPC (Remote Procedure Call) to allow one application to perform operations in another application\u2019s process space?",
+        "options": [
+            "AIDL (Android Interface Definition Language)",
+            "intent",
+            "Content Provider"
+        ],
+        "correctAnswer": 0,
+        "verified": 1
+    },
+    {
+        "question": "What action is typically required by a user to grant an app one of the special (SignatureOrSystem) permissions in Android, such as SYSTEM_ALERT_WINDOW or WRITE_SETTINGS?",
+        "options": [
+            "The user must grant these permissions at the app's installation time.",
+            "The user must enable these permissions in the device's system settings.",
+            "The app can automatically grant itself these permissions without user intervention."
+        ],
+        "correctAnswer": 1,
+        "verified": 1
+    },
+    {
+        "question": "What is the main purpose of Android signatures?",
+        "options": [
+            "Identifying developers",
+            "Verifying the developers' real identity",
+            "Distinguishing between developers"
+        ],
+        "correctAnswer": 2,
+        "verified": 1
+    },
+    {
+        "question": "What else can an app signature be used for?",
+        "options": [
+            "Guaranteeing the integrity of an Android app content",
+            "Guaranteeing the Android sandbox model",
+            "Guaranteeing the Android permission model"
+        ],
+        "correctAnswer": 0,
+        "verified": 1
+    },
+    {
+        "question": "If you try to install an app with the same package name of a different one that is already installed",
+        "options": [
+            "the Android OS will check the signature of the new one and, if equal to the already installed one, it will update the latter with the former",
+            "the Android OS will check the signature of the new one and, if both apps have a sharedUserID, it will update the old with the new one",
+            "the Android OS will deny the installation of the new app by default"
+        ],
+        "correctAnswer": 0,
+        "verified": 1
+    },
+    {
+        "question": "Which of the following is true about Android app signatures?",
+        "options": [
+            "Android apps can be distributed without any signature.",
+            "Android app signatures are optional.",
+            "Every Android app must be signed with a certificate."
+        ],
+        "correctAnswer": 2,
+        "verified": 1
+    },
+    {
+        "question": "How are Android app certificates managed in the development process?",
+        "options": [
+            "All Android apps share a common certificate.",
+            "Certificates are not required during development.",
+            "Developers create and manage their own certificates."
+        ],
+        "correctAnswer": 2,
+        "verified": 1
+    },
+    {
+        "question": "Which type of certificate is typically used for Android apps during development?",
+        "options": [
+            "Self-signed certificate",
+            "Release certificate",
+            "Debug certificate"
+        ],
+        "correctAnswer": 2,
+        "verified": 1
+    },
+    {
+        "question": "Why is it essential to protect the private key associated with an Android app certificate?",
+        "options": [
+            "To ensure compatibility with older devices",
+            "To prevent unauthorized signing of apps",
+            "To improve the app's user interface"
+        ],
+        "correctAnswer": 1,
+        "verified": 1
+    },
+    {
+        "question": "How can you generate a self-signed certificate for Android app development?",
+        "options": [
+            "Generate it using the keytool or a similar tool",
+            "Request one from a Certificate Authority (CA)",
+            "Use a built-in Android system certificate",
+            "Purchase it from Google Play Store"
+        ],
+        "correctAnswer": 0,
+        "verified": 1
+    },
+    {
+        "question": "How can you check the certificate information of an installed Android app?",
+        "options": [
+            "Through the \"About\" section of the app",
+            "Using the \"keytool\" command or a certificate viewer tool",
+            "By looking at the app's source code"
+        ],
+        "correctAnswer": 1,
+        "verified": 1
+    },
+    {
+        "question": "Select the correct statement",
+        "options": [
+            "The release certificate is primarily used for app development and testing. It's automatically generated by the Android SDK or Android Studio, and it's intended only for use during the development phase.",
+            "The self-signed certificate is primarily used for app development and testing. It's automatically generated by the Android SDK or Android Studio, and it's intended only for use during the development phase.",
+            "The debug certificate is primarily used for app development and testing. It's automatically generated by the Android SDK or Android Studio, and it's intended only for use during the development phase."
+        ],
+        "correctAnswer": 2,
+        "verified": 1
+    },
+    {
+        "question": "Activities",
+        "options": [
+            "are the only way for a user to interact with an app",
+            "can perform long-running operations",
+            "can run automatically"
+        ],
+        "correctAnswer": 0,
+        "verified": 1
+    },
+    {
+        "question": "Activities transitions between states are",
+        "options": [
+            "triggered by the user",
+            "triggered by events sent by the OS",
+            "triggered by the user and by events sent by the OS"
+        ],
+        "correctAnswer": 2,
+        "verified": 1
+    },
+    {
+        "question": "Services",
+        "options": [
+            "should be started through both explicit and implicit intents",
+            "should be started through implicit intents",
+            "should be started through explicit intents"
+        ],
+        "correctAnswer": 2,
+        "verified": 1
+    },
+    {
+        "question": "A bound service keeps running",
+        "options": [
+            "until the Android OS decides so",
+            "until it completes its action",
+            "until one of the calling component is running"
+        ],
+        "correctAnswer": 2,
+        "verified": 1
+    },
+    {
+        "question": "If a calling component wants to communicate with a service, it should rely on",
+        "options": [
+            "intents",
+            "messengers or AIDL",
+            "broadcast events"
+        ],
+        "correctAnswer": 1,
+        "verified": 1
+    },
+    {
+        "question": "Broadcast receivers",
+        "options": [
+            "intercept explicit intents",
+            "intercept any system wide events",
+            "intercept specific system wide events"
+        ],
+        "correctAnswer": 2,
+        "verified": 1
+    },
+    {
+        "question": "A content provider authority can handle",
+        "options": [
+            "multiple tables of different content providers",
+            "a single table",
+            "multiple tables of the same content provider"
+        ],
+        "correctAnswer": 2,
+        "verified": 1
+    },
+    {
+        "question": "Content Providers",
+        "options": [
+            "do not depend from the underlying structure of the data source",
+            "might depend from the underlying structure of the data source according to the developer",
+            "depend from the underlying structure of the data source"
+        ],
+        "correctAnswer": 0,
+        "verified": 1
+    },
+    {
+        "question": "Which of the following scenarios are best suited for using a Foreground Service in Android?",
+        "options": [
+            "Updating a database in the background.",
+            "Running a task that involves user interaction and requires ongoing notification, such as playing music",
+            "Running a one-time background operation that should automatically stop once complete."
+        ],
+        "correctAnswer": 1,
+        "verified": 1
+    },
+    {
+        "question": "Which of the following is a potential security risk associated with implementing Content Providers?",
+        "options": [
+            "Encrypting data at rest within the Content Provider to prevent unauthorized access",
+            "Exposing sensitive data through a public Content Provider without proper permission checks",
+            "Using URI permissions with specific paths to allow selective data access only as needed"
+        ],
+        "correctAnswer": 1,
+        "verified": 1
+    },
+    {
+        "question": "From which Android version was ART originally introduced?",
+        "options": [
+            "6.0",
+            "8.0",
+            "4.4"
+        ],
+        "correctAnswer": 2,
+        "verified": 1
+    },
+    {
+        "question": "Why did Google introduce DVM in Android?",
+        "options": [
+            "For security reasons",
+            "For performance reasons",
+            "For both performance and compatibility reasons"
+        ],
+        "correctAnswer": 2,
+        "verified": 1
+    },
+    {
+        "question": "A dex file contains",
+        "options": [
+            "the Dalvik bytecode obtained after the compilation of C/C++ source code",
+            "the Dalvik bytecode obtained after the compilation of Java and Kotlin source code",
+            "the Dalvik bytecode obtained after the compilation of Java, Kotlin and C/C++ source code"
+        ],
+        "correctAnswer": 1,
+        "verified": 1
+    },
+    {
+        "question": "Resources are",
+        "options": [
+            "zipped in the APK file in a compressed format",
+            "zipped in the APK file in an uncompressed format",
+            "compiled into the APK file"
+        ],
+        "correctAnswer": 0,
+        "verified": 1
+    },
+    {
+        "question": "What is the main difference between DVM and ART?",
+        "options": [
+            "The compilation procedure of Dalvik bytecode into machine code",
+            "The compilation procedure of Java source code into Dalvik bytecode",
+            "The compilation procedure of Java source code into binary code"
+        ],
+        "correctAnswer": 0,
+        "verified": 1
+    },
+    {
+        "question": "What is the main criterion used by the current Android versions to compile an app code AOT?",
+        "options": [
+            "by default, all methods of the developers' custom code are compiled AOT",
+            "methods that are classified as \"hot\" ones are compiled AOT",
+            "by default, all methods of the Android framework are compiled AOT"
+        ],
+        "correctAnswer": 1,
+        "verified": 1
+    },
+    {
+        "question": "Zygote is...",
+        "options": [
+            "the name of the process in which an app is executed",
+            "the name of the process in which a system service is executed",
+            "the parent process of all the apps as the processes they execute in are forked from Zygote"
+        ],
+        "correctAnswer": 2,
+        "verified": 1
+    },
+    {
+        "question": "What's the difference between the files boot.art and boot.oat?",
+        "options": [
+            "boot.oat contains pre-initialized classes and objects from the developers' custom code, while boot.art contains pre-compiled classes from developers' custom code",
+            "boot.art contains pre-initialized classes and objects from the Android framework, while boot.oat contains pre-compiled classes from the Android framework",
+            "boot.art contains pre-initialized classes and objects from the developers' custom code, while boot.oat contains pre-compiled classes from developers' custom code"
+        ],
+        "correctAnswer": 2,
+        "verified": 1
+    },
+    {
+        "question": "Dissassembling means...",
+        "options": [
+            "Obtaining the Java source code from the Dalvik bytecode",
+            "Obtaining the uncompressed Dalvik bytecode from the compressed one",
+            "Obtaining the C/C++ source code from a shared object file"
+        ],
+        "correctAnswer": 1,
+        "verified": 1
+    },
+    {
+        "question": "Decompiling means...",
+        "options": [
+            "Obtaining the assembly code from a shared object file",
+            "Obtaining the Dalvik bytecode from the machine code",
+            "Obtaining the Java source code from the Dalvik bytecode"
+        ],
+        "correctAnswer": 2,
+        "verified": 1
+    },
+    {
+        "question": "Among the following ones identify which is NOT a limitation for a static analysis approach",
+        "options": [
+            "Reflection",
+            "Obfuscated strings",
+            "Obfuscated code",
+            "Dynamic code loading",
+            "Amount of app's code"
+        ],
+        "correctAnswer": 4,
+        "verified": 1
+    },
+    {
+        "question": "Among the following ones identify which one is a limitation for a dynamic analysis approach",
+        "options": [
+            "Reflection",
+            "Dynamic code loading",
+            "Obfuscated code",
+            "Obfuscated strings"
+        ],
+        "correctAnswer": 0,
+        "verified": 1
+    },
+    {
+        "question": "Debugging means",
+        "options": [
+            "that you have a debugger running in a different process of the app's one and that one injects interrupt signals to stop the execution of the app and inspect the runtime values of its memory",
+            "that you insert new smali code in the app which is going to be executed at runtime",
+            "that you insert new source code in the app which is going to be executed at runtime"
+        ],
+        "correctAnswer": 0,
+        "verified": 1
+    },
+    {
+        "question": "Instrumentation means",
+        "options": [
+            "that you trace all the APIs invoked by an app",
+            "that you inject new code in the app at runtime",
+            "that you stop the runtime execution of the app and modify its variables values"
+        ],
+        "correctAnswer": 1,
+        "verified": 1
+    },
+    {
+        "question": "Taint analysis is used for...",
+        "options": [
+            "intercepting the communication between two apps",
+            "intercepting the communication between different app's components",
+            "tracking the flow of sensitive data within an app"
+        ],
+        "correctAnswer": 2,
+        "verified": 1
+    },
+    {
+        "question": "Symbolic execution is generally used for...",
+        "options": [
+            "build a general model based on input variables that could lead to the execution of different paths in the app",
+            "trace the APIs invoked by an app",
+            "trace the sensitive data flow within an app"
+        ],
+        "correctAnswer": 0,
+        "verified": 1
+    },
+    {
+        "question": "Code coverage is",
+        "options": [
+            "the amount of code inside an app that you are able to execute",
+            "the amount of code dynamically loaded by an app at runtime",
+            "the amount of code available inside an app"
+        ],
+        "correctAnswer": 0,
+        "verified": 1
+    },
+    {
+        "question": "Which technique is used for evading static analysis?",
+        "options": [
+            "smali code",
+            "Java/kotlin source code",
+            "native code"
+        ],
+        "correctAnswer": 2,
+        "verified": 1
+    },
+    {
+        "question": "A malware can bypass dynamic analysis techniques by",
+        "options": [
+            "dynamically loading new code at runtime",
+            "detecting that it is under debugging/instrumentation and thus hiding its malicious behaviour",
+            "using encrypted network traffic"
+        ],
+        "correctAnswer": 1,
+        "verified": 1
+    },
+    {
+        "question": "Any assumption that is acquired through a static analysis",
+        "options": [
+            "is always false",
+            "is always true",
+            "should be validated through a dynamic analysis"
+        ],
+        "correctAnswer": 2,
+        "verified": 1
+    },
+    {
+        "question": "Which one is the least likely motivation for developing a malware?",
+        "options": [
+            "Causing chaos, damaging devices, or disrupting the normal functioning of systems",
+            "Financial gain",
+            "Espionage"
+        ],
+        "correctAnswer": 0,
+        "verified": 1
+    },
+    {
+        "question": "Which of the following malware types is least likely to exploit the SMS feature?",
+        "options": [
+            "Spyware",
+            "Adware",
+            "Keyloggers"
+        ],
+        "correctAnswer": 2,
+        "verified": 1
+    },
+    {
+        "question": "Which of the following actions is least associated with mobile ransomware?",
+        "options": [
+            "Displaying intrusive advertisements on the device.",
+            "Locking the device and demanding a ransom for unlocking.",
+            "Encrypting files and demanding a ransom for decryption."
+        ],
+        "correctAnswer": 0,
+        "verified": 1
+    },
+    {
+        "question": "Which of the following activities is least associated with spyware on mobile devices?",
+        "options": [
+            "Displaying intrusive advertisements on the device.",
+            "Monitoring and recording user's keystrokes and online activities.",
+            "Gathering sensitive information such as login credentials and personal data."
+        ],
+        "correctAnswer": 0,
+        "verified": 1
+    },
+    {
+        "question": "Who DOES NOT gain money in an advertisement framework used in a mobile context?",
+        "options": [
+            "The mobile app developer",
+            "The advertisement framework developer",
+            "The user"
+        ],
+        "correctAnswer": 2,
+        "verified": 1
+    },
+    {
+        "question": "Which of the following is NOT a characteristic of adware?",
+        "options": [
+            "It can slow down your mobile device.",
+            "It displays unwanted advertisements.",
+            "It is a type of virus."
+        ],
+        "correctAnswer": 2,
+        "verified": 1
+    },
+    {
+        "question": "Which of the following is a way to prevent cross-device tracking on mobile devices?",
+        "options": [
+            "Disable ad tracking in your mobile device's settings.",
+            "Use a VPN or Tor.",
+            "All of them."
+        ],
+        "correctAnswer": 2,
+        "verified": 1
+    },
+    {
+        "question": "Which one is NOT a possible way for an attacker to install a malware on the victim device?",
+        "options": [
+            "Social engineering",
+            "Triggering the automatic installation of the malware",
+            "Repackaging attack"
+        ],
+        "correctAnswer": 1,
+        "verified": 1
+    },
+    {
+        "question": "Which of the following statements least accurately describes an Android repackaging attack?",
+        "options": [
+            "An Android repackaging attack involves modifying a legitimate app's package name and signing it with a different digital certificate.",
+            "An Android repackaging attack disguises malicious code within a legitimate app to deceive users and bypass security measures.",
+            "An Android repackaging attack is a technique used to intercept and modify network traffic between an Android device and external servers."
+        ],
+        "correctAnswer": 2,
+        "verified": 1
+    },
+    {
+        "question": "Which of the following actions is an attacker not able to perform when gaining root access on a device, thus introducing a novel attack if managing to complete it?",
+        "options": [
+            "Perform a software update for increased security",
+            "Modify system files and configurations",
+            "Install and run a malicious app"
+        ],
+        "correctAnswer": 0,
+        "verified": 1
+    },
+    {
+        "question": "Specify which of the following attack scenarios is less common:",
+        "options": [
+            "Malicious App Downloads",
+            "NFC Hacking",
+            "Phishing Attacks"
+        ],
+        "correctAnswer": 1,
+        "verified": 1
+    },
+    {
+        "question": "Assuming the attacker can lure the victim to visit an arbitrary URL, which attack is very unlikely?",
+        "options": [
+            "Drive-By Downloads",
+            "Phishing Attack",
+            "Remote Device Takeover"
+        ],
+        "correctAnswer": 2,
+        "verified": 1
+    },
+    {
+        "question": "If an attacker successfully runs code in the kernel of a mobile device, which attack cannot he complete?",
+        "options": [
+            "Rootkit Installation",
+            "Complete Remote Control",
+            "Privilege Escalation"
+        ],
+        "correctAnswer": 2,
+        "verified": 1
+    },
+    {
+        "question": "Which of the following statements accurately describes the process of exploitation in cybersecurity?",
+        "options": [
+            "Exploitation is the process of identifying and patching vulnerabilities in software.",
+            "Exploitation is the process of \"taking advantage\" of a vulnerability so that an attacker can perform unintended actions.",
+            "Exploitation is the process of enhancing system performance and efficiency"
+        ],
+        "correctAnswer": 1,
+        "verified": 1
+    },
+    {
+        "question": "When assessing the severity and relevance of a bug, which factors play a crucial role in determining its impact?",
+        "options": [
+            "The target victim device.",
+            "The combination of the \"type\" of bug and \"where\" it is (i.e., which component is affected).",
+            "The programming language used to develop the software."
+        ],
+        "correctAnswer": 1,
+        "verified": 1
+    },
+    {
+        "question": "Among the following ones, select which is NOT an EOP attack",
+        "options": [
+            "Attacker with code execution with app's sandbox \u21d2 write files in its private directory",
+            "Attacker with code execution with app's sandbox \u21d2 system user/root",
+            "Remote attacker \u21d2 local attacker"
+        ],
+        "correctAnswer": 2,
+        "verified": 1
+    },
+    {
+        "question": "What does the term \"attack surface\" refer to in the context of cybersecurity?",
+        "options": [
+            "The level of encryption used to protect sensitive data.",
+            "The sum of the different points (the \"attack vectors\") where an unauthorized user (the \"attacker\") can try to enter data to or extract data from an environment.",
+            "The total number of physical servers in an organization's data center"
+        ],
+        "correctAnswer": 1,
+        "verified": 1
+    },
+    {
+        "question": "Select which attack does not involve social engineering among the following ones:",
+        "options": [
+            "Data Masking: a technique used to protect sensitive information by replacing it with fictional or obfuscated data",
+            "Phishing: sending fraudulent emails or messages that appear to be from a trustworthy source to deceive individuals into revealing sensitive information or performing certain actions",
+            "Impersonation: Pretending to be someone else, such as a coworker or a representative from a reputable organization, to gain trust and manipulate individuals into providing confidential information"
+        ],
+        "correctAnswer": 0,
+        "verified": 1
+    },
+    {
+        "question": "How can you attack an app by exploiting dynamic code loading technique?",
+        "options": [
+            "By sniffing the network traffic during the download of the binary file from a remote server",
+            "By replacing the original downloaded binary file with a malicious one",
+            "By inspecting the code to be dynamically loaded in the private directory of the app"
+        ],
+        "correctAnswer": 1,
+        "verified": 1
+    },
+    {
+        "question": "Which is NOT a possible reason that leads towards cryptographic vulnerabilities?",
+        "options": [
+            "Network traffic in cleartext",
+            "Poor implementation of cryptographic libraries",
+            "Misuse of cryptographic libraries"
+        ],
+        "correctAnswer": 0,
+        "verified": 1
+    },
+    {
+        "question": "What is the Android Confused Deputy attack, and how does it work? Select the correct answer",
+        "options": [
+            "The Confused Deputy attack is a security vulnerability that occurs when an Android app grants excessive permissions to other apps without appropriate authorization checks. It allows a malicious app to misuse the granted permissions and access sensitive user data or perform unauthorized actions.",
+            "The Confused Deputy attack is a social engineering technique where an attacker tricks an Android user into downloading and installing a malicious app that steals sensitive information. The attack typically involves phishing emails or fake app stores.",
+            "The Confused Deputy attack is a method of exploiting vulnerabilities in the Android operating system to gain unauthorized root access to a device. It works by bypassing the security mechanisms and gaining escalated privileges."
+        ],
+        "correctAnswer": 0,
+        "verified": 1
+    },
+    {
+        "question": "What is Android overpermissioning, and what are its implications?",
+        "options": [
+            "Android overpermissioning is the phenomenon where Android apps request more permissions than necessary for their intended functionality. This can potentially expose user data to privacy risks and increase the attack surface for potential security breaches.",
+            "Android overpermissioning is a technique used by malicious apps to gain unauthorized access to user data by exploiting vulnerabilities in the Android operating system.",
+            "Android overpermissioning refers to the practice of granting unnecessary permissions to Android apps, leading to reduced performance and increased battery consumption."
+        ],
+        "correctAnswer": 0,
+        "verified": 1
+    },
+    {
+        "question": "What is zip path traversal, and how does it pose a security risk?",
+        "options": [
+            "Zip path traversal is a security vulnerability that allows an attacker to extract files to arbitrary locations on a system, potentially overwriting sensitive files or executing malicious code.",
+            "Zip path traversal is a technique used to compress and extract files and folders in a compressed ZIP archive. It does not pose any security risk but is solely a method for managing files.",
+            "Zip path traversal is a feature in ZIP compression that allows users to navigate through the directory structure of a compressed archive. While it may confuse users, it does not pose any security risk."
+        ],
+        "correctAnswer": 0,
+        "verified": 1
+    },
+    {
+        "question": "Which of the following vulnerabilities is an example of a hardware-level attack?",
+        "options": [
+            "Rowhammer Bug",
+            "Confused Deputy Problem",
+            "Component Hijacking"
+        ],
+        "correctAnswer": 0,
+        "verified": 1
+    },
+    {
+        "question": "Which of the following vulnerabilities arises due to improper handling of exported app components, allowing unauthorized access to protected resources?",
+        "options": [
+            "Zip Path Traversal",
+            "Component Hijacking",
+            "Overpermissioning"
+        ],
+        "correctAnswer": 1,
+        "verified": 1
+    },
+    {
+        "question": "What is Android SafetyNet attestation, and how does it enhance security?",
+        "options": [
+            "Android SafetyNet attestation is a feature that enables users to clone and replicate their Android devices, allowing them to use multiple instances of the same device simultaneously",
+            "Android SafetyNet attestation is a method used to bypass security measures on Android devices, allowing unauthorized access to protected data and services",
+            "Android SafetyNet attestation is a feature that verifies the integrity and compatibility of an Android device's operating system and software, ensuring a secure environment for sensitive applications"
+        ],
+        "correctAnswer": 2,
+        "verified": 1
+    },
+    {
+        "question": "Select the wrong statement",
+        "options": [
+            "Verify Apps (Google Play Protect) is a system-level security feature that scans and protects against potentially harmful or malicious apps on the Google Play Store",
+            "SafetyNet Attestation helps protect sensitive applications by ensuring they run on trusted devices and protecting against potential attacks",
+            "SafetyNet Attestation and Verify Apps are both security features provided by Google for Android devices, but they serve different purposes"
+        ],
+        "correctAnswer": 0,
+        "verified": 1
+    },
+    {
+        "question": "What is Project Treble, and how does it impact Android device updates?",
+        "options": [
+            "Project Treble is a feature that improves battery life on Android devices by optimizing power consumption and managing background processes efficiently.",
+            "Project Treble is a program that allows Android users to customize the appearance and layout of their device's user interface, providing a more personalized experience.",
+            "Project Treble is an architectural change in the Android operating system that separates the vendor implementation from the core Android framework. It simplifies the process of delivering Android updates to devices by enabling faster and more frequent updates from manufacturers."
+        ],
+        "correctAnswer": 2,
+        "verified": 1
+    },
+    {
+        "question": "Which one is an example of MAC on Android?",
+        "options": [
+            "App Permissions",
+            "SELinux policies",
+            "File System Permissions"
+        ],
+        "correctAnswer": 1,
+        "verified": 1
+    },
+    {
+        "question": "What is the role of SELinux in Android, and how does it enhance the operating system's security?",
+        "options": [
+            "SELinux in Android is a feature that scans and detects malicious apps on the device, providing real-time protection against potential security threats.",
+            "SELinux in Android is a security mechanism that enforces mandatory access control policies, limiting the actions and permissions of processes and applications based on their security contexts.",
+            "SELinux in Android is a security mechanism that enforces discretionary access control policies, limiting the actions and permissions of processes and applications based on their security contexts."
+        ],
+        "correctAnswer": 1,
+        "verified": 1
+    },
+    {
+        "question": "Which one is NOT a direct consequence of unlocking the Android bootloader?",
+        "options": [
+            "compromise the device hardware components",
+            "running untrusted software that may contain security vulnerabilities",
+            "exploiting a vulnerability to install malware that can compromise the device's security"
+        ],
+        "correctAnswer": 0,
+        "verified": 1
+    },
+    {
+        "question": "What is Android TrustZone, and how does it contribute to the security of the operating system?",
+        "options": [
+            "Android TrustZone is a security mechanism that prevents unauthorized access to the device by encrypting all data stored on the device's internal storage.",
+            "Android TrustZone is a hardware-based security extension that provides a secure execution environment for handling sensitive operations and storing sensitive data.",
+            "Android TrustZone is a feature that enables users to securely transfer files between Android devices using encrypted communication channels."
+        ],
+        "correctAnswer": 1,
+        "verified": 1
+    },
+    {
+        "question": "What is defence in depth?",
+        "options": [
+            "a vulnerability scanning tool",
+            "cybersecurity strategy that involves implementing multiple layers of security controls to protect against the same threat",
+            "cybersecurity strategy that involves implementing multiple layers of security controls to protect against the different threats"
+        ],
+        "correctAnswer": 1,
+        "verified": 1
+    },
+    {
+        "question": "Which statement accurately describes the role of Google SafetyNet Attestation in mobile app development?",
+        "options": [
+            "Google SafetyNet Attestation ensures the security and integrity of the device's software.",
+            "Google SafetyNet Attestation ensures the security and integrity of the device's software and hardware.",
+            "Google SafetyNet Attestation ensures the security and integrity of the device's hardware."
+        ],
+        "correctAnswer": 1,
+        "verified": 1
+    },
+    {
+        "question": "Which of the following best describes the purpose of the Android bootloader in the device's boot process?",
+        "options": [
+            "The bootloader verifies the integrity of the operating system and allows for its secure boot process.",
+            "The bootloader is responsible for executing device drivers and managing peripheral devices.",
+            "The bootloader determines the order in which system components are loaded during startup."
+        ],
+        "correctAnswer": 0,
+        "verified": 1
+    },
+    {
+        "question": "Which one is NOT a booting mode for a device?",
+        "options": [
+            "Debug mode.",
+            "Recovery mode.",
+            "Normal mode."
+        ],
+        "correctAnswer": 0,
+        "verified": 1
+    },
+    {
+        "question": "What is the primary purpose of Android TrustZone in mobile device architecture?",
+        "options": [
+            "TrustZone ensures software-based isolation for secure execution of sensitive operations and data.",
+            "TrustZone ensures hardware-based isolation for secure execution of sensitive operations.",
+            "TrustZone ensures hardware-based isolation for secure execution of sensitive operations and data."
+        ],
+        "correctAnswer": 2,
+        "verified": 1
+    },
+    {
+        "question": "Identify which one is an UNCOMMON threat model",
+        "options": [
+            "Installation of malicious apps that are disguised as legitimate applications and may perform activities such as data theft, unauthorized access, or aggressive advertising.",
+            "Android devices connected to various networks, including public Wi-Fi networks, which can expose them to network-based attacks.",
+            "Due to the Android OS fragmentation, older or customized versions may have unpatched vulnerabilities. Attackers can target specific OS versions or take advantage of inconsistencies across devices."
+        ],
+        "correctAnswer": 2,
+        "verified": 1
+    },
+    {
+        "question": "Which classes of attacker can we have in a threat model?",
+        "options": [
+            "Remote, close or local",
+            "External, proximal or internal",
+            "Remote, proximal or local"
+        ],
+        "correctAnswer": 2,
+        "verified": 1
+    },
+    {
+        "question": "Select the correct statement",
+        "options": [
+            "Attackers rely on security vulnerabilities to bypass the technical gap between the defence model and the attacker's aim.",
+            "Attackers rely on security vulnerabilities to bypass the technical gap between the threat model and the attacker's aim.",
+            "Attackers rely on security exploits to bypass the technical gap between the threat model and the attacker's aim."
+        ],
+        "correctAnswer": 1,
+        "verified": 1
+    },
+    {
+        "question": "Which one is NOT a vulnerability type?",
+        "options": [
+            "OS fragmentation",
+            "Elevation of privilege",
+            "Information disclosure"
+        ],
+        "correctAnswer": 0,
+        "verified": 1
+    },
+    {
+        "question": "What is a repackaging attack?",
+        "options": [
+            "It is a malicious technique where an attacker creates a new app by adding malicious code and redistributing it.",
+            "It is a malicious technique where an attacker modifies an existing app by adding malicious code and redistributing it.",
+            "It is a malicious technique where an attacker modifies an existing app by adding malicious code at runtime."
+        ],
+        "correctAnswer": 1,
+        "verified": 1
+    },
+    {
+        "question": "What is symbolic execution?",
+        "options": [
+            "Symbolic execution is a method that explores all possible program paths by using symbolic values as inputs to detect program vulnerabilities or generate test cases.",
+            "Symbolic execution is a method that explores all possible program paths by using symbolic values as inputs to cause program crashes.",
+            "Symbolic execution is a method that explores all reachable program paths by using symbolic values as inputs to launch exploits."
+        ],
+        "correctAnswer": 0,
+        "verified": 1
+    },
+    {
+        "question": "What is the primary purpose of the Android Zygote process?",
+        "options": [
+            "It handles the management of app processes and their life cycles.",
+            "It is responsible for compiling and optimizing the Java bytecode of Android apps.",
+            "It manages the communication between the Android runtime and the hardware components."
+        ],
+        "correctAnswer": 0,
+        "verified": 1
+    },
+    {
+        "question": "Which information is NOT contained in an Android app certificate?",
+        "options": [
+            "The developer private key.",
+            "The validity period.",
+            "The issuer, i.e. the entity that issued the certificate."
+        ],
+        "correctAnswer": 0,
+        "verified": 1
+    },
+    {
+        "question": "How does a bound service in Android communicate with components in the application?",
+        "options": [
+            "Bound services provide an interface through which components can bind and communicate.",
+            "Bound services use broadcast receivers for communication.",
+            "Bound services communicate using explicit intents."
+        ],
+        "correctAnswer": 0,
+        "verified": 1
+    },
+    {
+        "question": "How does an Android Content Provider facilitate data sharing between different applications?",
+        "options": [
+            "Content Providers expose a set of APIs for inter-process communication.",
+            "Content Providers use implicit intents to share data between applications.",
+            "Content Providers provide a structured interface for accessing and sharing data between applications."
+        ],
+        "correctAnswer": 2,
+        "verified": 1
+    },
+    {
+        "question": "The Android instrumentation",
+        "options": [
+            "provides a framework for running tests on Android applications, automating interactions, and monitoring the application's behavior during testing and debugging.",
+            "provides a framework for running tests on Android applications, automating interactions, and monitoring the application's behavior during the compilation.",
+            "provides a framework for running tests on Android applications, automating interactions, and monitoring the application's behavior during the development"
+        ],
+        "correctAnswer": 0,
+        "verified": 1
+    },
+    {
+        "question": "What is the purpose of taint analysis?",
+        "options": [
+            "to help in optimizing code execution.",
+            "to track and identify the data flow.",
+            "to identify memory leaks in a software application."
+        ],
+        "correctAnswer": 1,
+        "verified": 1
+    },
+    {
+        "question": "Which technique is mostly affected by scalability issues?",
+        "options": [
+            "Taint analysis.",
+            "Dynamic analysis.",
+            "Static analysis."
+        ],
+        "correctAnswer": 2,
+        "verified": 1
+    }
+]
