@@ -1,13 +1,15 @@
 [
 	{
-		"question": "Given the following bit series of a message in the CAN bus, complete the attacker's bit series such that it increases the TEC of the victim (notice that bold numbers are for arbitration) <br> <table><tr><td>Victim</td><td>0</td><th><b>1</b></th><th><b>0</b></th><th><b>1</b></th><td>0</td><td>0</td><td>1</td><td>1</td></tr><tr><td>Attacker</td></tr></table>",
+		"question": "Given the following bit series of a message in the CAN bus, complete the attacker's bit series such that it increases the TEC of the victim (notice that underlined numbers are for arbitration) <br> <table><tr><td>Victim</td><td>0</td><th><u>1</u></th><th><u>0</u></th><th><u>1</u></th><td>0</td><td>0</td><td>1</td><td>1</td></tr><tr><td>Attacker</td></tr></table>",
 		"options": [
 			"0 0 0 0 0 0 1 1",
 			"0 1 0 1 0 0 0 1",
 			"1 1 0 1 0 0 1 1"
 		],
-		"correctAnswer": 2,
-		"verified": 0
+		"correctAnswer": 1,
+		"motivation": "To increase the transmit error counter, which is the core of the bus-off attack, there must be a bit mismatch between the two messages in either the control field or the data field. All the preceding bits must be identical to the victim's message, which means that the first bit (start of frame) and the 2nd, 3rd, 4th bits (ID) must be 0101, thus leaving only one correct answer.",
+		"motivation_image": "img/increase_tec.png",
+		"verified": 1
 	},
 	{
 		"question": "Geo-indistinguishability is",
