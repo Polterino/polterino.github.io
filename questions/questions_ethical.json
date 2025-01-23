@@ -23,22 +23,22 @@
 	{
 		"question": "What does an attacker need to sniff packets?",
 		"options": [
-			"A powerful device",
 			"To be able to manipulate packets",
+			"A powerful device",
 			"To be connected to the communication medium of the victim"
 		],
 		"correctAnswer": 2,
 		"verified": 1
 	},
 	{
-		"question": "Choose the option(s) that hold true for the NIC card",
+		"question": "Choose the option(s) that holds true for the NIC card",
 		"options": [
-			"It is associated with an IP address",
+			"It's sole purpose is spoofing",
 			"It is a physical and logical interface for communications",
-			"It communicates with the kernel to pass packets to the user interface",
-			"It's sole purpose is spoofing"
+			"It is associated with an IP address",
+			"It communicates with the kernel to pass packets to the user interface"
 		],
-		"correctAnswer": [1, 2],
+		"correctAnswer": [1, 3],
 		"verified": 1
 	},
 	{
@@ -49,7 +49,7 @@
 			"Capture packets in a wireless network",
 			"Change the IP address of the sender of the current packet"
 		],
-		"correctAnswer": [1],
+		"correctAnswer": 1,
 		"verified": 1
 	},
 	{
@@ -60,17 +60,91 @@
 			"The process where the MAC address of the sender is changed",
 			"The process where the IP address of the sender is changed"
 		],
-		"correctAnswer": [1],
+		"correctAnswer": 1,
 		"verified": 1
 	},
 	{
 		"question": "What is a smurf attack?",
 		"options": [
+			"A spoofing attack in ICMP to overload a victim",
 			"A spoofing attack in TCP to overload a victim",
-			"A spoofing attack in ICMP to overload the whole network",
-			"A spoofing attack in ICMP to overload a victim"
+			"A spoofing attack in ICMP to overload the whole network"
 		],
-		"correctAnswer": [2],
+		"correctAnswer": 0,
+		"verified": 1
+	},
+	{
+		"question": "Which of the following statements is correct?",
+		"options": [
+			"TCP and UDP are equal alternatives layer 4 protocols",
+			"TCP is connection-based, UDP is connectionless",
+			"TCP is connectionless, UDP is connection-based"
+		],
+		"correctAnswer": 1,
+		"verified": 1
+	},
+	{
+		"question": "What is a network port?",
+		"options": [
+			"A specific protocol that uniquely defines a connection",
+			"A software component to establish a connection",
+			"A physical device to connect network cables to",
+			"A 16 bits identifier"
+		],
+		"correctAnswer": 3,
+		"verified": 1
+	},
+	{
+		"question": "Select the sentence that holds true for the three-way handshake.",
+		"options": [
+			"In TCP, the client and server exchange three messages to establish a communication session",
+			"In TCP, it is a procedure to terminate a communication session",
+			"In UDP, the client and server exchange three messages to establish a communication session",
+			"In TCP, it is a procedure to exchange single data packets"
+		],
+		"correctAnswer": 0,
+		"verified": 1
+	},
+    {
+		"question": "What is the purpose of the TCP RST packet?",
+		"options": [
+			"It informs the server that the client wants to terminate a connection",
+			"It informs the server that the client wants to establish a connection",
+			"It initializes the sequence number of successive packets"
+		],
+		"correctAnswer": 0,
+		"verified": 1
+	},
+	{
+		"question": "Select the option that holds true for the SYN attack",
+		"options": [
+			"It is a denial of service attack towards TCP exploiting the first packet of the 3-way handshake",
+			"It is a denial of service attack towards TCP exploiting the last packet of the 3-way handshake",
+			"It is a denial of service attack towards UDP exploiting the first packet of the 3-way handshake",
+			"It exploits the lack of authentication of the RST packet"
+		],
+		"correctAnswer": 0,
+		"verified": 1
+	},
+	{
+		"question": "What does an attacker need to launch a successful RST attack?",
+		"options": [
+			"The private key of the victim",
+			"The RST identifier of the victim",
+			"The IP address of the victim",
+			"The sequence number of the SYN packet"
+		],
+		"correctAnswer": 2,
+		"verified": 1
+	},
+	{
+		"question": "What is the effect of an RST Hijacking attack?",
+		"options": [
+			"Gain control over the victim connection",
+			"Causing a denial of service to the victim",
+			"Cause an out of order error to the received TCP packets"
+		],
+		"correctAnswer": 0,
 		"verified": 1
 	},
 	{
@@ -92,16 +166,7 @@
 		"verified": 1
 	},
 	{
-		"question": "What happens when a buffer is overflowed?",
-		"options": [
-			"Whatever is in the memory space that comes after the buffer is overwritten",
-			"The memory space that comes after the buffer holds the extra data as well as keeping the data that it contained before"
-		],
-		"correctAnswer": 0,
-		"verified": 1
-	},
-	{
-		"question": "To exploit any type of buffer overflow the attacker needs to understand how that buffer will be stored in the process's memory.",
+		"question": "To exploit any type of buffer overflow the attacker needs to understand how that buffer will be stored in the processes memory.",
 		"options": [
 			"False",
 			"True"
@@ -119,10 +184,19 @@
 		"verified": 1
 	},
 	{
+		"question": "What happens when a buffer is overflowed?",
+		"options": [
+			"Whatever is in the memory space that comes after the buffer is overwritten",
+			"The memory space that comes after the buffer holds the extra data as well as keeping the data that it contained before"
+		],
+		"correctAnswer": 0,
+		"verified": 1
+	},
+	{
 		"question": "What does a typical C program usually use stacks for?",
 		"options": [
-			"Permanent storage of variables",
 			"For preventing buffer overflows",
+			"Permanent storage of variables",
 			"Temporary storage of variables"
 		],
 		"correctAnswer": 2,
@@ -132,7 +206,7 @@
 		"question": "If you declare an array as A[100] in C and you try to write data to A[555], what will happen?",
 		"options": [
 			"Nothing",
-			"The C compiler will give you an error and won't compile",
+			"The C compiler will give you an error and won’t compile",
 			"Whatever is at A[555] will be overwritten"
 		],
 		"correctAnswer": 2,
@@ -141,11 +215,208 @@
 	{
 		"question": "What can be overwritten by a buffer overflow that causes a security problem?",
 		"options": [
-			"The original binary code of the program",
 			"Permanent data saved on the computer",
+			"The original binary code of the program",
 			"Any kind of pointer"
 		],
 		"correctAnswer": 2,
+		"verified": 1
+	},
+    {
+		"question": "What are the techniques used to eliminate zero bytes from shellcode?",
+		"options": [
+			"All of them",
+			"Shift-Left and Shift-Right Technique",
+			"XOR Technique",
+			"Assigning values to the lower portions of registers, such as using mov al, 0x99 instead of mov eax, 0x00000099"
+		],
+		"correctAnswer": 0,
+		"verified": 1
+	},
+	{
+		"question": "Why does the attacker have to collect information about the architecture of the victim machine to perform a shellcode attack?",
+		"options": [
+			"Because the shellcode contains binary code which depends on the underlying machine architecture",
+			"Because the shellcode will be compiled by the target victim machine",
+			"Because the shellcode will be sent over the network towards the target victim machine"
+		],
+		"correctAnswer": 0,
+		"verified": 1
+	},
+	{
+		"question": "Why does an attacker have to prevent the introduction of zero values inside a shellcode?",
+		"options": [
+			"Because the zero value cannot be represented through assembly code",
+			"Because the zero value cannot be pushed on the stack",
+			"Because the zero character is the termination character of strings and it affects some C functions"
+		],
+		"correctAnswer": 2,
+		"verified": 1
+	},
+	{
+		"question": "Which of the following techniques is used to obtain the address of a hardcoded string in the shellcode?",
+		"options": [
+			"Return-Oriented Programming (ROP)",
+			"Call-Pop Technique",
+			"XOR Technique"
+		],
+		"correctAnswer": 1,
+		"verified": 1
+	},
+	{
+		"question": "Which register is used to store the <u>first argument</u> of a system call in x86 assembly during a shellcode execution?",
+		"options": [
+			"ecx",
+			"eax",
+			"ebx"
+		],
+		"correctAnswer": 2,
+		"verified": 1
+	},
+	{
+		"question": "Which instruction is used to invoke a system call in 64-bit Linux assembly?",
+		"options": [
+			"int 0x80",
+			"ret",
+			"syscall"
+		],
+		"correctAnswer": 2,
+		"verified": 1
+	},
+	{
+		"question": "Which of the following assembly instructions is used to move the stack pointer to the address of a string in x86 shellcode?",
+		"options": [
+			"mov esp, ebx",
+			"mov ebx, esp",
+			"push esp"
+		],
+		"correctAnswer": 1,
+		"verified": 1
+	},
+	{
+		"question": "Which of the following registers is used to store the <u>system call number</u> for execve() in x86 assembly?",
+		"options": [
+			"eax",
+			"ecx",
+			"ebx"
+		],
+		"correctAnswer": 0,
+		"verified": 1
+	},
+	{
+		"question": "Which attack bypasses the non-executable stack countermeasure?",
+		"options": [
+			"Buffer overflow",
+			"Return to libc",
+			"Shellcode"
+		],
+		"correctAnswer": 1,
+		"verified": 1
+	},
+	{
+		"question": "In the function epilogue, the previous frame pointer, which is stored in the area below the return address, will be retrieved and assigned to the ebp register. However, when we overflow the return address, the previous frame pointer region is already modified, so after the function epilogue, ebp contains some arbitrary value. Does this matter?",
+		"options": [
+			"It depends",
+			"No",
+			"Yes"
+		],
+		"correctAnswer": 0,
+		"verified": 1
+	},
+	{
+		"question": "Can address space layout randomization help defeat the return-to-libc attack?",
+		"options": [
+			"No",
+			"Yes"
+		],
+		"correctAnswer": 0,
+		"verified": 1
+	},{
+		"question": "Why do we need to know technical details about the function prologue and function epilogue to perform a return to libc attack?",
+		"options": [
+			"Because function prologue and function epilogue allow to pass the arguments to the system() function",
+			"Because we exploit the ebp register to pass the arguments to the system() function and we need to know when the ebp value changes",
+			"Because function prologue and epilogue are part of the implementation of the system() function"
+		],
+		"correctAnswer": 1,
+		"verified": 1
+	},
+	{
+		"question": "Can the return to libc attack be implemented only through the system() function?",
+		"options": [
+			"Yes",
+			"No"
+		],
+		"correctAnswer": 1,
+		"verified": 1
+	},
+	{
+		"question": "Which feature is mandatory for a gadget?",
+		"options": [
+			"It should be injected by the attacker",
+			"It should end with the ret assembly instruction",
+			"It should be overwritten"
+		],
+		"correctAnswer": 1,
+		"verified": 1
+	},
+	{
+		"question": "A ROP attack is an extended version of",
+		"options": [
+			"The shellcode attack",
+			"The buffer overflow attack",
+			"The return to libc attack"
+		],
+		"correctAnswer": 2,
+		"verified": 1
+	},
+	{
+		"question": "Can we use the stack canaries idea to protect against format-string attacks?",
+		"options": [
+			"Yes",
+			"No"
+		],
+		"correctAnswer": 1,
+		"verified": 1
+	},
+	{
+		"question": "What is the main vulnerability exploited through a format string attack?",
+		"options": [
+			"The mismatch between the type of the format specifiers and the provided arguments",
+			"The mismatch between the number of format specifiers and the provided arguments",
+			"The use of format specifiers"
+		],
+		"correctAnswer": 1,
+		"verified": 1
+	},
+	{
+		"question": "The %s format specifier",
+		"options": [
+			"prints a string in the fetched address",
+			"considers the next fetched value as an integer and prints it",
+			"considers the next fetched value as an address and retrieves data from it"
+		],
+		"correctAnswer": 2,
+		"verified": 1
+	},
+	{
+		"question": "The %x format specifier",
+		"options": [
+			"considers the next fetched value as an integer and prints it",
+			"considers the next fetched value as an address and retrieves data from it",
+			"considers the next fetched value as an address and writes data into it"
+		],
+		"correctAnswer": 0,
+		"verified": 1
+	},
+	{
+		"question": "The %n format specifier",
+		"options": [
+			"considers the next fetched value as an address and writes arbitrary data into it",
+			"considers the next fetched value as an address and writes the number of printed characters into it",
+			"considers the next fetched value as an address and retrieves data from it"
+		],
+		"correctAnswer": 1,
 		"verified": 1
 	}
 ]
