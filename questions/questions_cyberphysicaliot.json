@@ -27,8 +27,9 @@
 			"a feature detection algorithm to identify and target specific on-ground victims",
 			"the pattern of apparent motion of objects, surfaces, and edges"
 		],
-		"correctAnswer": 0,
-		"verified": 0
+		"correctAnswer": 2,
+		"motivation_image": "img/optical_flow.png",
+		"verified": 1
 	},
 	{
 		"question": "In a bus-off attack",
@@ -78,7 +79,7 @@
 			"an anomaly detection system able to block malicious worms"
 		],
 		"correctAnswer": 0,
-		"verified": 0
+		"verified": 1
 	},
 	{
 		"question": "A saturation attack to a LiDAR",
@@ -87,7 +88,7 @@
 			"is a Denial of Service attack that leverages the limits in the linear region of sensors",
 			"is a Denial of Service attack that leverages the limits in the operational range of sensors"
 		],
-		"correctAnswer": 2,
+		"correctAnswer": 1,
 		"verified": 0
 	},
 	{
