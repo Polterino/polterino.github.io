@@ -418,5 +418,112 @@
 		],
 		"correctAnswer": 1,
 		"verified": 1
+	},
+	{
+		"question": "What is the main vulnerability exploited in SQL injection attack?",
+		"options": [
+			"Data channel and code channel are mixed",
+			"The user can input data in the web application",
+			"The web application relies on an external database"
+		],
+		"correctAnswer": 0,
+		"verified": 1
+	},
+	{
+		"question": "A SQL injection attack ...",
+		"options": [
+			"... can be performed only if the user input values are sent over an HTTP POST request",
+			"... can be performed only if the user input values are sent over an HTTP GET request",
+			"... it does not depend on the type of request"
+		],
+		"correctAnswer": 2,
+		"verified": 1
+	},
+	{
+		"question": "Is the following SQL statement vulnerable to SQL injection attacks?<br>$sql = \"SELECT * FROM employee WHERE eid=SHA2('$id', 256) and password=SHA2('$passwd',256)\";",
+		"options": [
+			"Yes",
+			"No"
+		],
+		"correctAnswer": 1,
+		"verified": 1
+	},
+	{
+		"question": "To defeat SQL injection attacks, a web application has implemented a filtering scheme at the client side: basically, on the page where users type their data, a filter is implemented using JavaScript. It removes any special characters for comments, and keywords reserved for SQL statements. Is this solution enough to prevent SQL injection attacks?",
+		"options": [
+			"No",
+			"Yes"
+		],
+		"correctAnswer": 0,
+		"verified": 1
+	},
+	{
+		"question": "The prepared statement countermeasure can only work ...",
+		"options": [
+			"... if the user input are sent over any HTML request",
+			"... if the user input are sent over an HTTP POST request",
+			"... if the user input are sent over an HTTP GET request"
+		],
+		"correctAnswer": 0,
+		"verified": 1
+	},
+	{
+		"question": "If the input parameters you use for a SQL injection attack are sent over an HTTP GET request, can you just copy/paste the parameters on the URL as you enter them in the web app?",
+		"options": [
+			"Yes",
+			"No"
+		],
+		"correctAnswer": 1,
+		"verified": 1
+	},
+	{
+		"question": "ASLR randomizes",
+		"options": [
+			"the stack base address in the memory",
+			"the address of a specific function frame on the stack",
+			"the internal offsets within the program stack"
+		],
+		"correctAnswer": 0,
+		"verified": 1
+	},
+	{
+		"question": "Which attack is prevented through the nonexecutable stack countermeasure?",
+		"options": [
+			"All the buffer overflow attacks",
+			"A buffer overflow attack aimed to modify the program data",
+			"Shellcode attack"
+		],
+		"correctAnswer": 2,
+		"verified": 1
+	},
+	{
+		"question": "The stack canary value",
+		"options": [
+			"is hardcoded in the program",
+			"is retrieved runtime at the first execution of the program",
+			"is retrieved at runtime for every new execution of the program"
+		],
+		"correctAnswer": 2,
+		"verified": 1
+	},
+	{
+		"question": "Stack canaries",
+		"options": [
+			"are automatically introduced by the compiler if the associated flag is specified during the compilation of the program",
+			"are introduced by the program developers",
+			"are automatically introduced by the compiler"
+		],
+		"correctAnswer": 0,
+		"verified": 1
+	},
+	{
+		"question": "Select the correct statement",
+		"options": [
+			"the OS and compiler approaches are alternative to each other",
+			"the OS and compiler approaches are effective only if there are no developer approaches",
+			"the OS and compiler approaches are always effective"
+		],
+		"correctAnswer": 2,
+		"verified": 1
 	}
 ]
