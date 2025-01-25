@@ -38,7 +38,7 @@
 			"The attacker can disconnect a node from the CAN bus"
 		],
 		"correctAnswer": 2,
-		"verified": 0
+		"verified": 1
 	},
 	{
 		"question": "Consider a platoon with N cars, where car i follows car i-1. Denoting as q<sub>i</sub> the location of car i, we can denote the distance between car i and its preceding car as d<sub>i</sub> = q<sub>i-1</sub>-q<sub>i</sub>. Cars aim at maintaining a desired distance d<sub>r,i</sub>=v<sub>i</sub>+3, and their controller computes the error as e<sub>i</sub>(t) = d<sub>i</sub>(t) - d<sub>r,i</sub>(t). Assume that the control rule is such that v<sub>i</sub>(t+1) = v<sub>i</sub>(t) + sign(e<sub>i</sub>(t)), the error value is updated accordingly, and that an attacker launches an attack able to modify the value of q<sub>i-1</sub>. What is the effect of an attacker reporting higher values for q<sub>i-1</sub> compared to the actual ones? <br>Note: sign(x) = 1 if x &gt; 0, -1 if x &lt; 0, 0 if x = 0",
@@ -98,7 +98,7 @@
 			"a counter value that can be used to implement the bus-off attack"
 		],
 		"correctAnswer": 0,
-		"verified": 0
+		"verified": 1
 	},
 	{
 		"question": "The CAN bus uses",
@@ -108,7 +108,7 @@
 			"a current loop wired-AND signalling"
 		],
 		"correctAnswer": 1,
-		"verified": 0
+		"verified": 1
 	},
 	{
 		"question": "In an ACC scenario, an attacker can",
@@ -117,7 +117,8 @@
 			"create a spike in the control signal and make the vehicle accelerate",
 			"leverage the existing communication channel between two vehicles to convey malicious information"
 		],
-		"correctAnswer": 0,
+		"correctAnswer": 1,
+		"motivation_image": "img/spike.png",
 		"verified": 0
 	},
 	{
