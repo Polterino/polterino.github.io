@@ -1,0 +1,4 @@
+Why it is mandatory to avoid zeros in the attack binary? (1-2 lines max)
+Because when a c programs reads an input and finds a 0, which is the string terminator
+it stops executing whatever it was doing, thus interrupting the attack
+(not sure this is even right)

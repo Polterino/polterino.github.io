@@ -1,0 +1,20 @@
+
+1) What is the malicious link that you need to send to Charlie?
+The server which hosts the malicious javascript code, which is
+http://www.attacker32.com/editprofile.html
+
+2) What you inserted in **1** and **2**?
+As requested by the task I put
+**1** -> Charlie<3Boby
+**2** -> Boby is my best friend and he will always be!
+
+3) What about **3**? How did you manage to find the guid?
+The guid of Charlie is 58. You can find it by sending a friend request/removing it as friend
+and inspecting the request with the network tab of the browser which is something like
+url/add?friend=58
+
+4) What is and how you can find the link you need to specify in **4**?
+The action is the POST request that you submit to the target website to perform
+a request, like sending data (POST), receiving data (GET), updating data (PUT).
+You can find it by inspecting the network tab of the browser and clicking "Update profile"
+to see which url the browser uses, which is http://www.seed-server.com/action/profile/edit

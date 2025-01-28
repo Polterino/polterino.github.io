@@ -1,0 +1,10 @@
+
+In the login page, to login into Boby's account type
+"Boby' -- " without double quotes (") into the username field, the password field can be left empty.
+Make sure that there is a blank space after -- otherwise sql throws an error
+
+When you are logged in Boby's account, go to edit profile and type
+', EID='10000', SSN='10211002', Salary='20000', birth='9/20', address='
+into the nickname field, the other fields can be left empty.
+If we also change the ID and the name there may be a sql error depending on
+what is the primary key of the table (primary key must be unique)
