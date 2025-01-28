@@ -476,7 +476,7 @@
             "boot.art contains pre-initialized classes and objects from the Android framework, while boot.oat contains pre-compiled classes from the Android framework",
             "boot.art contains pre-initialized classes and objects from the developers' custom code, while boot.oat contains pre-compiled classes from developers' custom code"
         ],
-        "correctAnswer": 2,
+        "correctAnswer": 1,
         "verified": 1
     },
     {
