@@ -1,0 +1,6 @@
+--------- beginning of main
+01-29 11:13:32.587 15450 15450 I MOBIOTSEC: Sending implicit intent with the flag
+01-29 11:13:32.587 15450 15450 I MOBIOTSEC: mobiotsec.MUTATE_ME
+01-29 11:13:32.591 15450 15450 I MOBIOTSEC: Intent { act=mobiotsec.MUTATE_ME flg=0x8 (has extras) }
+01-29 11:13:33.113 15498 15498 I MOBIOTSEC: Received intent from victim
+01-29 11:13:33.524 15450 15450 I MOBIOTSEC: FLAG{per_angusta_ad_augusta}
