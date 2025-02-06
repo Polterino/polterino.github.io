@@ -525,5 +525,185 @@
 		],
 		"correctAnswer": 2,
 		"verified": 1
+	},
+	{
+		"question": "Stack canaries prevent",
+		"options": [
+			"data-oriented bof attacks",
+			"any type of bof attacks (i.e., both data-oriented and control-flow-oriented bof attacks)",
+			"control-flow-oriented bof attacks"
+		],
+		"correctAnswer": 2,
+		"verified": 1
+	},
+	{
+		"question": "What is the purpose of a return-to-like attack?",
+		"options": [
+			"Return-to-like attacks aim to bypass ASLR and execute predefined sequences of existing library functions to carry out specific actions.",
+			"Return-to-like attacks involve redirecting the program's execution flow to arbitrary memory addresses, allowing the execution of malicious code.",
+			"Return-to-like attacks exploit vulnerabilities in the computer's memory management system to gain arbitrary code execution privileges."
+		],
+		"correctAnswer": 0,
+		"verified": 1
+	},
+	{
+		"question": "Which countermeasure is effective against return-to-like attack?",
+		"options": [
+			"Control Flow integrity, which enforce strict control over the program's execution flow, preventing deviations or unauthorized jumps to non-intended locations.",
+			"Address Splice Layout Randomization",
+			"Stack canaries"
+		],
+		"correctAnswer": 0,
+		"verified": 1
+	},
+	{
+		"question": "When you perform a shellcode attack, you have to make the program jump:",
+		"options": [
+			"to any address before the location of the shellcode cause the stack pointer will move along the stack until it finds the shellcode",
+			"to any address before the location of the shellcode, but after the return address, cause the stack pointer will move along the stack until it finds the shellcode",
+			"exactly at the address where the shellcode has been placed"
+		],
+		"correctAnswer": 2,
+		"verified": 1
+	},
+	{
+		"question": "Select the appropriate role of the eax, ebx and ecx registers when performing a shellcode attack:",
+		"options": [
+			"eax contains the zero value; ebx points to argv[0]; ecx points to argv",
+			"eax contains the system call number; ebx points to argv[0]; ecx points to argv",
+			"eax contains the system call number; ebx points to argv; ecx points to argv[0]"
+		],
+		"correctAnswer": 1,
+		"verified": 1
+	},
+	{
+		"question": "Gadgets used to perform a Return Oriented Programming (ROP) attack",
+		"options": [
+			"are assembly instructions that the attacker makes the program jump to in order to change its runtime behavior",
+			"are source code instructions that the attacker makes the program jump to in order to change its runtime behavior",
+			"are assembly instructions that the attacker injects into the victim program"
+		],
+		"correctAnswer": 0,
+		"verified": 1
+	},
+	{
+		"question": "Packet sniffing refers to the process of:",
+		"options": [
+			"Overhearing live communications between legitimate network entities",
+			"Changing sensitive information in a packet to trick the receiver",
+			"Intercepting communication between two hosts to manipulate packets"
+		],
+		"correctAnswer": 0,
+		"verified": 1
+	},
+	{
+		"question": "In a Smurf attack, the attacker:",
+		"options": [
+			"Spoof an ICMP packet using as sender address the victim's address",
+			"Spoof an ICMP packet using as receiver address the victim's address",
+			"Spoof an TCP packet using as sender address the victim's address"
+		],
+		"correctAnswer": 0,
+		"verified": 1
+	},
+	{
+		"question": "A reflected XSS attack:",
+		"options": [
+			"the attacker exploits a link sent to the victim",
+			"the attacker stores the malicious code on a server",
+			"the attacker stores and executes the code directly on the browser"
+		],
+		"correctAnswer": 0,
+		"verified": 1
+	},
+	{
+		"question": "In a DOM-based XSS attack, the sink:",
+		"options": [
+			"executes the script to e.g., display sensitive information",
+			"sanitizes the input to prevent the execution of the attack",
+			"interacts with a server to retrieve the attacker's code"
+		],
+		"correctAnswer": 0,
+		"verified": 1
+	},
+	{
+		"question": "What is the most generic set of pre-requisites for an attacker to complete a CSRF attack?",
+		"options": [
+			"Carling a cross-site request; making the victim send the cross-site request crafted by the attacker (e.g., by visiting a malicious web page); appending the victim session cookie to the cross-site request",
+			"Having the victim under an active session on the target website; crafting a cross-site request; making the victim send the cross-site request crafted by the attacker (e.g., by visiting a malicious web page)",
+			"Having the victim under an active session on the target website; crafting a cross-site request; making the victim click on the link crafted by the attacker which will send the cross-site request"
+		],
+		"correctAnswer": 1,
+		"verified": 1
+	},
+	{
+		"question": "Select which is the main vulnerability that leads to a CSRF attack among the following ones:",
+		"options": [
+			"Browsers attaching session cookies indiscriminately to any request towards the target website",
+			"Victim having an active session on the target website",
+			"Cross-site requests"
+		],
+		"correctAnswer": 0,
+		"verified": 1
+	},
+	{
+		"question": "In a SYN flooding attack",
+		"options": [
+			"The attacker always modifies the sender IP address",
+			"The attacker overloads the receiver's packet buffer causing a denial of service",
+			"The attacker takes control of an existing connection"
+		],
+		"correctAnswer": 1,
+		"verified": 1
+	},
+	{
+		"question": "Select which information is mandatory to be known by the attacker in order to successfully perform a SQL injection attack, assuming he can only interact with the web page of the victim website.",
+		"options": [
+			"The exact structure of the SQL query performed against the SQL database on the server",
+			"The exact structure of the SQL database on the server",
+			"The website sanitizers applied on the client side"
+		],
+		"correctAnswer": 2,
+		"verified": 1
+	},
+	{
+		"question": "XSS takes advantage of",
+		"options": [
+			"the fact that web applications execute scripts in a distributed fashion",
+			"the fact that web applications execute scripts on remote servers",
+			"the fact that web applications execute scripts on the users' browser"
+		],
+		"correctAnswer": 2,
+		"verified": 1
+	},
+	{
+		"question": "Select the option that holds true for TCP Hijacking",
+		"options": [
+			"The attacker takes control of an existing connection",
+			"The attacker causes a denial of service to an existing connection",
+			"The attacker creates a new connection impersonating another user"
+		],
+		"correctAnswer": 0,
+		"verified": 1
+	},
+	{
+		"question": "A transaction in a blockchain is",
+		"options": [
+			"a list of multiple exchanges that needs to be validated via a consensus algorithm",
+			"a string in a list of records including, among the others, the sender and receiver addresses, and the amount exchanged",
+			"a pointer to a digital currency (e.g., Bitcoin) exchanged among users"
+		],
+		"correctAnswer": 1,
+		"verified": 1
+	},
+	{
+		"question": "An Ethereum smart contract is",
+		"options": [
+			"bytecode stored in a transaction",
+			"a computer program stored in a specific node in the blockchain",
+			"a computer program written in solidity that simultaneously run over the whole blockchain network"
+		],
+		"correctAnswer": 0,
+		"verified": 1
 	}
 ]
