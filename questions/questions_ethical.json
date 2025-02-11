@@ -629,7 +629,7 @@
 	{
 		"question": "What is the most generic set of pre-requisites for an attacker to complete a CSRF attack?",
 		"options": [
-			"Carling a cross-site request; making the victim send the cross-site request crafted by the attacker (e.g., by visiting a malicious web page); appending the victim session cookie to the cross-site request",
+			"Crafting a cross-site request; making the victim send the cross-site request crafted by the attacker (e.g., by visiting a malicious web page); appending the victim session cookie to the cross-site request",
 			"Having the victim under an active session on the target website; crafting a cross-site request; making the victim send the cross-site request crafted by the attacker (e.g., by visiting a malicious web page)",
 			"Having the victim under an active session on the target website; crafting a cross-site request; making the victim click on the link crafted by the attacker which will send the cross-site request"
 		],
