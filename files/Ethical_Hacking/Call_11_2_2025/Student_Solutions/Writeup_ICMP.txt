@@ -1,0 +1,74 @@
+To verify you have been successful, try to run you attack and, from another machine, try using the
+ping command. When doing so, try to ping:
+- A non existing host on the internet (i.e., 1.2.3.4)
+- A non existing host on the LAN (e.g., 10.9.0.99)
+- An existing host on the internet (8.8.8.8)
+For each of the cases, justify your results.
+
+When pinging 1.2.3.4
+root@6bbe7f658dbc:/# ping 1.2.3.4 -c 10
+PING 1.2.3.4 (1.2.3.4) 56(84) bytes of data.
+From 192.168.122.1 icmp_seq=1 Destination Port Unreachable
+64 bytes from 1.2.3.4: icmp_seq=2 ttl=64 time=20.8 ms
+From 192.168.122.1 icmp_seq=2 Destination Port Unreachable
+64 bytes from 1.2.3.4: icmp_seq=3 ttl=64 time=34.8 ms
+From 192.168.122.1 icmp_seq=3 Destination Port Unreachable
+64 bytes from 1.2.3.4: icmp_seq=4 ttl=64 time=22.0 ms
+From 192.168.122.1 icmp_seq=4 Destination Port Unreachable
+64 bytes from 1.2.3.4: icmp_seq=5 ttl=64 time=23.8 ms
+From 192.168.122.1 icmp_seq=5 Destination Port Unreachable
+64 bytes from 1.2.3.4: icmp_seq=6 ttl=64 time=17.3 ms
+
+--- 1.2.3.4 ping statistics ---
+5 packets transmitted, 5 received, +5 errors, 0% packet loss, time 4007ms
+rtt min/avg/max/mdev = 17.279/23.736/34.804/5.927 ms
+
+I receive all the packets but with a destination port error, because the port was not set by the program
+using the TCP() layer of scapy.
+
+
+
+When pinging 10.9.0.99
+root@6bbe7f658dbc:/# ping 10.9.0.99 -c 10
+PING 10.9.0.99 (10.9.0.99) 56(84) bytes of data.
+From 10.9.0.6 icmp_seq=1 Destination Host Unreachable
+From 10.9.0.6 icmp_seq=2 Destination Host Unreachable
+From 10.9.0.6 icmp_seq=3 Destination Host Unreachable
+From 10.9.0.6 icmp_seq=4 Destination Host Unreachable
+From 10.9.0.6 icmp_seq=5 Destination Host Unreachable
+From 10.9.0.6 icmp_seq=6 Destination Host Unreachable
+From 10.9.0.6 icmp_seq=7 Destination Host Unreachable
+From 10.9.0.6 icmp_seq=8 Destination Host Unreachable
+From 10.9.0.6 icmp_seq=9 Destination Host Unreachable
+From 10.9.0.6 icmp_seq=10 Destination Host Unreachable
+
+--- 10.9.0.99 ping statistics ---
+10 packets transmitted, 0 received, +10 errors, 100% packet loss, time 9197ms
+pipe 4
+
+I get a dst host unreachable with 100% packet loss. This is because since the destination IP is inside the same network
+the ARP protocol is used to get the MAC address of the host but since our spoof
+program doesn't handle this, we will get this error
+
+
+
+When pinging 10.9.0.5
+root@6bbe7f658dbc:/# ping 1.9.0.5 -c 10
+PING 1.9.0.5 (1.9.0.5) 56(84) bytes of data.
+From 192.168.122.1 icmp_seq=1 Destination Port Unreachable
+64 bytes from 1.9.0.5: icmp_seq=2 ttl=64 time=63.7 ms
+From 192.168.122.1 icmp_seq=2 Destination Port Unreachable
+64 bytes from 1.9.0.5: icmp_seq=3 ttl=64 time=28.2 ms
+From 192.168.122.1 icmp_seq=3 Destination Port Unreachable
+64 bytes from 1.9.0.5: icmp_seq=4 ttl=64 time=21.8 ms
+From 192.168.122.1 icmp_seq=4 Destination Port Unreachable
+64 bytes from 1.9.0.5: icmp_seq=5 ttl=64 time=20.7 ms
+From 192.168.122.1 icmp_seq=5 Destination Port Unreachable
+64 bytes from 1.9.0.5: icmp_seq=6 ttl=64 time=23.0 ms
+
+--- 1.9.0.5 ping statistics ---
+5 packets transmitted, 5 received, +5 errors, 0% packet loss, time 4007ms
+rtt min/avg/max/mdev = 20.706/31.486/63.692/16.308 ms
+
+Since this host exists I dont have problems with the ARP protocol because the real host replies,
+but I have the same problem as the first case because the ICMP port is closed 

@@ -1,0 +1,25 @@
+The attacker aims to:
+1) Get access to user ‘Samy’ without knowing the password.
+Query inside the Login page
+samy' -- 
+Remember to put a blank space after --
+Injected into the username field
+
+2) Change its salary to 9999999 € and change the email address of the user ‘ted’ into
+‘tedthebest@bestmail.com’, which is an email address under her control. Include a screen
+showing this attack was successful.
+In the update page of samy profile
+In the nickname field type
+', salary=9999999, address='
+
+Then logout
+Then login into ted user using the query of task 1
+ted' -- 
+Using blank space at the end
+In the update page of ted profile
+Just change the email field using the email textbox typing tedthebest@bestmail.com
+
+Per each task, indicate:
+- which of the two is the form to be used;
+- the malicious input for the exploit;
+- in which field to inject it.

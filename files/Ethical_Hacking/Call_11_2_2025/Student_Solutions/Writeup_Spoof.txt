@@ -1,0 +1,5 @@
+What would you do to improve the attack efficacy?
+(You only need to give the idea in the writeup, implementing it is not mandatory)
+I would try to execute more instances of the synflood.py program by using threads,
+parallelizing the workload. With the same idea it would be better to execute the same program
+on multiple machines to maximize damage

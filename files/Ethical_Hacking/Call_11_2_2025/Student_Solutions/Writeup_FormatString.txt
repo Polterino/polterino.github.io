@@ -1,0 +1,6 @@
+1) What is the integer value to be used?
+64
+2) How did you get it?
+Because it's the difference between frame pointer and buffer addres plus 10 cells of 4 bytes each
+so 54+10=64
+

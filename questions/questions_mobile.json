@@ -1101,5 +1101,165 @@
         ],
         "correctAnswer": 2,
         "verified": 1
+    },
+    {
+        "question": "Select the correct statement regarding Android's ContentResolver:",
+        "options": [
+            "ContentResolver provides a <u>unified</u> interface for accessing and manipulating data across <u>different Android components in the same app</u>.",
+            "ContentResolver provides a <u>dedicated</u> interface, <u>one for each Android app</u> accessing and manipulating the ContentProvider data.",
+            "ContentResolver provides a <u>unified</u> interface for accessing and manipulating data across <u>different Android applications</u>."
+        ],
+        "correctAnswer": 2,
+        "verified": 1
+    },
+    {
+        "question": "What is the purpose of the Android sandbox?",
+        "options": [
+            "The Android sandbox isolates third-party apps from system apps, preventing malicious ones from accessing sensitive data or performing unauthorized actions.",
+            "The Android sandbox isolates individual apps from each other and the underlying OS, preventing malicious ones from accessing sensitive data or performing unauthorized actions.",
+            "The Android sandbox isolates individual apps from the underlying OS, preventing malicious ones from accessing sensitive data or performing unauthorized actions."
+        ],
+        "correctAnswer": 1,
+        "verified": 1
+    },
+    {
+        "question": "The Android signature",
+        "options": [
+            "is a security mechanism that prevents repackaging attacks",
+            "is a security mechanism that guarantees the trust in the Android app",
+            "is a security mechanism required for building the Android sandbox"
+        ],
+        "correctAnswer": 0,
+        "verified": 1
+    },
+    {
+        "question": "The entry point of an Android app",
+        "options": [
+            "might be any component, as far as it has a GUI",
+            "might be any component",
+            "should always be the Main Activity"
+        ],
+        "correctAnswer": 1,
+        "verified": 1
+    },
+    {
+        "question": "An Android app component declared in the app Manifest file",
+        "options": [
+            "can be reached by the components of other apps if it declares an Intent Filter and it is exported",
+            "can be reached by the components of other apps by default",
+            "can be reached by the other components of the same app only if it is exported"
+        ],
+        "correctAnswer": 0,
+        "verified": 1
+    },
+    {
+        "question": "Considering explicit and implicit intents,",
+        "options": [
+            "the implicit intents are classified as more secure because the user can always choose the app to be started through the chooser",
+            "the implicit intents are classified as more secure because the Android OS is responsible for redirecting them towards the appropriate target component",
+            "the explicit intents are classified as more secure because they are intercepted only by the specific target component"
+        ],
+        "correctAnswer": 2,
+        "verified": 1
+    },
+    {
+        "question": "The Android permission model is an example of",
+        "options": [
+            "a combination of MAC and DAC",
+            "MAC",
+            "DAC"
+        ],
+        "correctAnswer": 2,
+        "verified": 1
+    },
+    {
+        "question": "Select the correct statement.",
+        "options": [
+            "Secure Boot is a process that checks the integrity of the Android system during the boot process, protecting against unauthorized modifications.",
+            "Secure Boot ensures that only apps from verified developers can be installed on the device",
+            "Secure Boot is a feature that encrypts the device's storage to prevent unauthorized access to user data."
+        ],
+        "correctAnswer": 0,
+        "verified": 1
+    },
+    {
+        "question": "Select the correct statement regarding Android's SafetyNet API:",
+        "options": [
+            "SafetyNet API provides a set of services that help protect data confidentiality and attests the confidentiality of the device.",
+            "SafetyNet API provides a set of services that help protect against device tampering and attests the integrity of the device.",
+            "SafetyNet API provides a set of services that help protect against app tampering and attests the integrity of the apps."
+        ],
+        "correctAnswer": 1,
+        "verified": 1
+    },
+    {
+        "question": "What is the purpose of Android's Runtime Environment (ART)?",
+        "options": [
+            "To execute application bytecode",
+            "To interpret and execute application bytecode",
+            "To compile and execute application bytecode"
+        ],
+        "correctAnswer": 2,
+        "verified": 1
+    },
+    {
+        "question": "Binder is",
+        "options": [
+            "a communication mechanism between Android devices.",
+            "a communication mechanism between Android apps and system services.",
+            "a communication mechanism between Android apps."
+        ],
+        "correctAnswer": 1,
+        "verified": 1
+    },
+    {
+        "question": "Which technique allows to bypass a dynamic analysis approach?",
+        "options": [
+            "Obfuscated code",
+            "Encrypted code",
+            "Unreachable code"
+        ],
+        "correctAnswer": 2,
+        "verified": 1
+    },
+    {
+        "question": "What is the primary goal of static analysis in Android security?",
+        "options": [
+            "To examine the <u>source code</u>, <u>Dalvik code</u> and <u>binary code</u> of an Android app without executing it.",
+            "To examine the <u>source code</u> of an Android app without executing it.",
+            "To examine the <u>source code</u> and <u>binary code</u> of an Android app without executing it."
+        ],
+        "correctAnswer": 2,
+        "verified": 1
+    },
+    {
+        "question": "Select the correct statement about taint analysis in Android security:",
+        "options": [
+            "Taint analysis is a method to identify <u>memory leaks</u> in <u>Android applications</u>.",
+            "Taint analysis is used to track and identify the <u>flow of sensitive data within an application</u>.",
+            "Taint analysis helps <u>optimize code execution</u> by tracking data flow."
+        ],
+        "correctAnswer": 1,
+        "verified": 1
+    },
+    {
+        "question": "What role does symbolic execution play in static analysis?",
+        "options": [
+            "Symbolic execution is a method to explore all <u>possible program paths</u> by using <u>symbolic values</u> as inputs to detect <u>vulnerabilities</u>.",
+            "Symbolic execution is a method to explore all <u>possible program paths</u> by using <u>symbolic values</u> as inputs to prove <u>reachability</u>.",
+            "Symbolic execution is a method to explore <u>reachable program paths</u> by using <u>symbolic values</u> as inputs to detect <u>vulnerabilities</u>."
+        ],
+        "correctAnswer": 0,
+        "verified": 1
+    },
+    {
+        "question": "Activities",
+        "options": [
+            "are <u>mandatory</u> components which serve as <u>entry points by default</u>",
+            "are <u>not mandatory</u> components and serve as <u>entry points by default</u>",
+            "are <u>not mandatory</u> components and <u>may</u> serve as <u>entry points</u>"
+        ],
+        "correctAnswer": 2,
+        "verified": 1
     }
 ]

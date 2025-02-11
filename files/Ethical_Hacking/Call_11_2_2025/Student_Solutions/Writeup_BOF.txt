@@ -1,0 +1,25 @@
+Once you complete the missing parts, execute the attack using: “cat badfile | nc 10.9.0.5 ****”.
+How did you found the values of the missing fields?
+Where can you find the result of this attack?
+
+The port is the one the server is listening to, so nc 10.9.0.5 9090
+The result is printed by the server, which prints the buffer address and frame pointer
+To check if the file has been created, we can use the reverse shell and send a ls command
+
+
+1) Provide the address you used and the steps you made in order to successfully execute the attack and write into the file.
+I used 10.9.0.1 and port 9090 because I was listening with nc -lnv 9090
+After the reverse shell worked:
+I checked if the file existed using ls
+I used echo bof attack successful > bof_exploit.txt
+And to check if the write was successful, cat bof_exploit.txt
+2) What is the purpose of the ‘-i’ parameter in the executed command?
+To make the bash shell interactive and receive the output when you send an input such as ls
+3) How would you write inside the generated file without having the reverse shell?
+Using the same principle used when creating the file
+So after sending
+touch bof_exploit.txt
+I would send 
+echo bof attack succesfull > bof_exploit.txt
+through the exploit
+
