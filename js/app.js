@@ -20,6 +20,31 @@ document.addEventListener("DOMContentLoaded", function ()
 	// check if user don't want to shuffle them
 	const noShuffle = urlParams.get("noShuffle");
 
+	const languageMap ={
+		"js": "javascript",
+		"py": "python",
+		"c": "c",
+		"cpp": "cpp",
+		"java": "java",
+		"html": "markup"
+	};
+
+	// Find programming language from file extension
+	function getLanguageFromFile(fileName)
+	{
+		const ext = fileName.split('.').pop();
+		return languageMap[ext] || "plaintext";
+	}
+
+	function escapeHtml(str)
+	{
+		return str.replace(/&/g, "&amp;")
+				  .replace(/</g, "&lt;")
+				  .replace(/>/g, "&gt;")
+				  .replace(/"/g, "&quot;")
+				  .replace(/'/g, "&#039;");
+	}
+
 	// Fetch questions from the JSON file
 	fetch(questionsPath)
 	.then((response) => response.json())
@@ -138,7 +163,7 @@ document.addEventListener("DOMContentLoaded", function ()
 				if(currentQuestion.motivation)
 					motivation_local = `Motivation: ${currentQuestion.motivation}`;
 				if (currentQuestion.motivation_image)
-	            	motivation_image_local = `<img src="${currentQuestion.motivation_image}" alt="Motivation Image" class="question-image" style="margin-top: 10px;">`;
+					motivation_image_local = `<img src="${currentQuestion.motivation_image}" alt="Motivation Image" class="question-image" style="margin-top: 10px;">`;
 			}
 
 			//console.log(`Question ${i + 1}:`, currentQuestion.question);
@@ -152,6 +177,7 @@ document.addEventListener("DOMContentLoaded", function ()
 			<div class="verification-icon"></div>
 			<h2>${currentQuestion.question}</h2>
 			${imageHTML}
+			<div id="code-container-${i}"></div>
 			${optionsHTML}
 			<div class="feedback"></div>
 			<div class="motivation" style="margin-top: 10px">
@@ -159,6 +185,27 @@ document.addEventListener("DOMContentLoaded", function ()
 			${motivation_image_local}</div>
 			</div>
 			`;
+
+			// if there's a file with code to show
+			if (currentQuestion.code)
+			{
+				fetch(currentQuestion.code)
+					.then(response => {
+						if (!response.ok) {
+							throw new Error("Code file not found");
+						}
+						return response.text();
+					})
+					.then(code => {
+						const language = getLanguageFromFile(currentQuestion.code);
+						const escapedCode = escapeHtml(code);
+						const codeHTML = `<pre><code class="language-${language}">${escapedCode}</code></pre>`;
+
+						document.getElementById(`code-container-${i}`).innerHTML = codeHTML;
+						Prism.highlightAll();
+					})
+					.catch(error => console.error("Error loading code file:", error));
+			}
 		}
 
 		console.log("All questions displayed.");
@@ -250,7 +297,7 @@ document.addEventListener("DOMContentLoaded", function ()
 						if (currentQuestion.motivation)
 							motivationElement.innerHTML = `Motivation: ${currentQuestion.motivation}`;
 						if (currentQuestion.motivation_image)
-			            	motivationElement.innerHTML += `<img src="${currentQuestion.motivation_image}" alt="Motivation Image" class="question-image" style="margin-top: 10px;">`;
+							motivationElement.innerHTML += `<img src="${currentQuestion.motivation_image}" alt="Motivation Image" class="question-image" style="margin-top: 10px;">`;
 					}
 				}
 			}

@@ -705,5 +705,26 @@
 		],
 		"correctAnswer": 0,
 		"verified": 1
+	},
+	{
+		"question": "A firewall",
+		"options": [
+			"Only filters packet coming from the internal network",
+			"Only filters packet coming from the external network",
+			"Connects the internal network to a demilitarized zone and hence to external networks"
+		],
+		"correctAnswer": 2,
+		"verified": 1
+	},
+	{
+		"question": "The following hook function",
+		"options": [
+			"blocks UDP packets if their destination IP is 8.8.8.8 and the destination port is 53",
+			"allows UDP packets only if their destination IP is 8.8.8.8 and the destination port is 53",
+			"blocks all packets, except UDP packets if their destination IP is 8.8.8.8 and the destination port is 53"
+		],
+		"code": "code/firewall.c",
+		"correctAnswer": 0,
+		"verified": 1
 	}
 ]
