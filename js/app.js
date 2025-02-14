@@ -20,13 +20,15 @@ document.addEventListener("DOMContentLoaded", function ()
 	// check if user don't want to shuffle them
 	const noShuffle = urlParams.get("noShuffle");
 
-	const languageMap ={
+	const languageMap = {
 		"js": "javascript",
 		"py": "python",
 		"c": "c",
 		"cpp": "cpp",
 		"java": "java",
-		"html": "markup"
+		"html": "markup",
+		"sql": "sql",
+		"php": "php"
 	};
 
 	// Find programming language from file extension
@@ -199,10 +201,24 @@ document.addEventListener("DOMContentLoaded", function ()
 					.then(code => {
 						const language = getLanguageFromFile(currentQuestion.code);
 						const escapedCode = escapeHtml(code);
-						const codeHTML = `<pre><code class="language-${language}">${escapedCode}</code></pre>`;
+						//const codeHTML = `<pre><code class="language-${language}">${escapedCode}</code></pre>`;
 
-						document.getElementById(`code-container-${i}`).innerHTML = codeHTML;
-						Prism.highlightAll();
+						const pre = document.createElement("pre");
+				        const codeElement = document.createElement("code");
+				        codeElement.classList.add(`language-${language}`);
+				        codeElement.innerHTML = escapedCode;
+				        pre.appendChild(codeElement);
+
+				        codeContainer = document.getElementById(`code-container-${i}`);
+				        codeContainer.innerHTML = "";
+			            codeContainer.appendChild(pre);
+			            Prism.highlightElement(codeElement); 
+
+						//document.getElementById(`code-container-${i}`).innerHTML = codeHTML;
+						// highlight code
+						//const codeElement = codeContainer.querySelector("code");
+            			//Prism.highlightElement(document.getElementById(`code-container-${i}`));
+            			//Prism.highlightAll();
 					})
 					.catch(error => console.error("Error loading code file:", error));
 			}
@@ -210,6 +226,7 @@ document.addEventListener("DOMContentLoaded", function ()
 
 		console.log("All questions displayed.");
 	}
+
 
 	// Compute the score
 	function calculateScore()

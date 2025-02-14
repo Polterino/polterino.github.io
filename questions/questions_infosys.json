@@ -230,7 +230,7 @@
 			"O(n^2 log n)",
 			"O(n log n)"],
 	"correctAnswer": 3,
-	"image": "img/infosys/function.jpg",
+	"code": "code/function.c",
 	"verified": 1
 	},
 {
@@ -541,7 +541,7 @@
 			"O(n log n)",
 			"O(2<sup>n</sup>)"],
 	"correctAnswer": 3,
-	"image": "img/infosys/recursive.jpg",
+	"code": "code/recursive.c",
    	"verified": 1
 	},
 {

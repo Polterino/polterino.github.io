@@ -440,11 +440,12 @@
 		"verified": 1
 	},
 	{
-		"question": "Is the following SQL statement vulnerable to SQL injection attacks?<br>$sql = \"SELECT * FROM employee WHERE eid=SHA2('$id', 256) and password=SHA2('$passwd',256)\";",
+		"question": "Is the following SQL statement vulnerable to SQL injection attacks?",
 		"options": [
 			"Yes",
 			"No"
 		],
+		"code": "code/query.php",
 		"correctAnswer": 1,
 		"verified": 1
 	},

@@ -20,7 +20,7 @@ const faculties = {
         firstSemester: ['cogcomp', 'digital', 'machine', 'cyber', 'law']
     },
     compfin: {
-        //secondSemester: [],
+        thirdSemester: ['law'],
         firstSemester: ['infosys']
     }
 };

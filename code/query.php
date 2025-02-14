@@ -1,0 +1,1 @@
+$sql = "SELECT * FROM employee WHERE eid=SHA2('$id', 256) and password=SHA2('$passwd',256)";

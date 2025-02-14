@@ -642,13 +642,14 @@
         "verified": 1
     },
     {
-        "question": "Suppose you need to create a foreign key towards the following table <br>CREATE TABLE Example (<br> i INT,<br> j INT,<br> PRIMARY KEY (i, j)<br> );<br> Which statement is correct?",
+        "question": "Suppose you need to create a foreign key towards the following table, which statement is correct?",
         "options": [
             "CREATE TABLE Example2 (<br> a INT PRIMARY KEY,<br> i INT,<br> j INT,<br> FOREIGN KEY (i, j) REFERENCES Example(i, j)<br> );",
             "CREATE TABLE Example2 (<br> a INT PRIMARY KEY,<br> i INT REFERENCES Example(i),<br> j INT REFERENCES Example(j)<br> );",
             "CREATE TABLE Example2 (<br> a INT PRIMARY KEY,<br> i INT,<br> j INT,<br> FOREIGN KEY (i) REFERENCES Example(i),<br> FOREIGN KEY (j) REFERENCES Example(j)<br> );",
             "CREATE TABLE Example2 (<br> a INT PRIMARY KEY,<br> i, j INT REFERENCES Example(i, j)<br> );"
         ],
+        "code": "code/table2.sql",
         "correctAnswer": 0,
         "verified": 0
     },
@@ -686,13 +687,14 @@
         "verified": 0
     },
     {
-        "question": "Suppose you have the following table <br>CREATE TABLE Example (<br> taskID INT,<br> description VAR-CHAR(64),<br> supertask INT,<br> PRIMARY KEY (taskID),<br> FOREIGN KEY (supertask) REFERENCES Example(taskID));<br> containing the following<br> dataTaskID Description Supertask<br>10 Task 1011 Task 11 4512 Task 12 3713 Task 13 2929 Task 29 37194 Task 194 29<br> and that you need to determine how many sub-tasks there are for each task. Which statement is correct?",
+        "question": "Suppose you have the following table containing the following<br> dataTaskID Description Supertask<br>10 Task 1011 Task 11 4512 Task 12 3713 Task 13 2929 Task 29 37194 Task 194 29<br> and that you need to determine how many sub-tasks there are for each task. Which statement is correct?",
         "options": [
             "SELECT supertask,<br> COUNT(*) AS subtasks FROM Example<br> GROUP BY supertask;",
             "SELECT taskID,<br> COUNT(*) AS subtasks FROM Example<br> GROUP BY supertask;",
             "SELECT supertask,<br> COUNT(*) AS subtasks FROM Example<br> WHERE supertask IS NOT NULL<br> GROUP BY supertask;",
             "SELECT taskID,<br> COUNT(*) AS subtasks FROM Example<br> GROUP BY taskID;"
         ],
+        "code": "code/table1.sql",
         "correctAnswer": 2,
         "verified": 1
     },
@@ -841,13 +843,14 @@
         "verified": 0
     },
     {
-        "question": "Suppose you have the following table<br> CREATE TABLE Example (<br> taskID INT,<br> description VAR-CHAR(64),<br> supertask INT,<br> PRIMARY KEY (taskID),<br> FOREIGN KEY (supertask)<br> REFERENCES Example(taskID));<br> containing the following data<br>TaskID Description Supertask<br>10 Task 1011 Task 11 4512 Task 12 3713 Task 13 2929 Task 29 37194 Task 194 29<br> and that you need to determine which are the root tasks. Which statement is correct?",
+        "question": "Suppose you have the following table containing the following data<br>TaskID Description Supertask<br>10 Task 1011 Task 11 4512 Task 12 3713 Task 13 2929 Task 29 37194 Task 194 29<br> and that you need to determine which are the root tasks. Which statement is correct?",
         "options": [
             "SELECT taskID FROM Example WHERE supertask IS NULL;",
             "SELECT taskID FROM Example WHERE supertask = NULL;",
             "SELECT taskID FROM Example WHERE supertask IS NOT NULL;",
             "SELECT taskID FROM Example WHERE supertask <> NULL;"
         ],
+        "code": "code/table1.sql",
         "correctAnswer": 0,
         "verified": 0
     },
@@ -1083,13 +1086,14 @@
         "verified": 1
     },
     {
-        "question": "Suppose you have the following table <br>CREATE TABLE Example (<br> taskID INT,<br> description VARCHAR(64),<br> supertask INT,<br> PRIMARY KEY (taskID),<br> FOREIGN KEY (supertask) REFERENCES Example(taskID));<br> containing the following data<br>TaskID Description Supertask<br>10 Task 1011 Task 11 4512 Task 12 3713 Task 13 2929 Task 2937 Task 37 1045 Task 45 10101 Task 101 37194 Task 194 29 <br>and that you need to determine which tasks have more than one sub-task. Which statement is correct?",
+        "question": "Suppose you have the following table containing the following data<br>TaskID Description Supertask<br>10 Task 1011 Task 11 4512 Task 12 3713 Task 13 2929 Task 2937 Task 37 1045 Task 45 10101 Task 101 37194 Task 194 29 <br>and that you need to determine which tasks have more than one sub-task. Which statement is correct?",
         "options": [
             "SELECT supertask,<br> COUNT(*) AS subtasks<br> FROM Example<br> GROUP BY supertask<br> HAVING COUNT(*) > 1;",
             "SELECT supertask,<br> COUNT(*) AS subtasks<br> FROM Example<br> WHERE COUNT(*) > 1<br> GROUP BY supertask;",
             "SELECT supertask,<br> COUNT(*) AS subtasks<br> FROM Example<br> WHERE supertask IS NOT NULL AND COUNT(*) > 1 <br>GROUP BY supertask;",
             "SELECT supertask,<br> COUNT(*) AS subtasks<br> FROM Example<br> WHERE supertask IS NOT NULL<br> GROUP BY supertask <br>HAVING COUNT(*) > 1;"
         ],
+        "code": "code/table1.sql",
         "correctAnswer": 3,
         "verified": 1
     },
