@@ -1,0 +1,1 @@
+$sql = "UPDATE credential SET nickname='$input_nickname', email='$input_email' WHERE ID='$id';";

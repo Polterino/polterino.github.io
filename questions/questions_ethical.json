@@ -728,5 +728,67 @@
 		"code": "code/firewall.c",
 		"correctAnswer": 0,
 		"verified": 1
+	},
+	{
+		"question": "Packet spoofing refers to the process of:",
+		"options": [
+			"passively listening to an information exchange process",
+			"masquerading as a known entity in the system",
+			"sending malformed packets to cause unexpected behavior at the receiver (e.g., reverse shell)"
+		],
+		"correctAnswer": 1,
+		"verified": 1
+	},
+	{
+		"question": "The following query is performed in the back-end of a web page that allows the user to update his/her nickname and email address (the ID is automatically retrieved from the web page and it is equal to 25)<br>If the user insert the following input into the nickname web field<br>', salary='999999<br>which will be the query performed by the server?",
+		"options": [
+			"$sql = \"UPDATE credential set salary='999999' WHERE ID='25';\";",
+			"$sql = \"UPDATE credential set nickname='', salary='999999', email='' WHERE ID='25';\";",
+			"$sql = \"UPDATE credential set nickname=, salary=999999, email= WHERE ID=25;\";"
+		],
+		"code": "code/update_query.php",
+		"correctAnswer": 1,
+		"verified": 1
+	},
+	{
+		"question": "Which one is <u>NOT</u> a vulnerability that can lead to CSRF",
+		"options": [
+			"Lack of same-origin policy enforcement",
+			"Improper input validation",
+			"Lack of CSRF tokens"
+		],
+		"correctAnswer": 1,
+		"verified": 1
+	},
+	{
+		"question": "Assuming that a website has enabled the countermeasures against CSRF attacks. Select which cookies are transmitted in case of a POST cross-site request",
+		"options": [
+			"Normal cookie and lax cookie",
+			"Normal cookie and strict cookie",
+			"Normal cookie"
+		],
+		"correctAnswer": 2,
+		"verified": 1
+	},
+	{
+		"question": "What type of code does shellcode typically consist of?",
+		"options": [
+			"Assembly instructions to open a commmand prompt",
+			"Machine code to execute a specific action",
+			"Encrypted data to bypass security measures"
+		],
+		"correctAnswer": [0,1],
+		"motivation": "Initially \"Assembly instructions\" answer was the only one correct, but since even the \"Machine code\" one is also correct the professor agreed to count both of them as correct",
+		"verified": 1
+	},
+	{
+		"question": "What precautionary measure can mitigate the risk of shellcode injection?",
+		"options": [
+			"Implementing stack canaries",
+			"Disable system logging",
+			"Increasing the size of input buffers"
+		],
+		"correctAnswer": 0,
+		"verified": 1
 	}
 ]
