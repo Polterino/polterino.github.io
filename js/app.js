@@ -201,8 +201,8 @@ document.addEventListener("DOMContentLoaded", function ()
 					.then(code => {
 						const language = getLanguageFromFile(currentQuestion.code);
 						const escapedCode = escapeHtml(code);
-						//const codeHTML = `<pre><code class="language-${language}">${escapedCode}</code></pre>`;
-
+						
+						// Create code container
 						const pre = document.createElement("pre");
 				        const codeElement = document.createElement("code");
 				        codeElement.classList.add(`language-${language}`);
@@ -212,13 +212,7 @@ document.addEventListener("DOMContentLoaded", function ()
 				        codeContainer = document.getElementById(`code-container-${i}`);
 				        codeContainer.innerHTML = "";
 			            codeContainer.appendChild(pre);
-			            Prism.highlightElement(codeElement); 
-
-						//document.getElementById(`code-container-${i}`).innerHTML = codeHTML;
-						// highlight code
-						//const codeElement = codeContainer.querySelector("code");
-            			//Prism.highlightElement(document.getElementById(`code-container-${i}`));
-            			//Prism.highlightAll();
+			            Prism.highlightElement(codeElement);
 					})
 					.catch(error => console.error("Error loading code file:", error));
 			}
@@ -226,7 +220,6 @@ document.addEventListener("DOMContentLoaded", function ()
 
 		console.log("All questions displayed.");
 	}
-
 
 	// Compute the score
 	function calculateScore()

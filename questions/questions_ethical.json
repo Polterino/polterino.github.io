@@ -447,6 +447,7 @@
 		],
 		"code": "code/query.php",
 		"correctAnswer": 1,
+		"motivation": "This query is actually vulnerable to SQL injection attacks because SHA2() function is interpreted as SQL code instead of php code, but since this question was taken from the quiz on moodle, for a reason I don't know the answer reported as correct is No",
 		"verified": 1
 	},
 	{
