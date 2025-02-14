@@ -1280,7 +1280,7 @@
             "It may present thread-safety problems"
         ],
         "correctAnswer": 3,
-        "image": "img/webapp/servlet_code.png",
+        "code": "code/servlet.java",
         "motivation": "It's true that it may throw exceptions or that it may not find the file on the disk, but the most important problem is thread-related",
         "verified": 1
     },
