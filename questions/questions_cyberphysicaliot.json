@@ -120,7 +120,7 @@
 		],
 		"correctAnswer": 1,
 		"motivation_image": "img/spike.png",
-		"verified": 0
+		"verified": 1
 	},
 	{
 		"question": "In the threat model related to drone technology",
