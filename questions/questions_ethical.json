@@ -536,6 +536,7 @@
 			"control-flow-oriented bof attacks"
 		],
 		"correctAnswer": 2,
+		"category": ["First call 24/25"],
 		"verified": 1
 	},
 	{
@@ -546,6 +547,7 @@
 			"Return-to-like attacks exploit vulnerabilities in the computer's memory management system to gain arbitrary code execution privileges."
 		],
 		"correctAnswer": 0,
+		"category": ["First call 24/25"],
 		"verified": 1
 	},
 	{
@@ -556,6 +558,7 @@
 			"Stack canaries"
 		],
 		"correctAnswer": 0,
+		"category": ["First call 24/25"],
 		"verified": 1
 	},
 	{
@@ -566,6 +569,7 @@
 			"exactly at the address where the shellcode has been placed"
 		],
 		"correctAnswer": 2,
+		"category": ["First call 24/25"],
 		"verified": 1
 	},
 	{
@@ -576,6 +580,7 @@
 			"eax contains the system call number; ebx points to argv; ecx points to argv[0]"
 		],
 		"correctAnswer": 1,
+		"category": ["First call 24/25"],
 		"verified": 1
 	},
 	{
@@ -586,6 +591,7 @@
 			"are assembly instructions that the attacker injects into the victim program"
 		],
 		"correctAnswer": 0,
+		"category": ["First call 24/25"],
 		"verified": 1
 	},
 	{
@@ -596,6 +602,7 @@
 			"Intercepting communication between two hosts to manipulate packets"
 		],
 		"correctAnswer": 0,
+		"category": ["First call 24/25"],
 		"verified": 1
 	},
 	{
@@ -606,6 +613,7 @@
 			"Spoof an TCP packet using as sender address the victim's address"
 		],
 		"correctAnswer": 0,
+		"category": ["First call 24/25"],
 		"verified": 1
 	},
 	{
@@ -616,6 +624,7 @@
 			"the attacker stores and executes the code directly on the browser"
 		],
 		"correctAnswer": 0,
+		"category": ["First call 24/25"],
 		"verified": 1
 	},
 	{
@@ -626,6 +635,7 @@
 			"interacts with a server to retrieve the attacker's code"
 		],
 		"correctAnswer": 0,
+		"category": ["First call 24/25"],
 		"verified": 1
 	},
 	{
@@ -636,6 +646,7 @@
 			"Having the victim under an active session on the target website; crafting a cross-site request; making the victim click on the link crafted by the attacker which will send the cross-site request"
 		],
 		"correctAnswer": 1,
+		"category": ["First call 24/25"],
 		"verified": 1
 	},
 	{
@@ -646,6 +657,7 @@
 			"Cross-site requests"
 		],
 		"correctAnswer": 0,
+		"category": ["First call 24/25"],
 		"verified": 1
 	},
 	{
@@ -656,6 +668,7 @@
 			"The attacker takes control of an existing connection"
 		],
 		"correctAnswer": 1,
+		"category": ["First call 24/25"],
 		"verified": 1
 	},
 	{
@@ -666,6 +679,7 @@
 			"The website sanitizers applied on the client side"
 		],
 		"correctAnswer": 2,
+		"category": ["First call 24/25"],
 		"verified": 1
 	},
 	{
@@ -676,6 +690,7 @@
 			"the fact that web applications execute scripts on the users' browser"
 		],
 		"correctAnswer": 2,
+		"category": ["First call 24/25"],
 		"verified": 1
 	},
 	{
@@ -686,6 +701,7 @@
 			"The attacker creates a new connection impersonating another user"
 		],
 		"correctAnswer": 0,
+		"category": ["First call 24/25"],
 		"verified": 1
 	},
 	{
@@ -696,6 +712,7 @@
 			"a pointer to a digital currency (e.g., Bitcoin) exchanged among users"
 		],
 		"correctAnswer": 1,
+		"category": ["First call 24/25"],
 		"verified": 1
 	},
 	{
@@ -706,6 +723,7 @@
 			"a computer program written in solidity that simultaneously run over the whole blockchain network"
 		],
 		"correctAnswer": 0,
+		"category": ["First call 24/25"],	
 		"verified": 1
 	},
 	{
