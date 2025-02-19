@@ -176,9 +176,17 @@ document.addEventListener("DOMContentLoaded", function ()
 			// Add index of question before showing it
 			const questionNumberHTML = `<div class="question-number">${i + 1}</div>`;
 
+			// Generate category badges
+        	const categoryBadgesHTML = currentQuestion.category && Array.isArray(currentQuestion.category) ?
+            currentQuestion.category.map(cat => {
+                const color = generateColorFromCategory(cat);
+                return `<span class="category-badge" style="background-color: ${color};">${cat}</span>`;
+            }).join("") : "";
+
 			questionContainer.innerHTML += `
 			<div class="question" id="question${i}" data-verified="${currentQuestion.verified}">
 			${questionNumberHTML}
+			<div class="category-badges">${categoryBadgesHTML}</div>
 			<div class="verification-icon"></div>
 			<h2>${currentQuestion.question}</h2>
 			${imageHTML}
