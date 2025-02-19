@@ -23,11 +23,11 @@ window.addEventListener("load", applyTheme);
 
 function applyTheme() {
   if (loadThemeState() === "dark") {
-    document.body.classList.add("dark-mode");
-    console.log("dark-mode");
+	document.body.classList.add("dark-mode");
+	console.log("dark-mode");
   } else {
-    document.body.classList.remove("dark-mode");
-    console.log("light-mode");
+	document.body.classList.remove("dark-mode");
+	console.log("light-mode");
   }
 }
 
@@ -44,6 +44,6 @@ function darkMode() {
   applyTheme();
 
   setTimeout(() => {
-    body.classList.remove("changing-theme");
+	body.classList.remove("changing-theme");
   }, 1000);
 }

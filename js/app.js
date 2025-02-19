@@ -4,11 +4,13 @@ document.addEventListener("DOMContentLoaded", function ()
 	const calculateButton = document.getElementById("calculate-button");
 	const totalQuestionsContainer = document.getElementById("total-questions");
 	const showAllButton = document.getElementById("show-all-questions-button");
+	const categoriesContainer = document.getElementById("categories-container");
 
 	let questions; // array that contains all the questions ordered as in the input JSON file
 	let userAnswers = [];
 	let randomQuestions;
 	let questionsToDisplay;
+	let activeCategoryButton = null;
 
 	// get the name of the file to open
 	const urlParams = new URLSearchParams(window.location.search);
@@ -54,6 +56,7 @@ document.addEventListener("DOMContentLoaded", function ()
 		questions = data;
 		console.log("Questions loaded:", questions);
 		totalQuestionsContainer.innerHTML = `Total questions found on database: <b>${questions.length}</b>`;
+		printCategoryButtons();
 		showQuestions();
 	})
 	.catch((error) => console.error("Error loading questions:", error));
@@ -204,15 +207,15 @@ document.addEventListener("DOMContentLoaded", function ()
 						
 						// Create code container
 						const pre = document.createElement("pre");
-				        const codeElement = document.createElement("code");
-				        codeElement.classList.add(`language-${language}`);
-				        codeElement.innerHTML = escapedCode;
-				        pre.appendChild(codeElement);
+						const codeElement = document.createElement("code");
+						codeElement.classList.add(`language-${language}`);
+						codeElement.innerHTML = escapedCode;
+						pre.appendChild(codeElement);
 
-				        codeContainer = document.getElementById(`code-container-${i}`);
-				        codeContainer.innerHTML = "";
-			            codeContainer.appendChild(pre);
-			            Prism.highlightElement(codeElement);
+						codeContainer = document.getElementById(`code-container-${i}`);
+						codeContainer.innerHTML = "";
+						codeContainer.appendChild(pre);
+						Prism.highlightElement(codeElement);
 					})
 					.catch(error => console.error("Error loading code file:", error));
 			}
@@ -358,4 +361,153 @@ document.addEventListener("DOMContentLoaded", function ()
 			});
 			return selectedValues.length > 0 ? selectedValues : null;	
 	}
+
+	function printCategoryButtons()
+	{
+		if(!categoriesContainer)
+			return;
+		const categories = new Set();
+
+		// extract categories from questions
+		questions.forEach(question => {
+			if (question.category && Array.isArray(question.category)) {
+				question.category.forEach(cat => categories.add(cat));
+			}
+		});
+
+		categoriesContainer.style.marginBottom = "20px";
+
+		// Add a button
+		categories.forEach(category => {
+			const button = document.createElement("button");
+			button.textContent = category;
+			button.style.margin = "5px";
+
+			const categoryColor = generateColorFromCategory(category);
+			button.style.backgroundColor = categoryColor;
+			button.dataset.originalColor = categoryColor;
+
+			button.addEventListener("click", () => filterQuestionsByCategory(button, category));
+			categoriesContainer.appendChild(button);
+		});
+	}
+
+	function filterQuestionsByCategory(button, category)
+	{
+		if (activeCategoryButton)
+		{
+			// Reset previous active button
+			activeCategoryButton.disabled = false;
+			activeCategoryButton.style.backgroundColor = activeCategoryButton.dataset.originalColor;
+			activeCategoryButton.style.cursor  = "pointer"; 
+		}
+
+		// Set new active button
+		button.disabled = true;
+		button.style.cursor = "not-allowed"; 
+		button.style.backgroundColor = darkenColor(button.dataset.originalColor, 20);
+		activeCategoryButton = button;
+
+		const filteredQuestions = questions.filter(question => 
+			question.category && question.category.includes(category)
+		);
+		questionContainer.innerHTML = "";
+		showQuestions(filteredQuestions);
+	}
+
+	function hexToRgb(hex)
+	{
+		hex = hex.replace(/^#/, "");
+		if (hex.length === 3) {
+			hex = hex.split("").map(x => x + x).join("");
+		}
+		const num = parseInt(hex, 16);
+		return `rgb(${(num >> 16) & 255}, ${(num >> 8) & 255}, ${num & 255})`;
+	}
+
+	function darkenColor(color, percent)
+	{
+		if (color.startsWith("#")) {
+			color = hexToRgb(color);
+		}
+
+		let rgb = color.match(/\d+/g);
+		if (!rgb) {
+			console.error("Invalid color format:", color);
+			return color;
+		}
+
+		rgb = rgb.map(Number);
+		return `rgb(${rgb.map(c => Math.max(0, c - (c * percent / 100))).join(", ")})`;
+	}
+
+	function generateColorFromCategory(category)
+	{
+		luminosity = 40; // set luminosity to at least a value in percentage
+		let hash = 0;
+		for (let i = 0; i < category.length; i++) {
+			hash = category.charCodeAt(i) + ((hash << 5) - hash);
+		}
+		const r = (hash & 0xFF0000) >> 16;
+		const g = (hash & 0x00FF00) >> 8;
+		const b = (hash & 0x0000FF);
+		let hsl = rgbToHsl(r, g, b);
+	    hsl[2] = Math.max(luminosity, hsl[2]); // set luminosity
+
+	    let newRgb = hslToRgb(hsl[0], hsl[1], hsl[2]);
+	    
+	    return `rgb(${newRgb[0]}, ${newRgb[1]}, ${newRgb[2]})`;
+	}
+
+	// RGB -> HSL
+	function rgbToHsl(r, g, b)
+	{
+	    r /= 255, g /= 255, b /= 255;
+	    let max = Math.max(r, g, b), min = Math.min(r, g, b);
+	    let h, s, l = (max + min) / 2;
+
+	    if (max === min) {
+	        h = s = 0;
+	    } else {
+	        let d = max - min;
+	        s = l > 0.5 ? d / (2 - max - min) : d / (max + min);
+	        switch (max) {
+	            case r: h = (g - b) / d + (g < b ? 6 : 0); break;
+	            case g: h = (b - r) / d + 2; break;
+	            case b: h = (r - g) / d + 4; break;
+	        }
+	        h /= 6;
+	    }
+
+	    return [h * 360, s * 100, l * 100];
+	}
+
+	// HSL -> RGB
+	function hslToRgb(h, s, l)
+	{
+	    h /= 360, s /= 100, l /= 100;
+	    let r, g, b;
+
+	    if (s === 0) {
+	        r = g = b = l;
+	    } else {
+	        function hueToRgb(p, q, t) {
+	            if (t < 0) t += 1;
+	            if (t > 1) t -= 1;
+	            if (t < 1 / 6) return p + (q - p) * 6 * t;
+	            if (t < 1 / 2) return q;
+	            if (t < 2 / 3) return p + (q - p) * (2 / 3 - t) * 6;
+	            return p;
+	        }
+
+	        let q = l < 0.5 ? l * (1 + s) : l + s - l * s;
+	        let p = 2 * l - q;
+	        r = hueToRgb(p, q, h + 1 / 3);
+	        g = hueToRgb(p, q, h);
+	        b = hueToRgb(p, q, h - 1 / 3);
+	    }
+
+	    return [Math.round(r * 255), Math.round(g * 255), Math.round(b * 255)];
+	}
+
 });

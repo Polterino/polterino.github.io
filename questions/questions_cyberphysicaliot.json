@@ -9,6 +9,7 @@
 		"correctAnswer": 1,
 		"motivation": "To increase the transmit error counter, which is the core of the bus-off attack, there must be a bit mismatch between the two messages in either the control field or the data field. All the preceding bits must be identical to the victim's message, which means that the first bit (start of frame) and the 2nd, 3rd, 4th bits (ID) must be 0101, thus leaving only one correct answer.",
 		"motivation_image": "img/increase_tec.png",
+		"category": ["CAN bus"],
 		"verified": 1
 	},
 	{
@@ -18,6 +19,7 @@
 					"A methodology that an attacker can use to avoid being detected by drone detection systems"
 				],
 		"correctAnswer": 1,
+		"category": ["Drones"],
         "verified": 0
 	},
 	{
@@ -29,6 +31,7 @@
 		],
 		"correctAnswer": 2,
 		"motivation_image": "img/optical_flow.png",
+		"category": ["Drones"],
 		"verified": 1
 	},
 	{
@@ -39,6 +42,7 @@
 			"The attacker can disconnect a node from the CAN bus"
 		],
 		"correctAnswer": 2,
+		"category": ["CAN bus"],
 		"verified": 1
 	},
 	{
@@ -49,6 +53,7 @@
 			"The car will slow down and increase the distance to the preceding car, thus disrupting the platoon"
 		],
 		"correctAnswer": 0,
+		"category": ["Autonomous vehicles"],
 		"verified": 0
 	},
 	{
@@ -59,6 +64,7 @@
 			"Monitor the traffic of a specific ECU to get information regarding the network configuration and its main features"
 		],
 		"correctAnswer": 0,
+		"category": ["CAN bus"],
 		"verified": 0
 	},
 	{
@@ -79,6 +85,7 @@
 			"an anomaly detection system able to block malicious worms"
 		],
 		"correctAnswer": 0,
+		"category": ["ICS"],
 		"verified": 1
 	},
 	{
@@ -89,6 +96,7 @@
 			"is a Denial of Service attack that leverages the limits in the operational range of sensors"
 		],
 		"correctAnswer": 1,
+		"category": ["Autonomous vehicles", "Second call 24/25"],
 		"verified": 0
 	},
 	{
@@ -99,6 +107,7 @@
 			"a counter value that can be used to implement the bus-off attack"
 		],
 		"correctAnswer": 0,
+		"category": ["CAN bus", "Second call 24/25"],
 		"verified": 1
 	},
 	{
@@ -109,6 +118,7 @@
 			"a current loop wired-AND signalling"
 		],
 		"correctAnswer": 1,
+		"category": ["CAN bus"],
 		"verified": 1
 	},
 	{
@@ -120,6 +130,7 @@
 		],
 		"correctAnswer": 1,
 		"motivation_image": "img/spike.png",
+		"category": ["Autonomous vehicles"],
 		"verified": 1
 	},
 	{
@@ -130,6 +141,7 @@
 			"the attacker needs to have physical access to the drone"
 		],
 		"correctAnswer": 0,
+		"category": ["Drones"],
 		"verified": 0
 	},
 	{
@@ -140,6 +152,7 @@
 			"the physical world by tampering the hardware itself"
 		],
 		"correctAnswer": 0,
+		"category": ["Drones", "Second call 24/25"],
 		"verified": 0
 	},
 	{
@@ -149,7 +162,8 @@
 			"after 6 steps, the anomaly detector triggers the alarm",
 			"the detector does not work as the compensation parameter is too high"
 		],
-		"correctAnswer": 1,
+		"correctAnswer": 2,
+		"category": ["ICS", "Second call 24/25"],
 		"verified": 0
 	},
 	{
@@ -160,6 +174,7 @@
 			"create attacks that lie outside the operational range of sensors to be stealthy"
 		],
 		"correctAnswer": 1,
+		"category": ["ICS", "Second call 24/25"],
 		"verified": 1
 	},
 	{
@@ -170,7 +185,9 @@
 			"occurs at layer three thanks to a router device"
 		],
 		"correctAnswer": 2,
-		"verified": 0
+		"motivation_image": "img/network_segmentation.png",
+		"category": ["ICS", "Second call 24/25"],
+		"verified": 1
 	},
 	{
 		"question": "A SAE Level-4 autonomous driving indicates",
@@ -180,7 +197,8 @@
 			"high automation where the vehicle performs all driving tasks under specific circumstances and in geofenced areas"
 		],
 		"correctAnswer": 2,
-		"verified": 0
+		"category": ["Autonomous vehicles", "Second call 24/25"],
+		"verified": 1
 	},
 	{
 		"question": "In a reduced headway attack",
@@ -189,8 +207,9 @@
 			"the attacker injects a fake location in the communication and reduces the headway of a victim vehicle",
 			"the attacker causes the following (victim) vehicle to increase its distance from the preceding vehicle"
 		],
-		"correctAnswer": 1,
-		"verified": 1
+		"correctAnswer": 0,
+		"category": ["Autonomous vehicles", "Second call 24/25"],
+		"verified": 0
 	},
 	{
 		"question": "In CACC",
@@ -199,7 +218,8 @@
 			"the vehicle uses information from the preceding vehicle in a feed-forward loop",
 			"the sensed distance from the preceding car is reported to the controller, which acts on the speed to maintain a minimum safety distance"
 		],
-		"correctAnswer": 2,
+		"correctAnswer": 1,
+		"category": ["Autonomous vehicles", "Second call 24/25"],
 		"verified": 0
 	},
 	{
@@ -210,6 +230,8 @@
 			"leveraging the periodicity of messages and priorities"
 		],
 		"correctAnswer": 2,
+		"motivation_image": "img/tx_synch.png",
+		"category": ["CAN bus", "Second call 24/25"],
 		"verified": 1
 	}
 ]
