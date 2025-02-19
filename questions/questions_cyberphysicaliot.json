@@ -131,5 +131,85 @@
 		],
 		"correctAnswer": 0,
 		"verified": 0
+	},
+	{
+		"question": "In attack to MEMS, the attacker exploits",
+		"options": [
+			"the physical world to trick the sensor into detecting a phenomena that does not exist",
+			"the digital world, by capturing the drone and modifying its firmware",
+			"the physical world by tampering the hardware itself"
+		],
+		"correctAnswer": 0,
+		"verified": 0
+	},
+	{
+		"question": "Let us consider the CUSUM statistic update, and consider a value z<sub>i</sub>(k) = |y<sub>received</sub> - y<sub>estimate</sub>|-b<sub>i</sub>, where the received signal is the actually received signal, the estimate is the output of the model and the last term is a compensation parameter. The non parametric CUSUM statistic at time k is given by S<sub>i</sub>(k) = (S<sub>i</sub>(k-1) + z<sub>i</sub>(k))<sup>+</sup>. Let us assume that S<sub>i</sub>(0) = 0, that b<sub>i</sub> = 1, and that the detection rule triggers an alarm when S<sub>i</sub>(k) is greater than 10.<br>Assuming that the process is such that the received signal is constant = 1, if an attacker starts an attack against sensor i such that the reported measurement is always twice the expected value, then",
+		"options": [
+			"after 5 steps, the anomaly detector triggers the alarm",
+			"after 6 steps, the anomaly detector triggers the alarm",
+			"the detector does not work as the compensation parameter is too high"
+		],
+		"correctAnswer": 1,
+		"verified": 0
+	},
+	{
+		"question": "In attacks to the sensors used in an ICS, the attacker needs to",
+		"options": [
+			"launch a DoS attack as the only means to be effective",
+			"create attacks that lie within the operational range of sensors to be stealthy",
+			"create attacks that lie outside the operational range of sensors to be stealthy"
+		],
+		"correctAnswer": 1,
+		"verified": 1
+	},
+	{
+		"question": "In an industrial plant, segmentation",
+		"options": [
+			"is only applied at the control network, as corporate network is already segmented",
+			"refers to the process of grouping sensors according to their functionalities",
+			"occurs at layer three thanks to a router device"
+		],
+		"correctAnswer": 2,
+		"verified": 0
+	},
+	{
+		"question": "A SAE Level-4 autonomous driving indicates",
+		"options": [
+			"full automation with the vehicle performing all driving tasks in all conditions",
+			"conditional automation, where the vehicle can perform most of the driving task",
+			"high automation where the vehicle performs all driving tasks under specific circumstances and in geofenced areas"
+		],
+		"correctAnswer": 2,
+		"verified": 0
+	},
+	{
+		"question": "In a reduced headway attack",
+		"options": [
+			"the car ignores the predefined headway policy and closely follow the preceding vehicles",
+			"the attacker injects a fake location in the communication and reduces the headway of a victim vehicle",
+			"the attacker causes the following (victim) vehicle to increase its distance from the preceding vehicle"
+		],
+		"correctAnswer": 1,
+		"verified": 1
+	},
+	{
+		"question": "In CACC",
+		"options": [
+			"the vehicle uses a radar and a controller to automate acceleration tasks",
+			"the vehicle uses information from the preceding vehicle in a feed-forward loop",
+			"the sensed distance from the preceding car is reported to the controller, which acts on the speed to maintain a minimum safety distance"
+		],
+		"correctAnswer": 2,
+		"verified": 0
+	},
+	{
+		"question": "In order for the bus-off attack to be effective, the attacker achieves precise synchronization by",
+		"options": [
+			"detecting the ID of the packet of interest of the victim ECU",
+			"detecting in real-time the presence of the target packet",
+			"leveraging the periodicity of messages and priorities"
+		],
+		"correctAnswer": 2,
+		"verified": 1
 	}
 ]
