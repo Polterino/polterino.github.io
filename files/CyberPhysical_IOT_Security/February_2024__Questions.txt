@@ -1,4 +1,4 @@
-On both first calls of 23/24 and 24/25 the questions were
+On both first calls of 23/24 and 24/25 (January 31th 2025) the questions were
 
 - What are the functions of the Can controller?
 Answer using definition, so send serial bits and talk with the processor
