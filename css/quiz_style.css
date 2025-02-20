@@ -210,7 +210,7 @@ input[type="checkbox"]:hover {
     border-color: #2980b9;
 }
 
-/* Aggiorna questo stile nel tuo file CSS */
+
 .question {
     border: 1px solid #ddd;
     padding: 10px;
@@ -223,6 +223,14 @@ input[type="checkbox"]:hover {
     /* Imposta la larghezza massima della domanda */
     margin: 0 auto;
     /* Centra la domanda orizzontalmente */
+}
+
+.question-header {
+    display: flex;
+    align-items: center;
+    gap: 10px; /* Distanza tra numero e icona */
+    width: 100%; /* Assicura che occupi tutta la larghezza */
+    margin-bottom: 10px; /* Aggiunge spazio tra header e badge */
 }
 
 .question-image {
@@ -283,20 +291,38 @@ input[type="checkbox"]:hover {
 }
 
 .category-badges {
-    position: absolute;
-    top: 10px;
-    right: 40px; /* Posiziona i badge alla sinistra del logo "verified" */
     display: flex;
-    gap: 5px;
+    flex-wrap: wrap; /* Permette ai badge di andare a capo */
+    gap: 5px; /* Spazio tra i badge */
+    margin-top: 30px;
+    margin-bottom: 10px; /* Distanza tra badge e la domanda */
+    align-items: flex-start; /* Evita che i badge vengano tagliati */
+}
+
+.category-badges:empty {
+    margin-bottom: 0;
+    margin-top: 0;
 }
 
 .category-badge {
-    padding: 4px 8px;
+    background-color: #007bff;
+    color: white;
+    padding: 5px 10px;
     border-radius: 12px;
     font-size: 12px;
-    color: white;
     font-weight: bold;
     text-transform: uppercase;
+    margin-bottom: 5px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+@media (max-width: 400px) {
+    .category-badges {
+        flex-direction: row;
+        justify-content: flex-start; /* Impedisce la compressione e lo spezzamento */
+        align-items: flex-start;
+    }
 }
 
 #toggleDarkMode {

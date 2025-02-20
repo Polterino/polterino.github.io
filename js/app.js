@@ -185,17 +185,19 @@ document.addEventListener("DOMContentLoaded", function ()
 
 			questionContainer.innerHTML += `
 			<div class="question" id="question${i}" data-verified="${currentQuestion.verified}">
-			${questionNumberHTML}
-			<div class="category-badges">${categoryBadgesHTML}</div>
-			<div class="verification-icon"></div>
-			<h2>${currentQuestion.question}</h2>
-			${imageHTML}
-			<div id="code-container-${i}"></div>
-			${optionsHTML}
-			<div class="feedback"></div>
-			<div class="motivation" style="margin-top: 10px">
-			${motivation_local}
-			${motivation_image_local}</div>
+				<div class="question-header">
+		            ${questionNumberHTML}
+		            <div class="verification-icon"></div>
+	        	</div>
+				<div class="category-badges">${categoryBadgesHTML}</div>
+				<h2>${currentQuestion.question}</h2>
+				${imageHTML}
+				<div id="code-container-${i}"></div>
+				${optionsHTML}
+				<div class="feedback"></div>
+				<div class="motivation" style="margin-top: 10px">
+				${motivation_local}
+				${motivation_image_local}</div>
 			</div>
 			`;
 
