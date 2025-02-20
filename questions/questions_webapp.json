@@ -33,6 +33,7 @@
             "Not assigned"
         ],
         "correctAnswer": 3,
+        "category": ["First call 23/24"],
         "verified": 1
     },
     {
@@ -57,6 +58,7 @@
             "Not assigned"
         ],
         "correctAnswer": 2,
+        "category": ["First call 23/24"],
         "verified": 1
     },
     {
@@ -69,6 +71,7 @@
             "It contains commands to format and layout the content"
         ],
         "correctAnswer": 0,
+        "category": ["First call 23/24"],
         "verified": 1
     },
     {
@@ -81,6 +84,7 @@
             "To define the format and visualisation of information"
         ],
         "correctAnswer": 1,
+        "category": ["First call 23/24"],
         "verified": 1
     },
     {
@@ -105,6 +109,7 @@
             "The JSP page forwards the request to a servlet which processes it"
         ],
         "correctAnswer": 1,
+        "category": ["First call 23/24"],
         "verified": 1
     },
     {
@@ -141,6 +146,7 @@
             "Not assigned"
         ],
         "correctAnswer": 0,
+        "category": ["First call 23/24"],
         "verified": 1
     },
     {
@@ -488,6 +494,7 @@
             "It is a pull streaming API for XML which returns events to the applications when asked"
         ],
         "correctAnswer": 0,
+        "category": ["First call 23/24"],
         "verified": 1
     },
     {
@@ -662,6 +669,7 @@
             "It is a method whose multiple invocations produce the same effect as a single one"
         ],
         "correctAnswer": 3,
+        "category": ["First call 23/24"],
         "verified": 1
     },
     {
@@ -673,6 +681,7 @@
             "JavaBeans are the model, JSP are the View, and servlets are the Controller"
         ],
         "correctAnswer": 3,
+        "category": ["First call 23/24"],
         "verified": 1
     },
     {
@@ -740,6 +749,7 @@
             "There is a random boundary which changes for each part and it is prefixed by -"
         ],
         "correctAnswer": 1,
+        "category": ["First call 23/24"],
         "verified": 1,
         "motivation": "The professor said that the boundary is arbitrary, not random. \"Not appearing in any part\" is wrong because it appears in the header, but whatever, we didn't ask this to the professor."
     },
@@ -1117,6 +1127,7 @@
             "It is the evolution of the Web where the contents of an HTML page are clearly described"
         ],
         "correctAnswer": 1,
+        "category": ["First call 23/24"],
         "verified": 1
     },
     {
@@ -1183,6 +1194,7 @@
             "Possibility to balance the load"
         ],
         "correctAnswer": 2,
+        "category": ["First call 23/24"],
         "verified": 1
     },
     {
@@ -1192,6 +1204,7 @@
                     "&lt;!DOCTYPE html5 PUBLIC&gt;",
                     "&lt;!DOCTYPE html&gt;"],
         "correctAnswer": 3,
+        "category": ["First call 23/24"],
         "verified": 1
     },
     {
@@ -1201,6 +1214,7 @@
                     "Javascript is not case-sensitive, while HTML is case-sensitive",
                     "Both javascript and HTML are not case-sensitive"],
         "correctAnswer": 1,
+        "category": ["First call 23/24"],
         "verified": 1
     },
     {
@@ -1210,6 +1224,7 @@
                     "None of them",
                     "Surfing the web"],
         "correctAnswer": 3,
+        "category": ["First call 23/24"],
         "verified": 1,
         "motivation": "Literally no idea why. Check webapp uploaded file \"first call 6 june 2024\" if you don't believe this is the correct answer."
     },
@@ -1220,6 +1235,7 @@
                     "It removes a float element from the normal flow and allows it to start on the next available space",
                     "It clears both sides of a floating element, allowing it to be surrounded only by elements inside the normal flow and not by float elements"],
         "correctAnswer": 1,
+        "category": ["First call 23/24"],
         "verified": 1
     },
     {
@@ -1229,6 +1245,7 @@
                     "An UML sequence diagram",
                     "An UML class"],
         "correctAnswer": 2,
+        "category": ["First call 23/24"],
         "verified": 1
     },
     {
@@ -1238,6 +1255,7 @@
                     "It is a snapshot of the libraries and dependencies required by a container to run properly",
                     "It is a tool for managing the cooperative development of source code"],
         "correctAnswer": 2,
+        "category": ["First call 23/24"],
         "verified": 1
     },
     {
@@ -1247,6 +1265,7 @@
                     "It is called by the container to setup any needed resources every time before servicing a request",
                     "It is called by the container only once before servlet disposal to release any needed resources"],
         "correctAnswer": 0,
+        "category": ["First call 23/24"],
         "verified": 1
     },
     {
@@ -1258,6 +1277,7 @@
             "&lt;input type=\"radio\" name=\"gender\" value=\"male\" checked&gt; Male &lt;br&gt; <br> &lt;input type=\"radio\" name=\"gender\" value=\"female\"&gt; Female &lt;br&gt; <br> &lt;input type=\"radio\" name=\"gender\" value=\"other\" &gt; Other"
         ],
         "correctAnswer": 3,
+        "category": ["First call 23/24"],
         "verified": 1
     },
     {
@@ -1269,6 +1289,7 @@
             "It is the newer version of CSS, i.e. eXtreme Style Sheets"
         ],
         "correctAnswer": 1,
+        "category": ["First call 23/24"],
         "verified": 1
     },
     {
@@ -1280,6 +1301,7 @@
             "It may present thread-safety problems"
         ],
         "correctAnswer": 3,
+        "category": ["First call 23/24"],
         "code": "code/servlet.java",
         "motivation": "It's true that it may throw exceptions or that it may not find the file on the disk, but the most important problem is thread-related",
         "verified": 1
@@ -1293,6 +1315,7 @@
             "Loaded and executed first if they are embedded or external script and later if they are exported from another web server"
         ],
         "correctAnswer": 1,
+        "category": ["First call 23/24"],
         "verified": 1
     },
     {
@@ -1304,6 +1327,7 @@
             "Only to send form fields"
         ],
         "correctAnswer": 3,
+        "category": ["First call 23/24"],
         "verified": 1
     }
 ]
