@@ -8,6 +8,7 @@
             "Feedback"
         ],
         "correctAnswer": 1,
+        "category": ["First partial (B) 23/24"],
         "verified": 1
     },
     {
@@ -19,6 +20,7 @@
             "ubiquitous computing"
         ],
         "correctAnswer": 3,
+        "category": ["First partial (B) 23/24"],
         "verified": 1
     },
     {
@@ -30,6 +32,7 @@
             "feedback and consequent refinement are taken into consideration only at the end of the development"
         ],
         "correctAnswer": 0,
+        "category": ["First partial (B) 23/24"],
         "verified": 1
     },
     {
@@ -41,6 +44,7 @@
             "larger and require more screen space"
         ],
         "correctAnswer": 1,
+        "category": ["First partial (B) 23/24"],
         "verified": 1
     },
     {
@@ -52,6 +56,7 @@
             "attention"
         ],
         "correctAnswer": 3,
+        "category": ["First partial (B) 23/24"],
         "verified": 1
     },
     {
@@ -63,6 +68,7 @@
             "used only in controlled settings (e.g., lab setting)"
         ],
         "correctAnswer": 0,
+        "category": ["First partial (B) 23/24"],
         "verified": 1
     },
     {
@@ -74,6 +80,7 @@
             "to provide up ot 10 options in a speech-based menu"
         ],
         "correctAnswer": 1,
+        "category": ["First partial (A) 23/24"],
         "verified": 1
     },
     {
@@ -85,6 +92,7 @@
             "getting insight into the problem"
         ],
         "correctAnswer": 3,
+        "category": ["First partial (A) 23/24"],
         "verified": 1
     },
     {
@@ -96,6 +104,7 @@
             "tangible interfaces"
         ],
         "correctAnswer": 0,
+        "category": ["First partial (A) 23/24"],
         "verified": 0
     },
     {
@@ -107,6 +116,7 @@
             "Window, icon, menu, pointer (WIMP)"
         ],
         "correctAnswer": 1,
+        "category": ["First partial (A) 23/24"],
         "verified": 1
     },
     {
@@ -118,6 +128,7 @@
             "the extent to which the product provides the needed functionalities"
         ],
         "correctAnswer": 1,
+        "category": ["First partial (A) 23/24"],
         "verified": 1
     },
     {
@@ -129,6 +140,7 @@
             "low drop-out of users"
         ],
         "correctAnswer": 3,
+        "category": ["First partial (A) 23/24"],
         "verified": 1
     },
     {
@@ -162,6 +174,7 @@
             "Fixations"
         ],
         "correctAnswer": 3,
+        "category": ["Second partial (B) 23/24"],
         "verified": 1
     },
     {
@@ -173,6 +186,7 @@
             "IoT"
         ],
         "correctAnswer": 1,
+        "category": ["Second partial (B) 23/24"],
         "verified": 1
     },
     {
@@ -184,6 +198,7 @@
             "Are time-saving and easy to conduct but can miss subtle aspects of the user experience."
         ],
         "correctAnswer": 0,
+        "category": ["Second partial (B) 23/24", "First call 23/24"],
         "verified": 1
     },
     {
@@ -195,6 +210,7 @@
             "Didactic communication pattern, Appearance pattern, Affordance pattern"
         ],
         "correctAnswer": 2,
+        "category": ["Second partial (B) 23/24"],
         "verified": 1
     },
     {
@@ -206,6 +222,7 @@
             "Overt attention, Light, Cognitive load"
         ],
         "correctAnswer": 2,
+        "category": ["Second partial (B) 23/24"],
         "verified": 1
     },
     {
@@ -217,6 +234,7 @@
             "Coding scheme"
         ],
         "correctAnswer": 3,
+        "category": ["Second partial (B) 23/24"],
         "verified": 1
     },
     {
@@ -228,6 +246,7 @@
             "Emotional Engagement"
         ],
         "correctAnswer": 0,
+        "category": ["Second partial (A) 23/24"],
         "verified": 1
     },
     {
@@ -239,6 +258,7 @@
             "A graphical combination of Fixations and Saccades"
         ],
         "correctAnswer": 0,
+        "category": ["Second partial (A) 23/24"],
         "verified": 1
     },
     {
@@ -250,6 +270,7 @@
             "Two-tailed design"
         ],
         "correctAnswer": 0,
+        "category": ["Second partial (A) 23/24"],
         "verified": 1
     },
     {
@@ -261,6 +282,7 @@
             "Outside-in approach"
         ],
         "correctAnswer": 3,
+        "category": ["Second partial (A) 23/24"],
         "verified": 1
     },
     {
@@ -272,6 +294,7 @@
             "Analyzed videos are longer than 10 minutes"
         ],
         "correctAnswer": 2,
+        "category": ["Second partial (A) 23/24"],
         "verified": 1
     },
     {
@@ -283,6 +306,187 @@
             "Variables that show a negative correlation between them"
         ],
         "correctAnswer": 2,
+        "category": ["Second partial (A) 23/24"],
         "verified": 1
+    },
+    {
+        "question": "Considering design principles, <u>consistency</u> refers to:",
+        "options": [
+            "making sure that important actions are visible",
+            "determining ways of restricting the kinds of user interaction that can take place at a given moment",
+            "an attribute of an object that allows people to know how to use it",
+            "designing interfaces to have similar operations and use similar elements for achieving similar tasks"
+        ],
+        "correctAnswer": 3,
+        "category": ["First call 23/24"],
+        "verified": 0
+    },
+    {
+        "question": "Which interfaces are designed for more than one person to use, provide multiple inputs, and sometimes allow simultaneous input by collocated groups?",
+        "options": [
+            "Multimodal interfaces",
+            "Sharable interfaces",
+            "Touch interfaces",
+            "Pen-Based devices"
+        ],
+        "correctAnswer": 0,
+        "category": ["First call 23/24"],
+        "verified": 0
+    },
+    {
+        "question": "The definition \"One party being virtually present with another party who is present in a physical space\" applies to:",
+        "options": [
+            "co-presence",
+            "virtual presence",
+            "social presence",
+            "telepresence"
+        ],
+        "correctAnswer": 3,
+        "category": ["First call 23/24"],
+        "verified": 0
+    },
+    {
+        "question": "With <u>incidental learning</u>, we mean:",
+        "options": [
+            "learning that occurs without the intention to learn",
+            "the target that all educational applications should aim for",
+            "a goal-directed process meant to memorize specific contents",
+            "that the interface should promote the recall of important elements"
+        ],
+        "correctAnswer": 0,
+        "category": ["First call 23/24"],
+        "verified": 0
+    },
+    {
+        "question": "The different interaction types that can be found are:",
+        "options": [
+            "conversing, pointing, manipulating, exploring, responding",
+            "conversing, manipulating, touching, exploring, responding",
+            "instructing, conversing, exploring, commanding, responding",
+            "instructing, conversing, manipulating, exploring, responding"
+        ],
+        "correctAnswer": 3,
+        "category": ["First call 23/24"],
+        "verified": 0
+    },
+    {
+        "question": "Interfaces can be made expressive to:",
+        "options": [
+            "improve usability",
+            "create an emotional connection with the user",
+            "create a dialog with the user",
+            "improve accessibility"
+        ],
+        "correctAnswer": 1,
+        "category": ["First call 23/24"],
+        "verified": 0
+    },
+    {
+        "question": "Open source software refers to:",
+        "options": [
+            "source code for components, frameworks, or whole systems that is available for reuse or modification, free of charge",
+            "source code for components, frameworks, or whole systems that is available for reuse without modification, free of charge",
+            "source code easily understandable by users",
+            "source code easily understandable by the designers"
+        ],
+        "correctAnswer": 0,
+        "category": ["First call 23/24"],
+        "verified": 0
+    },
+    {
+        "question": "The term \"snowball sampling\" refers to:",
+        "options": [
+            "the sample needed for within-participant design",
+            "the situation in which all the members of the target population are accessible",
+            "the type of sample needed for between-participant design",
+            "the situation in which the current participant finds another participant"
+        ],
+        "correctAnswer": 3,
+        "category": ["First call 23/24"],
+        "verified": 0
+    },
+    {
+        "question": "The basic approaches to qualitative data analysis are:",
+        "options": [
+            "identifying themes, categorizing data, and analyzing critical incidents",
+            "discover, develop, deliver",
+            "identifying users, prototyping, and analyzing critical incidents",
+            "define, develop, discover"
+        ],
+        "correctAnswer": 0,
+        "category": ["First call 23/24"],
+        "verified": 0
+    },
+    {
+        "question": "The Wizard-of-Oz prototype:",
+        "options": [
+            "relies on hand-based sketches",
+            "assumes that the prototype is fully working",
+            "relies on paper-based prototypes",
+            "assumes that a human simulates the software’s response to the user"
+        ],
+        "correctAnswer": 3,
+        "category": ["First call 23/24"],
+        "verified": 0
+    },
+    {
+        "question": "The definition \"rich descriptions of typical users of the product under development on which the designers can focus and for which they can design products\" refers to:",
+        "options": [
+            "Probes",
+            "Scenarios",
+            "Personas",
+            "Individuals"
+        ],
+        "correctAnswer": 1,
+        "category": ["First call 23/24"],
+        "verified": 0
+    },
+    {
+        "question": "Referring to the data ethics principles, <u>accountability</u> refers to:",
+        "options": [
+            "impartial treatment of data without discrimination",
+            "a system that is capable of explaining the decision made in a way that is perceived as accurate and correct",
+            "a system capable of explaining the decision made",
+            "the extent to which a system makes its decision visible"
+        ],
+        "correctAnswer": 1,
+        "category": ["First call 23/24"],
+        "verified": 0
+    },
+    {
+        "question": "Tangible interfaces:",
+        "options": [
+            "are sensor-based interactions, where physical objects, such as bricks, balls, and cubes, are coupled with digital representations",
+            "are devices that can be worn on the body",
+            "are communication pathways between a person’s brain waves and external devices",
+            "don’t require the use of technological devices"
+        ],
+        "correctAnswer": 0,
+        "category": ["First call 23/24"],
+        "verified": 0
+    },
+    {
+        "question": "Which of the following is a reliable heuristic in evaluation?",
+        "options": [
+            "recognition rather than recall",
+            "hide system status",
+            "provide errors in codes",
+            "recall rather than recognition"
+        ],
+        "correctAnswer": 0,
+        "category": ["First call 23/24"],
+        "verified": 0
+    },
+    {
+        "question": "In a \"matched-participant design\":",
+        "options": [
+            "each pair is randomly allocated to the experimental conditions",
+            "a group of participants is randomly allocated to the experimental conditions",
+            "possible order effects are neutralized",
+            "each participant is randomly allocated to the experimental conditions"
+        ],
+        "correctAnswer": 0,
+        "category": ["First call 23/24"],
+        "verified": 0
     }
 ]
