@@ -24,7 +24,16 @@
 </head>
 
 <body>
+	<!-- Modal -->
+    <div class="modal" id="help-modal">
+        <div class="modal-content">
+            <span class="close-btn" id="close-btn">&times;</span>
+            <h3>PWA Update</h3>
+            <p>From now on this website can be installed on desktop and mobile as a <a href="https://en.wikipedia.org/wiki/Progressive_web_app" target="_blank">Progressive web app</a>. In this way the app stores files on the device meaning it can be used when there's no internet connectivity. Remember that only supported browser and operating systems support PWAs, please refer to <a href="img/supported_devices.png" target="_blank">this image</a>. If you see the "Install app" button you can use it, no more actions required. If you're on iOS (iPhone or iPad) and you use Safari, you must install it by clicking on the "Share" icon and then <a href="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ffilecamp.com%2Fwp-content%2Fuploads%2F2022%2F08%2Fhomescreen-shortcuts-ios-02.jpg&f=1&nofb=1&ipt=ae7746932f74a2ec6e8442793c86af3299d29d2600000fe13637c087d9ff2dc0&ipo=images" target="_blank">"Add to Home Screen"</a>.</p>
+        </div>
+    </div>
 	<div class="container">
+		<div id="pwa-text-div" class="pwa-text" style="color:#00a0e1;">Website <span class="help-icon" id="help-btn">?</span></div>
 		<button id="toggleDarkMode"><img src="img/dark-mode.png" alt="Toggle Dark Mode"></button>
 		<script src="js/darkMode.js"></script>
 		<h1>Welcome</h1>

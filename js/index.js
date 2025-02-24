@@ -28,6 +28,73 @@ function generateSection(title, containerId, subjects)
 	}
 }
 
+// Change PWA text dynamically
+function setPWAText()
+{
+	const pwa_div = document.getElementById("pwa-text-div");
+	if(pwa_div)
+	{
+		if(isPWAInstalled())
+		{
+			pwa_div.style.color = "#00e107";
+			pwa_div.innerHTML = "PWA <span class=\"help-icon\" id=\"help-btn\">?</span>"
+		}
+	}
+}
+setPWAText();
+
+// Handle install PWA button
+let deferredPrompt;
+window.addEventListener("beforeinstallprompt", (event) => {
+	event.preventDefault();
+	deferredPrompt = event;
+
+	const installButton = document.getElementById("install-btn");
+	const container = document.getElementById("install-app-container");
+	if(installButton)
+	{
+		installButton.style.display = "block";
+		installButton.addEventListener("click", () => {
+			deferredPrompt.prompt();
+			deferredPrompt.userChoice.then((choice) => {
+				if (choice.outcome === "accepted") {
+					console.log("PWA correctly installed!");
+					installButton.style.display = "none";
+					container.style.paddingBottom = "0px";
+					setPWAText();
+				} else {
+					console.log("Intallation failed");
+				}
+				deferredPrompt = null;
+			});
+		});
+	}
+	if(container)
+		container.style.paddingBottom = "20px";
+});
+
+// Handle tooltip
+const helpBtn = document.getElementById("help-btn");
+const modal = document.getElementById("help-modal");
+const closeBtn = document.getElementById("close-btn");
+
+// Show modal when clicked
+helpBtn.addEventListener("click", () => {
+    modal.style.display = "flex";
+});
+
+// Close modal when clicking X
+closeBtn.addEventListener("click", () => {
+    modal.style.display = "none";
+});
+
+// Close modal when clicking outside
+window.addEventListener("click", (event) => {
+    if (event.target === modal) {
+        modal.style.display = "none";
+    }
+});
+
 // change default list value if there's a cookie
 const cookieSelectedFaculty = getCookie('selectedFaculty');
 // Set the default selected option in the dropdown list
