@@ -25,6 +25,44 @@ const faculties = {
 	}
 };
 
+// To make PWA work
+if ("serviceWorker" in navigator)
+{
+	navigator.serviceWorker.register("/js/service-worker.js")
+		.then(() => console.log("Service Worker registered"))
+		.catch(err => console.error("Failed to register Service Worker", err));
+}
+
+// Install PWA
+let deferredPrompt;
+window.addEventListener("beforeinstallprompt", (event) => {
+	event.preventDefault();
+	deferredPrompt = event;
+
+	const installButton = document.getElementById("install-btn");
+	const container = document.getElementById("install-app-container");
+	if(installButton)
+	{
+		installButton.style.display = "block";
+		installButton.addEventListener("click", () => {
+			deferredPrompt.prompt();
+			deferredPrompt.userChoice.then((choice) => {
+				if (choice.outcome === "accepted") {
+					console.log("PWA correctly installed!");
+					installButton.style.display = "none";
+					container.style.paddingBottom = "0px";
+				} else {
+					console.log("Intallation failed");
+				}
+				deferredPrompt = null;
+			});
+		});
+	}
+	if(container)
+		container.style.paddingBottom = "20px";
+});
+
+
 function setCookie(name, value, days) 
 {
 	let expires = "";
