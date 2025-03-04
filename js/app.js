@@ -10,7 +10,6 @@ document.addEventListener("DOMContentLoaded", function ()
 	let userAnswers = [];
 	let randomQuestions;
 	let questionsToDisplay;
-	let activeCategoryButton = null;
 
 	// get the name of the file to open
 	const urlParams = new URLSearchParams(window.location.search);
@@ -156,7 +155,7 @@ document.addEventListener("DOMContentLoaded", function ()
 				`).join("");
 			}
 
-			const imageHTML = currentQuestion.image? 
+			const imageHTML = currentQuestion.image?
 			`<img src="${currentQuestion.image}" alt="Question Image" class="question-image">`
 			: "";
 
@@ -177,18 +176,18 @@ document.addEventListener("DOMContentLoaded", function ()
 			const questionNumberHTML = `<div class="question-number">${i + 1}</div>`;
 
 			// Generate category badges
-        	const categoryBadgesHTML = currentQuestion.category && Array.isArray(currentQuestion.category) ?
-            currentQuestion.category.map(cat => {
-                const color = generateColorFromCategory(cat);
-                return `<span class="category-badge" style="background-color: ${color};">${cat}</span>`;
-            }).join("") : "";
+			const categoryBadgesHTML = currentQuestion.category && Array.isArray(currentQuestion.category) ?
+			currentQuestion.category.map(cat => {
+				const color = generateColorFromCategory(cat);
+				return `<span class="category-badge" style="background-color: ${color};">${cat}</span>`;
+			}).join("") : "";
 
 			questionContainer.innerHTML += `
 			<div class="question" id="question${i}" data-verified="${currentQuestion.verified}">
 				<div class="question-header">
-		            ${questionNumberHTML}
-		            <div class="verification-icon"></div>
-	        	</div>
+					${questionNumberHTML}
+					<div class="verification-icon"></div>
+				</div>
 				<div class="category-badges">${categoryBadgesHTML}</div>
 				<h2>${currentQuestion.question}</h2>
 				${imageHTML}
@@ -395,7 +394,6 @@ document.addEventListener("DOMContentLoaded", function ()
 
 			const categoryColor = generateColorFromCategory(category);
 			button.style.backgroundColor = categoryColor;
-			button.dataset.originalColor = categoryColor;
 
 			button.addEventListener("click", () => filterQuestionsByCategory(button, category));
 			categoriesContainer.appendChild(button);
@@ -404,19 +402,10 @@ document.addEventListener("DOMContentLoaded", function ()
 
 	function filterQuestionsByCategory(button, category)
 	{
-		if (activeCategoryButton)
-		{
-			// Reset previous active button
-			activeCategoryButton.disabled = false;
-			activeCategoryButton.style.backgroundColor = activeCategoryButton.dataset.originalColor;
-			activeCategoryButton.style.cursor  = "pointer"; 
-		}
-
-		// Set new active button
-		button.disabled = true;
-		button.style.cursor = "not-allowed"; 
-		button.style.backgroundColor = darkenColor(button.dataset.originalColor, 20);
-		activeCategoryButton = button;
+		if(button.classList.contains("highlight"))
+			button.classList.remove("highlight");
+		else
+			button.classList.add("highlight");
 
 		const filteredQuestions = questions.filter(question => 
 			question.category && question.category.includes(category)
@@ -461,63 +450,65 @@ document.addEventListener("DOMContentLoaded", function ()
 		const r = (hash & 0xFF0000) >> 16;
 		const g = (hash & 0x00FF00) >> 8;
 		const b = (hash & 0x0000FF);
+		return `rgb(${r}, ${g}, ${b})`;
+		// Add luminosity to color
 		let hsl = rgbToHsl(r, g, b);
-	    hsl[2] = Math.max(luminosity, hsl[2]); // set luminosity
+		hsl[2] = Math.max(luminosity, hsl[2]); // set luminosity
 
-	    let newRgb = hslToRgb(hsl[0], hsl[1], hsl[2]);
-	    
-	    return `rgb(${newRgb[0]}, ${newRgb[1]}, ${newRgb[2]})`;
+		let newRgb = hslToRgb(hsl[0], hsl[1], hsl[2]);
+		
+		return `rgb(${newRgb[0]}, ${newRgb[1]}, ${newRgb[2]})`;
 	}
 
 	// RGB -> HSL
 	function rgbToHsl(r, g, b)
 	{
-	    r /= 255, g /= 255, b /= 255;
-	    let max = Math.max(r, g, b), min = Math.min(r, g, b);
-	    let h, s, l = (max + min) / 2;
+		r /= 255, g /= 255, b /= 255;
+		let max = Math.max(r, g, b), min = Math.min(r, g, b);
+		let h, s, l = (max + min) / 2;
 
-	    if (max === min) {
-	        h = s = 0;
-	    } else {
-	        let d = max - min;
-	        s = l > 0.5 ? d / (2 - max - min) : d / (max + min);
-	        switch (max) {
-	            case r: h = (g - b) / d + (g < b ? 6 : 0); break;
-	            case g: h = (b - r) / d + 2; break;
-	            case b: h = (r - g) / d + 4; break;
-	        }
-	        h /= 6;
-	    }
+		if (max === min) {
+			h = s = 0;
+		} else {
+			let d = max - min;
+			s = l > 0.5 ? d / (2 - max - min) : d / (max + min);
+			switch (max) {
+				case r: h = (g - b) / d + (g < b ? 6 : 0); break;
+				case g: h = (b - r) / d + 2; break;
+				case b: h = (r - g) / d + 4; break;
+			}
+			h /= 6;
+		}
 
-	    return [h * 360, s * 100, l * 100];
+		return [h * 360, s * 100, l * 100];
 	}
 
 	// HSL -> RGB
 	function hslToRgb(h, s, l)
 	{
-	    h /= 360, s /= 100, l /= 100;
-	    let r, g, b;
+		h /= 360, s /= 100, l /= 100;
+		let r, g, b;
 
-	    if (s === 0) {
-	        r = g = b = l;
-	    } else {
-	        function hueToRgb(p, q, t) {
-	            if (t < 0) t += 1;
-	            if (t > 1) t -= 1;
-	            if (t < 1 / 6) return p + (q - p) * 6 * t;
-	            if (t < 1 / 2) return q;
-	            if (t < 2 / 3) return p + (q - p) * (2 / 3 - t) * 6;
-	            return p;
-	        }
+		if (s === 0) {
+			r = g = b = l;
+		} else {
+			function hueToRgb(p, q, t) {
+				if (t < 0) t += 1;
+				if (t > 1) t -= 1;
+				if (t < 1 / 6) return p + (q - p) * 6 * t;
+				if (t < 1 / 2) return q;
+				if (t < 2 / 3) return p + (q - p) * (2 / 3 - t) * 6;
+				return p;
+			}
 
-	        let q = l < 0.5 ? l * (1 + s) : l + s - l * s;
-	        let p = 2 * l - q;
-	        r = hueToRgb(p, q, h + 1 / 3);
-	        g = hueToRgb(p, q, h);
-	        b = hueToRgb(p, q, h - 1 / 3);
-	    }
+			let q = l < 0.5 ? l * (1 + s) : l + s - l * s;
+			let p = 2 * l - q;
+			r = hueToRgb(p, q, h + 1 / 3);
+			g = hueToRgb(p, q, h);
+			b = hueToRgb(p, q, h - 1 / 3);
+		}
 
-	    return [Math.round(r * 255), Math.round(g * 255), Math.round(b * 255)];
+		return [Math.round(r * 255), Math.round(g * 255), Math.round(b * 255)];
 	}
 
 });
