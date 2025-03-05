@@ -335,6 +335,7 @@ document.addEventListener("DOMContentLoaded", function ()
 		// Show final score on the bottom of the page
 		const scoreContainer = document.getElementById("score-container");
 		scoreContainer.innerHTML = `Your Score: ${score} / ${questionsToDisplay.length}`;
+		scoreContainer.scrollIntoView({ behavior: "smooth" });
 		console.log("Score:", score);
 	}
 
