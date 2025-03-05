@@ -15,6 +15,7 @@ document.addEventListener("DOMContentLoaded", function ()
 	const urlParams = new URLSearchParams(window.location.search);
 	const currentPage = urlParams.get("page");
 	const questionsPath = `questions/questions_${currentPage}.json`;
+	const selectedCategories = new Set();
 
 	// check if user wants a quiz with all the questions from the file
 	const isAllQuestion = urlParams.get("allQuestion");
@@ -402,15 +403,28 @@ document.addEventListener("DOMContentLoaded", function ()
 
 	function filterQuestionsByCategory(button, category)
 	{
-		if(button.classList.contains("highlight"))
+		if(selectedCategories.has(category))
+		{
+			selectedCategories.delete(category);
 			button.classList.remove("highlight");
+		}
 		else
+		{
+			selectedCategories.add(category);
 			button.classList.add("highlight");
+		}
 
-		const filteredQuestions = questions.filter(question => 
-			question.category && question.category.includes(category)
-		);
 		questionContainer.innerHTML = "";
+		if(selectedCategories.size === 0)
+		{
+			showQuestions();
+			return;
+		}
+
+		const filteredQuestions = questions.filter(question =>
+        	question.category && question.category.some(cat => selectedCategories.has(cat))
+    	);
+
 		showQuestions(filteredQuestions);
 	}
 
