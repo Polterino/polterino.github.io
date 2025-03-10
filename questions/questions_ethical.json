@@ -178,6 +178,7 @@
 			"False"
 		],
 		"correctAnswer": 1,
+		"category": ["Buffer Overflow"],
 		"verified": 1
 	},
 	{
@@ -187,6 +188,7 @@
 			"True"
 		],
 		"correctAnswer": 1,
+		"category": ["Buffer Overflow"],
 		"verified": 1
 	},
 	{
@@ -196,6 +198,7 @@
 			"False"
 		],
 		"correctAnswer": 1,
+		"category": ["Buffer Overflow"],
 		"verified": 1
 	},
 	{
