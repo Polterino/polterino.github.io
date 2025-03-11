@@ -32,7 +32,7 @@ document.addEventListener("DOMContentLoaded", function ()
 		"sql": "sql",
 		"php": "php"
 	};
-
+/*
 	const predefinedColors = [
 	    "#FF5733", "#3357FF", "#F39C12", "#9B59B6",
 	    "#1ABC9C", "#D35400", "#C0392B", "#27AE60", "#8E44AD",
@@ -41,6 +41,13 @@ document.addEventListener("DOMContentLoaded", function ()
 	    "#E91E63", "#9C27B0", "#3F51B5", "#009688", "#FF9800",
 	    "#795548", "#FFEB3B", "#00BCD4", "#CDDC39", "#673AB7",
 	    "#F06292", "#FFA726", "#BA68C8", "#64B5F6", "#4DB6AC"
+	];
+*/
+	const predefinedColors = [
+	    "#0000FF", "#2A00D5", "#5500AA", "#800080",
+	    "#AA0055", "#D5002B", "#FF0000", "#FB2A00", "#F75500",
+	    "#F38000", "#EEAA00", "#EAD500", "#E0D52A",
+	    "#D9AA55", "#D38080", "#CC55AA", "#C62BD5", "#BF00FF"
 	];
 	let colorIndex = 0;
 

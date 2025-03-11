@@ -326,8 +326,8 @@ input[type="checkbox"]:hover {
 }
 
 .highlight {
-    border: 3px solid white; /* Bordo chiaro */
-    box-shadow: 0 0 5px black; /* Ombra nera per migliorare il contrasto */
+    border: 3px solid white;
+    box-shadow: 0 0 5px black;
 }
 
 @media (max-width: 400px) {
