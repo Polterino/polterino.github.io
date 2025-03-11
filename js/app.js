@@ -33,6 +33,17 @@ document.addEventListener("DOMContentLoaded", function ()
 		"php": "php"
 	};
 
+	const predefinedColors = [
+	    "#FF5733", "#3357FF", "#F39C12", "#9B59B6",
+	    "#1ABC9C", "#D35400", "#C0392B", "#27AE60", "#8E44AD",
+	    "#2980B9", "#E67E22", "#16A085", "#2C3E50", "#E74C3C",
+	    "#7F8C8D", "#3498DB", "#34495E", "#D35400", "#BDC3C7",
+	    "#E91E63", "#9C27B0", "#3F51B5", "#009688", "#FF9800",
+	    "#795548", "#FFEB3B", "#00BCD4", "#CDDC39", "#673AB7",
+	    "#F06292", "#FFA726", "#BA68C8", "#64B5F6", "#4DB6AC"
+	];
+	let colorIndex = 0;
+
 	// Find programming language from file extension
 	function getLanguageFromFile(fileName)
 	{
@@ -179,7 +190,9 @@ document.addEventListener("DOMContentLoaded", function ()
 			// Generate category badges
 			const categoryBadgesHTML = currentQuestion.category && Array.isArray(currentQuestion.category) ?
 			currentQuestion.category.map(cat => {
-				const color = generateColorFromCategory(cat);
+				//const color = generateColorFromCategory(cat);
+				// Take color from previously generated button
+				const color = document.getElementById(cat).style.backgroundColor;
 				return `<span class="category-badge" style="background-color: ${color};">${cat}</span>`;
 			}).join("") : "";
 
@@ -391,11 +404,13 @@ document.addEventListener("DOMContentLoaded", function ()
 		// Add a button
 		categories.forEach(category => {
 			const button = document.createElement("button");
+			button.id = category;
 			button.textContent = category;
 			button.style.margin = "5px";
 
-			const categoryColor = generateColorFromCategory(category);
-			button.style.backgroundColor = categoryColor;
+			//const categoryColor = generateColorFromCategory(category);
+			button.style.backgroundColor = predefinedColors[colorIndex];
+			colorIndex = (colorIndex+1) % predefinedColors.length;
 
 			button.addEventListener("click", () => filterQuestionsByCategory(button, category));
 			categoriesContainer.appendChild(button);

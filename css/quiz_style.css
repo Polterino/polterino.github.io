@@ -290,6 +290,14 @@ input[type="checkbox"]:hover {
     background-image: url('../img/warning.png');
 }
 
+#categories-container {
+    max-width: 600px;
+    display: flex; /* Usa flexbox */
+    flex-wrap: wrap; /* Permette ai bottoni di andare a capo se necessario */
+    justify-content: center; /* Centra gli elementi */
+    margin: 0 auto;
+}
+
 .category-badges {
     display: flex;
     flex-wrap: wrap; /* Permette ai badge di andare a capo */
@@ -318,7 +326,8 @@ input[type="checkbox"]:hover {
 }
 
 .highlight {
-    border: 2px solid red !important;
+    border: 3px solid white; /* Bordo chiaro */
+    box-shadow: 0 0 5px black; /* Ombra nera per migliorare il contrasto */
 }
 
 @media (max-width: 400px) {

@@ -208,6 +208,7 @@
 			"The memory space that comes after the buffer holds the extra data as well as keeping the data that it contained before"
 		],
 		"correctAnswer": 0,
+		"category": ["Buffer Overflow"],
 		"verified": 1
 	},
 	{
@@ -218,6 +219,7 @@
 			"Temporary storage of variables"
 		],
 		"correctAnswer": 2,
+		"category": ["Buffer Overflow"],
 		"verified": 1
 	},
 	{
@@ -228,6 +230,7 @@
 			"Whatever is at A[555] will be overwritten"
 		],
 		"correctAnswer": 2,
+		"category": ["Buffer Overflow"],
 		"verified": 1
 	},
 	{
@@ -238,6 +241,7 @@
 			"Any kind of pointer"
 		],
 		"correctAnswer": 2,
+		"category": ["Buffer Overflow"],
 		"verified": 1
 	},
     {
@@ -249,6 +253,7 @@
 			"Assigning values to the lower portions of registers, such as using mov al, 0x99 instead of mov eax, 0x00000099"
 		],
 		"correctAnswer": 0,
+		"category": ["Shellcode"],
 		"verified": 1
 	},
 	{
@@ -259,6 +264,7 @@
 			"Because the shellcode will be sent over the network towards the target victim machine"
 		],
 		"correctAnswer": 0,
+		"category": ["Shellcode"],
 		"verified": 1
 	},
 	{
@@ -269,6 +275,7 @@
 			"Because the zero character is the termination character of strings and it affects some C functions"
 		],
 		"correctAnswer": 2,
+		"category": ["Shellcode"],
 		"verified": 1
 	},
 	{
@@ -279,6 +286,7 @@
 			"XOR Technique"
 		],
 		"correctAnswer": 1,
+		"category": ["Shellcode"],
 		"verified": 1
 	},
 	{
@@ -289,6 +297,7 @@
 			"ebx"
 		],
 		"correctAnswer": 2,
+		"category": ["Shellcode"],
 		"verified": 1
 	},
 	{
@@ -299,6 +308,7 @@
 			"syscall"
 		],
 		"correctAnswer": 2,
+		"category": ["Shellcode"],
 		"verified": 1
 	},
 	{
@@ -309,6 +319,7 @@
 			"push esp"
 		],
 		"correctAnswer": 1,
+		"category": ["Shellcode"],
 		"verified": 1
 	},
 	{
@@ -319,6 +330,7 @@
 			"ebx"
 		],
 		"correctAnswer": 0,
+		"category": ["Shellcode"],
 		"verified": 1
 	},
 	{
@@ -329,6 +341,7 @@
 			"Shellcode"
 		],
 		"correctAnswer": 1,
+		"category": ["Return to libc"],
 		"verified": 1
 	},
 	{
@@ -339,6 +352,7 @@
 			"Yes"
 		],
 		"correctAnswer": 0,
+		"category": ["Return to libc"],
 		"verified": 1
 	},
 	{
@@ -348,8 +362,10 @@
 			"Yes"
 		],
 		"correctAnswer": 0,
+		"category": ["Return to libc"],
 		"verified": 1
-	},{
+	},
+	{
 		"question": "Why do we need to know technical details about the function prologue and function epilogue to perform a return to libc attack?",
 		"options": [
 			"Because function prologue and function epilogue allow to pass the arguments to the system() function",
@@ -357,6 +373,7 @@
 			"Because function prologue and epilogue are part of the implementation of the system() function"
 		],
 		"correctAnswer": 1,
+		"category": ["Return to libc"],
 		"verified": 1
 	},
 	{
@@ -366,6 +383,7 @@
 			"No"
 		],
 		"correctAnswer": 1,
+		"category": ["Return to libc"],
 		"verified": 1
 	},
 	{
@@ -376,6 +394,7 @@
 			"It should be overwritten"
 		],
 		"correctAnswer": 1,
+		"category": ["Return to libc"],
 		"verified": 1
 	},
 	{
@@ -386,6 +405,7 @@
 			"The return to libc attack"
 		],
 		"correctAnswer": 2,
+		"category": ["Return to libc"],
 		"verified": 1
 	},
 	{
@@ -395,6 +415,7 @@
 			"No"
 		],
 		"correctAnswer": 1,
+		"category": ["Format String"],
 		"verified": 1
 	},
 	{
@@ -405,6 +426,7 @@
 			"The use of format specifiers"
 		],
 		"correctAnswer": 1,
+		"category": ["Format String"],
 		"verified": 1
 	},
 	{
@@ -415,6 +437,7 @@
 			"considers the next fetched value as an address and retrieves data from it"
 		],
 		"correctAnswer": 2,
+		"category": ["Format String"],
 		"verified": 1
 	},
 	{
@@ -425,6 +448,7 @@
 			"considers the next fetched value as an address and writes data into it"
 		],
 		"correctAnswer": 0,
+		"category": ["Format String"],
 		"verified": 1
 	},
 	{
@@ -435,6 +459,7 @@
 			"considers the next fetched value as an address and retrieves data from it"
 		],
 		"correctAnswer": 1,
+		"category": ["Format String"],
 		"verified": 1
 	},
 	{
@@ -445,6 +470,7 @@
 			"The web application relies on an external database"
 		],
 		"correctAnswer": 0,
+		"category": ["SQL injection"],
 		"verified": 1
 	},
 	{
@@ -455,6 +481,7 @@
 			"... it does not depend on the type of request"
 		],
 		"correctAnswer": 2,
+		"category": ["SQL injection"],
 		"verified": 1
 	},
 	{
@@ -465,6 +492,7 @@
 		],
 		"code": "code/query.php",
 		"correctAnswer": 1,
+		"category": ["SQL injection"],
 		"motivation": "This query is actually vulnerable to SQL injection attacks because SHA2() function is interpreted as SQL code instead of php code, but since this question was taken from the quiz on moodle, for a reason I don't know the answer reported as correct is No",
 		"verified": 1
 	},
@@ -475,6 +503,7 @@
 			"Yes"
 		],
 		"correctAnswer": 0,
+		"category": ["SQL injection"],
 		"verified": 1
 	},
 	{
@@ -485,6 +514,7 @@
 			"... if the user input are sent over an HTTP GET request"
 		],
 		"correctAnswer": 0,
+		"category": ["SQL injection"],
 		"verified": 1
 	},
 	{
@@ -494,6 +524,7 @@
 			"No"
 		],
 		"correctAnswer": 1,
+		"category": ["SQL injection"],
 		"verified": 1
 	},
 	{
@@ -504,6 +535,7 @@
 			"the internal offsets within the program stack"
 		],
 		"correctAnswer": 0,
+		"category": ["Countermeasures"],
 		"verified": 1
 	},
 	{
@@ -514,6 +546,7 @@
 			"Shellcode attack"
 		],
 		"correctAnswer": 2,
+		"category": ["Countermeasures"],
 		"verified": 1
 	},
 	{
@@ -524,6 +557,7 @@
 			"is retrieved at runtime for every new execution of the program"
 		],
 		"correctAnswer": 2,
+		"category": ["Countermeasures"],
 		"verified": 1
 	},
 	{
@@ -534,6 +568,7 @@
 			"are automatically introduced by the compiler"
 		],
 		"correctAnswer": 0,
+		"category": ["Countermeasures"],
 		"verified": 1
 	},
 	{
@@ -544,6 +579,7 @@
 			"the OS and compiler approaches are always effective"
 		],
 		"correctAnswer": 2,
+		"category": ["Countermeasures"],
 		"verified": 1
 	},
 	{
@@ -554,7 +590,7 @@
 			"control-flow-oriented bof attacks"
 		],
 		"correctAnswer": 2,
-		"category": ["First call 24/25"],
+		"category": ["First call 24/25", "Countermeasures"],
 		"verified": 1
 	},
 	{
@@ -565,7 +601,7 @@
 			"Return-to-like attacks exploit vulnerabilities in the computer's memory management system to gain arbitrary code execution privileges."
 		],
 		"correctAnswer": 0,
-		"category": ["First call 24/25"],
+		"category": ["First call 24/25", "Return to libc"],
 		"verified": 1
 	},
 	{
@@ -576,7 +612,7 @@
 			"Stack canaries"
 		],
 		"correctAnswer": 0,
-		"category": ["First call 24/25"],
+		"category": ["First call 24/25", "Countermeasures"],
 		"verified": 1
 	},
 	{
@@ -587,7 +623,7 @@
 			"exactly at the address where the shellcode has been placed"
 		],
 		"correctAnswer": 2,
-		"category": ["First call 24/25"],
+		"category": ["First call 24/25", "Shellcode"],
 		"verified": 1
 	},
 	{
@@ -598,7 +634,7 @@
 			"eax contains the system call number; ebx points to argv; ecx points to argv[0]"
 		],
 		"correctAnswer": 1,
-		"category": ["First call 24/25"],
+		"category": ["First call 24/25", "Shellcode"],
 		"verified": 1
 	},
 	{
@@ -609,7 +645,7 @@
 			"are assembly instructions that the attacker injects into the victim program"
 		],
 		"correctAnswer": 0,
-		"category": ["First call 24/25"],
+		"category": ["First call 24/25", "Return to libc"],
 		"verified": 1
 	},
 	{
@@ -620,7 +656,7 @@
 			"Intercepting communication between two hosts to manipulate packets"
 		],
 		"correctAnswer": 0,
-		"category": ["First call 24/25"],
+		"category": ["First call 24/25", "Sniffing and spoofing"],
 		"verified": 1
 	},
 	{
@@ -631,7 +667,7 @@
 			"Spoof an TCP packet using as sender address the victim's address"
 		],
 		"correctAnswer": 0,
-		"category": ["First call 24/25"],
+		"category": ["First call 24/25", "Sniffing and spoofing"],
 		"verified": 1
 	},
 	{
@@ -642,7 +678,7 @@
 			"the attacker stores and executes the code directly on the browser"
 		],
 		"correctAnswer": 0,
-		"category": ["First call 24/25"],
+		"category": ["First call 24/25", "XSS"],
 		"verified": 1
 	},
 	{
@@ -653,7 +689,7 @@
 			"interacts with a server to retrieve the attacker's code"
 		],
 		"correctAnswer": 0,
-		"category": ["First call 24/25"],
+		"category": ["First call 24/25", "XSS"],
 		"verified": 1
 	},
 	{
@@ -664,7 +700,7 @@
 			"Having the victim under an active session on the target website; crafting a cross-site request; making the victim click on the link crafted by the attacker which will send the cross-site request"
 		],
 		"correctAnswer": 1,
-		"category": ["First call 24/25"],
+		"category": ["First call 24/25", "CSRF"],
 		"verified": 1
 	},
 	{
@@ -675,7 +711,7 @@
 			"Cross-site requests"
 		],
 		"correctAnswer": 0,
-		"category": ["First call 24/25"],
+		"category": ["First call 24/25", "CSRF"],
 		"verified": 1
 	},
 	{
@@ -686,7 +722,7 @@
 			"The attacker takes control of an existing connection"
 		],
 		"correctAnswer": 1,
-		"category": ["First call 24/25"],
+		"category": ["First call 24/25", "TCP"],
 		"verified": 1
 	},
 	{
@@ -697,7 +733,7 @@
 			"The website sanitizers applied on the client side"
 		],
 		"correctAnswer": 2,
-		"category": ["First call 24/25"],
+		"category": ["First call 24/25", "SQL injection"],
 		"verified": 1
 	},
 	{
@@ -708,7 +744,7 @@
 			"the fact that web applications execute scripts on the users' browser"
 		],
 		"correctAnswer": 2,
-		"category": ["First call 24/25"],
+		"category": ["First call 24/25", "XSS"],
 		"verified": 1
 	},
 	{
@@ -719,7 +755,7 @@
 			"The attacker creates a new connection impersonating another user"
 		],
 		"correctAnswer": 0,
-		"category": ["First call 24/25"],
+		"category": ["First call 24/25", "TCP"],
 		"verified": 1
 	},
 	{
@@ -730,7 +766,7 @@
 			"a pointer to a digital currency (e.g., Bitcoin) exchanged among users"
 		],
 		"correctAnswer": 1,
-		"category": ["First call 24/25"],
+		"category": ["First call 24/25", "Blockchain"],
 		"verified": 1
 	},
 	{
@@ -741,7 +777,7 @@
 			"a computer program written in solidity that simultaneously run over the whole blockchain network"
 		],
 		"correctAnswer": 0,
-		"category": ["First call 24/25"],	
+		"category": ["First call 24/25", "Blockchain"],	
 		"verified": 1
 	},
 	{
@@ -752,7 +788,7 @@
 			"Connects the internal network to a demilitarized zone and hence to external networks"
 		],
 		"correctAnswer": 2,
-		"category": ["Second call 24/25"],
+		"category": ["Second call 24/25", "Sniffing and spoofing"],
 		"verified": 1
 	},
 	{
@@ -763,7 +799,7 @@
 			"blocks all packets, except UDP packets if their destination IP is 8.8.8.8 and the destination port is 53"
 		],
 		"code": "code/firewall.c",
-		"category": ["Second call 24/25"],
+		"category": ["Second call 24/25", "Sniffing and spoofing"],
 		"correctAnswer": 0,
 		"verified": 1
 	},
@@ -775,7 +811,7 @@
 			"sending malformed packets to cause unexpected behavior at the receiver (e.g., reverse shell)"
 		],
 		"correctAnswer": 1,
-		"category": ["Second call 24/25"],
+		"category": ["Second call 24/25", "Sniffing and spoofing"],
 		"verified": 1
 	},
 	{
@@ -786,7 +822,7 @@
 			"$sql = \"UPDATE credential set nickname=, salary=999999, email= WHERE ID=25;\";"
 		],
 		"code": "code/update_query.php",
-		"category": ["Second call 24/25"],
+		"category": ["Second call 24/25", "SQL injection"],
 		"correctAnswer": 1,
 		"verified": 1
 	},
@@ -798,7 +834,7 @@
 			"Lack of CSRF tokens"
 		],
 		"correctAnswer": 1,
-		"category": ["Second call 24/25"],
+		"category": ["Second call 24/25", "CSRF"],
 		"verified": 1
 	},
 	{
@@ -809,7 +845,7 @@
 			"Normal cookie"
 		],
 		"correctAnswer": 2,
-		"category": ["Second call 24/25"],
+		"category": ["Second call 24/25", "CSRF"],
 		"verified": 1
 	},
 	{
@@ -820,7 +856,7 @@
 			"Encrypted data to bypass security measures"
 		],
 		"correctAnswer": [0,1],
-		"category": ["Second call 24/25"],
+		"category": ["Second call 24/25", "Shellcode"],
 		"motivation": "Initially \"Assembly instructions\" answer was the only one correct, but since even the \"Machine code\" one is also correct the professor agreed to count both of them as correct",
 		"verified": 1
 	},
@@ -832,7 +868,7 @@
 			"Increasing the size of input buffers"
 		],
 		"correctAnswer": 0,
-		"category": ["Second call 24/25"],
+		"category": ["Second call 24/25", "Shellcode"],
 		"verified": 1
 	}
 ]
