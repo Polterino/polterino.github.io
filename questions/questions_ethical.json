@@ -777,7 +777,7 @@
 			"a computer program written in solidity that simultaneously run over the whole blockchain network"
 		],
 		"correctAnswer": 0,
-		"category": ["First call 24/25", "Blockchain"],	
+		"category": ["First call 24/25", "Second call 24/25", "Blockchain"],	
 		"verified": 1
 	},
 	{
