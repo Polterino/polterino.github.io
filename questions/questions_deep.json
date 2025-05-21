@@ -77,67 +77,31 @@
 	},
 	{
 		"question": "Consider a CNN layer with 2 filters of size 3x3, stride 1, input images of size 4x4 and padding=\"same\" on a colour image (i.e. with three channels). How many <u>multiplications</u> (between two numbers) are performed to compute the output (feature map) of such a layer? (do not consider bias terms or activation functions)",
-		"options": [
-			"864",
-			"216",
-			"522",
-			"120",
-			"445",
-			"288"
-		],
-		"correctAnswer": 0,
+		"correctTextboxAnswer": "864",
 		"motivation": "2 x 3x3 x 4x4 x 3",
-		"verified": 0
+		"verified": 1
 	},
 	{
 		"question": "Consider a CNN layer with 5 filters of size 3x3, stride 3, input images of size 6x6 and padding=\"valid\" on a black and white image (i.e. with one input channel). How many <u>multiplications</u> (between two numbers) are performed to compute the output (feature map) of such a layer? (do not consider bias terms or activation functions)",
-		"options": [
-			"180",
-			"200",
-			"1620",
-			"490",
-			"900"
-		],
-		"correctAnswer": 0,
+		"correctTextboxAnswer": "180",
 		"motivation": "5 x 3x3 x ( (6-3)/3 + 1)<sup>2</sup>",
 		"verified": 1
 	},
 	{
 		"question": "Consider a CNN layer with 10 filters of size 4x4, a stride of 2 and input images of size 6x6 on a single channel (i.e. black and white). How many <u>multiplications</u> (between two numbers) are performed to compute the output (feature map) of such a layer? (do not consider bias terms or activation functions)",
-		"options": [
-			"640",
-			"545",
-			"610",
-			"590",
-			"663"
-		],
-		"correctAnswer": 0,
+		"correctTextboxAnswer": "640",
 		"motivation": "10 x 4x4 x ( (6-4)/2 + 1)<sup>2</sup>",
 		"verified": 1
 	},
 	{
 		"question": "Consider a CNN layer with 10 filters of size 4x4, a stride of 1 and input images of size 8x8. How many <u>parameters</u> are we required to train for such a layer? (do not consider bias terms)",
-		"options": [
-			"640",
-			"4000",
-			"610",
-			"590",
-			"160"
-		],
-		"correctAnswer": 4,
+		"correctTextboxAnswer": "160",
 		"motivation": "10 x 4x4",
 		"verified": 1
 	},
 	{
 		"question": "Consider an <u>unshared</u> CNN layer (i.e. a convolution layer where the weights are not shared across different positions) with just 1 filter of size 3x3, a stride of 1, input images of size 4x4 and no padding. How many parameters are we required to train for such a layer? (do not consider bias terms or activation functions)",
-		"options": [
-			"36",
-			"120",
-			"510",
-			"22",
-			"356"
-		],
-		"correctAnswer": 0,
+		"correctTextboxAnswer": "36",
 		"motivation": "1 x 3x3 x ( (4-3)/1 + 1)<sup>2</sup>",
 		"verified": 1
 	},
@@ -192,28 +156,14 @@
 	},
 	{
 		"question": "Suppose to have a IO-isomorphic prediction task and a RNN with the following Recurrent Network: where y is the target, L the loss function, o the RNN output, h the hidden state, x the input at time t, and the black square represents the time-shift operator q<sup>-1</sup>. U, W, Vx and Vh are weights matrices. Suppose to use back-propagation through time with mini-batch equal to 2 for training. Given input sequences composed of 2 and 4 items, respectively, how many terms should be summed up to compute the gradient of the loss with respect to U?",
-		"options": [
-			"13",
-			"15",
-			"8",
-			"10",
-			"20"
-		],
-		"correctAnswer": 0,
+		"correctTextboxAnswer": "13",
 		"motivation": "4 + 3 + 2 + 1 + 2 + 1",
 		"verified": 1,
 		"image": "img/deep_rnn_1.png"
 	},
 	{
 		"question": "Suppose to have a IO-isomorphic prediction task and a RNN with the following Recurrent Network: where y is the target, L the loss function, o the RNN output, h the hidden state, x the input at time t, and the black square represents the time-shift operator q<sup>-1</sup>. U, W, Vx and Vh are weights matrices. Suppose to use back-propagation through time with mini-batch equal to 3 for training. Given input sequences composed of 3 items, how many terms should be summed up to compute the gradient of the loss with respect to U?",
-		"options": [
-			"13",
-			"18",
-			"8",
-			"10",
-			"20"
-		],
-		"correctAnswer": 1,
+		"correctTextboxAnswer": "18",
 		"motivation": "(1 + 2 + 3) x 3",
 		"verified": 1,
 		"image": "img/deep_rnn_1.png"

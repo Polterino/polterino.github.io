@@ -127,8 +127,15 @@ document.addEventListener("DOMContentLoaded", function ()
 			const isMCQ = Array.isArray(currentQuestion.correctAnswer);
 			let optionsHTML;
 
+			// If it's a textBox answer, show it
+			if(currentQuestion.correctTextboxAnswer)
+			{
+				optionsHTML = `
+					<input type="text" name="answer${i}" value="${selectCorrectAnswer? currentQuestion.correctTextboxAnswer: ""}"><br>
+				`;
+			}
 			// if it's a single choice question
-			if(!isMCQ)
+			else if(!isMCQ)
 			{
 				const correctAnswerIndex = currentQuestion.correctAnswer;
 
@@ -276,14 +283,25 @@ document.addEventListener("DOMContentLoaded", function ()
 		// Loop through all questions
 		for (let i = 0; i < questionsToDisplay.length; i++)
 		{
+			currentQuestion = questionsToDisplay[i];
+
+
 			let selectedAnswer = getSelectedAnswer(`answer${i}`);
 			userAnswers.push(selectedAnswer);
+			var textboxAnswer = null;
+			var correctAnswers = null;
+			// check whether is null because it's a textbox answer or the user didn't select the checkbox
+			if(selectedAnswer == null)
+			{
+				textboxAnswer = document.querySelector(`input[name="answer${i}"]`).value;
+			}
+			else
+			{
+				correctAnswers = Array.isArray(currentQuestion.correctAnswer) 
+					? currentQuestion.correctAnswer 
+					: [currentQuestion.correctAnswer];
+			}
 
-			currentQuestion = questionsToDisplay[i];
-			const correctAnswers = Array.isArray(currentQuestion.correctAnswer) 
-			? currentQuestion.correctAnswer 
-			: [currentQuestion.correctAnswer];
-			
 			const feedbackElement = document
 			.getElementById(`question${i}`)
 			.querySelector(".feedback");
@@ -295,8 +313,6 @@ document.addEventListener("DOMContentLoaded", function ()
 			// if there's at least one selected answer for that question
 			if (selectedAnswer)
 			{
-				//const correctAnswerIndex = currentQuestion.correctAnswer;
-
 				// single choice question
 				if (correctAnswers.length === 1)
 				{
@@ -344,9 +360,29 @@ document.addEventListener("DOMContentLoaded", function ()
 					}
 				}
 			}
+			// If there's a textbox answer
+			else if(textboxAnswer)
+			{
+				if(textboxAnswer === currentQuestion.correctTextboxAnswer)
+				{
+					feedbackElement.innerHTML = "Correct!";
+					feedbackElement.classList.add("correct");
+					score += 1;
+				}
+				else
+				{
+					feedbackElement.innerHTML = `Incorrect. Correct answer: ${currentQuestion.correctTextboxAnswer}`;
+						feedbackElement.classList.add("incorrect");
+	
+					if (currentQuestion.motivation)
+						motivationElement.innerHTML = `Motivation: ${currentQuestion.motivation}`;
+					if (currentQuestion.motivation_image)
+						motivationElement.innerHTML += `<img src="${currentQuestion.motivation_image}" alt="Motivation Image" class="question-image" style="margin-top: 10px;">`;
+				}
+			}
+			// No answer was selected or written, consider it wrong
 			else
 			{
-				// No answer was selected, consider it wrong
 				feedbackElement.innerHTML = "Incorrect. No answer selected.";
 				feedbackElement.classList.add("incorrect");
 			}
