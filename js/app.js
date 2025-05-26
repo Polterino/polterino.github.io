@@ -293,7 +293,9 @@ document.addEventListener("DOMContentLoaded", function ()
 			// check whether is null because it's a textbox answer or the user didn't select the checkbox
 			if(selectedAnswer == null)
 			{
-				textboxAnswer = document.querySelector(`input[name="answer${i}"]`).value;
+				textboxAnswer = document.querySelector(`input[type="text"][name="answer${i}"]`);
+				if(textboxAnswer)
+					textboxAnswer = textboxAnswer.value;
 			}
 			else
 			{
