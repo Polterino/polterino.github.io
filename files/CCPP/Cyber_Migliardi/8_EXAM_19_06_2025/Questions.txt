@@ -1,0 +1,30 @@
+1/10) Is the program leak.c vulnerable to a buffer overflow of type stack smashing/control hijacking?
+(If yes why, if no why)
+
+2/10) Is the program leak.c vulnerable to an attack of type heap manipulation?
+(If yes why, if no why)
+
+3/10) Is the program leak.c vulnerable to an attack of type stack information exfiltration?
+(If yes why, if no why)
+
+4/10) Is the program leak.c vulnerable to an attack of type heap information exfiltration?
+(If yes why, if no why)
+
+5/10) Is the program leak.c vulnerable to any of the previously mentioned attacks if stack protectors (canaries) are in place?
+(If yes why, if no why)
+
+6/10) Can not executable stack prevent the return loop in loop3.c?
+(If yes why, if no why)
+
+7/10) Can stack protectors (canaries) prevent the return loop in loop3.c?
+(If yes why, if no why)
+
+8/10) Can ASLR prevent the return loop in loop3.c?
+(If yes why, if no why)
+
+Let's make the Hypothesis that there is no "system" function call in the libc library
+9/10) Is it possible to make a return to libc attack that activates any program that is present on the system?
+(If yes why, if no why, are there any restrictions)
+
+10/10) Does ASLR protect from a return to libc attack?
+(If yes why, if no why)
