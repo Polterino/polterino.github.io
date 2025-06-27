@@ -1,0 +1,143 @@
+Grade: 28
+
+
+
+1/10) Is the program leak.c vulnerable to a buffer overflow of type stack smashing/control hijacking?
+
+(If yes why, if no why)
+
+
+
+No, the buffer does not take any content from user input and then the copy is done on the heap since retval is allocated a run time on the heap.
+
+
+
+3 ok, the explanation could be better though
+
+
+
+2/10) Is the program leak.c vulnerable to an attack of type heap manipulation?
+
+(If yes why, if no why)
+
+
+
+No, the retval array is allocated of size i but, even though the value of i is less that SIZE, memcpy() will copy in the retval exactly i values, so it is not possible to go beyond the retval boundaries on the heap.
+
+
+
+3 ok
+
+
+
+3/10) Is the program leak.c vulnerable to an attack of type stack information exfiltration?
+
+(If yes why, if no why)
+
+
+
+Yes, in the isThisVulnerable function, the memcpy() copies from the src, which is on the stack, the amount of elements that is specified in the size (i) which is given by user input. That means that if the value given by user is over 16 (the size of src) the memcpy will go aver the content of the src.
+
+
+
+3 ok
+
+
+
+4/10) Is the program leak.c vulnerable to an attack of type heap information exfiltration?
+
+(If yes why, if no why)
+
+
+
+No, the read of memory for the copy is done on the buff which is on the stack. And also in the for loop for the print, it has exactly i iterations, so there is not in any case the possibility to go over the boundaries of the allocated space in the heap.
+
+
+
+3 ok 
+
+
+
+5/10) Is the program leak.c vulnerable to any of the previously mentioned attacks if stack protectors (canaries) are in place?
+
+(If yes why, if no why)
+
+
+
+Yes, the heap information exfiltration is still a vulnerability since canaries are only placed in the stack.
+
+
+
+0 but there is no heap exfiltration vulnerability. You said so yourself!
+
+
+
+6/10) Can not executable stack prevent the return loop in loop3.c?
+
+(If yes why, if no why)
+
+
+
+No, the not executable stack is a counter to buffer overflow but the loop in the program is a sort of Return Oriented Programming which relies on the chain of multiple return addresses of gadgets (in this case the loop functionis a sort of gadget) to execute commands that are part of the standard lib c.
+
+
+
+3 ok, even if it's not really ROP
+
+
+
+7/10) Can stack protectors (canaries) prevent the return loop in loop3.c?
+
+(If yes why, if no why)
+
+
+
+No, canaries are placed tipically in between the buffer and the ret address. The loop has the *((int*)(&(buf[SIZE + offset]))) = &loop; instruction to overwrites only the value of ret address due to the fact that the offset is also taken from user input. So, when the canary is checked its value will be remain the same, and the attack will not be notified by stack guards.
+
+
+
+3 ok
+
+
+
+8/10) Can ASLR prevent the return loop in loop3.c?
+
+(If yes why, if no why)
+
+
+
+No, the ASLR randomizes the position of the frame in the stack, but it doesn't change the order of addresses in the stack frame. That means that even though the stack frame of loop() are randomized in the stack, the position of ret address will always be buf[SIZE + offset], and so will always be overwritten.
+
+
+
+3 ok, even if you forgot to say that also the address of the loop function is read inside the program
+
+
+
+Let's make the Hypothesis that there is no "system" function call in the libc library
+
+9/10) Is it possible to make a return to libc attack that activates any program that is present on the system?
+
+(If yes why, if no why, are there any restrictions)
+
+
+
+Yes, the return2libC attack relies on the execution of functions that are part of the standard lib c which contains other commands like execve to execute instructions. The limitation is due to the fact that it is possible to execute commands that do not requires root priviledges if the program requires root to be executed, unless you have set user id.
+
+
+
+4 you realized that "any program" was to unbounded
+
+
+
+10/10) Does ASLR protect from a return to libc attack?
+
+(If yes why, if no why)
+
+
+
+No it doesn't protect, ASLR only makes the attack more difficult to perform by randomly changing addresses of executables but they can still be finded during program's run time by leaking them.
+
+
+
+3 ok, even if it provides a reasonable level of protection that still has some attack surfaces
