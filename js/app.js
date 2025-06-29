@@ -3,6 +3,7 @@ document.addEventListener("DOMContentLoaded", function ()
 	const questionContainer = document.getElementById("question-container");
 	const calculateButton = document.getElementById("calculate-button");
 	const totalQuestionsContainer = document.getElementById("total-questions");
+	const info = document.getElementById("more-info");
 	const showAllButton = document.getElementById("show-all-questions-button");
 	const categoriesContainer = document.getElementById("categories-container");
 
@@ -78,6 +79,9 @@ document.addEventListener("DOMContentLoaded", function ()
 		showQuestions();
 	})
 	.catch((error) => console.error("Error loading questions:", error));
+
+	if(info && currentPage === "deep")
+		info.innerHTML = "Notes and exercises' solutions are available at this <a href=\"https://unipdit-my.sharepoint.com/:o:/g/personal/michele_gusella_studenti_unipd_it/EjzBSOx8tnFHuCTc0jwYyNYB-0IIjiJjlq8Bg0JRaGcAFg?e=aBlEDL\" target=\"_blank\">link</a>"
 
 	// Event listener for the Calculate Score button and show all questions
 	calculateButton.addEventListener("click", calculateScore);

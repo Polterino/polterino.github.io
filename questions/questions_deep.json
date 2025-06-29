@@ -111,6 +111,13 @@
 		"verified": 1
 	},
 	{
+		"question": "Consider an image in black and white (1 input channel) and a CNN layer with 2 filters of size 3x3, padding=same and an input image of size 5x3. How many multiplications does it have to perform? (do not consider the bias terms)",
+		"correctTextboxAnswer": "270",
+		"motivation": "2 x 5x3 x 3x3x1",
+		"category": ["CNN"],
+		"verified": 1
+	},
+	{
 		"question": "Multi-task learning can improve the predictive performance over single-task learning (select the correct answer)",
 		"options": [
 			"because there are more training data to train on",
@@ -174,6 +181,13 @@
 		"category": ["RNN"],
 		"verified": 1,
 		"image": "img/deep_rnn_1.png"
+	},
+	{
+		"question": "Consider shallow RNNs, N<sub>a</sub> and N<sub>b</sub>, with dependencies defined by the following Recursive Networks (a) (b) where the input is at the bottom, the hidden at the middle, and the output at the top. Given for both RNNs an input layer of size 10, and an output layer of size 3, and an hidden layer of size 10 for N<sub>a</sub>, what is the minimum number of hidden units N<sub>b</sub> should have to own a larger number of parameters than N<sub>a</sub> (considering also the bias for each neuron)?",
+		"correctTextboxAnswer": "12",
+		"category": ["RNN"],
+		"image": "img/rnn_feedback.png",
+		"verified": 1
 	},
 	{
 		"question": "Which of the following statements about the Universal Approximation theorem for neural networks is true?",
@@ -244,6 +258,90 @@
 			"None of the above"
 		],
 		"correctAnswer": 1,
+		"verified": 1
+	},
+	{
+		"question": "Which of the following statements about hidden unit activation functions in deep neural networks is TRUE?",
+		"options": [
+			"Sigmoid and Tanh activations can cause vanishing gradient issues in deep networks",
+			"The ReLU activation function is differentiable across the entire real number line, which makes it suitable for backpropagation",
+			"Linear activation functions are typically used in hidden layers of deep networks to improve expressiveness",
+			"The sigmoid function is immune to vanishing gradients, even in deep architectures",
+			"Hidden unit activation functions must match the output activation function for the model to converge"
+		],
+		"correctAnswer": 0,
+		"verified": 1
+	},
+	{
+		"question": "Which of the following statements are TRUE about the use of gradients in training a deep neural network?",
+		"options": [
+			"Gradients are only used during the testing phase of a neural network",
+			"Gradients in deep networks never vanish or explode if the network is initialized properly",
+			"Gradient descent guarantees finding the global minimum for any deep network",
+			"Higher gradients always imply better generalization performance on unseen data",
+			"Gradients are used to update network weights in the direction that minimizes the loss"
+		],
+		"correctAnswer": 4,
+		"verified": 1
+	},
+	{
+		"question": "Given a sequential transduction T, a recursive state representation for T exists only if",
+		"options": [
+			"T is IO-isomorphic",
+			"T is stationary",
+			"T is with finite memory",
+			"T is temporal",
+			"None of the above statement is true"
+		],
+		"correctAnswer": 4,
+		"motivation": "T must be causal",
+		"verified": 1
+	},
+	{
+		"question": "Which one of the following sentences about the graph convolution operator (GC) is TRUE?",
+		"options": [
+			"GC is translation invariant",
+			"GC is translation equivariant",
+			"GC is scale equivariant",
+			"GC is permutation equivariant",
+			"None of the above"
+		],
+		"correctAnswer": 3,
+		"verified": 1
+	},
+	{
+		"question": "Which of the following statements about the approximation capabilities of neural networks is TRUE?",
+		"options": [
+			"A Neural Network with three hidden layers using linear activation functions, along with one hidden layer employing the tanh activation function, can approximate any continuous function arbitrarily well given a sufficient number of hidden neurons",
+			"A Neural Network with at least one hidden layer and a squashing activation function can approximate any continuous function arbitrarily well, regardless of the number of hidden neurons used",
+			"The minimum number of hidden neurons required for a neural network with one hidden layer and a squashing activation function to approximate up to a given extent a continuous function is linear in the output dimension",
+			"None of the above"
+		],
+		"correctAnswer": 0,
+		"verified": 1
+	},
+	{
+		"question": "Given an undirected graphical model for representing the joint probability p, the Monte Carlo estimation of E<sub>p</sub>[f(x)] is biased if:",
+		"options": [
+			"The partition function cannot be decomposed in smaller factors",
+			"The estimation is obtained by a Markov Chain",
+			"The estimation is obtained by Importance Sampling using normalized probabilities",
+			"The undirected graph does not contain cliques of size larger than 2",
+			"None of the above"
+		],
+		"correctAnswer": 4,
+		"verified": 1
+	},
+	{
+		"question": "When considering the Transformer model, very long sequences can be dealt with the",
+		"options": [
+			"Longformer variant",
+			"BigBird variant",
+			"Star Transformer variant",
+			"Vanilla variant",
+			"None of the above"
+		],
+		"correctAnswer": 4,
 		"verified": 1
 	}
 ]
