@@ -261,6 +261,18 @@
 		"verified": 1
 	},
 	{
+		"question": "Which of the following statements that relate to both the XOR problem, and the universal approximation theorem is TRUE?",
+		"options": [
+			"The universal approximation theorem implies that a trained network  will always generalize well to unseen data",
+			"The universal approximation theorem ensures that all networks, even without hidden layers can solve the XOR problem",
+			"The XOR problem disproves the universal approximation theorem",
+			"Since XOR is a simple problem, it can always be solved by any network, even those violating the assumptions of the universal approximation theorem",
+			"The inability of a single layer neural network to solve the XOR problem motivated the development of deeper neural networks, which universal approximation theorem later justified"
+		],
+		"correctAnswer": 4,
+		"verified": 0
+	},
+	{
 		"question": "Which of the following statements about hidden unit activation functions in deep neural networks is TRUE?",
 		"options": [
 			"Sigmoid and Tanh activations can cause vanishing gradient issues in deep networks",
