@@ -105,12 +105,20 @@
 
     function setDivImage(div, url)
     {
-        const courseImageInside = div.querySelector('.courseimageinside');
+        const courseImage = div.querySelector('.courseimage > img');
 
-        if (courseImageInside) {
-            courseImageInside.style.backgroundImage = `url("${url}")`;
+        if (courseImage) {
+            courseImage.src = url;
         } else {
-            console.log('Errore nel cambiare lo sfondo del corso '+ div.getAttribute('data-courseid'));
+            const courseImageDad = div.querySelector('.d-flex');
+            const courseImageDiv = document.createElement('div');
+            courseImageDiv.classList.add("courseimage");
+            courseImageDad.prepend(courseImageDiv);
+            var img = document.createElement("img");
+            img.setAttribute('src', url);
+            courseImageDiv.appendChild(img);
+
+            //console.log('Errore nel cambiare lo sfondo del corso '+ div.getAttribute('data-courseid'));
         }
     }
 
@@ -182,12 +190,11 @@
 
 
 
-    // Cerco il div che contiene tutti i corsi come div figli
-    const rowDiv = document.querySelector('.courses.theme-list-courses.frontpage-course-list-enrolled .row');
-
+    // Find the main div
+    const rowDiv = document.getElementsByClassName('courses frontpage-course-list-enrolled');
     if (rowDiv)
     {
-        const divList = rowDiv.querySelectorAll('div');
+        const divList = rowDiv[0].querySelectorAll('div');
 
         // Salvo solo i div validi, ovvero quelli con un course id
         divList.forEach((div) => {
@@ -195,16 +202,16 @@
             {
                 courseList.push(div);
 
-                const courseImageInside = div.querySelector('.courseimageinside');
+                const courseImageInside = div.querySelector('.courseimage > img');
                 if (courseImageInside) {
-                    courseImgUrl[div.getAttribute('data-courseid')] = courseImageInside.style.backgroundImage;
+                    courseImgUrl[div.getAttribute('data-courseid')] = courseImageInside.src;
                 } else {
                     console.log('Background image non trovata del corso '+ div.getAttribute('data-courseid'));
                 }
             }
         });
     }
-    else { console.log("Div con la lista di corsi non trovato."); }
+    else { console.log("Main div not found."); }
     // Salvo courseList prima di mettere le icone
     courseListClone = courseList.slice(0);
 
@@ -270,5 +277,5 @@
         // Inserisci il nuovo div subito dopo il div esistente
         mainDiv.insertAdjacentElement('afterend', newDiv);
     }
-    else { console.log("Main non trovato."); }
+    else { console.log("Main div non trovato."); }
 })();
