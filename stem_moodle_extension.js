@@ -283,7 +283,7 @@
 
         const title = document.createElement('h2');
         title.textContent = "Bookmarked courses";
-        //title.style.margin = "0";
+        title.style.margin = "0";
         title.style.textAlign = "left";
 
         const colorpicker = document.createElement('input');
@@ -298,6 +298,10 @@
         headerWrapper.style.display = "flex";
         headerWrapper.style.justifyContent = "space-between";
         headerWrapper.style.alignItems = "center";
+        headerWrapper.style.width = "100%";
+        headerWrapper.style.maxWidth = "1140px";
+        headerWrapper.style.boxSizing = "border-box";
+        headerWrapper.style.margin = "0 auto";
         headerWrapper.appendChild(title);
         headerWrapper.appendChild(colorpicker);
 
