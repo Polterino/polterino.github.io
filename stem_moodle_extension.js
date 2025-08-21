@@ -19,7 +19,11 @@
     var courseListClone = [];
     const courseImgUrl = {}; // it contains touples structured as courseID: default background image url
     var userInput = "";
-    const newRowDiv = document.createElement('div');
+    // Div that actually stores courses div
+    const innerDiv = document.createElement('div');
+    innerDiv.className = 'courses frontpage-course-list-enrolled';
+
+    const COOKIE_EXPIRATION = 3650; // days
 
     function addIcon(inputDiv, saveIcon)
     {
@@ -49,13 +53,13 @@
             {
                 courseListClone.forEach((div) => {
                     const courseId = div.getAttribute('data-courseid');
-                    if (courseId === inputDiv.getAttribute('data-courseid')) { newRowDiv.appendChild(addIcon(div.cloneNode(true), false)); }
+                    if (courseId === inputDiv.getAttribute('data-courseid')) { innerDiv.appendChild(addIcon(div.cloneNode(true), false)); }
                 });
-                setCourseCookie(inputDiv.getAttribute('data-courseid'), 'true', 365); // Imposta il cookie
+                setCourseCookie(inputDiv.getAttribute('data-courseid'), 'true', COOKIE_EXPIRATION); // Set cookie
             }
             else
             {
-                const divList = newRowDiv.querySelectorAll('div');
+                const divList = innerDiv.querySelectorAll('div');
                 divList.forEach((div) => {
                     if (div.getAttribute('data-courseid') === inputDiv.getAttribute('data-courseid')) { div.remove(); }
                 });
@@ -78,7 +82,10 @@
             {
                 // if the input is empty, user wants to set the default image of the course
                 // replace (regex) is needed to remove url() from the string
-                if (userInput === "") { userInput = courseImgUrl[inputDiv.getAttribute('data-courseid')].replace(/^url\(["']?/, '').replace(/["']?\)$/, ''); }
+                if (userInput === "" && courseImgUrl[inputDiv.getAttribute('data-courseid')])
+                {
+                    userInput = courseImgUrl[inputDiv.getAttribute('data-courseid')].replace(/^url\(["']?/, '').replace(/["']?\)$/, '');
+                }
 
                 // set image of non-bookmarked courses
                 courseList.forEach((div) => {
@@ -87,11 +94,11 @@
                 });
 
                 // set image of bookmarked courses
-                const divList = newRowDiv.querySelectorAll('div');
+                const divList = innerDiv.querySelectorAll('div');
                 divList.forEach((div) => {
                     if (div.getAttribute('data-courseid') === inputDiv.getAttribute('data-courseid')) { setDivImage(div, userInput); }
                 });
-                setCourseCookie(inputDiv.getAttribute('data-courseid')+"-image", userInput, 365);
+                setCourseCookie(inputDiv.getAttribute('data-courseid')+"-image", userInput, COOKIE_EXPIRATION);
             }
         };
         // Aggiungi la seconda icona al contenitore
@@ -105,20 +112,36 @@
 
     function setDivImage(div, url)
     {
-        const courseImage = div.querySelector('.courseimage > img');
+        // Remove image
+        if(url === "")
+        {
+            const courseImage = div.querySelector('.courseimage');
+            if(courseImage)
+            {
+                while (courseImage.hasChildNodes())
+                {
+                    courseImage.removeChild(courseImage.firstChild);
+                }
+                courseImage.remove();
+            }
+        }
+        // Add (or replace) image
+        else
+        {
+            const courseImage = div.querySelector('.courseimage > img');
+            if (courseImage) {
+                courseImage.src = url;
+            } else {
+                const courseImageDad = div.querySelector('.d-flex');
+                const courseImageDiv = document.createElement('div');
+                courseImageDiv.classList.add("courseimage");
+                courseImageDad.prepend(courseImageDiv);
+                var img = document.createElement("img");
+                img.setAttribute('src', url);
+                courseImageDiv.appendChild(img);
 
-        if (courseImage) {
-            courseImage.src = url;
-        } else {
-            const courseImageDad = div.querySelector('.d-flex');
-            const courseImageDiv = document.createElement('div');
-            courseImageDiv.classList.add("courseimage");
-            courseImageDad.prepend(courseImageDiv);
-            var img = document.createElement("img");
-            img.setAttribute('src', url);
-            courseImageDiv.appendChild(img);
-
-            //console.log('Errore nel cambiare lo sfondo del corso '+ div.getAttribute('data-courseid'));
+                //console.log('Errore nel cambiare lo sfondo del corso '+ div.getAttribute('data-courseid'));
+            }
         }
     }
 
@@ -128,8 +151,8 @@
         d.setTime(d.getTime() + (exdays * 24 * 60 * 60 * 1000)); // Scadenza del cookie
         const expires = "expires=" + d.toUTCString(); // Imposta la scadenza
         document.cookie = cname + "=" + cvalue + ";" + expires + '; path=/';
-        if (cname.endsWith("image")) { console.log('Immagine correttamente salvata'); }
-        else { console.log('Corso correttamente salvato'); }
+        if (cname.endsWith("image")) { console.log('Image correctly saved'); }
+        else { console.log('Course correctly bookmarked'); }
     }
 
     function getCourseCookies()
@@ -183,12 +206,12 @@
     function deleteCourseCookie(courseID)
     {
         document.cookie = `${courseID}=; expires=Thu, 01 Jan 1970 00:00:00 GMT; path=/;`;
-        console.log("Corso correttamente eliminato");
+        console.log("Course correctly deleted");
     }
 
 
 
-
+    // ============================================================================================================
 
     // Find the main div
     const rowDiv = document.getElementsByClassName('courses frontpage-course-list-enrolled');
@@ -206,7 +229,7 @@
                 if (courseImageInside) {
                     courseImgUrl[div.getAttribute('data-courseid')] = courseImageInside.src;
                 } else {
-                    console.log('Background image non trovata del corso '+ div.getAttribute('data-courseid'));
+                    //console.log('Background image not found. courseid '+ div.getAttribute('data-courseid'));
                 }
             }
         });
@@ -252,30 +275,25 @@
 
     if (mainDiv)
     {
-        const newDiv = document.createElement('div');
-        newDiv.id = "frontpage-course-list";
+        const CourseListDiv = document.createElement('div');
+        CourseListDiv.id = "frontpage-course-list";
 
-        const titolo = document.createElement('h2');
-        titolo.textContent = "Corsi salvati";
+        const title = document.createElement('h2');
+        title.textContent = "Bookmarked courses";
 
-        const secondDiv = document.createElement('div');
-        secondDiv.className = 'courses theme-list-courses frontpage-course-list-enrolled';
-
-        newRowDiv.classList.add('row');
         // inserisco ogni corso che devo clonare
         clonedDivList.forEach((div) => {
-            newRowDiv.appendChild(div);
+            innerDiv.appendChild(div);
         });
 
-        newDiv.style.backgroundColor = "#f4f4f4";
-        newDiv.style.marginTop = "10px";
+        CourseListDiv.style.backgroundColor = "#f4f4f4";
+        CourseListDiv.style.marginTop = "10px";
 
-        newDiv.appendChild(titolo);
-        newDiv.appendChild(secondDiv);
-        secondDiv.appendChild(newRowDiv);
+        CourseListDiv.appendChild(title);
+        CourseListDiv.appendChild(innerDiv);
 
         // Inserisci il nuovo div subito dopo il div esistente
-        mainDiv.insertAdjacentElement('afterend', newDiv);
+        mainDiv.insertAdjacentElement('afterend', CourseListDiv);
     }
-    else { console.log("Main div non trovato."); }
+    else { console.log("Search courses div not found"); }
 })();
