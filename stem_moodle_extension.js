@@ -1,10 +1,11 @@
 // ==UserScript==
 // @name         Bookmark stem moodle (unipd) courses
 // @namespace    http://tampermonkey.net/
-// @version      2024-10-01
+// @version      2025-08-21
 // @description  This script let's you bookmark courses to find them faster
 // @author       Polterino
 // @match        https://stem.elearning.unipd.it/
+// @match        https://stem.elearning.unipd.it/*
 // @icon         https://www.google.com/s2/favicons?sz=64&domain=tampermonkey.net
 // @run-at       document-idle
 // @grant        none
@@ -13,6 +14,8 @@
 (function() {
 
     'use strict';
+
+    if (location.pathname !== "/") return;
 
     console.log("Stem moodle extension - Developed by Polterino")
     var courseList = [];
@@ -280,6 +283,23 @@
 
         const title = document.createElement('h2');
         title.textContent = "Bookmarked courses";
+        //title.style.margin = "0";
+        title.style.textAlign = "left";
+
+        const colorpicker = document.createElement('input');
+        colorpicker.type = "color";
+        colorpicker.id = "picker";
+        colorpicker.value = "#f4f4f4";
+        colorpicker.addEventListener("input", () => {
+            CourseListDiv.style.backgroundColor = colorpicker.value;
+        });
+        // to wrap color picker and title in a single flex row
+        const headerWrapper = document.createElement('div');
+        headerWrapper.style.display = "flex";
+        headerWrapper.style.justifyContent = "space-between";
+        headerWrapper.style.alignItems = "center";
+        headerWrapper.appendChild(title);
+        headerWrapper.appendChild(colorpicker);
 
         // inserisco ogni corso che devo clonare
         clonedDivList.forEach((div) => {
@@ -289,7 +309,7 @@
         CourseListDiv.style.backgroundColor = "#f4f4f4";
         CourseListDiv.style.marginTop = "10px";
 
-        CourseListDiv.appendChild(title);
+        CourseListDiv.appendChild(headerWrapper);
         CourseListDiv.appendChild(innerDiv);
 
         // Inserisci il nuovo div subito dopo il div esistente
