@@ -293,5 +293,16 @@
 		],
 		"correctAnswer": 1,
 		"verified": 1
+	},
+	{
+		"question": "What is a common problem related to remote authentication mechanisms and not present in normal login-in-presence scenarios?",
+		"options": [
+			"Dictionary Attack",
+			"Eavesdropping",
+			"Brute-force attack",
+			"All of the listed"
+		],
+		"correctAnswer": 1,
+		"verified": 1
 	}
 ]
