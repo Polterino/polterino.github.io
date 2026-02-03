@@ -1,54 +1,54 @@
 [
-    {
-        "question": "The main difference between the EU and the US approaches to the legal regime of personal data is",
-        "options": ["that the EU treats personal data as as an aspect of individual personality, whereas the US treats data as a market",
-                    "that only EU protects privacy",
-                    "that only the US protect privacy",
-                    "that only the US approach leverages individual consent to protect privacy"],
-        "correctAnswer": 0,
-        "verified": 0
-    },
-    {
-        "question": "Correcting illegal bias in AI",
-        "options": ["is always legitimate",
-                    "must be done in a way that does not violate basic legal principles such as equality",
-                    "is legally impossible",
-                    "can be done only by amending the algorithm or the dataset for the training"],
-        "correctAnswer": 1,
-        "verified": 0
-    },
-    {
-        "question": "The processing of personal data pursuant to the GDPR may be lawfully carried out ",
-        "options": ["When data subjects expressed their own consent",
-                    "Based on the controller’s free choice",
-                    "When there is no consent by data subjects, but the processing is needed for protecting the data subjects’ or other individuals’ vital interests",
-                    "When there is no consent, but the processing must take place to perform a contract between the controller and any third party"],
-        "correctAnswer": 2,
-        "verified": 0
-    },
-    {
-        "question": "Which of the following are legislative instruments belonging to EU primary law?",
-        "options": ["Treaty of the European Union, Treaty on the functioning of the European Union, Case-law of the European Court of Justice",
-                    "Treaty of the European Union, Treaty on the functioning of the European Union, Charter of fundamental rights of the European Union",
-                    "Charter of fundamental rights of the European Union, Regulations, Case-law of the European Court of Justice"],
-        "correctAnswer": 1,
-        "verified": 1
-    },
-    {
-        "question": "Which of the following answers is correct? The hierarchical system of EU law is structured as such:",
-        "options": ["(1) Primary Law, (2) Secondary Law, (3) International Agreements",
-                    "(1) Founding treaties, (2) International Agreements, (3) Secondary Law",
-                    "(1) Primary Law, (3) Secondary Law, (3) Member States law"],
-        "correctAnswer": 1,
-        "verified": 0
-    },
-    {
-        "question": "The European Data Protection Board is",
-        "options": ["An agency of the European Commission with the aim of protecting the fundamental right to data protection",
-                    "An independent body gathering the national supervisory authorities of each EU Member State",
-                    "An institution provided for by the Treaty on the European Union"],
-        "correctAnswer": 1,
-        "verified": 1
+	{
+		"question": "The main difference between the EU and the US approaches to the legal regime of personal data is",
+		"options": ["that the EU treats personal data as as an aspect of individual personality, whereas the US treats data as a market",
+					"that only EU protects privacy",
+					"that only the US protect privacy",
+					"that only the US approach leverages individual consent to protect privacy"],
+		"correctAnswer": 0,
+		"verified": 0
+	},
+	{
+		"question": "Correcting illegal bias in AI",
+		"options": ["is always legitimate",
+					"must be done in a way that does not violate basic legal principles such as equality",
+					"is legally impossible",
+					"can be done only by amending the algorithm or the dataset for the training"],
+		"correctAnswer": 1,
+		"verified": 0
+	},
+	{
+		"question": "The processing of personal data pursuant to the GDPR may be lawfully carried out ",
+		"options": ["When data subjects expressed their own consent",
+					"Based on the controller’s free choice",
+					"When there is no consent by data subjects, but the processing is needed for protecting the data subjects’ or other individuals’ vital interests",
+					"When there is no consent, but the processing must take place to perform a contract between the controller and any third party"],
+		"correctAnswer": [0, 2],
+		"verified": 0
+	},
+	{
+		"question": "Which of the following are legislative instruments belonging to EU primary law?",
+		"options": ["Treaty of the European Union, Treaty on the functioning of the European Union, Case-law of the European Court of Justice",
+					"Treaty of the European Union, Treaty on the functioning of the European Union, Charter of fundamental rights of the European Union",
+					"Charter of fundamental rights of the European Union, Regulations, Case-law of the European Court of Justice"],
+		"correctAnswer": 1,
+		"verified": 1
+	},
+	{
+		"question": "Which of the following answers is correct? The hierarchical system of EU law is structured as such:",
+		"options": ["(1) Primary Law, (2) Secondary Law, (3) International Agreements",
+					"(1) Founding treaties, (2) International Agreements, (3) Secondary Law",
+					"(1) Primary Law, (3) Secondary Law, (3) Member States law"],
+		"correctAnswer": 1,
+		"verified": 0
+	},
+	{
+		"question": "The European Data Protection Board is",
+		"options": ["An agency of the European Commission with the aim of protecting the fundamental right to data protection",
+					"An independent body gathering the national supervisory authorities of each EU Member State",
+					"An institution provided for by the Treaty on the European Union"],
+		"correctAnswer": 1,
+		"verified": 1
 	},
 	{
 		"question": "Which of the following statements is correct",
@@ -57,7 +57,7 @@
 					"Freedom of thought deserves protection only once the individual shares his thoughts with others",
 					"Freedom of thought is considered as a human right in most jurisdictions but hardly protected in itself"],
 		"correctAnswer": 3,
-        "verified": 1
+		"verified": 1
 	},
 	{
 		"question": "The charter of fundamental rights recognizes the right to privacy and the right to data protection to",
@@ -65,7 +65,7 @@
 					"All individuals provided that they are in the EU",
 					"Only to EU companies"],
 		"correctAnswer": 1,
-        "verified": 1
+		"verified": 1
 	},
 	{
 		"question": "Which of the following statements is correct",
@@ -73,6 +73,386 @@
 					"Regulations are directly applicable in all Member States as such, whereas directives need to be implemented by every Member State",
 					"Directives are directly applicable in all Member States as such, whereas regulations need to be implemented by every Member State"],
 		"correctAnswer": 1,
-        "verified": 1
+		"verified": 1
+	},
+	{
+		"question": "Which of the following statements is correct:",
+		"options": [
+			"Synthetic data is protected by GDPR",
+			"The GDPR does not cover the protection of synthetic data",
+			"The GDPR prohibits the creation and the dissemination of synthetic data",
+			"Synthetic data and anonymized data are the same notion"
+		],
+		"correctAnswer": 1,
+		"verified": 1
+	},
+	{
+		"question": "When the European Court of Human Rights rules that a State has failed to protect a right of an individual:",
+		"options": [
+			"The Court’s ruling replaces the domestic rule that is incompatible with the European Convention of Human Rights",
+			"It is up to the State to remove the violation of the European Convention",
+			"The individual can sue the State in the European Court of Human Rights"
+		],
+		"correctAnswer": 1,
+		"verified": 1
+	},
+	{
+		"question": "The European Data Protection Supervisor is:",
+		"options": [
+			"A national authority supervising on data protection",
+			"A supranational authority supervising on the activity of national supervisory authorities",
+			"A supranational supervisor on any processing of personal data Member States citizens",
+			"An independent body at the European level supervising on processing carried out by EU Institutions"
+		],
+		"correctAnswer": 3,
+		"verified": 1
+	},
+	{
+		"question": "The European Data Protection Supervisor:",
+		"options": [
+			"gathers the European Data Protection Board and the National Supervisory Authorities",
+			"is in charge for handling any report of personal data breach committed by any entity within the EU",
+			"is responsible for handling individuals’ reports of data breaches committed by EU institutions only"
+		],
+		"correctAnswer": 2,
+		"verified": 1
+	},
+	{
+		"question": "What is the difference between regulations and directives in EU law?",
+		"options": [
+			"Regulations are immediately enforceable, while directives need domestic execution",
+			"Regulations are binding, while directives are only exhortations",
+			"Regulations establish rules, whereas directives introduce principles",
+			"There is no difference between the two notions"
+		],
+		"correctAnswer": 0,
+		"verified": 1
+	},
+	{
+		"question": "Social Credit Systems are:",
+		"options": [
+			"Intrinsically incompatible with basic legal principles",
+			"Problematic insofar as they are opaque and have wide ramifications for the legal, economic, and social life of a subject",
+			"Forbidden under Chinese law",
+			"Forbidden under U.S. Law"
+		],
+		"correctAnswer": 1,
+		"verified": 1
+	},
+	{
+		"question": "The EU Charter of fundamental rights expressly safeguards",
+		"options": [
+			"The right of data controllers and processors to process anyone’s personal data",
+			"The right of individuals to personal data protection",
+			"The right of individuals to private and family life",
+			"The right of individuals to process any other individuals’ personal data"
+		],
+		"correctAnswer": [
+			1,
+			2
+		],
+		"verified": 1
+	},
+	{
+		"question": "Should data controllers and data processors be separate entities, the GDPR sets out that:",
+		"options": [
+			"data controllers are totally free to indicate one or more data processors, the latter not being bound by any obligation towards data controllers",
+			"their relationships need to be regulated by specific contractual agreements or by different acts provided for by law",
+			"their mutual relationships need to be regulated only by an order of any competent National Supervisory Authority"
+		],
+		"correctAnswer": 1,
+		"verified": 1
+	},
+	{
+		"question": "What is the difference between synthetic and anonymized data?",
+		"options": [
+			"Anonymized data are covered by the GDPR, whereas synthetic data are not",
+			"Anonymized data lose most details and are therefore less useful to train algorithms",
+			"Synthetic data are covered by the GDPR, whereas anonymized data are not",
+			"Only anonymization can be reversed to reidentify individuals"
+		],
+		"correctAnswer": 1,
+		"verified": 1
+	},
+	{
+		"question": "Why is the protection of personal data insufficient to protect fundamental rights?",
+		"options": [
+			"Because it only covers specific countries; there is no macroregional standardized regulation",
+			"Internet users cannot cope with massive consent requests when they visit websites",
+			"Because AI doesn’t use personal data",
+			"Because AI can be biased"
+		],
+		"correctAnswer": 3,
+		"motivation": "\"Internet users cannot cope with massive consent requests when they visit websites\" --> this was originally the correct one but \"Because AI can be biased\" seems more correct",
+		"verified": 0
+	},
+	{
+		"question": "The E-Privacy Directive:",
+		"options": [
+			"provides for personal data protection in processing activities carried out by EU institutions",
+			"needed to be implemented in any Member State",
+			"was directly applicable in every Member State since its entry into force",
+			"regulates personal data processing in connection with public communications services in public communications networks within the EU"
+		],
+		"correctAnswer": [
+			1,
+			3
+		],
+		"verified": 1
+	},
+	{
+		"question": "The European Electronic Communications Code (so-called Recast Directive):",
+		"options": [
+			"deals with personal data processing activities in the communication industry",
+			"aims at ensuring equal and fair access to electronic communications services, promoting at the same time connectivity across the EU",
+			"does not concern personal data processing activities"
+		],
+		"correctAnswer": 1,
+		"verified": 1
+	},
+	{
+		"question": "What is the legal treatment of synthetic data?",
+		"options": [
+			"Synthetic data are protected by the GDPR.",
+			"Synthetic data are not covered by the GDPR.",
+			"Anonymized data are protected by the GDPR.",
+			"Synthetic data are prohibited under the GDPR."
+		],
+		"correctAnswer": 1,
+		"verified": 1
+	},
+	{
+		"question": "Why is the protection of personal data so important?",
+		"options": [
+			"Because the EU does not protect synthetic data",
+			"The protection of personal data usually serves to protect people from manipulation and exploitation",
+			"Because AI does not need personal data",
+			"Because AI can be biased."
+		],
+		"correctAnswer": 1,
+		"verified": 1
+	},
+	{
+		"question": "A Data Protection Impact Assessment under the GDPR is:",
+		"options": [
+			"compulsory only when the appointment of a DPO is required by law",
+			"compulsory only in specific cases expressly set out by law",
+			"mandatory for any kind of processing activities involving non personal data",
+			"compulsory for every kind of processing activities involving personal data"
+		],
+		"correctAnswer": 1,
+		"verified": 1
+	},
+	{
+		"question": "A data controller is:",
+		"options": [
+			"entitled to always deny the access to a data subject’s personal data, except for the event where the latter’s personal data are inaccurate",
+			"required to grant access to personal data held when requested by the data subject concerned",
+			"always required to grant access to a data subject’s personal data by anyone requesting it",
+			"required to grant access to personal data to subjects other than the data subject, when set forth by law"
+		],
+		"correctAnswer": [
+			1,
+			3
+		],
+		"verified": 1
+	},
+	{
+		"question": "The 2014 judgment issued by the European Court of Justice in case Google Spain (C-131/12):",
+		"options": [
+			"the way to recognize the right to personal data protection in the EU Charter of Fundamental Rights",
+			"paved the way to include the right to be forgotten in the GDPR as one of the rights recognized to the data subject’s benefit",
+			"originated from a preliminary ruling proceedings referred to the ECJ by a Spanish first instance Judge",
+			"paved the way to include the right to be forgotten in the GDPR as one of the rights recognized to the data controller’s benefit"
+		],
+		"correctAnswer": 1,
+		"verified": 1
+	},
+	{
+		"question": "Which is the correct order of the following sources of EU law in the EU related hierarchy (from the top to the bottom)?",
+		"options": [
+			"Regulations/Directives, International Agreements, Charter of Fundamental Rights, Decisions",
+			"Regulations/Directives, International Agreements, Charter of Fundamental Rights, Decisions",
+			"Founding Treaties/Charter of Fundamental Rights, Regulations/Directives",
+			"Founding Treaties/Charter of Fundamental Rights, International Agreements, Regulations/Directives"
+		],
+		"correctAnswer": 3,
+		"verified": 1
+	},
+	{
+		"question": "The AI Act is",
+		"options": [
+			"A soft law legal instrument offering guidelines for using AI",
+			"A hard law regulation adopted by the EU",
+			"An international convention governing the use of AI worldwide",
+			"A regulation adopted by the EU which might influence extra-EU countries in adopting similar legislation"
+		],
+		"correctAnswer": [
+			1,
+			3
+		],
+		"verified": 1
+	},
+	{
+		"question": "The Brussels Effect means that",
+		"options": [
+			"All economic operators coming from outside the EU are bound to comply with EU law",
+			"Many third countries will be legally required to adopt the same legislations adopted by Belgium",
+			"Some extra-EU legal systems adopted, or will likely adopt, legislations similar to those firstly adopted by the EU",
+			"Some third countries will conclude international conventions with the EU for applying EU legislation"
+		],
+		"correctAnswer": 2,
+		"verified": 1
+	},
+	{
+		"question": "Which of the following statements is false?",
+		"options": [
+			"The GDPR applies only to EU citizens within the EU",
+			"The GDPR applies to any data subject within the EU",
+			"The GDPR applies to data controllers incorporated in third countries when they operate in the EU",
+			"The GDPR does not apply to data controllers incorporated in third countries when they process personal data belonging to EU citizens"
+		],
+		"correctAnswer": [
+			0,
+			3
+		],
+		"verified": 1
+	},
+	{
+		"question": "Which of the EU institutions is regarded as the Guardian of the Treaties and EU Law?",
+		"options": [
+			"The European Parliament",
+			"The European Commission",
+			"The European Court of Justice"
+		],
+		"correctAnswer": 1,
+		"verified": 1
+	},
+	{
+		"question": "Which is not a function of the Court of Justice of the European Union (CJEU)?",
+		"options": [
+			"The consistent interpretation of European Union law",
+			"Consideration of the validity of the acts of the Institutions",
+			"Hearing appeals from national courts"
+		],
+		"correctAnswer": [
+			0,
+			2
+		],
+		"verified": 1
+	},
+	{
+		"question": "Which of the following statements best describes what the General Data Protection Regulation is?",
+		"options": [
+			"An update on the Directive 95/46 which means personal data can only legally be collected and stored by companies that are certified in accordance with the GDPR regulations",
+			"A legal framework aimed at companies operating online in the EU, stipulating how and when companies are able to collect personal data",
+			"A legal framework relating to the collection, storage and usage of personal data, which applies to any organization doing business with EU citizens"
+		],
+		"correctAnswer": 2,
+		"verified": 1
+	},
+	{
+		"question": "What are the types of personal data as defined under GDPR?",
+		"options": [
+			"Any identifiable information",
+			"Only name, identification number, location data, online identifier, specific factors related to the physical, physiological, genetic, mental, economic, cultural or social identity of a natural person",
+			"Personally identifiable information & special categories of personal data"
+		],
+		"correctAnswer": 2,
+		"motivation": "\"Any identifiable information\" is also formally correct",
+		"verified": 0
+	},
+	{
+		"question": "Which of the following is not an example of a special category of personal data?",
+		"options": [
+			"Ethnicity",
+			"Religious beliefs",
+			"Date of Birth"
+		],
+		"correctAnswer": 2,
+		"verified": 1
+	},
+	{
+		"question": "Considering the decision of the EUCJ on the Google Spain case, which of the following statements is correct:",
+		"options": [
+			"When there are insufficient legal references, the EUCJ has unlimited power in creating new rights to address the contemporary legal issues related to online personal data protection",
+			"A legal approach that focuses too much on data protection law categories can have detrimental effects on protecting other fundamental rights equally involved in the digital revolution.",
+			"Within the EU legal framework, personal data protection law is the primary legal reference for all the issues concerning data regulation since it can always be applied in a flexible and creative way"
+		],
+		"correctAnswer": 1,
+		"verified": 1
+	},
+	{
+		"question": "Which is the primary function of Personal Data Protection Authorities?",
+		"options": [
+			"To provide expert advice at the national level and handle the complaints, lodged against the violations of the GDPR",
+			"To provide expert advice at the national level and define policies and guidelines for a better application of national data protection law",
+			"To ensure the respect of the GDPR at the national level with unlimited powers before the other national authorities and institutions"
+		],
+		"correctAnswer": 0,
+		"verified": 1
+	},
+	{
+		"question": "What are the value and scope of the Court of Justice of the European Union decision?",
+		"options": [
+			"The decisions of the CJEU are being for the EU institutions, members states and EU citizens, but they cannot cover EU data protection law",
+			"The decisions of the CJEU generally are not bending and cover all the view law excluded data protection law",
+			"The decisions of the CJEU are binding and cover all the EU law"
+		],
+		"correctAnswer": 2,
+		"verified": 1
+	},
+	{
+		"question": "Which of the following statements best describes the scope of the right access?",
+		"options": [
+			"The data subject always has the right to obtain a copy of all the personal data concerning his her personal data processed by the controller",
+			"The data subject had the right obtain from the controller confirmation about the processing operation concerning her his personal data, access to the personal data and obtain the main information on the controller and the ongoing processing activities",
+			"The data subject always has the right to obtain information about the processing operations concerning her, his personal data"
+		],
+		"correctAnswer": 1,
+		"verified": 1
+	},
+	{
+		"question": "What is the function of DPIA?",
+		"options": [
+			"A DPIA is a procedure performed by the controller at the beginning of a processing activity and then periodically to estimate they’re related risks for its business and according to the GDPR this is mandatory for any processing operation",
+			"A DPIA is a procedure performed by the controller only at the beginning of a processing activity to estimate or related risks and according to the GDPR this is mandatory for any processing operation",
+			"A DPIA is a procedure performed by the controller at the beginning of a processing activity and then periodically to estimate the related risk for the data subjects according to the GDPR is mandatory for processing operations that are likely to result in high technological risk or uncertainty"
+		],
+		"correctAnswer": 2,
+		"verified": 1
+	},
+	{
+		"question": "Which of the following categories of data subjects fall outside the scope of GDPR?",
+		"options": [
+			"Deceased individuals",
+			"Children aged under eight years old",
+			"Individual with proven mental disabilities"
+		],
+		"correctAnswer": 0,
+		"verified": 1
+	},
+	{
+		"question": "Considering the decisions of EU institutions about the use of facial recognition tech technologies, which of the following statements is more correct?",
+		"options": [
+			"Consider considering the perplex cities raised by some national judges, facial recognition technologies are now under the care analysis of the EU institutions",
+			"Considering the intrusiveness and the risks for the rights and freedoms of data subjects facial recognition technologies are definitively banned in all the EU jurisdiction",
+			"Considering the intrusiveness and the risks for the rights and freedoms of data subjects, and the perplexities raised by some national judges institutions at the moment suggest limiting the use of facial recognition technologies"
+		],
+		"correctAnswer": 2,
+		"verified": 1
+	},
+	{
+		"question": "Which of the following is correct?",
+		"options": [
+			"The GDPR only applies to organizations based within the EU",
+			"The GDPR covers any processing of personal data of people in the EU, regardless of whether the organization concerned is based in the EU",
+			"The GDPR covers organizations outsides the EU who offer goods and services to people in the EU"
+		],
+		"correctAnswer": [
+			1,
+			2
+		],
+		"verified": 1
 	}
 ]
