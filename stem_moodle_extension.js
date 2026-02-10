@@ -30,7 +30,11 @@
 
     function addIcon(inputDiv, saveIcon)
     {
+        const existingIcon = inputDiv.querySelector('.custom-icon-container');
+        if (existingIcon) existingIcon.remove();
+
         const iconContainer = document.createElement('div'); // Crea un nuovo div per le icone
+        iconContainer.className = 'custom-icon-container';
         iconContainer.style.position = 'absolute';
         iconContainer.style.top = '10px';
         iconContainer.style.right = '10px';
@@ -72,7 +76,7 @@
         iconContainer.appendChild(mainIcon);
 
         const extraIcon = document.createElement('i');
-        extraIcon.className = 'fa fa-image'; // Cambia l'icona secondo le tue preferenze
+        extraIcon.className = 'fa fa-image';
 
         extraIcon.onclick = function() {
             extraIcon.style.transform = 'scale(1.2)'; // Effetto di ingrandimento
@@ -218,7 +222,7 @@
 
     // Find the main div
     const rowDiv = document.getElementsByClassName('courses frontpage-course-list-enrolled');
-    if (rowDiv)
+    if (rowDiv && rowDiv.length > 0)
     {
         const divList = rowDiv[0].querySelectorAll('div');
 
