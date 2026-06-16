@@ -233,5 +233,115 @@
 		"motivation_image": "img/tx_synch.png",
 		"category": ["CAN bus", "Second call 24/25"],
 		"verified": 1
-	}
+	},
+	{
+        "question": "Executable Link Format is",
+        "options": [
+            "the top-level directory in a file system hierarchy",
+            "a reverse engineering technique",
+            "a common standard file format"
+        ],
+        "correctAnswer": 2,
+        "category": ["Third call 25/26"],
+        "verified": 0
+    },
+    {
+        "question": "The dominant bit in the CAN bus protocol is",
+        "options": [
+            "the bit one, as it corresponds to the highest differential voltage value (3.5 V and 1.5 V, respectively)",
+            "the zero bit, as it corresponds to the lowest differential voltage value (2.5V on both ends)",
+            "the zero bit, as it corresponds to the highest differential voltage value (3.5 V and 1.5 V, respectively)"
+        ],
+        "correctAnswer": 2,
+        "category": ["Third call 25/26"],
+        "verified": 0
+    },
+    {
+        "question": "A remote attestation protocol is",
+        "options": [
+            "A protocol that hashes the memory content of an IoT device and sends the result back to a verifier",
+            "A protocol to securely supply evidence about the state of an attested device",
+            "An authentication protocol to attest whether we are talking with the legitimate device"
+        ],
+        "correctAnswer": 1,
+        "category": ["Third call 25/26"],
+        "verified": 0
+    },
+    {
+        "question": "The immutability property of a remote attestation protocol implies that",
+        "options": [
+            "The protocol needs not to be interrupted while executed in a dedicated non-mutable memory",
+            "The protocol needs to be executed in place in the ROM",
+            "While the protocol is executing, no leaks about internal states are left in the execution trace"
+        ],
+        "correctAnswer": 0,
+        "category": ["Third call 25/26"],
+        "verified": 0
+    },
+    {
+        "question": "A trusted computing base is",
+        "options": [
+            "the minimal set of components that must be trusted for the system's security to hold",
+            "a dedicated hardware component where we can perform trusted execution",
+            "a hardware component that ensures that each stage of the boot process only executes code that is cryptographically verified as trusted"
+        ],
+        "correctAnswer": 0,
+        "category": ["Third call 25/26"],
+        "verified": 0
+    },
+    {
+        "question": "If I were to attack the optical flow sensor of an UAV, I would need to",
+        "options": [
+            "to get the drone to move in a target direction, project features on a ground plane and move them towards the target direction",
+            "to get the drone to move in a target direction, project features on a ground plane and move them towards the opposite direction",
+            "to get the drone to move in a target direction, project static features on a ground plane until the drone reaches the target direction"
+        ],
+        "correctAnswer": 1,
+        "category": ["Third call 25/26"],
+        "verified": 0
+    },
+    {
+        "question": "A drone leverages an EKF filter during its flying mission, among the others, to",
+        "options": [
+            "compute ground image features from the video feed",
+            "Create a map of the surrounding environment for navigation purposes",
+            "compute the innovation along target directions and detect inconsistent behaviors"
+        ],
+        "correctAnswer": 2,
+        "category": ["Third call 25/26"],
+        "verified": 0
+    },
+    {
+        "question": "Static Taint Analysis refers to the process that",
+        "options": [
+            "tracks how multiple components in a target program interact when mutually calling each other",
+            "tracks how different inputs cause different behaviors in a target program",
+            "tracks how private information flows through the program and if it is leaked to public observers"
+        ],
+        "correctAnswer": 2,
+        "category": ["Third call 25/26"],
+        "verified": 1
+    },
+    {
+        "question": "A distance bounding protocol",
+        "options": [
+            "are protocols that leverage the autocorrelation between a target packet and the received signal to estimate the communication range",
+            "are cryptographic protocols that solve the relay attack problem in keyless entry systems",
+            "are protocols used by drones to estimate the distance from the ground and keep the device at a safe altitude"
+        ],
+        "correctAnswer": 1,
+        "category": ["Third call 25/26"],
+        "verified": 0
+    },
+    {
+        "question": "Error handling in CAN bus is implemented via",
+        "options": [
+            "a three state machine, where state transition occurs based on two different counters (TEC, and REC)",
+            "a two state machine, where state transition occurs based on two different counters (TEC, and REC)",
+            "a soft synchronization mechanism where each five bits of the same polarity, we insert a reverse polarity bit"
+        ],
+        "correctAnswer": 0,
+        "category": ["Third call 25/26"],
+        "verified": 0
+    }
 ]
