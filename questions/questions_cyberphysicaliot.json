@@ -243,7 +243,7 @@
         ],
         "correctAnswer": 2,
         "category": ["Third call 25/26"],
-        "verified": 0
+        "verified": 1
     },
     {
         "question": "The dominant bit in the CAN bus protocol is",
@@ -254,7 +254,7 @@
         ],
         "correctAnswer": 2,
         "category": ["Third call 25/26"],
-        "verified": 0
+        "verified": 1
     },
     {
         "question": "A remote attestation protocol is",
@@ -265,7 +265,8 @@
         ],
         "correctAnswer": 1,
         "category": ["Third call 25/26"],
-        "verified": 0
+		"motivation": "A remote attestation protocol aims at verifying the state of the device. Knowing whether we are talking to the legitimate device is the authentication step",
+        "verified": 1
     },
     {
         "question": "The immutability property of a remote attestation protocol implies that",
@@ -274,9 +275,9 @@
             "The protocol needs to be executed in place in the ROM",
             "While the protocol is executing, no leaks about internal states are left in the execution trace"
         ],
-        "correctAnswer": 0,
+        "correctAnswer": 1,
         "category": ["Third call 25/26"],
-        "verified": 0
+        "verified": 1
     },
     {
         "question": "A trusted computing base is",
@@ -287,7 +288,7 @@
         ],
         "correctAnswer": 0,
         "category": ["Third call 25/26"],
-        "verified": 0
+        "verified": 1
     },
     {
         "question": "If I were to attack the optical flow sensor of an UAV, I would need to",
@@ -298,7 +299,7 @@
         ],
         "correctAnswer": 1,
         "category": ["Third call 25/26"],
-        "verified": 0
+        "verified": 1
     },
     {
         "question": "A drone leverages an EKF filter during its flying mission, among the others, to",
@@ -309,7 +310,7 @@
         ],
         "correctAnswer": 2,
         "category": ["Third call 25/26"],
-        "verified": 0
+        "verified": 1
     },
     {
         "question": "Static Taint Analysis refers to the process that",
@@ -320,6 +321,7 @@
         ],
         "correctAnswer": 2,
         "category": ["Third call 25/26"],
+		"motivation": "Verifying the program's behavior is related to fuzzing or symbolic execution",
         "verified": 1
     },
     {
@@ -331,7 +333,7 @@
         ],
         "correctAnswer": 1,
         "category": ["Third call 25/26"],
-        "verified": 0
+        "verified": 1
     },
     {
         "question": "Error handling in CAN bus is implemented via",
@@ -342,6 +344,6 @@
         ],
         "correctAnswer": 0,
         "category": ["Third call 25/26"],
-        "verified": 0
+        "verified": 1
     }
 ]
